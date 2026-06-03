@@ -47,6 +47,40 @@ Point your domain registrar at the Azure SWA:
 
 The SWA default hostname is output by Terraform as `static_web_app_url`.
 
+## Multi-Era Architecture
+
+The site will host multiple archived snapshots of the festival site (one per year/phase).
+
+### URL Structure
+
+```
+/              → splash / landing page
+/2015/         → 2015 main site
+/2016/         → 2016 main site
+/2017/         → 2017 main site
+/2018/         → 2018 main site
+```
+
+Phases within a year (if distinct snapshots exist):
+
+```
+/2017/presale/ → presale teaser
+/2017/         → show-time (full lineup)
+/2017/recap/   → post-show
+```
+
+### Randomized Landing Options
+
+When all eras are deployed, the root URL could randomly surface a different year:
+
+**Option A: Client-side redirect** — Root `index.html` picks a random year via JS and calls `window.location.replace()`. Simple, no backend, but URL changes and there's a brief flash.
+
+**Option B: In-place content swap** — Root stays at `/` and fetches a random year's page into the DOM. Complex and fragile with full archive snapshots that have their own CSS/JS.
+
+**Option C: Server-side 302 via Azure Functions** — A linked SWA API function at `/api/random` returns a 302 to a random year. Rewrite `/` → `/api/random` in `staticwebapp.config.json`. Cleanest UX (no flash), but requires a Functions backend.
+
+**Option D: Splash with random entry button** — Splash page stays stable with an "Enter" or "Explore" button that randomly navigates to a year. Preserves a consistent landing page while still offering discovery.
+
 ## Local Development
 
 ```bash
