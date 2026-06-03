@@ -13,6 +13,7 @@ terraform {
     storage_account_name = "d4ntfstate"
     container_name       = "tfstate"
     key                  = "dayfornight.dev.tfstate"
+    use_oidc             = true
   }
 }
 
