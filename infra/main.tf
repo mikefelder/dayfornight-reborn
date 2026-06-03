@@ -14,10 +14,20 @@ resource "azurerm_static_web_app" "site" {
 }
 
 # Custom domains
+import {
+  to = azurerm_static_web_app_custom_domain.apex
+  id = "/subscriptions/1784740a-1cf6-416b-b3db-bda6985970aa/resourceGroups/rg-dayfornight/providers/Microsoft.Web/staticSites/swa-dayfornight/customDomains/dayfornight.dev"
+}
+
 resource "azurerm_static_web_app_custom_domain" "apex" {
   static_web_app_id = azurerm_static_web_app.site.id
   domain_name       = var.custom_domain
   validation_type   = "dns-txt-token"
+}
+
+import {
+  to = azurerm_static_web_app_custom_domain.www
+  id = "/subscriptions/1784740a-1cf6-416b-b3db-bda6985970aa/resourceGroups/rg-dayfornight/providers/Microsoft.Web/staticSites/swa-dayfornight/customDomains/www.dayfornight.dev"
 }
 
 resource "azurerm_static_web_app_custom_domain" "www" {
