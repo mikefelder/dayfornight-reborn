@@ -13,14 +13,19 @@ resource "azurerm_static_web_app" "site" {
   tags                = var.tags
 }
 
-resource "azurerm_static_web_app_custom_domain" "apex" {
-  static_web_app_id = azurerm_static_web_app.site.id
-  domain_name       = var.custom_domain
-  validation_type   = "cname-delegation"
-}
+# Custom domains - uncomment after DNS is configured
+# Step 1: Point www.dayfornight.dev CNAME → <default_hostname>
+# Step 2: Add TXT record _dnsauth.dayfornight.dev → <validation_token from Azure portal>
+# Step 3: Uncomment these resources and re-apply
 
-resource "azurerm_static_web_app_custom_domain" "www" {
-  static_web_app_id = azurerm_static_web_app.site.id
-  domain_name       = "www.${var.custom_domain}"
-  validation_type   = "cname-delegation"
-}
+# resource "azurerm_static_web_app_custom_domain" "apex" {
+#   static_web_app_id = azurerm_static_web_app.site.id
+#   domain_name       = var.custom_domain
+#   validation_type   = "dns-txt-token"
+# }
+
+# resource "azurerm_static_web_app_custom_domain" "www" {
+#   static_web_app_id = azurerm_static_web_app.site.id
+#   domain_name       = "www.${var.custom_domain}"
+#   validation_type   = "cname-delegation"
+# }
