@@ -7,8 +7,68 @@
  * - Google Fonts (Lato)
  */
 
-/* Google Fonts — Lato (used by Timetable plugin) */
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+/* Local fonts — GT-Cinetype + Lato */
+@font-face {
+  font-family: 'GT-Cinetype-Light';
+  src: url('/shared-assets/2015/fonts/GT-Cinetype-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT-Cinetype-Regular';
+  src: url('/shared-assets/2015/fonts/GT-Cinetype-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT-Cinetype-Bold';
+  src: url('/shared-assets/2015/fonts/GT-Cinetype-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT-Cinetype';
+  src: url('/shared-assets/2015/fonts/GT-Cinetype-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT-Cinetype';
+  src: url('/shared-assets/2015/fonts/GT-Cinetype-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT-Cinetype';
+  src: url('/shared-assets/2015/fonts/GT-Cinetype-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('/shared-assets/2015/fonts/lato/lato-400.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('/shared-assets/2015/fonts/lato/lato-700.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global typography to match source material */
+body {
+  letter-spacing: 0.10em;
+}
 
 /* ===== Artist page hero image fix ===== */
 .portfolio-gallery .post-media img {
@@ -310,6 +370,11 @@ textarea:focus {
   text-align: center !important;
   font-size: 12px !important;
   line-height: 12px !important;
+  transition: opacity 0.2s ease;
+}
+.dfn-quicklinks--wrap a:hover,
+.dfn-quicklinks--wrap a:focus {
+  opacity: .6;
 }
 
 /* ===== Sub-title social icons: vertically align with text ===== */
