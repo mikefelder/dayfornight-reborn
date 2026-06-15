@@ -18,16 +18,18 @@ function youtubeId(url: string): string {
 
 <Flora2015Layout title="Recap" bodyClass="home page page-template recap-page" extraStylesheets={["/shared-assets/2015/css/recap.css"]}>
 
-  <!-- Social icons injected into header area -->
-  <ul class="social-icons recap-header-social">
-    {snapshotData.socialLinks.map((link) => (
-      <li>
-        <a href={link.url} target="_blank" rel="noopener noreferrer" title={link.title}>
-          <i class={iconMap[link.title] || 'flora-icon-link'}></i>
-        </a>
-      </li>
-    ))}
-  </ul>
+  <!-- Recap header bar -->
+  <header class="recap-header">
+    <ul class="social-icons recap-header-social">
+      {snapshotData.socialLinks.map((link) => (
+        <li>
+          <a href={link.url} target="_blank" rel="noopener noreferrer" title={link.title}>
+            <i class={iconMap[link.title] || 'flora-icon-link'}></i>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </header>
 
   <div class="main-content full-width">
     <div class="page-background" style="background-color:#ffffff"></div>

@@ -9,24 +9,31 @@
 }
 
 /* Recap header bar — thin fixed black strip with social icons */
-.recap-header-social {
+.recap-header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  list-style: none;
-  padding: 0 48px;
-  margin: 0;
   background: #000;
   height: 55px;
+  display: flex;
+  align-items: center;
+  padding: 0 48px;
+}
+
+.recap-header-social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   align-items: center;
 }
 
 .recap-header-social li {
   display: inline-block;
-  margin-right: 12px;
+  margin: 0;
+  padding: 5px 10px;
 }
 
 .recap-header-social li a {
