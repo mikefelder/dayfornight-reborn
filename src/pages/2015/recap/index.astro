@@ -1,11 +1,30 @@
 ---
 import Flora2015Layout from '@layouts/Flora2015Layout.astro';
 import recapData from '@data/recap-2015.json';
+import snapshotData from '@data/snapshot-2015.json';
+
+const iconMap: Record<string, string> = {
+  Facebook: 'flora-icon-facebook',
+  Instagram: 'flora-icon-instagram',
+  Twitter: 'flora-icon-twitter',
+  Spotify: 'flora-icon-soundcloud',
+};
 ---
 
 <Flora2015Layout title="Recap" bodyClass="home page page-template recap-page" extraStylesheets={["/shared-assets/2015/css/recap.css"]}>
 
-  <div class="main-content full-width header-space">
+  <!-- Social icons injected into header area -->
+  <ul class="social-icons recap-header-social">
+    {snapshotData.socialLinks.map((link) => (
+      <li>
+        <a href={link.url} target="_blank" rel="noopener noreferrer" title={link.title}>
+          <i class={iconMap[link.title] || 'flora-icon-link'}></i>
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  <div class="main-content full-width">
     <div class="page-background" style="background-color:#ffffff"></div>
 
     <!-- Hero Video -->
@@ -19,7 +38,7 @@ import recapData from '@data/recap-2015.json';
                   <source src={recapData.heroVideo} type="video/mp4" />
                 </video>
               </div>
-              <a href={recapData.heroYouTubeUrl} target="_blank" rel="noopener noreferrer">
+              <a href={recapData.heroYouTubeUrl} target="_blank" rel="noopener noreferrer" data-astro-reload>
                 <span class="w-media-player"></span>
               </a>
             </section>
@@ -45,7 +64,7 @@ import recapData from '@data/recap-2015.json';
         <div class="row">
           {recapData.recapVideos.map((video) => (
             <div class="col col-4">
-              <a href={video.youtubeUrl} target="_blank" rel="noopener noreferrer" class="video-thumb">
+              <a href={video.youtubeUrl} target="_blank" rel="noopener noreferrer" class="video-thumb" data-astro-reload>
                 <img src={video.thumbnail} alt={video.title} />
                 <span class="w-media-player-play"></span>
               </a>

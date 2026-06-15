@@ -1,6 +1,77 @@
 /* Recap Page Styles */
 
-/* Video Hero Section */
+/* Header: hide logo (original had it commented out), show social icons */
+.recap-page #header-logo {
+  display: none !important;
+}
+
+.recap-page #header {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.recap-page #header .header-wrapper {
+  justify-content: flex-start;
+}
+
+/* Social icons in header */
+.recap-page #header .social-icons {
+  position: absolute;
+  bottom: 12px;
+  left: 40px;
+  padding: 0;
+}
+
+.recap-page #header .social-icons > li a {
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .recap-page #header .social-icons {
+    bottom: 20px;
+    left: 50%;
+    margin-left: -78px;
+  }
+}
+
+/* Recap social icons (positioned in header area) */
+.recap-header-social {
+  position: fixed;
+  top: 20px;
+  left: 40px;
+  z-index: 101;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recap-header-social li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.recap-header-social li a {
+  color: #777;
+  font-size: 16px;
+}
+
+.recap-header-social li a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .recap-header-social {
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Video Hero Section — use Flora's native .w-media-player overlay */
 .video-js-wrapper {
   position: relative;
   overflow: hidden;
@@ -20,44 +91,22 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  pointer-events: none;
 }
 
+/* Let the <a> fill the entire video area as a clickable overlay */
 .video-js-wrapper > a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-.video-js-wrapper .w-media-player {
-  display: block;
-  width: 60px;
-  height: 60px;
-  position: relative;
-}
-
-.video-js-wrapper .w-media-player::before {
-  content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 50%;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer;
 }
 
-.video-js-wrapper .w-media-player::after {
-  content: '\e804';
-  font-family: 'flora';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-40%, -50%);
-  font-size: 18px;
-  color: #000;
-}
+/* .w-media-player inside uses Flora's native CSS:
+   dark overlay + 80px white-bordered circle + play icon */
 
 /* Tagline */
 .recap-tagline {
@@ -84,35 +133,46 @@
   display: block;
 }
 
+/* Play button overlay on YouTube thumbnails */
 .row-youtube .video-thumb .w-media-player-play {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
 }
 
 .row-youtube .video-thumb .w-media-player-play::before {
   content: '';
+  display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  left: 50%;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
+  border: 3px solid #fff;
   border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .row-youtube .video-thumb .w-media-player-play::after {
-  content: '\e804';
-  font-family: 'flora';
+  content: '\25b6';
+  font-family: flora;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  display: block;
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-40%, -50%);
-  font-size: 16px;
-  color: #000;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .row-youtube .video-title {
