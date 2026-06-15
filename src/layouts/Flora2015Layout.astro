@@ -11,9 +11,10 @@ interface Props {
   title: string;
   bodyClass?: string;
   ogImage?: string;
+  extraStylesheets?: string[];
 }
 
-const { title, bodyClass = '', ogImage } = Astro.props;
+const { title, bodyClass = '', ogImage, extraStylesheets = [] } = Astro.props;
 const fullBodyClass = `loaded ${bodyClass}`.trim();
 ---
 
@@ -30,6 +31,9 @@ const fullBodyClass = `loaded ${bodyClass}`.trim();
     <link rel="stylesheet" href="/shared-assets/2015/css/animation.css" />
     <link rel="stylesheet" href="/shared-assets/2015/css/shortcodes.css" />
     <link rel="stylesheet" href="/shared-assets/2015/css/components.css" />
+    {extraStylesheets.map((href) => (
+      <link rel="stylesheet" href={href} />
+    ))}
     <style is:inline>
       /* Force loaded state — skip preloader */
       #preloader { display: none !important; }

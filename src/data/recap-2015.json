@@ -1,0 +1,139 @@
+{
+  "description": "Day for Night is a visually immersive art and music festival that explores and pushes the boundaries of where light and sound collide.",
+  "heroVideo": "/shared-assets/2015/videos/home.mp4",
+  "heroYouTubeUrl": "https://www.youtube.com/watch?v=J2VFq70MYQ0",
+  "recapVideos": [
+    {
+      "title": "2015 Day for Night Recap",
+      "youtubeUrl": "https://www.youtube.com/watch?v=J2VFq70MYQ0",
+      "thumbnail": "/shared-assets/2015/images/recap/recap-thumb.jpg"
+    },
+    {
+      "title": "This is Day for Night",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Z4trFDtCX7M",
+      "thumbnail": "/shared-assets/2015/images/recap/this-thumb.jpg"
+    },
+    {
+      "title": "Making Day for Night",
+      "youtubeUrl": "https://www.youtube.com/watch?v=aPxvrgN3ex4",
+      "thumbnail": "/shared-assets/2015/images/recap/bts-thumb.jpg"
+    }
+  ],
+  "press": [
+    {
+      "name": "Consequence of Sound",
+      "url": "http://consequenceofsound.net/2015/12/day-for-night-2015-festival-review-the-top-15-moments-2/",
+      "image": "/shared-assets/2015/images/recap/press/consequence-of-sound.jpg",
+      "width": "97px"
+    },
+    {
+      "name": "Noisey",
+      "url": "http://noisey.vice.com/blog/day-for-night-2015-review",
+      "image": "/shared-assets/2015/images/recap/press/noisey.jpg",
+      "width": "165px"
+    },
+    {
+      "name": "Spin",
+      "url": "http://www.spin.com/2015/10/day-for-night-2015-lineup-kendrick-lamar-dillon-francis-flying-lotus/",
+      "image": "/shared-assets/2015/images/recap/press/spin.jpg",
+      "width": "99px"
+    },
+    {
+      "name": "Creators Project",
+      "url": "http://thecreatorsproject.vice.com/blog/nonotak-day-for-night-festival",
+      "image": "/shared-assets/2015/images/recap/press/creators-project.jpg",
+      "width": "216px"
+    },
+    {
+      "name": "Paper",
+      "url": "http://www.papermag.com/day-for-night-festival-kendrick-lamar-houston-1521223925.html",
+      "image": "/shared-assets/2015/images/recap/press/paper.jpg",
+      "width": "131px"
+    },
+    {
+      "name": "Bands in Town",
+      "url": "http://news.bandsintown.com/view-article/2015/12/22/photo-gallery-day-for-night-festival",
+      "image": "/shared-assets/2015/images/recap/press/bands-in-town.jpg",
+      "width": "181px"
+    },
+    {
+      "name": "Daily Mail",
+      "url": "http://www.dailymail.co.uk/wires/reuters/article-3367290/Music-digital-art-intersect-Day-Night-festival-Houston.html",
+      "image": "/shared-assets/2015/images/recap/press/daily-mail.jpg",
+      "width": "213px"
+    },
+    {
+      "name": "Brooklyn Vegan",
+      "url": "http://www.brooklynvegan.com/archives/2015/12/houstons_day_fo.html",
+      "image": "/shared-assets/2015/images/recap/press/brooklyn-vegan.jpg",
+      "width": "183px"
+    }
+  ],
+  "musicians": [
+    { "slug": "kendrick-lamar", "name": "KENDRICK LAMAR" },
+    { "slug": "new-order", "name": "NEW ORDER" },
+    { "slug": "philip-glass-ensemble", "name": "PHILIP GLASS ENSEMBLE" },
+    { "slug": "dillon-francis", "name": "DILLON FRANCIS" },
+    { "slug": "janelle-monae", "name": "JANELLE MONÁE" },
+    { "slug": "flying-lotus", "name": "FLYING LOTUS" },
+    { "slug": "death-grips-3", "name": "DEATH GRIPS" },
+    { "slug": "nicolas-jaar", "name": "NICOLAS JAAR" },
+    { "slug": "madeon", "name": "MADEON" },
+    { "slug": "psychic-tv", "name": "PSYCHIC TV" },
+    { "slug": "cocorosie", "name": "COCOROSIE" },
+    { "slug": "shamir-2", "name": "SHAMIR" },
+    { "slug": "elliphant", "name": "ELLIPHANT" },
+    { "slug": "battles", "name": "BATTLES" },
+    { "slug": "dan-deacon", "name": "DAN DEACON" },
+    { "slug": "com-truise", "name": "COM TRUISE" },
+    { "slug": "cazwell", "name": "CAZWELL" },
+    { "slug": "amanda-lepore", "name": "AMANDA LEPORE" },
+    { "slug": "holly-herndon", "name": "HOLLY HERNDON" },
+    { "slug": "julien-bayle", "name": "JULIEN BAYLE" },
+    { "slug": "indian-jewelry", "name": "INDIAN JEWELRY" },
+    { "slug": "u-s-girls", "name": "U.S. GIRLS" },
+    { "slug": "portfolio-1", "name": "JONTÉ MOANING" },
+    { "slug": "prince-rama", "name": "PRINCE RAMA" },
+    { "slug": "deru", "name": "DERU" },
+    { "slug": "matt-thibideau", "name": "MATT THIBIDEAU" },
+    { "slug": "roman-gianarthur", "name": "ROMAN GIANARTHUR" },
+    { "slug": "richard-ramirez", "name": "RICHARD RAMIREZ" },
+    { "slug": "christine-renee", "name": "CHRISTINE RENEE" },
+    { "slug": "future-blondes", "name": "FUTURE BLONDES" },
+    { "slug": "boan", "name": "BOAN" },
+    { "slug": "millennial-grave", "name": "MILLENNIAL GRAVE" },
+    { "slug": "wrestlers", "name": "WRESTLERS" },
+    { "slug": "children-of-pop", "name": "CHILDREN OF POP" },
+    { "slug": "b-l-a-c-k-i-e", "name": "B L A C K I E" },
+    { "slug": "hearts-of-animals", "name": "HEARTS OF ANIMALS" },
+    { "slug": "josiah-gabriel", "name": "JOSIAH GABRIEL" },
+    { "slug": "flcon-fcker", "name": "FLCON FCKER" },
+    { "slug": "the-vanity", "name": "THE VANITY" },
+    { "slug": "light-wheel", "name": "LIGHT WHEEL" },
+    { "slug": "bart-black", "name": "BART BLACK" },
+    { "slug": "prismo", "name": "PRISMO" },
+    { "slug": "dj-fredster", "name": "DJ FREDSTER" }
+  ],
+  "artists": [
+    { "slug": "casey-reas", "name": "CASEY REAS" },
+    { "slug": "zach-liebermann", "name": "ZACH LIEBERMAN" },
+    { "slug": "school-for-poetic-computation", "name": "SCHOOL FOR POETIC COMPUTATION" },
+    { "slug": "nonotak", "name": "NONOTAK" },
+    { "slug": "refik-anadol", "name": "REFIK ANADOL" },
+    { "slug": "markus-heckmann", "name": "MARKUS HECKMANN" },
+    { "slug": "mark-eats", "name": "MARK EATS" },
+    { "slug": "kamil-nawratil", "name": "KAMIL NAWRATIL" },
+    { "slug": "gabriel-pulecio", "name": "GABRIEL PULECIO" },
+    { "slug": "vincent-houze-w-avc", "name": "VINCENT HOUZÉ w/ AV&C" },
+    { "slug": "masomenos", "name": "MASOMENOS" },
+    { "slug": "david-ciheina-and-gene-han", "name": "DAVID CIHELNA AND GENE HAN" },
+    { "slug": "joanie-lemercier", "name": "JOANIE LEMERCIER" },
+    { "slug": "matthew-dryhurst", "name": "MATHEW DRYHURST" },
+    { "slug": "alex-czetwertynski", "name": "ALEX CZETWERTYNSKI" },
+    { "slug": "work-order", "name": "WORK-ORDER" },
+    { "slug": "nightmoves", "name": "NIGHTM0VES" },
+    { "slug": "neil-ebbflo", "name": "NEIL EBBFLO" },
+    { "slug": "effixx", "name": "EFFIXX" },
+    { "slug": "adrian-thomas-2", "name": "ADRIAN THOMAS" }
+  ]
+}

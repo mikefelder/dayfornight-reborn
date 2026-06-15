@@ -19,6 +19,9 @@ const snapshots = [
     fetch(target)
       .then(r => r.text())
       .then(html => {
+        // Inject <base> so relative asset paths resolve against the snapshot's directory
+        const baseTag = '<base href="' + target + '">';
+        html = html.replace(/<head([^>]*)>/i, '<head$1>' + baseTag);
         document.open();
         document.write(html);
         document.close();
