@@ -1,0 +1,59 @@
+---
+interface NavArtist {
+  slug: string;
+  name: string;
+}
+
+interface Props {
+  prevArtist?: NavArtist;
+  nextArtist?: NavArtist;
+}
+
+const { prevArtist, nextArtist } = Astro.props;
+---
+
+<nav class="post-nav clear">
+  {prevArtist?.slug && (
+    <div class="prev-post">
+      <a href={`/2015/artists/${prevArtist.slug}/`} rel="prev"></a>
+      <div class="post-link clear">
+        <span>
+          <a href={`/2015/artists/${prevArtist.slug}/`} rel="prev">
+            <img
+              src={`/shared-assets/2015/images/${prevArtist.slug}-1600-640x500.jpg`}
+              alt={prevArtist.name}
+              class="post-thumb"
+              loading="lazy"
+            />
+          </a>
+        </span>
+        <h4>
+          <a href={`/2015/artists/${prevArtist.slug}/`} rel="prev">{prevArtist.name}</a>
+        </h4>
+      </div>
+    </div>
+  )}
+  {nextArtist?.slug && (
+    <div class="next-post">
+      <a href={`/2015/artists/${nextArtist.slug}/`} rel="next"></a>
+      <div class="post-link clear">
+        <span>
+          <a href={`/2015/artists/${nextArtist.slug}/`} rel="next">
+            <img
+              src={`/shared-assets/2015/images/${nextArtist.slug}-1600-640x500.jpg`}
+              alt={nextArtist.name}
+              class="post-thumb"
+              loading="lazy"
+            />
+          </a>
+        </span>
+        <h4>
+          <a href={`/2015/artists/${nextArtist.slug}/`} rel="next">{nextArtist.name}</a>
+        </h4>
+      </div>
+    </div>
+  )}
+  <div class="nav-home">
+    <a href="/2015/"><i class="flora-icon-th"></i></a>
+  </div>
+</nav>

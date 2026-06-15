@@ -1,0 +1,26 @@
+---
+interface Props {
+  darkLogo: string;
+  stickyLogo: string;
+}
+
+const { darkLogo, stickyLogo } = Astro.props;
+---
+
+<header id="header" class="w-dark w-sticky w-text-dark">
+  <div class="container">
+    <div class="header-wrapper">
+      <span class="mobile-nav-icon">
+        <i class="menu-icon"></i>
+      </span>
+      <span id="header-logo">
+        <a href="/2015/">
+          <img class="dark-logo" src={darkLogo} alt="Day For Night" />
+          <img class="dark-sticky" src={stickyLogo} alt="Day For Night" />
+          <img class="light-logo" src={darkLogo} alt="Day For Night" />
+          <img class="light-sticky" src={stickyLogo} alt="Day For Night" />
+        </a>
+      </span>
+    </div>
+  </div>
+</header>

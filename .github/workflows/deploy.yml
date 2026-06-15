@@ -4,12 +4,18 @@ on:
   push:
     branches: [main]
     paths:
-      - "site/**"
+      - "src/**"
+      - "public/**"
+      - "package.json"
+      - "astro.config.mjs"
       - ".github/workflows/deploy.yml"
   pull_request:
     branches: [main]
     paths:
-      - "site/**"
+      - "src/**"
+      - "public/**"
+      - "package.json"
+      - "astro.config.mjs"
   workflow_dispatch:
 
 permissions:
@@ -28,9 +34,8 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "site"
-          skip_app_build: true
-          skip_api_build: true
+          app_location: "/"
+          output_location: "dist"
 
   close_pr:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

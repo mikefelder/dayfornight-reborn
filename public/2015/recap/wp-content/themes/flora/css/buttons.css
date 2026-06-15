@@ -1,0 +1,202 @@
+/**
+* AddToCalendar Blue Style
+* http://addtocalendar.com
+*/
+
+/* Base */
+
+.addtocalendar var {
+  display: none;
+}
+
+.addtocalendar {
+  position: relative;
+  display: inline-block;
+  background: transparent!important;
+  width:240px;
+}
+
+.atcb-link {
+  display: block;
+  outline: none!important;
+  cursor: pointer;
+  text-transform: lowercase;
+  text-align: right;
+}
+
+.atcb-link:before ,
+.atcb-link:after {
+  position: absolute;
+  content: "";
+  left:0;
+}
+
+.atcb-link:before {
+  width: 27px;
+  height: 31px;
+  margin-top: -2px;
+  margin-left: 19px;
+  background: url(images/ico-calender.png) 0 0 no-repeat;
+  background-size: 27px;
+}
+
+.atcb-link:after {
+  width: 65px;
+  height: 65px;
+  top:0;
+  left:0;
+  background: rgba(255,255,255,.5);
+  z-index: -1
+}
+
+.atcb-link:focus ~ ul,
+.atcb-link:active ~ ul,
+.atcb-list:hover {
+  visibility: visible;
+}
+
+.atcb-list {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  max-width: 280px;
+  z-index: 900;
+  transition: background 0.5s ease;
+}
+
+.atcb-list *{
+  transition: background 0.5s ease;
+}
+
+.atcb-list,
+.atcb-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.atcb-item {
+  float: none;
+  text-align: left;
+}
+
+.atcb-item-link {
+  text-decoration: none;
+  outline: none;
+  display: block;
+}
+
+.atcb-item.hover,
+.atcb-item:hover {
+  position: relative;
+  z-index: 900;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.atc-style-dfn .atcb-link,
+.atc-style-dfn .atcb-link:hover,
+.atc-style-dfn .atcb-link:active,
+.atc-style-dfn .atcb-link:focus {
+  margin: 20px 0 0;
+  padding: 18px 25px;
+  color: black;
+  line-height: 26px;
+  background: #F1F1F1;
+  zoom: 1;
+}
+
+.atc-style-dfn .atcb-list {
+  min-width: 240px;
+  max-width: 280px;
+  padding:12px 0;
+  border-bottom: 1px solid black;
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px #f9f9f9;
+}
+
+.atc-style-dfn .atcb-list,
+.atc-style-dfn .atcb-item {
+  background: #fff;
+  color: #000;
+}
+
+.atc-style-dfn .atcb-item,
+.atc-style-dfn .atcb-item-link {
+  line-height: 1.3em;
+  vertical-align: middle;
+  zoom: 1;
+}
+
+.atc-style-dfn .atcb-item-link,
+.atc-style-dfn .atcb-item-link:hover,
+.atc-style-dfn .atcb-item-link:active,
+.atc-style-dfn .atcb-item-link:focus {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+  outline: none;
+  padding: 10px 16px;
+}
+
+.atc-style-dfn .atcb-item-link:hover,
+.atc-style-dfn .atcb-item-link:active,
+.atc-style-dfn .atcb-item-link:focus {
+  color: #fff;
+  background: black;
+}
+
+.atc-style-dfn .atcb-item.hover,
+.atc-style-dfn .atcb-item:hover {
+  background: black;
+}
+
+
+/* buttons */
+
+.button {
+  position: relative;
+  display: inline-block;		
+  margin: 20px 0 0;
+  padding: 18px 25px;
+  color: black;
+  line-height: 26px;
+  background: #F1F1F1;
+  min-width: 240px;
+  max-width: 280px;
+  text-indent: 65px;
+}
+
+.button:hover, .button:focus  {
+  color: black;
+  line-height: 26px;
+  background: #e4e4e4;
+}
+
+.button:before ,
+.button:after {
+  position: absolute;
+  content: "";
+  left:0;
+}
+
+.button:before {
+  width: 23px;
+  height: 31px;
+  margin-top: -2px;
+  margin-left: 22px;
+  background: url(images/ico-map.png) 0 0 no-repeat;
+  background-size: 23px;
+}
+
+.button:after {
+  width: 65px;
+  height: 65px;
+  top:0;
+  left:0;
+  background: rgba(255,255,255,.5);
+  z-index: -1
+}

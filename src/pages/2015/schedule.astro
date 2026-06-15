@@ -1,0 +1,242 @@
+---
+import Flora2015Layout from '@layouts/Flora2015Layout.astro';
+
+const saturday = {
+  red: [
+    { artist: 'Jonte Moaning', start: '1:00 PM', end: '1:30 PM' },
+    { artist: 'Cazwell and Amanda Lepore', start: '1:45 PM', end: '3:00 PM' },
+    { artist: 'Shamir', start: '3:30 PM', end: '4:30 PM' },
+    { artist: 'CocoRosie', start: '5:00 PM', end: '6:15 PM' },
+    { artist: 'Janelle Monáe', start: '7:00 PM', end: '8:00 PM' },
+    { artist: 'New Order', start: '9:00 PM', end: '11:00 PM' },
+  ],
+  green: [
+    { artist: 'Christine Renee', start: '12:00 PM', end: '1:00 PM' },
+    { artist: 'Philip Glass Ensemble', start: '1:30 PM', end: '2:30 PM' },
+    { artist: 'Julien Bayle', start: '3:15 PM', end: '4:15 PM' },
+    { artist: 'Deru', start: '5:00 PM', end: '6:00 PM' },
+    { artist: 'Prince Rama', start: '6:30 PM', end: '7:30 PM' },
+    { artist: 'Battles', start: '8:15 PM', end: '9:15 PM' },
+    { artist: 'Madeon', start: '9:50 PM', end: '10:50 PM' },
+  ],
+  blue: [
+    { artist: 'Millennial Grave', start: '1:00 PM', end: '1:40 PM' },
+    { artist: 'Boan', start: '2:00 PM', end: '2:40 PM' },
+    { artist: 'Richard Ramirez', start: '3:15 PM', end: '3:45 PM' },
+    { artist: 'Future Blondes', start: '4:15 PM', end: '5:00 PM' },
+    { artist: 'Indian Jewelry', start: '5:30 PM', end: '6:15 PM' },
+    { artist: 'Psychic TV', start: '7:00 PM', end: '9:00 PM' },
+    { artist: 'Roman Gianarthur', start: '9:45 PM', end: '10:45 PM' },
+  ],
+};
+
+const sunday = {
+  red: [
+    { artist: 'Fredster', start: '12:00 PM', end: '1:00 PM' },
+    { artist: 'U.S. Girls', start: '1:30 PM', end: '2:30 PM' },
+    { artist: 'Elliphant', start: '3:00 PM', end: '4:00 PM' },
+    { artist: 'HEALTH', start: '4:30 PM', end: '5:30 PM' },
+    { artist: 'Death Grips', start: '6:00 PM', end: '7:00 PM' },
+    { artist: 'Flying Lotus', start: '7:30 PM', end: '8:45 PM' },
+    { artist: 'Kendrick Lamar', start: '9:30 PM', end: '11:00 PM' },
+  ],
+  green: [
+    { artist: 'Josiah Gabriel', start: '1:00 PM', end: '1:30 PM' },
+    { artist: 'Matt Thibideau', start: '2:00 PM', end: '3:00 PM' },
+    { artist: 'Holly Herndon', start: '3:30 PM', end: '4:45 PM' },
+    { artist: 'Nicolas Jaar', start: '5:15 PM', end: '6:45 PM' },
+    { artist: 'Dan Deacon', start: '7:15 PM', end: '8:15 PM' },
+    { artist: 'Dillon Francis', start: '8:45 PM', end: '9:45 PM' },
+    { artist: 'Prismo', start: '10:15 PM', end: '11:00 PM' },
+  ],
+  blue: [
+    { artist: 'FLCON FCKER', start: '1:00 PM', end: '1:30 PM' },
+    { artist: 'Light Wheel', start: '1:50 PM', end: '2:20 PM' },
+    { artist: 'The Vanity', start: '2:40 PM', end: '3:20 PM' },
+    { artist: 'Hearts of Animals', start: '3:40 PM', end: '4:20 PM' },
+    { artist: 'Children of Pop', start: '4:45 PM', end: '5:30 PM' },
+    { artist: 'Wrestlers', start: '6:00 PM', end: '6:40 PM' },
+    { artist: 'B L A C K I E', start: '7:10 PM', end: '7:45 PM' },
+    { artist: 'Com Truise', start: '8:15 PM', end: '9:30 PM' },
+  ],
+};
+---
+
+<Flora2015Layout title="Schedule" bodyClass="page classic-nav no-title">
+  <div class="main-content full-width header-space">
+    <div class="page-background" style="background-color: #ffffff;"></div>
+    <section class="w-section s-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12">
+            <div class="schedule-tabs">
+              <nav class="schedule-tabs__nav">
+                <button class="schedule-tab active" data-day="saturday">Saturday Dec. 19</button>
+                <button class="schedule-tab" data-day="sunday">Sunday Dec. 20</button>
+              </nav>
+
+              <div class="schedule-day active" id="saturday">
+                <div class="schedule-grid">
+                  <div class="schedule-stage">
+                    <h3 class="stage-header stage-header--red">Red Stage</h3>
+                    {saturday.red.map((set) => (
+                      <div class="schedule-event">
+                        <span class="event-artist">{set.artist}</span>
+                        <span class="event-time">{set.start} – {set.end}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div class="schedule-stage">
+                    <h3 class="stage-header stage-header--green">Green Stage</h3>
+                    {saturday.green.map((set) => (
+                      <div class="schedule-event">
+                        <span class="event-artist">{set.artist}</span>
+                        <span class="event-time">{set.start} – {set.end}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div class="schedule-stage">
+                    <h3 class="stage-header stage-header--blue">Blue Stage</h3>
+                    {saturday.blue.map((set) => (
+                      <div class="schedule-event">
+                        <span class="event-artist">{set.artist}</span>
+                        <span class="event-time">{set.start} – {set.end}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div class="schedule-day" id="sunday">
+                <div class="schedule-grid">
+                  <div class="schedule-stage">
+                    <h3 class="stage-header stage-header--red">Red Stage</h3>
+                    {sunday.red.map((set) => (
+                      <div class="schedule-event">
+                        <span class="event-artist">{set.artist}</span>
+                        <span class="event-time">{set.start} – {set.end}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div class="schedule-stage">
+                    <h3 class="stage-header stage-header--green">Green Stage</h3>
+                    {sunday.green.map((set) => (
+                      <div class="schedule-event">
+                        <span class="event-artist">{set.artist}</span>
+                        <span class="event-time">{set.start} – {set.end}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div class="schedule-stage">
+                    <h3 class="stage-header stage-header--blue">Blue Stage</h3>
+                    {sunday.blue.map((set) => (
+                      <div class="schedule-event">
+                        <span class="event-artist">{set.artist}</span>
+                        <span class="event-time">{set.start} – {set.end}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <style is:inline>
+    .schedule-tabs__nav {
+      display: flex;
+      gap: 0;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #000;
+    }
+    .schedule-tab {
+      background: none;
+      border: none;
+      padding: 12px 24px;
+      font-family: GT-Cinetype-Regular, Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
+      cursor: pointer;
+      color: #999;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .schedule-tab:hover {
+      color: #333;
+    }
+    .schedule-tab.active {
+      color: #000;
+      border-bottom-color: #000;
+    }
+    .schedule-day {
+      display: none;
+    }
+    .schedule-day.active {
+      display: block;
+    }
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 767px) {
+      .schedule-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .stage-header {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
+      padding: 10px 12px;
+      margin: 0 0 2px 0;
+      color: #fff;
+    }
+    .stage-header--red { background: #000; }
+    .stage-header--green { background: #000; }
+    .stage-header--blue { background: #000; }
+    .schedule-event {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 12px;
+      border-bottom: 1px solid #eee;
+      background: #fafafa;
+    }
+    .schedule-event:hover {
+      background: #f0f0f0;
+    }
+    .event-artist {
+      font-family: GT-Cinetype-Regular, Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #000;
+    }
+    .event-time {
+      font-family: GT-Cinetype-Regular, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      color: #666;
+      margin-top: 2px;
+      letter-spacing: 0.05em;
+    }
+  </style>
+
+  <script is:inline>
+    document.querySelectorAll('.schedule-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.schedule-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.schedule-day').forEach(d => d.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.day).classList.add('active');
+      });
+    });
+  </script>
+</Flora2015Layout>

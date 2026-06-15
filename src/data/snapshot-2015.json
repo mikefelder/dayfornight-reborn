@@ -1,0 +1,520 @@
+{
+  "snapshot": "20151205012054",
+  "year": 2015,
+  "festivalDates": "December 19-20, 2015",
+  "theme": "Flora",
+  "siteTitle": "Day For Night - light & sound collide",
+  "subtitle": "DAY FOR NIGHT FESTIVAL: JOIN THE EVOLUTION OF LIGHT + SOUND",
+  "logos": {
+    "main": "DAY_FOR_NIGHT.png",
+    "sticky": "DAY_FOR_NIGHT_LOGO.png",
+    "sideNav": "logo.png",
+    "footer": "logo-white.png",
+    "favicon": "favicon-dfn.png"
+  },
+  "socialLinks": [
+    {
+      "url": "https://www.facebook.com/dayfornightfest",
+      "title": "Facebook"
+    },
+    {
+      "url": "https://instagram.com/dayfornightfest/",
+      "title": "Instagram"
+    },
+    {
+      "url": "https://twitter.com/dayfornightfest",
+      "title": "Twitter"
+    },
+    {
+      "url": "https://open.spotify.com/playlist/5yQVK7rXvuwcna4Gx9PYVn",
+      "title": "Spotify"
+    }
+  ],
+  "footerEmails": [
+    {
+      "label": "Sponsors",
+      "href": "mailto:sponsors@dayfornight.dev"
+    },
+    {
+      "label": "Media",
+      "href": "mailto:media@dayfornight.dev"
+    },
+    {
+      "label": "Vendors",
+      "href": "mailto:vendors@dayfornight.dev"
+    },
+    {
+      "label": "Info",
+      "href": "mailto:info@dayfornight.dev"
+    }
+  ],
+  "footerCopyright": "Site contents copyright © 2015 Day For Night 2015 . All rights reserved.",
+  "footerSponsorImage": "silver-eagle-distributors.png",
+  "heroImage": "banner-photo-120415.jpg",
+  "navItems": [
+    {
+      "label": "Home",
+      "href": "/",
+      "isExternal": false
+    },
+    {
+      "label": "Buy Tickets",
+      "href": "https://dayfornight.frontgatetickets.com/",
+      "isExternal": true
+    },
+    {
+      "label": "Schedule",
+      "href": "/index.php/schedule/",
+      "isExternal": false
+    },
+    {
+      "label": "Info",
+      "href": "/index.php/info/",
+      "isExternal": false
+    }
+  ],
+  "gridOrder": [
+    {
+      "name": "KENDRICK LAMAR",
+      "slug": "kendrick-lamar",
+      "category": "Musicians",
+      "image": "images/kendrick-lamar-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "NEW ORDER",
+      "slug": "new-order",
+      "category": "Musicians",
+      "image": "images/new-order-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "PHILIP GLASS ENSEMBLE",
+      "slug": "philip-glass-ensemble",
+      "category": "Musicians",
+      "image": "images/philip-glass-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "DILLON FRANCIS",
+      "slug": "dillon-francis",
+      "category": "Musicians",
+      "image": "images/dillon-francis-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "JANELLE MONÁE",
+      "slug": "janelle-monae",
+      "category": "Musicians",
+      "image": "images/janelle-monae-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "FLYING LOTUS",
+      "slug": "flying-lotus",
+      "category": "Musicians",
+      "image": "images/flying-lotus-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "DEATH GRIPS",
+      "slug": "death-grips-3",
+      "category": "Musicians",
+      "image": "images/death-grips-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "NICOLAS JAAR",
+      "slug": "nicolas-jaar",
+      "category": "Musicians",
+      "image": "images/nicolas-jaar-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "MADEON",
+      "slug": "madeon",
+      "category": "Musicians",
+      "image": "images/madeon-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "PSYCHIC TV",
+      "slug": "psychic-tv",
+      "category": "Musicians",
+      "image": "images/psychic-tv-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "COCOROSIE",
+      "slug": "cocorosie",
+      "category": "Musicians",
+      "image": "images/cocorosie-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "SHAMIR",
+      "slug": "shamir-2",
+      "category": "Musicians",
+      "image": "images/shamir_1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "ELLIPHANT",
+      "slug": "elliphant",
+      "category": "Musicians",
+      "image": "images/elliphant-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "BATTLES",
+      "slug": "battles",
+      "category": "Musicians",
+      "image": "images/battles-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "DAN DEACON",
+      "slug": "dan-deacon",
+      "category": "Musicians",
+      "image": "images/dan-deacon-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "COM TRUISE",
+      "slug": "com-truise",
+      "category": "Musicians",
+      "image": "images/com-truise-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "CAZWELL",
+      "slug": "cazwell",
+      "category": "Musicians",
+      "image": "images/cazwell-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "AMANDA LEPORE",
+      "slug": "amanda-lepore",
+      "category": "Musicians",
+      "image": "images/AMANDA-LEPORE_1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "HOLLY HERNDON",
+      "slug": "holly-herndon",
+      "category": "Musicians",
+      "image": "images/holly-herndon-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "JULIEN BAYLE",
+      "slug": "julien-bayle",
+      "category": "Musicians",
+      "image": "images/julien-bayle-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "INDIAN JEWELRY",
+      "slug": "indian-jewelry",
+      "category": "Musicians",
+      "image": "images/indian-jewelry1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "U.S. GIRLS",
+      "slug": "u-s-girls",
+      "category": "Musicians",
+      "image": "images/us-girls-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "JONTE’ MOANING",
+      "slug": "portfolio-1",
+      "category": "Musicians",
+      "image": "images/jonte-moaning-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "PRINCE RAMA",
+      "slug": "prince-rama",
+      "category": "Musicians",
+      "image": "images/prince-rama-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "DERU",
+      "slug": "deru",
+      "category": "Musicians",
+      "image": "images/deru-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "MATT THIBIDEAU",
+      "slug": "matt-thibideau",
+      "category": "Musicians",
+      "image": "images/MarkusHMattTreclusion_1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "ROMAN GIANARTHUR",
+      "slug": "roman-gianarthur",
+      "category": "Musicians",
+      "image": "images/roman-gianarthur-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "RICHARD RAMIREZ",
+      "slug": "richard-ramirez",
+      "category": "Musicians",
+      "image": "images/richard-ramirez-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "CHRISTINE RENEE",
+      "slug": "christine-renee",
+      "category": "Musicians",
+      "image": "images/christine-renee1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "FUTURE BLONDES",
+      "slug": "future-blondes",
+      "category": "Musicians",
+      "image": "images/Future-Blondes_1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "BOAN",
+      "slug": "boan",
+      "category": "Musicians",
+      "image": "images/Boan_1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "MILLENNIAL GRAVE",
+      "slug": "millennial-grave",
+      "category": "Musicians",
+      "image": "images/millennial-grave-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "WRESTLERS",
+      "slug": "wrestlers",
+      "category": "Musicians",
+      "image": "images/wrestlers_1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "CHILDREN OF POP",
+      "slug": "children-of-pop",
+      "category": "Musicians",
+      "image": "images/children-of-pop-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "B L A C K I E",
+      "slug": "b-l-a-c-k-i-e",
+      "category": "Musicians",
+      "image": "images/B-L-A-C-K-I-E-v2_1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "HEARTS OF ANIMALS",
+      "slug": "hearts-of-animals",
+      "category": "Musicians",
+      "image": "images/hearts-of-animals-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "JOSIAH GABRIEL",
+      "slug": "josiah-gabriel",
+      "category": "Musicians",
+      "image": "images/Josiah-Gabriel_1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "FLCON FCKER",
+      "slug": "flcon-fcker",
+      "category": "Musicians",
+      "image": "images/Flcon-Fcker_1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "THE VANITY",
+      "slug": "the-vanity",
+      "category": "Musicians",
+      "image": "images/the-vanity-1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "LIGHT WHEEL",
+      "slug": "light-wheel",
+      "category": "Musicians",
+      "image": "images/lightwheel_1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "Bart Black",
+      "slug": "bart-black",
+      "category": "Musicians",
+      "image": "images/bartblack_1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "PRISMO",
+      "slug": "prismo",
+      "category": "Musicians",
+      "image": "images/prismo_1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "DJ FREDSTER",
+      "slug": "dj-fredster",
+      "category": "Musicians",
+      "image": "images/djfredster_1600-640x500.jpg",
+      "cssClass": "musicians"
+    },
+    {
+      "name": "CASEY REAS",
+      "slug": "casey-reas",
+      "category": "Artists",
+      "image": "images/Casey-Reas_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "ZACH LIEBERMAN",
+      "slug": "zach-liebermann",
+      "category": "Artists",
+      "image": "images/Zach-Lieberman_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "SCHOOL FOR POETIC COMPUTATION",
+      "slug": "school-for-poetic-computation",
+      "category": "Artists",
+      "image": "images/school-for-poetic-computation_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "NONOTAK",
+      "slug": "nonotak",
+      "category": "Artists",
+      "image": "images/Nonotak_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "REFIK ANADOL",
+      "slug": "refik-anadol",
+      "category": "Artists",
+      "image": "images/Refik-Anadol_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "MARKUS HECKMANN",
+      "slug": "markus-heckmann",
+      "category": "Artists",
+      "image": "images/Markus_16001-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "MARK EATS",
+      "slug": "mark-eats",
+      "category": "Artists",
+      "image": "images/Mark-Eats_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "KAMIL NAWRATIL",
+      "slug": "kamil-nawratil",
+      "category": "Artists",
+      "image": "images/Kamil-Nawratil_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "GABRIEL PULECIO",
+      "slug": "gabriel-pulecio",
+      "category": "Artists",
+      "image": "images/Gabriel-Pulecio_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "VINCENT HOUZÉ w/ AV&C",
+      "slug": "vincent-houze-w-avc",
+      "category": "Artists",
+      "image": "images/Vincent-Houzé_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "MASOMENOS",
+      "slug": "masomenos",
+      "category": "Artists",
+      "image": "images/masomenos_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "DAVID CIHELNA AND GENE HAN",
+      "slug": "david-ciheina-and-gene-han",
+      "category": "Artists",
+      "image": "images/David-Ciheina_Gene-Han_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "JOANIE LEMERCIER",
+      "slug": "joanie-lemercier",
+      "category": "Artists",
+      "image": "images/Joanie-1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "MATHEW DRYHURST",
+      "slug": "matthew-dryhurst",
+      "category": "Artists",
+      "image": "images/Matthew-Dryhurst_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "ALEX CZETWERTYNSKI",
+      "slug": "alex-czetwertynski",
+      "category": "Artists",
+      "image": "images/Alex-Czetwertynski_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "WORK-ORDER",
+      "slug": "work-order",
+      "category": "Artists",
+      "image": "images/Work-Order_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "NIGHTM0VES",
+      "slug": "nightmoves",
+      "category": "Artists",
+      "image": "images/NightMoves_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "NEIL EBBFLO",
+      "slug": "neil-ebbflo",
+      "category": "Artists",
+      "image": "images/ebbflo-bio-1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "EFFIXX",
+      "slug": "effixx",
+      "category": "Artists",
+      "image": "images/effixx_1600-640x500.jpg",
+      "cssClass": "artists"
+    },
+    {
+      "name": "Adrian Thomas",
+      "slug": "adrian-thomas-2",
+      "category": "Artists",
+      "image": "images/adrianthomas_1600-640x500.jpg",
+      "cssClass": "artists"
+    }
+  ],
+  "artistCount": 63
+}

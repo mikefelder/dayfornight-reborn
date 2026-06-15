@@ -1,0 +1,44 @@
+---
+interface GridItem {
+  name: string;
+  slug: string;
+  category: string;
+  image: string;
+  cssClass: string;
+}
+
+interface Props {
+  items: GridItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="w-portfolio-grid w-grid-space grid-3-cols w-scrollmore" data-animation="fadeIn">
+  <ul class="w-view w-effect-flora-1 clear">
+    {items.map((item) => (
+      <li class={`w-item col-4 c-${item.cssClass || 'musicians'}`}>
+        <figure>
+          <img
+            class="cover-image"
+            src={`/shared-assets/2015/${item.image}`}
+            alt={item.name}
+            loading="lazy"
+          />
+          <figcaption>
+            <h3>{item.name}</h3>
+            {item.category && <p>{item.category}</p>}
+            <a href={`/2015/artists/${item.slug}/`}></a>
+            <span>
+              <a
+                href={`/shared-assets/2015/${item.image}`}
+                data-rel="prettyPhoto[portfolio]"
+                title={item.name}
+              ></a>
+            </span>
+          </figcaption>
+        </figure>
+      </li>
+    ))}
+  </ul>
+</div>

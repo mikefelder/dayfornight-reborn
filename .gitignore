@@ -6,6 +6,10 @@
 tfplan
 crash.log
 
+# Node / Astro
+node_modules/
+dist/
+
 # OS
 .DS_Store
 Thumbs.db

@@ -1,13 +1,39 @@
 # dayfornight.dev
 
-Static placeholder site for Day for Night — deployed to Azure Static Web Apps.
+Archival site for Day for Night festival — deployed to Azure Static Web Apps via Astro.
+
+## Routes
+
+| Path | Content |
+|------|---------|
+| `/` | Random redirect to one of the snapshots |
+| `/2015/` | 2015 festival lineup (Flora theme archive) |
+| `/2015/splash` | Original splash/holding page |
+| `/2015/recap/` | Post-festival recap site (March 2016 snapshot) |
+| `/2015/artists/:slug` | Individual artist pages |
+| `/2015/info` | Festival info |
+| `/2015/schedule` | Schedule |
 
 ## Structure
 
 ```
-site/           → Static site content (deployed to Azure SWA)
+src/            → Astro source (pages, layouts, components, content)
+public/         → Static assets copied to build output as-is
+  shared-assets/2015/  → Images, CSS, fonts for the 2015 archive
+  2015/splash/         → Original splash page (self-contained HTML)
+  2015/recap/          → 20160315150212 Wayback snapshot
 infra/          → Terraform for Azure infrastructure
 .github/        → CI/CD workflows
+scripts/        → Content extraction scripts
+```
+
+## Development
+
+```bash
+npm install
+npm run dev       # Local dev server
+npm run build     # Static build → dist/
+npm run preview   # Preview built site
 ```
 
 ## Setup

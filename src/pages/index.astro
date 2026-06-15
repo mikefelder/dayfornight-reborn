@@ -1,0 +1,22 @@
+---
+// Root page — randomly redirects to one of the year snapshots
+const snapshots = [
+  '/2015/',
+  '/2015/splash',
+  '/2015/recap/',
+];
+---
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Day for Night</title>
+  <meta name="description" content="Day for Night — Light & Sound Collide." />
+  <script define:vars={{ snapshots }}>
+    const target = snapshots[Math.floor(Math.random() * snapshots.length)];
+    window.location.replace(target);
+  </script>
+</head>
+<body></body>
+</html>

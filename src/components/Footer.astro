@@ -1,0 +1,98 @@
+---
+interface SocialLink {
+  url: string;
+  title: string;
+}
+
+interface FooterEmail {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  socialLinks: SocialLink[];
+  footerEmails: FooterEmail[];
+  copyright: string;
+  sponsorImage: string;
+  footerLogo: string;
+}
+
+const { socialLinks, footerEmails, copyright, sponsorImage, footerLogo } = Astro.props;
+
+const iconMap: Record<string, string> = {
+  Facebook: 'flora-icon-facebook',
+  Instagram: 'flora-icon-instagram',
+  Twitter: 'fa fa-twitter',
+  Spotify: 'fa fa-spotify',
+};
+---
+
+<footer id="footer" class="footer-v3 w-sticky">
+  <div class="footer-wrapper">
+    <aside id="footer-widget">
+      <div class="bg-overlay" style="background-color: #000000; opacity: 0.8;"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col col-6">
+            <div class="widget widget_text">
+              <div class="textwidget">
+                <ul class="footer-nav list-inline">
+                  {footerEmails.map((email) => (
+                    <li>
+                      <a href={email.href}>{email.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div class="widget wyde_widget_social">
+              <div class="w-social-icons text-left">
+                <ul class="social-icons">
+                  {socialLinks.map((link) => (
+                    <li>
+                      <a href={link.url} target="_blank" rel="noopener noreferrer" title={link.title}>
+                        <i class={iconMap[link.title] || 'flora-icon-link'}></i>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col col-6">
+            <div class="widget widget_text">
+              <div class="textwidget">
+                <div class="newsletter-wrap">
+                  <h4 class="GT-Cinetype-Regular text-center">Sign up for our newsletter</h4>
+                  <form class="newsletter-form" action="#" method="post">
+                    <input type="email" placeholder="you@example.com" disabled />
+                    <button type="button" class="newsletter-btn" disabled>Subscribe</button>
+                  </form>
+                </div>
+                <p class="copyright footer-copyright">{copyright}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div id="footer-bottom">
+      <div class="container">
+        <div class="col-6">
+          <div id="footer-logo">
+            <a href="/2015/">
+              <img src={footerLogo} alt="Day For Night" />
+            </a>
+          </div>
+        </div>
+        <div class="col-6">
+          <div id="footer-nav"></div>
+          <div id="footer-text"></div>
+        </div>
+      </div>
+      <div id="toplink-wrapper">
+        <a href="#"><i class="flora-icon-up-1"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,159 @@
+---
+import Flora2015Layout from '@layouts/Flora2015Layout.astro';
+import { CONTACT_EMAILS } from '@data/site-config';
+---
+
+<Flora2015Layout title="Info" bodyClass="page classic-nav no-title">
+  <div class="main-content full-width header-space">
+    <section class="w-section dfn-quicklinks--wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col col-4">
+            <a class="w-link-button" href="http://dayfornight.frontgatetickets.com/" target="_blank" rel="noopener noreferrer">
+              <span></span>Buy Tickets
+            </a>
+          </div>
+          <div class="col col-4">
+            <a class="w-link-button" href="/2015/schedule/">
+              <span></span>Schedule
+            </a>
+          </div>
+          <div class="col col-4">
+            <a class="w-link-button" href="/2015/info/">
+              <span></span>Info
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-section page-info-section">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12">
+            <div class="grid-mm page-info">
+              <div class="grid-item dfn-when" style="width:100%;">
+                <div class="dfn-inner">
+                  <h1>Day For Night: A 2 Day Experiential art and music festival<br/>Houston, Texas</h1>
+                  <p class="GT-Cinetype-Light">The festival will take place rain or shine, unless otherwise posted. DAY FOR NIGHT is for all ages. No re-entry.</p>
+                  <p class="GT-Cinetype-Light">Day For Night will be located at the areas surrounding Silver Street Studios at 2000 Edwards. Just a few blocks outside of downtown Houston, there will be tons of parking available on the western perimeter of downtown. Stay tuned for more parking and transit details.</p>
+                  <p class="GT-Cinetype-Light">
+                    For sponsorship info:<br/>
+                    <a href={`mailto:${CONTACT_EMAILS.sponsors}`}>{CONTACT_EMAILS.sponsors}</a><br/><br/>
+                    For media inquiries:<br/>
+                    <a href={`mailto:${CONTACT_EMAILS.media}`}>{CONTACT_EMAILS.media}</a><br/><br/>
+                    General info:<br/>
+                    <a href={`mailto:${CONTACT_EMAILS.info}`}>{CONTACT_EMAILS.info}</a><br/><br/>
+                    For vendor inquiries:<br/>
+                    <a href={`mailto:${CONTACT_EMAILS.vendors}`}>{CONTACT_EMAILS.vendors}</a>
+                  </p>
+
+                  <div class="row">
+                    <div class="col col-6 dfn-date item">
+                      <date class="GT-Cinetype-Bold">DECEMBER 19 - 20, 2015</date>
+                      <br/>
+                      <time>Saturday - Sunday<br/>11am - 11pm</time>
+                    </div>
+                    <div class="col col-6 dfn-address item">
+                      <address>
+                        <span class="GT-Cinetype-Bold">SILVER STREET STUDIOS</span>
+                        <br/>2000 Edwards Street
+                        <br/>Houston TX 77007
+                      </address>
+                      <a class="button" href="https://www.google.com/maps/place/Silver+Street+Studios,+Houston,+TX" target="_blank" rel="noopener noreferrer">view map</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Flora2015Layout>
+
+<style>
+  .page-info-section {
+    padding: 50px 0 80px;
+  }
+
+  .page-info .dfn-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .page-info h1 {
+    font-family: 'GT-Cinetype-Bold', sans-serif;
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .page-info .GT-Cinetype-Light {
+    font-family: 'GT-Cinetype-Light', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .page-info a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .page-info .dfn-date,
+  .page-info .dfn-address {
+    margin-top: 40px;
+  }
+
+  .page-info date {
+    font-family: 'GT-Cinetype-Bold', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .page-info time {
+    font-family: 'GT-Cinetype-Light', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .page-info address {
+    font-style: normal;
+    font-family: 'GT-Cinetype-Light', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .page-info .button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: 1px solid #000;
+    font-family: 'GT-Cinetype-Regular', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .page-info .button:hover {
+    background: #000;
+    color: #fff;
+  }
+
+  @media (max-width: 767px) {
+    .page-info h1 {
+      font-size: 22px;
+    }
+
+    .page-info .col-6 {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+</style>

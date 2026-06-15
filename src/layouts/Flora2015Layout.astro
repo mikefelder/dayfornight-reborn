@@ -1,0 +1,147 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '@components/Header.astro';
+import SideNav from '@components/SideNav.astro';
+import Footer from '@components/Footer.astro';
+import snapshotData from '@data/snapshot-2015.json';
+
+
+
+interface Props {
+  title: string;
+  bodyClass?: string;
+  ogImage?: string;
+}
+
+const { title, bodyClass = '', ogImage } = Astro.props;
+const fullBodyClass = `loaded ${bodyClass}`.trim();
+---
+
+<BaseLayout title={`${title} | Day For Night`} ogImage={ogImage} bodyClass={fullBodyClass}>
+  <Fragment slot="head">
+    <link rel="stylesheet" href="/shared-assets/2015/css/settings.css" />
+    <link rel="stylesheet" href="/shared-assets/2015/css/superfish.css" />
+    <link rel="stylesheet" href="/shared-assets/2015/css/timetable-style.css" />
+    <link rel="stylesheet" href="/shared-assets/2015/css/event_template.css" />
+    <link rel="stylesheet" href="/shared-assets/2015/css/style.css" />
+    <link rel="stylesheet" href="/shared-assets/2015/css/flora.css" />
+    <link rel="stylesheet" href="/shared-assets/2015/css/work-order.css" />
+    <link rel="stylesheet" href="/shared-assets/2015/css/icons.css" />
+    <link rel="stylesheet" href="/shared-assets/2015/css/animation.css" />
+    <link rel="stylesheet" href="/shared-assets/2015/css/shortcodes.css" />
+    <link rel="stylesheet" href="/shared-assets/2015/css/components.css" />
+    <style is:inline>
+      /* Force loaded state — skip preloader */
+      #preloader { display: none !important; }
+      body { opacity: 1 !important; visibility: visible !important; }
+      #content, #footer, .main-content { opacity: 1 !important; visibility: visible !important; }
+      .w-animation { opacity: 1 !important; visibility: visible !important; transform: none !important; }
+    </style>
+  </Fragment>
+
+  <SideNav
+    navItems={snapshotData.navItems}
+    socialLinks={snapshotData.socialLinks}
+    logoSrc={`/shared-assets/2015/images/${snapshotData.logos.sideNav}`}
+  />
+
+  <Header
+    darkLogo={`/shared-assets/2015/images/${snapshotData.logos.main}`}
+    stickyLogo={`/shared-assets/2015/images/${snapshotData.logos.sticky}`}
+  />
+
+  <div id="page-overlay"></div>
+
+  <div id="content">
+    <slot />
+  </div>
+
+  <Footer
+    socialLinks={snapshotData.socialLinks}
+    footerEmails={snapshotData.footerEmails}
+    copyright={snapshotData.footerCopyright}
+    sponsorImage={`/shared-assets/2015/images/${snapshotData.footerSponsorImage}`}
+    footerLogo={`/shared-assets/2015/images/${snapshotData.logos.footer}`}
+  />
+
+  <a id="toplink-button" href="#">
+    <span class="border">
+      <i class="flora-icon-up-1"></i>
+    </span>
+  </a>
+
+  <script>
+    import { navigate } from 'astro:transitions/client';
+
+    // Responsive mobile-nav class: only at ≤991px
+    function updateMobileNav() {
+      if (window.innerWidth <= 991) {
+        document.body.classList.add('mobile-nav');
+      } else {
+        document.body.classList.remove('mobile-nav', 'side-nav-active');
+        document.getElementById('page-overlay')?.classList.remove('active');
+      }
+    }
+
+    function initPage() {
+      updateMobileNav();
+
+      const header = document.getElementById('header');
+      if (header) {
+        header.classList.add('active');
+      }
+
+      // Back to top button
+      const toplink = document.getElementById('toplink-button');
+      if (toplink) {
+        toplink.style.opacity = window.scrollY > 300 ? '1' : '0';
+        toplink.style.visibility = window.scrollY > 300 ? 'visible' : 'hidden';
+      }
+
+      // Mobile nav toggle
+      const mobileNavIcon = document.querySelector('.mobile-nav-icon');
+      const pageOverlay = document.getElementById('page-overlay');
+      if (mobileNavIcon) {
+        mobileNavIcon.addEventListener('click', () => {
+          document.body.classList.toggle('side-nav-active');
+          pageOverlay?.classList.toggle('active');
+        });
+        pageOverlay?.addEventListener('click', () => {
+          document.body.classList.remove('side-nav-active');
+          pageOverlay?.classList.remove('active');
+        });
+      }
+    }
+
+    // Run on initial load and after each client-side navigation
+    initPage();
+    document.addEventListener('astro:after-swap', initPage);
+
+    // Scroll-based listeners (persist across navigations)
+    window.addEventListener('resize', updateMobileNav);
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (header) {
+        if (window.scrollY > 100) {
+          header.classList.add('w-fixed');
+        } else {
+          header.classList.remove('w-fixed');
+        }
+      }
+      const toplink = document.getElementById('toplink-button');
+      if (toplink) {
+        toplink.style.opacity = window.scrollY > 300 ? '1' : '0';
+        toplink.style.visibility = window.scrollY > 300 ? 'visible' : 'hidden';
+      }
+    });
+
+    // Back to top click
+    document.addEventListener('click', (e) => {
+      const toplink = (e.target as HTMLElement).closest('#toplink-button');
+      if (toplink) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  </script>
+</BaseLayout>

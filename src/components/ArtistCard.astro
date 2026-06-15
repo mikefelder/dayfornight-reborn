@@ -1,0 +1,34 @@
+---
+interface Props {
+  name: string;
+  slug: string;
+  image: string;
+  category?: string;
+  cssClass?: string;
+}
+
+const { name, slug, image, category, cssClass = 'musicians' } = Astro.props;
+---
+
+<li class={`w-item col-4 c-${cssClass}`}>
+  <figure>
+    <img
+      class="cover-image"
+      src={`/shared-assets/2015/images/${image}`}
+      alt={name}
+      loading="lazy"
+    />
+    <figcaption>
+      <h3>{name}</h3>
+      {category && <p>{category}</p>}
+      <a href={`/2015/artists/${slug}/`}></a>
+      <span>
+        <a
+          href={`/shared-assets/2015/images/${image}`}
+          data-rel="prettyPhoto[portfolio]"
+          title={name}
+        ></a>
+      </span>
+    </figcaption>
+  </figure>
+</li>

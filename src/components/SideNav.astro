@@ -1,0 +1,74 @@
+---
+interface NavItem {
+  label: string;
+  href: string;
+  isExternal: boolean;
+}
+
+interface SocialLink {
+  url: string;
+  title: string;
+}
+
+interface Props {
+  navItems: NavItem[];
+  socialLinks: SocialLink[];
+  logoSrc: string;
+}
+
+const { navItems, socialLinks, logoSrc } = Astro.props;
+
+const currentPath = Astro.url.pathname;
+
+const iconMap: Record<string, string> = {
+  Facebook: 'flora-icon-facebook',
+  Instagram: 'flora-icon-instagram',
+  Twitter: 'fa fa-twitter',
+  Spotify: 'fa fa-spotify',
+};
+---
+
+<aside id="side-nav" class="w-text-light">
+  <div class="side-nav-wrapper">
+    <span id="side-nav-logo">
+      <a href="/2015/">
+        <img src={logoSrc} alt="Logo" />
+      </a>
+    </span>
+    <nav id="vertical-nav">
+      <ul class="vertical-menu">
+        {navItems.map((item) => {
+          const itemHref = item.href.replace(/^\/index\.php/, '/2015').replace(/^\/$/, '/2015/');
+          const isActive = !item.isExternal && (currentPath === itemHref || currentPath === itemHref.replace(/\/$/, '') || currentPath.startsWith(itemHref) && itemHref !== '/2015/');
+          return (
+            <li class:list={['menu-item', { 'current-menu-item': isActive }]}>
+              <a
+                href={itemHref}
+                target={item.isExternal ? '_blank' : undefined}
+                rel={item.isExternal ? 'noopener noreferrer' : undefined}
+              >
+                {item.label}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
+    <ul id="side-menu">
+      <li class="menu-item-search">
+        <a class="live-search-button" href="#">
+          <i class="flora-icon-search"></i>Search
+        </a>
+      </li>
+    </ul>
+    <ul class="social-icons">
+      {socialLinks.map((link) => (
+        <li>
+          <a href={link.url} target="_blank" rel="noopener noreferrer" title={link.title}>
+            <i class={iconMap[link.title] || 'flora-icon-link'}></i>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</aside>

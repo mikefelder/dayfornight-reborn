@@ -1,0 +1,70 @@
+---
+import { getCollection, render } from 'astro:content';
+import Flora2015Layout from '@layouts/Flora2015Layout.astro';
+import PostNav from '@components/PostNav.astro';
+
+export async function getStaticPaths() {
+  const artists = await getCollection('artists2015');
+  return artists.map((artist) => ({
+    params: { slug: artist.data.slug },
+    props: { artist },
+  }));
+}
+
+const { artist } = Astro.props;
+const { Content } = await render(artist);
+const { name, image, categories, publishedDate, prevArtist, nextArtist } = artist.data;
+---
+
+<Flora2015Layout
+  title={name}
+  bodyClass="single single-wyde_portfolio classic-nav no-title"
+  ogImage={`/shared-assets/2015/images/${image}`}
+>
+  <div class="main-content full-width header-space portfolio-gallery">
+    <div class="post-media">
+      <img
+        src={`/shared-assets/2015/images/${image}`}
+        alt={name}
+        class="artist-hero-image"
+      />
+      <a href={`/shared-assets/2015/images/${image}`} data-rel="prettyPhoto[portfolio]"></a>
+    </div>
+
+    <div class="post-content container">
+      <h2 class="post-title">{name}</h2>
+      <div class="row">
+        <div class="col col-12">
+          <div class="w-text-block">
+            <Content />
+          </div>
+        </div>
+      </div>
+
+      <div class="post-description row">
+        <div class="col col-12">
+          <div class="portfolio-meta-widget widget">
+            <p><i class="flora-icon-calendar"></i>Published: {publishedDate}</p>
+          </div>
+        </div>
+        {categories.length > 0 && (
+          <div class="col col-3">
+            <div class="portfolio-category-widget widget">
+              <h4>Categories</h4>
+              <ul>
+                {categories.map((cat) => (
+                  <li><a href="#">{cat}</a></li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
+        <div class="col col-8 col-offset-1"></div>
+      </div>
+    </div>
+
+    <ul class="post-gallery clear"></ul>
+
+    <PostNav prevArtist={prevArtist} nextArtist={nextArtist} />
+  </div>
+</Flora2015Layout>

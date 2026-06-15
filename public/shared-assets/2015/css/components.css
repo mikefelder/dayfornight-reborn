@@ -1,0 +1,574 @@
+/**
+ * Day For Night 2015 — Component & Dynamic Styles
+ * Extracted from original WordPress inline <style> blocks:
+ * - Flora theme dynamic options (side-nav, footer backgrounds)
+ * - Flora color scheme (accent color: #000000)
+ * - Visual Composer shortcodes custom CSS
+ * - Google Fonts (Lato)
+ */
+
+/* Google Fonts — Lato (used by Timetable plugin) */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+/* ===== Artist page hero image fix ===== */
+.portfolio-gallery .post-media img {
+  opacity: 1 !important;
+  width: 100%;
+  height: auto;
+}
+
+/* ===== Dynamic Options (Flora Theme Customizer output) ===== */
+#side-nav {
+  background-color: #0a0808;
+  background-size: cover;
+  background-position: center bottom;
+}
+#footer-widget {
+  color: #ffffff;
+  background-color: #111111;
+  background-size: cover;
+  background-position: center bottom;
+  background-image: url('../images/Lieberman-header-02.jpg') !important;
+  padding: 50px 0 !important;
+}
+#footer-bottom {
+  color: #ffffff;
+  background-color: #0a0a0a;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/* ===== Flora Color Scheme (accent: #000000) ===== */
+a,
+#header .top-menu li:hover > a,
+#header .top-menu li.current-menu-ancestor > a,
+#header .top-menu li.current-menu-item > a,
+.vertical-menu li.back-to-parent:hover > span,
+.vertical-menu li:hover > a,
+.vertical-menu .current-menu-ancestor > a,
+.vertical-menu .current-menu-item > a,
+.w-dark #full-nav .vertical-menu li.back-to-parent:hover > span,
+.w-dark #full-nav .vertical-menu li:hover > a,
+.w-dark #full-nav .vertical-menu .current-menu-ancestor > a,
+.w-dark #full-nav .vertical-menu .current-menu-item > a,
+#fullscreen-nav.w-dark .social-icons > li:hover a,
+#side-menu li:hover > a,
+.w-light .sliding-remove-button:hover,
+.w-text-light .dropcap,
+.highlight,
+blockquote:before,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.pp_hoverContainer > a:hover,
+.w-blog-posts .post-title a:hover,
+.w-blog-posts .meta-date a:hover,
+.post-meta a:hover,
+.post-nav .nav-home a:hover,
+.post-footer a:hover,
+.post-nav h4 a:hover,
+.prev-post > a:hover,
+.next-post > a:hover,
+.post-tags a:hover,
+.widget a:hover,
+.related-posts li:hover h4 a,
+.related-posts li h4 a:hover,
+.comment-box .name a,
+.social-icons > li a:hover,
+.w-blog-posts .w-media-player:hover:after,
+.owl-nav > div,
+.owl-nav > div:hover,
+.w-text-light .w-team-slider .owl-nav > div:hover,
+.onsale:before,
+.woocommerce-message:before,
+.woocommerce-info:before,
+.woocommerce-error li:before,
+.star-rating:before,
+.star-rating span:before,
+.stars a:hover,
+.products li .price,
+.woocommerce button.button:hover,
+.woocommerce .buttons .button:hover,
+.wc-proceed-to-checkout .button:hover,
+.my_account_orders a.button:hover,
+.add_to_cart_inline .button:hover {
+  color: #000000;
+}
+
+code,
+.w-button,
+.w-tabs .w-tabs-nav li.active,
+#toplink-button:hover .border,
+.loader-border,
+.w-blog-posts.w-large .w-item > .post.sticky,
+.w-blog-posts.w-grid .w-item > .post.sticky,
+.variation,
+.shop_table .quantity input:focus,
+.shop_table .quantity input:hover {
+  border-color: #000000;
+}
+
+.dropdown-nav ul ul,
+.woocommerce-message,
+.woocommerce-error,
+.woocommerce-info {
+  border-top-color: #000000;
+}
+
+.top-menu li.megamenu > ul > li > a:before,
+#header span:hover > .menu-icon,
+#header span:hover > .menu-icon:before,
+#header span:hover > .menu-icon:after,
+.expand-nav.full-nav-active #header .full-nav-icon:hover > .menu-icon,
+.expand-nav.full-nav-active #header .full-nav-icon:hover > .menu-icon:before,
+.expand-nav.full-nav-active #header .full-nav-icon:hover > .menu-icon:after,
+#fullscreen-nav.w-light:before,
+#live-search.w-light:before,
+#toplink-button .border:before,
+.w-button,
+.w-link-button span,
+.w-twitter .profile-image img,
+#wp-calendar tbody td#today:hover,
+#cancel-comment-reply-link:hover,
+.w-tabs.w-icon-tabs .w-tabs-nav li.active a,
+.w-tour .w-tabs-nav li.active a,
+.w-team-slider .member-content:before,
+.post-thumb,
+.related-posts .thumb a span,
+.loader-inner,
+.w-effect-flora-1 figure figcaption:before,
+.w-effect-flora-3 figure figcaption:before,
+.w-effect-split figure,
+.onsale,
+.cart-items,
+.widget_price_filter .ui-slider .ui-slider-range,
+.widget_price_filter .ui-slider .ui-slider-handle,
+.products li figure .button {
+  background: #000000;
+}
+
+.w-link-button,
+.w-ghost-button,
+.w-tabs .w-tabs-nav li.active a {
+  color: #000000;
+  border-color: #000000;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+:not(:required) input[type="checkbox"]:checked,
+:not(:required) input[type="radio"]:checked,
+.widget .tagcloud a:hover,
+.comments-nav a:hover,
+.pagination a:hover,
+.woocommerce button.button,
+.woocommerce .buttons .button,
+.wc-proceed-to-checkout .button,
+.my_account_orders a.button,
+.add_to_cart_inline .button {
+  border-color: #000000;
+  background: #000000;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="search"]:focus,
+.w-text-light input[type="file"]:hover,
+textarea:focus {
+  border-color: #000000;
+  box-shadow: 0px 1px 0 #000000;
+}
+
+.la-pacman > div,
+.la-ball-square-spin > div,
+.la-square-jelly-box > div,
+.la-line-scale-pulse-out-rapid > div {
+  color: #000000;
+  background: #000000;
+  border-color: #000000;
+}
+
+/* ===== Visual Composer Custom CSS ===== */
+.vc_custom_1447863533459 {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  border-top-width: 0px !important;
+  border-bottom-width: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.vc_custom_1447866055635 {
+  margin-top: 20px !important;
+  border-top-width: 0px !important;
+  padding-top: 0px !important;
+}
+.vc_custom_1447873167114 {
+  padding-top: 0px !important;
+}
+.vc_custom_1449245848640 {
+  margin-top: 0px !important;
+  border-top-width: 0px !important;
+  padding-top: 0px !important;
+}
+
+/* ===== Header: tall dark bar with centered logo ===== */
+#header {
+  opacity: 1 !important;
+  transition: height 0.3s ease-in-out !important;
+}
+#header:not(.w-fixed) {
+  height: 165px !important;
+}
+#header::before {
+  background: #000 !important;
+  opacity: 1 !important;
+}
+#header-logo {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  float: none !important;
+  width: 200px !important;
+}
+#header .buy-now-btn {
+  display: none !important;
+}
+#header:not(.w-fixed) #header-logo img {
+  max-height: 115px !important;
+}
+#header:not(.w-fixed) .dark-logo {
+  opacity: 1 !important;
+}
+#header:not(.w-fixed) .dark-sticky,
+#header:not(.w-fixed) .light-logo,
+#header:not(.w-fixed) .light-sticky {
+  opacity: 0 !important;
+}
+/* Scrolled/fixed state: compact header */
+#header.w-fixed {
+  height: 65px !important;
+}
+#header.w-fixed::before {
+  opacity: 0.9 !important;
+}
+#header.w-fixed #header-logo img {
+  max-height: 46px !important;
+}
+#header.w-fixed .light-sticky {
+  opacity: 1 !important;
+}
+#header.w-fixed .dark-logo,
+#header.w-fixed .dark-sticky,
+#header.w-fixed .light-logo {
+  opacity: 0 !important;
+}
+.main-content.header-space {
+  padding-top: 165px !important;
+}
+
+/* ===== Hero section: banner image unavailable, style countdown standalone ===== */
+.homepage-hero-img img {
+  display: none;
+}
+.homepage-hero-img {
+  min-height: 0 !important;
+  position: relative !important;
+}
+.w-section.w-full {
+  padding: 10px 0 !important;
+}
+.countdown-timer {
+  position: relative !important;
+  color: #333 !important;
+  font-size: 20px !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  padding: 10px 0 !important;
+  height: auto !important;
+  line-height: normal !important;
+  display: block !important;
+  font-family: GT-Cinetype-Regular, Arial, Helvetica, sans-serif !important;
+  margin-bottom: 0 !important;
+}
+
+/* ===== Quicklink buttons: full-width, compact like original ===== */
+.dfn-quicklinks--wrap {
+  padding: 10px 0 !important;
+}
+.dfn-quicklinks--wrap .w-link-button {
+  background: #000 !important;
+  color: #fff !important;
+  border-color: #000 !important;
+  padding: 10px 20px !important;
+  display: block !important;
+  text-align: center !important;
+  font-size: 12px !important;
+  line-height: 12px !important;
+}
+
+/* ===== Sub-title social icons: vertically align with text ===== */
+.sub-title-wrap .s1 {
+  display: inline;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 1.5px;
+}
+.sub-title-wrap .images {
+  display: inline;
+  vertical-align: middle;
+}
+.sub-title-wrap .images img {
+  vertical-align: middle;
+  display: inline-block;
+}
+.sub-title-wrap .p1 {
+  line-height: 38px;
+}
+
+/* ===== Mobile adjustments ===== */
+@media (max-width: 991px) {
+  .sub-title-wrap .images {
+    display: block;
+    margin-top: 10px;
+  }
+  .countdown-timer {
+    font-size: 16px !important;
+    letter-spacing: 2px !important;
+  }
+  /* Tighten spacing between quicklink buttons on mobile */
+  .dfn-quicklinks--wrap .col {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .dfn-quicklinks--wrap .row {
+    padding: 0 15px;
+  }
+  /* Shorter header on mobile, show icon-only logo */
+  #header:not(.w-fixed) {
+    height: 65px !important;
+  }
+  #header:not(.w-fixed) #header-logo img {
+    max-height: 45px !important;
+  }
+  /* Hide text logo, show icon-only (sticky) logo on mobile */
+  #header:not(.w-fixed) .dark-logo {
+    opacity: 0 !important;
+  }
+  #header:not(.w-fixed) .dark-sticky {
+    opacity: 1 !important;
+  }
+  #header-logo {
+    display: block !important;
+    height: 100% !important;
+    overflow: hidden !important;
+    left: 50% !important;
+    margin-left: -54px !important;
+    position: absolute !important;
+    width: 108px !important;
+    z-index: 1 !important;
+    float: none !important;
+    transform: none !important;
+  }
+  .main-content.header-space {
+    padding-top: 65px !important;
+  }
+  /* Mobile artist grid: musicians 1-wide, visual artists 2-wide */
+  .w-item.c-musicians {
+    width: 100% !important;
+  }
+  .w-item.c-artists {
+    width: 50% !important;
+  }
+}
+
+/* Visual Artists heading between grid sections */
+.visual-artists-heading {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 30px 0 20px;
+  padding: 0;
+}
+
+/* Artist page hero image — constrained on desktop, full-width on mobile */
+.artist-hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.portfolio-gallery .post-media {
+  text-align: center;
+  background: #000;
+}
+
+/* ===== Side Navigation Menu ===== */
+#vertical-nav {
+  height: 190px;
+  padding-bottom: 30px;
+}
+#side-nav .vertical-menu {
+  width: 208px;
+}
+#side-nav .vertical-menu li,
+#side-nav .vertical-menu li a {
+  transition: color 0.2s ease-in-out;
+}
+#side-nav .vertical-menu > li {
+  width: 208px;
+  height: 40px;
+}
+#side-nav .vertical-menu > li > a {
+  display: block;
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: inherit;
+  padding: 12px 0;
+  cursor: pointer;
+  color: inherit;
+}
+/* Hover: links turn black */
+#side-nav .vertical-menu > li:hover > a {
+  color: #000;
+}
+/* Active/current page: invisible text (matches side-nav background) */
+#side-nav .vertical-menu > li.current-menu-item > a {
+  color: #0a0808;
+}
+#side-nav .social-icons {
+  text-align: left;
+}
+
+/* ===== Footer Styles ===== */
+/* Override work-order.css hiding footer-bottom */
+#footer-bottom {
+  display: block !important;
+}
+#footer-logo {
+  display: block !important;
+}
+
+/* Dim all footer-widget text to match archive */
+#footer-widget * {
+  color: rgba(255, 255, 255, .3);
+}
+
+/* Footer nav links: horizontal inline list */
+.footer-nav.list-inline {
+  margin: 0;
+  padding: 10px 0;
+}
+.footer-nav.list-inline li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 20px;
+}
+.footer-nav.list-inline li a {
+  font-family: 'GT-Cinetype-Bold', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Footer social icons sizing */
+#footer-widget .social-icons {
+  text-align: left;
+}
+#footer-widget .social-icons > li a {
+  font-size: 16px;
+}
+
+/* Newsletter form */
+.newsletter-wrap {
+  margin-bottom: 20px;
+}
+.newsletter-wrap > h4 {
+  text-transform: uppercase !important;
+}
+.newsletter-form {
+  position: relative;
+}
+.newsletter-form input[type="email"] {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  font-size: 14px;
+  padding: 10px 0;
+  outline: none;
+  font-family: 'GT-Cinetype-Light', sans-serif;
+}
+.newsletter-form .newsletter-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #000;
+  border: none;
+  font-family: 'GT-Cinetype-Regular', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Footer copyright */
+.footer-copyright {
+  font-size: inherit !important;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+/* Override flora.css sticky footer (position:fixed hides it behind content) */
+#footer.w-sticky {
+  position: relative !important;
+  z-index: 99 !important;
+}
+
+/* Footer bottom bar */
+.footer-v3 #footer-bottom {
+  padding: 20px 0;
+  position: relative;
+  height: 80px;
+}
+#footer-logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Mobile footer */
+@media (max-width: 991px) {
+  #footer-widget, #footer-bottom, #footer-bottom #footer-nav, #footer-bottom #footer-text {
+    text-align: center;
+  }
+  #footer-widget .col-6 {
+    width: 100% !important;
+    float: none !important;
+  }
+  #footer-widget .social-icons {
+    text-align: center !important;
+  }
+  #footer-widget .social-icons > li {
+    float: none !important;
+    display: inline-block !important;
+  }
+  /* Footer bottom bar: same height on mobile as desktop */
+  .footer-v3 #footer-bottom {
+    height: 80px;
+  }
+}
+
