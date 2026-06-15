@@ -1,8 +1,18 @@
 /* Recap Page Styles */
 
-/* Header: hide logo (original had it commented out), show social icons */
+/* Header: show logo, transparent over video */
 .recap-page #header-logo {
-  display: none !important;
+  display: block !important;
+}
+
+.recap-page #header-logo .dark-logo,
+.recap-page #header-logo .light-logo,
+.recap-page #header-logo .light-sticky {
+  opacity: 0 !important;
+}
+
+.recap-page #header-logo .dark-sticky {
+  opacity: 1 !important;
 }
 
 .recap-page #header {
@@ -71,15 +81,16 @@
   }
 }
 
-/* Video Hero Section — use Flora's native .w-media-player overlay */
+/* Video Hero Section — logo overlay centered on video */
 .video-js-wrapper {
   position: relative;
   overflow: hidden;
+  max-height: 550px;
 }
 
 .video-js-responsive-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 42.25%;
   height: 0;
   overflow: hidden;
 }
@@ -91,22 +102,26 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  pointer-events: none;
 }
 
-/* Let the <a> fill the entire video area as a clickable overlay */
-.video-js-wrapper > a {
+/* Logo overlay on hero video */
+.hero-logo-overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 10;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
 }
 
-/* .w-media-player inside uses Flora's native CSS:
-   dark overlay + 80px white-bordered circle + play icon */
+.hero-logo-overlay img {
+  width: 180px;
+  height: auto;
+  opacity: 0.9;
+}
 
 /* Tagline */
 .recap-tagline {
@@ -125,7 +140,12 @@
 .row-youtube .video-thumb {
   position: relative;
   display: block;
+  width: 100%;
   text-decoration: none;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background: none;
 }
 
 .row-youtube .video-thumb img {
@@ -133,7 +153,7 @@
   display: block;
 }
 
-/* Play button overlay on YouTube thumbnails */
+/* Play button overlay on YouTube thumbnails — centered */
 .row-youtube .video-thumb .w-media-player-play {
   position: absolute;
   top: 0;
@@ -141,21 +161,20 @@
   right: 0;
   bottom: 0;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .row-youtube .video-thumb .w-media-player-play::before {
   content: '';
   display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
   width: 60px;
   height: 60px;
-  margin-left: -30px;
-  margin-top: -30px;
   border: 3px solid #fff;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.4);
+  position: absolute;
 }
 
 .row-youtube .video-thumb .w-media-player-play::after {
@@ -163,16 +182,12 @@
   font-family: flora;
   font-size: 24px;
   color: #fff;
-  text-align: center;
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
-  line-height: 60px;
-  margin-left: -30px;
-  margin-top: -30px;
+  position: absolute;
 }
 
 .row-youtube .video-title {
@@ -197,22 +212,26 @@ section.press .press-row {
 section.press a {
   display: inline-block;
   margin: 10px 15px;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-}
-
-section.press a:hover {
-  opacity: 1;
 }
 
 section.press img {
   display: block;
 }
 
-/* Performers Section */
+/* Performers Section — matches original work-order.css */
 section.performers {
-  padding: 40px 0 60px;
+  background: #EDEDED;
+  font-size: 13px;
+  line-height: 33px;
+  margin: 50px 0;
+  padding-bottom: 100px;
+  padding-top: 20px;
   text-align: center;
+  text-transform: uppercase;
+}
+
+section.performers .row {
+  margin-bottom: 25px;
 }
 
 section.performers h2 {
@@ -220,12 +239,12 @@ section.performers h2 {
 }
 
 section.performers h4 {
-  margin-bottom: 15px;
-  margin-top: 30px;
+  font-weight: normal;
+  text-align: left;
 }
 
 section.performers .lineup-list {
-  line-height: 2.2;
+  line-height: 33px;
 }
 
 section.performers .lineup-list a {
@@ -235,12 +254,12 @@ section.performers .lineup-list a {
 }
 
 section.performers .lineup-list a:hover {
-  opacity: 0.6;
+  color: #00AEEF;
 }
 
 section.performers .bullet {
   margin: 0 8px;
-  color: #999;
+  color: #00AEEF;
 }
 
 /* VC Custom spacing */
@@ -251,4 +270,92 @@ section.performers .bullet {
   border-bottom-width: 0 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+
+/* Video Modal */
+.video-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-modal.active {
+  display: flex;
+}
+
+.video-modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.video-modal-content {
+  position: relative;
+  width: 90vw;
+  max-width: 960px;
+  z-index: 1;
+}
+
+.video-modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 5px 10px;
+  line-height: 1;
+}
+
+.video-modal-close:hover {
+  opacity: 0.7;
+}
+
+.video-modal-player {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-modal-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Mobile: fullscreen modal */
+@media (max-width: 768px) {
+  .video-modal-content {
+    width: 100vw;
+    max-width: none;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .video-modal-close {
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+  }
+
+  .video-modal-player {
+    width: 100%;
+  }
 }

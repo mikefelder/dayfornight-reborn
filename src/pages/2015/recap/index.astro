@@ -9,6 +9,11 @@ const iconMap: Record<string, string> = {
   Twitter: 'flora-icon-twitter',
   Spotify: 'flora-icon-soundcloud',
 };
+
+function youtubeId(url: string): string {
+  const match = url.match(/[?&]v=([^&]+)/);
+  return match ? match[1] : '';
+}
 ---
 
 <Flora2015Layout title="Recap" bodyClass="home page page-template recap-page" extraStylesheets={["/shared-assets/2015/css/recap.css"]}>
@@ -38,9 +43,9 @@ const iconMap: Record<string, string> = {
                   <source src={recapData.heroVideo} type="video/mp4" />
                 </video>
               </div>
-              <a href={recapData.heroYouTubeUrl} target="_blank" rel="noopener noreferrer" data-astro-reload>
-                <span class="w-media-player"></span>
-              </a>
+              <div class="hero-logo-overlay">
+                <img src="/shared-assets/2015/images/DAY_FOR_NIGHT.png" alt="Day for Night" />
+              </div>
             </section>
           </div>
         </div>
@@ -64,10 +69,10 @@ const iconMap: Record<string, string> = {
         <div class="row">
           {recapData.recapVideos.map((video) => (
             <div class="col col-4">
-              <a href={video.youtubeUrl} target="_blank" rel="noopener noreferrer" class="video-thumb" data-astro-reload>
+              <button type="button" class="video-thumb" data-youtube-id={youtubeId(video.youtubeUrl)}>
                 <img src={video.thumbnail} alt={video.title} />
                 <span class="w-media-player-play"></span>
-              </a>
+              </button>
               <p class="video-title">{video.title}</p>
             </div>
           ))}
@@ -141,4 +146,49 @@ const iconMap: Record<string, string> = {
       </div>
     </section>
   </div>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-backdrop"></div>
+    <div class="video-modal-content">
+      <button type="button" class="video-modal-close" aria-label="Close">&times;</button>
+      <div class="video-modal-player">
+        <iframe id="videoModalIframe" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+    (function() {
+      var modal = document.getElementById('videoModal');
+      var iframe = document.getElementById('videoModalIframe');
+      var thumbs = document.querySelectorAll('.video-thumb[data-youtube-id]');
+
+      function openModal(videoId) {
+        iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0';
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.classList.remove('active');
+        iframe.src = '';
+        document.body.style.overflow = '';
+      }
+
+      thumbs.forEach(function(thumb) {
+        thumb.addEventListener('click', function() {
+          var id = this.getAttribute('data-youtube-id');
+          if (id) openModal(id);
+        });
+      });
+
+      modal.querySelector('.video-modal-backdrop').addEventListener('click', closeModal);
+      modal.querySelector('.video-modal-close').addEventListener('click', closeModal);
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+      });
+    })();
+  </script>
 </Flora2015Layout>
