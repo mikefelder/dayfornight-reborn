@@ -1,59 +1,17 @@
 /* Recap Page Styles */
 
-/* Header: show logo, transparent over video */
-.recap-page #header-logo {
-  display: block !important;
-}
-
-.recap-page #header-logo .dark-logo,
-.recap-page #header-logo .light-logo,
-.recap-page #header-logo .light-sticky {
-  opacity: 0 !important;
-}
-
-.recap-page #header-logo .dark-sticky {
-  opacity: 1 !important;
-}
-
+/* Header: hidden on recap page (original uses opacity:0) */
 .recap-page #header {
-  position: absolute;
-  width: 100%;
-  z-index: 100;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
+  opacity: 0 !important;
+  pointer-events: none;
 }
 
-.recap-page #header .header-wrapper {
-  justify-content: flex-start;
-}
-
-/* Social icons in header */
-.recap-page #header .social-icons {
-  position: absolute;
-  bottom: 12px;
-  left: 40px;
-  padding: 0;
-}
-
-.recap-page #header .social-icons > li a {
-  color: #777;
-}
-
-@media (max-width: 768px) {
-  .recap-page #header .social-icons {
-    bottom: 20px;
-    left: 50%;
-    margin-left: -78px;
-  }
-}
-
-/* Recap social icons (positioned in header area) */
+/* Recap social icons — positioned top-left, matching original */
 .recap-header-social {
   position: fixed;
-  top: 20px;
-  left: 40px;
-  z-index: 101;
+  top: 12px;
+  left: 48px;
+  z-index: 1000;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -61,7 +19,7 @@
 
 .recap-header-social li {
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .recap-header-social li a {
@@ -120,7 +78,7 @@
 .hero-logo-overlay img {
   width: 180px;
   height: auto;
-  opacity: 0.9;
+  filter: brightness(0) invert(1);
 }
 
 /* Tagline */
