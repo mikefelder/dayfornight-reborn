@@ -1,8 +1,8 @@
 ---
-// Root page — randomly redirects to one of the year snapshots
+// Root page — randomly serves one of the year snapshots in a seamless iframe
 const snapshots = [
   '/2015/',
-  '/2015/splash',
+  '/2015/splash/',
   '/2015/recap/',
 ];
 ---
@@ -13,10 +13,15 @@ const snapshots = [
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Day for Night</title>
   <meta name="description" content="Day for Night — Light & Sound Collide." />
-  <script define:vars={{ snapshots }}>
-    const target = snapshots[Math.floor(Math.random() * snapshots.length)];
-    window.location.replace(target);
-  </script>
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+    iframe { border: none; width: 100%; height: 100%; display: block; }
+  </style>
 </head>
-<body></body>
+<body>
+  <iframe id="frame" title="Day for Night"></iframe>
+  <script define:vars={{ snapshots }}>
+    document.getElementById('frame').src = snapshots[Math.floor(Math.random() * snapshots.length)];
+  </script>
+</body>
 </html>
