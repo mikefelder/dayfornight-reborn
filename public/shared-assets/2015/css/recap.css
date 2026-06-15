@@ -1,25 +1,29 @@
 /* Recap Page Styles */
 
-/* Header: hidden on recap page (original uses opacity:0) */
+/* Header: hidden on recap page — replaced by custom black bar */
 .recap-page #header {
   opacity: 0 !important;
   pointer-events: none;
+  height: 0 !important;
+  min-height: 0 !important;
 }
 
-/* Recap social icons — positioned top-left, matching original */
+/* Recap header bar — thin fixed black strip with social icons */
 .recap-header-social {
   position: fixed;
-  top: 12px;
-  left: 48px;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   list-style: none;
-  padding: 0;
+  padding: 12px 48px;
   margin: 0;
+  background: #000;
 }
 
 .recap-header-social li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .recap-header-social li a {
@@ -33,9 +37,8 @@
 
 @media (max-width: 768px) {
   .recap-header-social {
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+    padding: 12px 20px;
+    text-align: center;
   }
 }
 
