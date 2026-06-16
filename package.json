@@ -10,7 +10,7 @@
     "extract": "node scripts/extract-content.js"
   },
   "dependencies": {
-    "@astrojs/react": "^4.3.0",
+    "@astrojs/react": "^5.0.7",
     "astro": "^5.9.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
