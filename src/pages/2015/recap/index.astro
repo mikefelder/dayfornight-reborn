@@ -167,7 +167,7 @@ function youtubeId(url: string): string {
       var thumbs = document.querySelectorAll('.video-thumb[data-youtube-id]');
 
       function openModal(videoId) {
-        iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0';
+        iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0&playsinline=1';
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
       }
