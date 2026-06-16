@@ -310,14 +310,11 @@ section.performers .bullet {
   border: 0;
 }
 
-/* Mobile: fullscreen modal */
+/* Mobile: full-width modal, centered by parent flex */
 @media (max-width: 768px) {
   .video-modal-content {
     width: 100vw;
     max-width: none;
-    height: 100vh;
-    display: flex;
-    align-items: center;
   }
 
   .video-modal-close {
@@ -328,5 +325,10 @@ section.performers .bullet {
 
   .video-modal-player {
     width: 100%;
+    /* Replace the padding-bottom aspect-ratio trick with an explicit height.
+       The padding-bottom trick is unreliable inside flex containers on iOS Safari
+       and can cause the iframe to have zero rendered height. */
+    height: 56.25vw;
+    padding-bottom: 0;
   }
 }
