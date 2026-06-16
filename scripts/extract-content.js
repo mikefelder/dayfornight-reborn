@@ -202,8 +202,10 @@ function toFrontmatter(data) {
         lines.push(`  ${k}: "${v}"`);
       }
     } else {
-      // Escape quotes in string values
-      const escaped = String(value).replace(/"/g, '\\"');
+      // Escape backslashes and quotes in string values for YAML double-quoted scalars
+      const escaped = String(value)
+        .replace(/\\/g, '\\\\')
+        .replace(/"/g, '\\"');
       lines.push(`${key}: "${escaped}"`);
     }
   }
