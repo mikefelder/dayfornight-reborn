@@ -1,75 +1,67 @@
 {
-  "$ref": "#/definitions/artists2015",
-  "definitions": {
-    "artists2015": {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "externalUrl": {
+      "type": "string"
+    },
+    "categories": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publishedDate": {
+      "type": "string"
+    },
+    "prevArtist": {
       "type": "object",
       "properties": {
-        "name": {
-          "type": "string"
-        },
         "slug": {
           "type": "string"
         },
-        "image": {
-          "type": "string"
-        },
-        "externalUrl": {
-          "type": "string"
-        },
-        "categories": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "default": []
-        },
-        "publishedDate": {
-          "type": "string"
-        },
-        "prevArtist": {
-          "type": "object",
-          "properties": {
-            "slug": {
-              "type": "string"
-            },
-            "name": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "slug",
-            "name"
-          ],
-          "additionalProperties": false
-        },
-        "nextArtist": {
-          "type": "object",
-          "properties": {
-            "slug": {
-              "type": "string"
-            },
-            "name": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "slug",
-            "name"
-          ],
-          "additionalProperties": false
-        },
-        "$schema": {
+        "name": {
           "type": "string"
         }
       },
       "required": [
-        "name",
         "slug",
-        "image",
-        "publishedDate"
-      ],
-      "additionalProperties": false
+        "name"
+      ]
+    },
+    "nextArtist": {
+      "type": "object",
+      "properties": {
+        "slug": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "slug",
+        "name"
+      ]
+    },
+    "$schema": {
+      "type": "string"
     }
   },
-  "$schema": "http://json-schema.org/draft-07/schema#"
+  "required": [
+    "name",
+    "slug",
+    "image",
+    "publishedDate"
+  ]
 }
