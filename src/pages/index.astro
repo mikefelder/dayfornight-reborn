@@ -16,24 +16,37 @@ const snapshots = [
 </head>
 <body>
   <script define:vars={{ snapshots }}>
-    const storageKey = 'dfn:last-snapshot';
-    const historySize = 3;
+    const storageKey = 'dfn:snapshot-seen-at';
+    const cooldownMs = 20 * 60 * 1000;
+    const now = Date.now();
 
-    let recent = [];
+    let seenAt = {};
     try {
-      recent = JSON.parse(localStorage.getItem(storageKey) || '[]');
-      if (!Array.isArray(recent)) recent = [];
+      const parsed = JSON.parse(localStorage.getItem(storageKey) || '{}');
+      if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+        seenAt = parsed;
+      }
     } catch {
-      recent = [];
+      seenAt = {};
     }
 
-    const recentSet = new Set(recent);
-    const candidates = snapshots.filter((s) => !recentSet.has(s));
-    const pool = candidates.length > 0 ? candidates : snapshots;
+    const candidates = snapshots.filter((s) => {
+      const lastSeen = Number(seenAt[s] || 0);
+      return now - lastSeen >= cooldownMs;
+    });
+
+    // If all snapshots are still in cooldown, pick the least-recently-seen one.
+    const fallbackPool = [...snapshots].sort((a, b) => {
+      const aSeen = Number(seenAt[a] || 0);
+      const bSeen = Number(seenAt[b] || 0);
+      return aSeen - bSeen;
+    });
+
+    const pool = candidates.length > 0 ? candidates : fallbackPool.slice(0, 1);
     const target = pool[Math.floor(Math.random() * pool.length)];
 
-    const nextRecent = [target, ...recent.filter((s) => s !== target)].slice(0, historySize);
-    localStorage.setItem(storageKey, JSON.stringify(nextRecent));
+    seenAt[target] = now;
+    localStorage.setItem(storageKey, JSON.stringify(seenAt));
 
     fetch(target)
       .then(r => r.text())
