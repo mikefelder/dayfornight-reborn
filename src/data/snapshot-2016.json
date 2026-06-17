@@ -1,0 +1,43 @@
+{
+  "title": "Day for Night",
+  "dateLocation": "DEC 17-18 2016\u00a0\u00a0HOUSTON",
+  "presale": {
+    "line1": "BLIND PRESALE",
+    "line2Prefix": "STARTS",
+    "line2Highlight": "TUE 10AM"
+  },
+  "intro": "A visually immersive art and music festival exploring the boundaries of light, space and sound.",
+  "logos": {
+    "emblem": "logo.png",
+    "wordmark": "logo-dfn.png"
+  },
+  "heroImage": "intro.jpg",
+  "newsletter": {
+    "action": "//dayfornight.us13.list-manage.com/subscribe/post?u=2f0646d01369ed754c53fb8a3&id=a04eff96cd",
+    "hiddenField": "b_2f0646d01369ed754c53fb8a3_a04eff96cd"
+  },
+  "socialLinks": [
+    { "platform": "facebook", "url": "https://www.facebook.com/dayfornightfest" },
+    { "platform": "instagram", "url": "https://www.instagram.com/dayfornightfest/" },
+    { "platform": "spotify", "url": "https://play.spotify.com/user/dayfornightfest?play=true&utm_source=open.spotify.com&utm_medium=open" },
+    { "platform": "soundcloud", "url": "https://soundcloud.com/user-431330920" }
+  ],
+  "videos": [
+    { "youtubeId": "fFQRkRGE10w", "thumb": "merging-thumb.jpg", "title": "Day for Night: Merging Art and Music" },
+    { "youtubeId": "Z4trFDtCX7M", "thumb": "this-thumb.jpg", "title": "This is Day for Night" },
+    { "youtubeId": "J2VFq70MYQ0", "thumb": "recap-thumb.jpg", "title": "2015 Day for Night Recap" },
+    { "youtubeId": "_LO4lv3XS-Q", "thumb": "nonotak-thumb.jpg", "title": "DFN Artist Series: Nonotak" },
+    { "youtubeId": "INjWyZv6Dss", "thumb": "casey-thumb.jpg", "title": "DFN Artist Series: Casey Reas" },
+    { "youtubeId": "aPxvrgN3ex4", "thumb": "bts-thumb.jpg", "title": "Making Day for Night" }
+  ],
+  "lineup": [
+    {
+      "heading": "2015 SOUND",
+      "names": "Kendrick Lamar New Order Philip Glass Ensemble Dillon Francis Janelle Mon\u00e1e Flying Lotus Death Grips Madeon Nicolas Jaar Psychic TV CocoRosie Elliphant Battles Dan Deacon Com Truise Cazwell Amanda Lepore Holly Herndon Julien Bayle Indian Jewelry U.S. Girls Jont\u00e9 Moaning Prince Rama Deru Matt Thibideau Roman Gianarthur Richard Ramirez Christine Renee Future Blondes BOAN Millennial Grave Wrestlers Children of Pop B L A C K I E Hearts of Animals Josiah Gabriel FLCON FCKER The Vanity Light Wheel Jerk Bart BlackPrismo DJ Fredster"
+    },
+    {
+      "heading": "2015 LIGHT",
+      "names": "Casey Reas Zach Lieberman School For Poetic Computation Nonotak Studio Refik Anadol Markus Heckmann Mark Eats Kamil Nawratil Gabriel Pulecio EFFIXX Vincent Houz\u00e9 + AV&C Masomenos David Cihelna & Gene Han Matthew Dryhurst Alex Czetwertynski Work-Order Nightm0ves Neil Ebbflo"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+---
+import Dfn2016Layout from '@layouts/Dfn2016Layout.astro';
+import SocialIcons2016 from '@components/SocialIcons2016.astro';
+import snapshot from '@data/snapshot-2016.json';
+
+const IMG = '/shared-assets/2016/images';
+const { logos, heroImage, presale, intro, dateLocation, newsletter, videos, lineup } = snapshot;
+---
+
+<Dfn2016Layout title={snapshot.title}>
+  <section class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h1 class="site-title">
+            <img class="emblem" src={`${IMG}/${logos.emblem}`} alt="Day for Night" />
+            <img class="dfn" src={`${IMG}/${logos.wordmark}`} alt="Day for Night" />
+          </h1>
+        </div>
+        <div class="col-sm-6">
+          <div class="desktop-view">
+            <SocialIcons2016 />
+          </div>
+        </div>
+      </div>
+      <div class="newsletter-wrap row">
+        <div class="col-sm-6">
+          <h4 set:html={dateLocation} />
+          <div class="mobile-view">
+            <SocialIcons2016 />
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-subscribe form-inline">
+            <form
+              action={newsletter.action}
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate"
+              target="_blank"
+            >
+              <div id="mc_embed_signup_scroll">
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="form-control email"
+                  id="mce-EMAIL"
+                  placeholder="Email Updates"
+                  required
+                />
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name={newsletter.hiddenField} tabindex="-1" value="" />
+                </div>
+                <button class="btn" type="submit">GO</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video">
+    <div class="title-wrap">
+      <h2>
+        &nbsp;{presale.line1}&nbsp;<br />
+        &nbsp;{presale.line2Prefix} <span>{presale.line2Highlight}</span>&nbsp;<br />
+      </h2>
+    </div>
+    <img class="mobile-fallback" src={`${IMG}/${heroImage}`} alt="Day for Night" />
+    <!-- The original autoplay background video (intro.mp4) was never captured by
+         the Wayback Machine. The archived stage still (intro.jpg) is used as the
+         poster so desktop shows the hero image until/unless a video is restored. -->
+    <video class="responsive-video" autoplay loop muted playsinline poster={`${IMG}/${heroImage}`}>
+      <source src="/shared-assets/2016/videos/intro.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <section class="introduction">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>{intro}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="videos">
+    <div class="container-fluid">
+      <div class="row">
+        {videos.map((v) => (
+          <div class="video col-sm-2">
+            <a
+              class="fancybox text-center"
+              href={`https://www.youtube.com/watch?v=${v.youtubeId}`}
+              data-youtube-id={v.youtubeId}
+              data-video-title={v.title}
+            >
+              <div class="thumbnail-video"><img src={`${IMG}/${v.thumb}`} alt={v.title} /></div>
+              <h3 class="title">{v.title}</h3>
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="lineup">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          {lineup.map((group) => (
+            <div class="sub-section">
+              <h4>{group.heading}</h4>
+              <p class="lead">{group.names}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-browser video lightbox (replaces the original fancybox iframe) -->
+  <div id="video-lightbox" class="video-lightbox" hidden role="dialog" aria-modal="true" aria-label="Video player">
+    <button class="video-lightbox__close" type="button" aria-label="Close video">&times;</button>
+    <div class="video-lightbox__frame"></div>
+  </div>
+
+  <style is:global>
+    .video-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 4vw;
+    }
+    .video-lightbox[hidden] { display: none; }
+    .video-lightbox__frame {
+      position: relative;
+      width: 100%;
+      max-width: 1170px;
+      aspect-ratio: 16 / 9;
+    }
+    .video-lightbox__frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-lightbox__close {
+      position: absolute;
+      top: 4vw;
+      right: 5vw;
+      background: none;
+      border: 0;
+      color: #fff;
+      font-size: 48px;
+      line-height: 1;
+      cursor: pointer;
+    }
+  </style>
+
+  <script>
+    function initVideoLightbox() {
+      const lightbox = document.getElementById('video-lightbox');
+      if (!lightbox) return;
+      const frame = lightbox.querySelector('.video-lightbox__frame') as HTMLElement;
+      const closeBtn = lightbox.querySelector('.video-lightbox__close') as HTMLElement;
+
+      function open(id: string, title: string) {
+        frame.innerHTML =
+          `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1&rel=0" ` +
+          `title="${title}" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>`;
+        lightbox!.hidden = false;
+        document.body.style.overflow = 'hidden';
+        closeBtn.focus();
+      }
+
+      function close() {
+        closeBtn.blur();
+        frame.innerHTML = '';
+        lightbox!.hidden = true;
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll<HTMLAnchorElement>('a[data-youtube-id]').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          open(link.dataset.youtubeId!, link.dataset.videoTitle || 'Video');
+        });
+      });
+
+      closeBtn.addEventListener('click', close);
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) close();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !lightbox.hidden) close();
+      });
+    }
+
+    initVideoLightbox();
+    document.addEventListener('astro:after-swap', initVideoLightbox);
+  </script>
+</Dfn2016Layout>

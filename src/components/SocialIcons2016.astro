@@ -1,0 +1,15 @@
+---
+import socialData from '@data/snapshot-2016.json';
+
+const { socialLinks } = socialData;
+---
+
+<div class="social-icons">
+  <ul>
+    {socialLinks.map((s) => (
+      <li class={s.platform}>
+        <a target="_blank" rel="noopener noreferrer" href={s.url} aria-label={s.platform}></a>
+      </li>
+    ))}
+  </ul>
+</div>
