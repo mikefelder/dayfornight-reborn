@@ -16,7 +16,25 @@ const snapshots = [
 </head>
 <body>
   <script define:vars={{ snapshots }}>
-    const target = snapshots[Math.floor(Math.random() * snapshots.length)];
+    const storageKey = 'dfn:last-snapshot';
+    const historySize = 3;
+
+    let recent = [];
+    try {
+      recent = JSON.parse(localStorage.getItem(storageKey) || '[]');
+      if (!Array.isArray(recent)) recent = [];
+    } catch {
+      recent = [];
+    }
+
+    const recentSet = new Set(recent);
+    const candidates = snapshots.filter((s) => !recentSet.has(s));
+    const pool = candidates.length > 0 ? candidates : snapshots;
+    const target = pool[Math.floor(Math.random() * pool.length)];
+
+    const nextRecent = [target, ...recent.filter((s) => s !== target)].slice(0, historySize);
+    localStorage.setItem(storageKey, JSON.stringify(nextRecent));
+
     fetch(target)
       .then(r => r.text())
       .then(html => {
