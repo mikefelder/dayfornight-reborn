@@ -16,13 +16,13 @@ const snapshots = [
 </head>
 <body>
   <script define:vars={{ snapshots }}>
-    const storageKey = 'dfn:snapshot-seen-at';
+    const storageKey = 'dfn:snapshot-seen-at-session';
     const cooldownMs = 20 * 60 * 1000;
     const now = Date.now();
 
     let seenAt = {};
     try {
-      const parsed = JSON.parse(localStorage.getItem(storageKey) || '{}');
+      const parsed = JSON.parse(sessionStorage.getItem(storageKey) || '{}');
       if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
         seenAt = parsed;
       }
@@ -46,7 +46,7 @@ const snapshots = [
     const target = pool[Math.floor(Math.random() * pool.length)];
 
     seenAt[target] = now;
-    localStorage.setItem(storageKey, JSON.stringify(seenAt));
+    sessionStorage.setItem(storageKey, JSON.stringify(seenAt));
 
     fetch(target)
       .then(r => r.text())
