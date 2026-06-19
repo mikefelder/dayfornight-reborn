@@ -15,6 +15,7 @@ Archival site for Day for Night festival — deployed to Azure Static Web Apps v
 | `/2015/schedule` | Schedule |
 | `/2016/` | 2016 blind-presale page (video hero, lineup teasers, YouTube lightbox) |
 | `/2016/lineup/` | 2016 full lineup site with time-of-day gradient system |
+| `/2016/recap/` | 2016 post-festival recap (VICE quote, recap video, sponsors) |
 
 ## Structure
 
@@ -89,12 +90,12 @@ The site will host multiple archived snapshots of the festival site (one per yea
 /2015/recap/   → Post-show recap (static Wayback snapshot)
 /2016/         → 2016 blind-presale page (Astro-native)
 /2016/lineup/  → 2016 full lineup with time-based gradients (Astro-native)
+/2016/recap/   → Post-festival recap with VICE quote + Vimeo video (Astro-native)
 ```
 
 Future phases:
 
 ```
-/2016/recap/   → Post-festival recap (when converted)
 /2017/         → 2017 main site
 /2018/         → 2018 main site
 ```
@@ -103,7 +104,7 @@ Future phases:
 
 The root URL uses in-place content swap: `src/pages/index.astro` randomly picks a snapshot, fetches its HTML, injects a `<base>` tag, and renders via `document.write`. Selection uses `sessionStorage` with a 20-minute per-snapshot cooldown. When all entries are in cooldown, it falls back to the least-recently-seen one.
 
-Current rotation pool: `/2015/`, `/2015/splash/`, `/2015/recap/`, `/2016/`, `/2016/lineup/`
+Current rotation pool: `/2015/`, `/2015/splash/`, `/2015/recap/`, `/2016/`, `/2016/lineup/`, `/2016/recap/`
 
 ## Deployment
 

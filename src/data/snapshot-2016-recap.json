@@ -1,0 +1,61 @@
+{
+  "title": "Day for Night",
+  "tagline": "Combining headlining musicians with immersive art installations, Day for Night transforms live music production by introducing new sensory experiences to the festival landscape.",
+  "quote": {
+    "text": "An unmissable celebration of creativity",
+    "source": "VICE"
+  },
+  "video": {
+    "vimeoId": "198867394",
+    "title": "Day For Night 2016",
+    "coverImage": "uploads/DFN_01-1024x576.jpg"
+  },
+  "installationImages": [
+    {
+      "medium": "uploads/DFN16_PRESS_ROGER-HO_SAT_APHEX-TWIN_1-500x333.jpg",
+      "large": "uploads/DFN16_PRESS_ROGER-HO_SAT_APHEX-TWIN_1-1024x683.jpg",
+      "medh": "333"
+    },
+    {
+      "medium": "uploads/DFN16_PRESS_ROGER-HO_SAT_NONOTAK-HIGHLINE_3-4-500x231.jpg",
+      "large": "uploads/DFN16_PRESS_ROGER-HO_SAT_NONOTAK-HIGHLINE_3-4-1024x474.jpg",
+      "medh": "231"
+    }
+  ],
+  "sponsors": [
+    { "name": "Heineken", "image": "uploads/heineken-1.png", "maxWidth": "200px" },
+    { "name": "Google", "image": "uploads/google@2x.png", "maxWidth": "139px" },
+    { "name": "Topman", "image": "uploads/topman-2.png", "maxWidth": "135px" },
+    { "name": "Deep Eddy", "image": "uploads/deep-eddy@2x.png", "maxWidth": "119px" }
+  ],
+  "nav": [
+    { "label": "About", "href": "/about-day-for-night/" },
+    { "label": "Schedule", "href": "/schedule/" },
+    { "label": "2016 Lineup", "href": "/lineup/", "children": [
+      { "label": "Sound", "href": "/lineup/sound/" },
+      { "label": "Light", "href": "/lineup/light/" }
+    ]},
+    { "label": "Map", "href": "/map/" },
+    { "label": "Media", "href": "/media/" },
+    { "label": "FAQ", "href": "/faq/" },
+    { "label": "Sponsors", "href": "/sponsors/" }
+  ],
+  "social": [
+    { "platform": "spotify", "url": "https://play.spotify.com/user/dayfornightfest" },
+    { "platform": "facebook", "url": "https://www.facebook.com/dayfornightfest" },
+    { "platform": "soundcloud", "url": "https://soundcloud.com/dayfornightfest" },
+    { "platform": "instagram", "url": "https://www.instagram.com/dayfornightfest/" },
+    { "platform": "twitter", "url": "https://twitter.com/dayfornightfest" }
+  ],
+  "newsletter": {
+    "action": "//dayfornight.us13.list-manage.com/subscribe/post?u=2f0646d01369ed754c53fb8a3&id=a04eff96cd",
+    "label": "Get our newsletter"
+  },
+  "footer": {
+    "contactUrl": "/contact/"
+  },
+  "dateData": [
+    ["12","17","2016","7:13","17:21"],
+    ["12","18","2016","7:14","17:22"]
+  ]
+}
