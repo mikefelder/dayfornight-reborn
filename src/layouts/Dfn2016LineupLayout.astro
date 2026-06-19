@@ -1,0 +1,18 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title?: string;
+  bodyClass?: string;
+}
+
+const { title = 'Day for Night', bodyClass = 'home page page-id-5 page-template-default page-homepage' } = Astro.props;
+---
+
+<BaseLayout title={title} bodyClass={bodyClass}>
+  <Fragment slot="head">
+    <link rel="stylesheet" href="/shared-assets/2016/css/lineup-styles.css" />
+  </Fragment>
+
+  <slot />
+</BaseLayout>

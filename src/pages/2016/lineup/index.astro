@@ -1,0 +1,269 @@
+---
+import Dfn2016LineupLayout from '@layouts/Dfn2016LineupLayout.astro';
+import snapshot from '@data/snapshot-2016-lineup.json';
+
+const IMG = '/shared-assets/2016/images';
+const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, sound, light, installationImages, footer, dateData } = snapshot;
+---
+
+<Dfn2016LineupLayout>
+  <span class="gradientBG"></span>
+  <div id="container">
+    <header id="header">
+      <h1 id="main-title">
+        <a href="/2016/lineup/">
+          <svg role="img" class="stroke c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#stroke`}></use></svg>
+          <svg role="img" class="half c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#half`}></use></svg>
+          <svg role="img" class="dropped c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#dropped`}></use></svg>
+          <svg role="img" class="d c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#d`}></use></svg>
+          <svg role="img" class="fn c0" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#fn`}></use></svg>
+        </a>
+      </h1>
+    </header>
+
+    <div class="nav-items">
+      <ul id="menu-main-menu" class="menu">
+        {nav.map((item) => (
+          <li class={`menu-item${item.children ? ' menu-item-has-children' : ''}${item.label === 'Lineup' ? ' lineup-link' : ''}`}>
+            <a href={item.href}>{item.label}</a>
+            {item.children && (
+              <ul class="sub-menu">
+                {item.children.map((child) => (
+                  <li class={`menu-item${child.label === 'Sound' ? ' sound-link' : ''}${child.label === 'Light' ? ' light-link' : ''}`}>
+                    <a href={child.href}>{child.label}</a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+      <a href={ticketUrl} class="button ticket-link" target="_blank" rel="noopener noreferrer">Tickets</a>
+      <span class="menu-toggle mobile-only"></span>
+    </div>
+
+    <div class="social-sidebar">
+      {social.map((s) => (
+        <a href={s.href} class="social-link" target="_blank" rel="noopener noreferrer">
+          <svg role="img" class={s.id} viewBox="0 0 36 36" x="0px" y="0px" width="36px" height="36px"><use xlink:href={`${IMG}/social.svg#${s.id}`}></use></svg>
+        </a>
+      ))}
+      <a href={newsletter.action} class="mailing-list-toggle newsletter-link caption" target="_blank" rel="noopener noreferrer">Get our newsletter</a>
+    </div>
+
+    <div id="main" role="main">
+      <h1 class="home-title o1 display3">
+        <span class="span-1" dub={tagline}>{tagline}</span>
+        {' '}
+        <span class="span-2" dub={dateLocation}>{dateLocation}</span>
+      </h1>
+
+      <div class="features sound-features o1">
+        <span class="features-label caption">{sound.label}</span>
+        <ul>
+          {sound.artists.map((artist, i) => (
+            <li class={`li-${i + 1} ${i % 2 === 0 ? 'li-odd' : 'li-even'}${artist.class ? ` ${artist.class}` : ''}`}>
+              <a href={artist.href} dub={artist.name}>
+                {artist.name}
+                {artist.subtitle && <span class="bjork">{artist.subtitle}</span>}
+              </a>
+            </li>
+          ))}
+          <li class="more li-10 li-even">
+            <a href={sound.moreHref} dub="and more →">and more&nbsp;→</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sound-media">
+        <div class="vid-pad" style="padding-bottom:41.719%;">
+          <iframe
+            src={`https://player.vimeo.com/video/${vimeoId}?background=1&title=0&byline=0&portrait=0`}
+            width="640"
+            height="267"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="features light-features o1">
+        <span class="features-label caption">{light.label}</span>
+        <ul>
+          {light.artists.map((artist, i) => (
+            <li class={`li-${i + 1} ${i % 2 === 0 ? 'li-odd' : 'li-even'}`}>
+              <a href={artist.href} dub={artist.name}>{artist.name}</a>
+            </li>
+          ))}
+          <li class={`more li-${light.artists.length + 1} ${light.artists.length % 2 === 0 ? 'li-odd' : 'li-even'}`}>
+            <a href={light.moreHref} dub="and more →">and more&nbsp;→</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="light-media o1">
+        {installationImages.map((img) => (
+          <span
+            class="install-item"
+            data-install-medium={`${IMG}/${img.medium}`}
+            data-install-medh={img.medh}
+            data-install-large={`${IMG}/${img.large}`}
+          ></span>
+        ))}
+      </div>
+    </div>
+
+    <div class="container-footer"></div>
+  </div>
+
+  <footer>
+    <a href={footer.contactHref}>Contact</a>
+    {footer.lines.map((line) => <span>{line}</span>)}
+  </footer>
+
+  <div class="modal-bg"></div>
+  <div class="modal modal-mailinglist bbox">
+    <span class="close">Close</span>
+    <div class="form-subscribe form-inline bbox">
+      <p>Enter your email address to get updates</p>
+      <div id="mc_embed_signup">
+        <form
+          action={newsletter.action}
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div id="mc_embed_signup_scroll">
+            <div class="mc-field-group">
+              <input type="email" value="" name="EMAIL" class="required email bbox" id="mce-EMAIL" />
+              <button class="btn" type="submit" id="mc-embedded-subscribe">&rarr;</button>
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name={`b_2f0646d01369ed754c53fb8a3_a04eff96cd`} tabindex="-1" value="" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script define:vars={{ dateData }}>
+    // Time-of-day gradient system — reimplemented from project.js
+    const sunlight = '#f7931e';
+    const twilight = '#00ffff';
+
+    function doDateDisplay() {
+      const today = new Date();
+      const dd = String(today.getDate()).padStart(2, '0');
+      const mm = String(today.getMonth() + 1).padStart(2, '0');
+      const yyyy = String(today.getFullYear());
+
+      // Find matching date entry (or use Dec 17 as fallback for demo)
+      let currDay = dateData.find(d => d[0] === mm && d[1] === dd && d[2] === yyyy);
+      if (!currDay) {
+        // Use Dec 17 data as fallback so the gradient always shows
+        currDay = dateData.find(d => d[0] === '12' && d[1] === '17') || dateData[dateData.length - 1];
+      }
+
+      const sunrise = currDay[3].split(':');
+      const sunset = currDay[4].split(':');
+      const date1 = new Date(+currDay[2], +currDay[0] - 1, +currDay[1], +sunrise[0], +sunrise[1]);
+      const date2 = new Date(+currDay[2], +currDay[0] - 1, +currDay[1], +sunset[0], +sunset[1]);
+      const rightNow = new Date();
+      // Override rightNow to use same date as the lookup for out-of-range years
+      const simNow = new Date(+currDay[2], +currDay[0] - 1, +currDay[1], rightNow.getHours(), rightNow.getMinutes(), rightNow.getSeconds());
+
+      const dayLength = date2 - date1;
+      const nightLength = 86400000 - dayLength;
+
+      let displayMode = '';
+      let percComplete = 0;
+
+      if (date1 > simNow) {
+        percComplete = ((nightLength - (date1 - simNow)) / nightLength).toFixed(4);
+        displayMode = percComplete >= 0.5 ? 'night2' : 'night1';
+      } else if (date1 < simNow && date2 > simNow) {
+        percComplete = ((simNow - date1) / dayLength).toFixed(4);
+        displayMode = percComplete >= 0.5 ? 'day2' : 'day1';
+      } else {
+        percComplete = ((simNow - date2) / nightLength).toFixed(4);
+        displayMode = percComplete >= 0.5 ? 'night2' : 'night1';
+      }
+
+      // Apply body mode class
+      document.body.classList.remove('mode-night1', 'mode-day1', 'mode-night2', 'mode-day2');
+      document.body.classList.add('mode-' + displayMode);
+
+      // Dynamic gradient on desktop
+      updateSky(displayMode, percComplete);
+    }
+
+    function updateSky(mode, perc) {
+      if (perc < 1) perc = (perc * 100).toFixed(4);
+
+      let skyUp = '';
+      if ((mode === 'night1' || mode === 'night2') && perc >= 50 && perc < 95) {
+        skyUp = 'black ' + perc + '%, ' + twilight + ' 100%';
+      } else if ((mode === 'night1' || mode === 'night2') && perc < 50) {
+        skyUp = twilight + ' 0%, black ' + perc + '%';
+      } else if ((mode === 'night1' || mode === 'night2') && perc >= 95) {
+        skyUp = sunlight + ' 0%, black ' + Math.abs(5 - (100 - perc)) + '%, black ' + perc + '%, ' + twilight + ' 100%';
+      } else if ((mode === 'day1' || mode === 'day2') && perc >= 50 && perc < 95) {
+        skyUp = 'black ' + perc + '%, ' + sunlight + ' 100%';
+      } else if ((mode === 'day1' || mode === 'day2') && perc < 50) {
+        skyUp = sunlight + ' 0%, black ' + perc + '%';
+      } else if ((mode === 'day1' || mode === 'day2') && perc >= 95) {
+        skyUp = twilight + ' 0%, black ' + Math.abs(5 - (100 - perc)) + '%, black ' + perc + '%, ' + sunlight + ' 100%';
+      }
+
+      if (window.innerWidth > 670) {
+        const gradEl = document.querySelector('.gradientBG');
+        if (gradEl && skyUp) {
+          gradEl.style.backgroundImage = 'linear-gradient(to right, ' + skyUp + ')';
+        }
+      }
+    }
+
+    // Run immediately and re-check every 10 seconds
+    doDateDisplay();
+    setInterval(doDateDisplay, 10000);
+
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.menu-toggle');
+      if (toggle) {
+        toggle.addEventListener('click', () => {
+          document.body.classList.toggle('menu-on');
+        });
+      }
+
+      // Newsletter modal
+      const mlToggle = document.querySelector('.mailing-list-toggle');
+      const modalBg = document.querySelector('.modal-bg');
+      const modalClose = document.querySelector('.modal-mailinglist .close');
+      if (mlToggle) {
+        mlToggle.addEventListener('click', (e) => {
+          e.preventDefault();
+          document.body.classList.add('modal-on');
+        });
+      }
+      if (modalBg) {
+        modalBg.addEventListener('click', () => {
+          document.body.classList.remove('modal-on', 'gallery-on');
+        });
+      }
+      if (modalClose) {
+        modalClose.addEventListener('click', () => {
+          document.body.classList.remove('modal-on');
+        });
+      }
+    });
+  </script>
+</Dfn2016LineupLayout>
