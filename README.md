@@ -6,13 +6,14 @@ Archival site for Day for Night festival — deployed to Azure Static Web Apps v
 
 | Path | Content |
 |------|---------|
-| `/` | Random redirect to one of the snapshots |
+| `/` | Random rotation across all available snapshots (session-based cooldown) |
 | `/2015/` | 2015 festival lineup (Flora theme archive) |
 | `/2015/splash` | Original splash/holding page |
 | `/2015/recap/` | Post-festival recap site (March 2016 snapshot) |
 | `/2015/artists/:slug` | Individual artist pages |
 | `/2015/info` | Festival info |
 | `/2015/schedule` | Schedule |
+| `/2016/` | 2016 blind-presale page (video hero, lineup teasers, YouTube lightbox) |
 
 ## Structure
 
@@ -20,6 +21,7 @@ Archival site for Day for Night festival — deployed to Azure Static Web Apps v
 src/            → Astro source (pages, layouts, components, content)
 public/         → Static assets copied to build output as-is
   shared-assets/2015/  → Images, CSS, fonts for the 2015 archive
+  shared-assets/2016/  → Images, CSS, fonts, videos for the 2016 archive
   2015/splash/         → Original splash page (self-contained HTML)
   2015/recap/          → 20160315150212 Wayback snapshot
 infra/          → Terraform for Azure infrastructure
@@ -80,40 +82,28 @@ The site will host multiple archived snapshots of the festival site (one per yea
 ### URL Structure
 
 ```
-/              → splash / landing page
-/2015/         → 2015 main site
-/2016/         → 2016 main site
+/              → Random rotation (serves one snapshot inline via fetch + document.write)
+/2015/         → 2015 full lineup site (Astro-native from Flora theme)
+/2015/splash/  → Original holding page (static HTML)
+/2015/recap/   → Post-show recap (static Wayback snapshot)
+/2016/         → 2016 blind-presale page (Astro-native)
+```
+
+Future phases:
+
+```
+/2016/lineup/  → Full lineup site (when converted)
 /2017/         → 2017 main site
 /2018/         → 2018 main site
 ```
 
-Phases within a year (if distinct snapshots exist):
+### Randomized Landing Rotation
 
-```
-/2017/presale/ → presale teaser
-/2017/         → show-time (full lineup)
-/2017/recap/   → post-show
-```
+The root URL uses in-place content swap: `src/pages/index.astro` randomly picks a snapshot, fetches its HTML, injects a `<base>` tag, and renders via `document.write`. Selection uses `sessionStorage` with a 20-minute per-snapshot cooldown. When all entries are in cooldown, it falls back to the least-recently-seen one.
 
-### Randomized Landing Options
-
-When all eras are deployed, the root URL could randomly surface a different year:
-
-**Option A: Client-side redirect** — Root `index.html` picks a random year via JS and calls `window.location.replace()`. Simple, no backend, but URL changes and there's a brief flash.
-
-**Option B: In-place content swap** — Root stays at `/` and fetches a random year's page into the DOM. Complex and fragile with full archive snapshots that have their own CSS/JS.
-
-**Option C: Server-side 302 via Azure Functions** — A linked SWA API function at `/api/random` returns a 302 to a random year. Rewrite `/` → `/api/random` in `staticwebapp.config.json`. Cleanest UX (no flash), but requires a Functions backend.
-
-**Option D: Splash with random entry button** — Splash page stays stable with an "Enter" or "Explore" button that randomly navigates to a year. Preserves a consistent landing page while still offering discovery.
-
-## Local Development
-
-```bash
-cd site && python3 -m http.server 8000
-```
+Current rotation pool: `/2015/`, `/2015/splash/`, `/2015/recap/`, `/2016/`
 
 ## Deployment
 
-Pushing to `main` with changes in `site/` triggers automatic deployment via GitHub Actions.
+Pushing to `main` triggers automatic deployment via GitHub Actions.
 Infrastructure changes in `infra/` trigger a Terraform plan (PRs) or apply (main).
