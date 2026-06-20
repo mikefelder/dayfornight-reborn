@@ -64,16 +64,14 @@ const { tagline, quote, video, nav, social, newsletter, installationImages, spon
       </div>
 
       <div class="mainVid">
-        <div class="vid-cover" data-id={video.vimeoId} data-vid-title={video.title}>
-          <span class="img-wrap" style={`background-image:url(${IMG}/${video.coverImage});`}></span>
-        </div>
-      </div>
-      <div class="iframe-wrap mobile-only">
-        <iframe
-          src={`https://player.vimeo.com/video/${video.vimeoId}?color=f7931e&title=0&byline=0&portrait=0`}
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+        <video
+          controls
+          preload="metadata"
+          poster={`${IMG}/${video.coverImage}`}
+          style="width:100%; display:block;"
+        >
+          <source src="/shared-assets/2016/videos/Day%20for%20Night%202016.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div class="home-section intro-section">
