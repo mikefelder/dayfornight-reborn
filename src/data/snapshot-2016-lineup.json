@@ -5,13 +5,13 @@
   "ticketUrl": "https://day-for-night.eventbrite.com",
   "vimeoId": "182770858",
   "nav": [
-    { "label": "About", "href": "/about-day-for-night/" },
-    { "label": "Lineup", "href": "/lineup/", "children": [
-      { "label": "Sound", "href": "/lineup/sound/" },
-      { "label": "Light", "href": "/lineup/light/" }
+    { "label": "About", "href": "#" },
+    { "label": "Lineup", "href": "/2016/lineup/", "children": [
+      { "label": "Sound", "href": "#" },
+      { "label": "Light", "href": "#" }
     ]},
-    { "label": "Media", "href": "/media/" },
-    { "label": "FAQ", "href": "/faq/" }
+    { "label": "Media", "href": "#" },
+    { "label": "FAQ", "href": "#" }
   ],
   "social": [
     { "id": "spotify", "href": "https://play.spotify.com/user/dayfornightfest?play=true&utm_source=open.spotify.com&utm_medium=open" },
@@ -25,28 +25,28 @@
   "sound": {
     "label": "Performing Live",
     "artists": [
-      { "name": "Aphex Twin", "href": "/sound/aphex-twin/" },
-      { "name": "ODESZA", "href": "/sound/odesza/" },
-      { "name": "Björk Digital", "href": "/sound/bjork/", "subtitle": "A five-room digital experience and DJ set", "class": "bjork-item" },
-      { "name": "Kaskade", "href": "/sound/kaskade/" },
-      { "name": "Nick Murphy (Chet Faker)", "href": "/sound/nick-murphy/" },
-      { "name": "Travis Scott", "href": "/sound/travis-scott/" },
-      { "name": "Run The Jewels", "href": "/sound/run-the-jewels/" },
-      { "name": "Butthole Surfers", "href": "/sound/butthole-surfers/" },
-      { "name": "Banks", "href": "/sound/banks/" }
+      { "name": "Aphex Twin", "href": "#" },
+      { "name": "ODESZA", "href": "#" },
+      { "name": "Björk Digital", "href": "#", "subtitle": "A five-room digital experience and DJ set", "class": "bjork-item" },
+      { "name": "Kaskade", "href": "#" },
+      { "name": "Nick Murphy (Chet Faker)", "href": "#" },
+      { "name": "Travis Scott", "href": "#" },
+      { "name": "Run The Jewels", "href": "#" },
+      { "name": "Butthole Surfers", "href": "#" },
+      { "name": "Banks", "href": "#" }
     ],
-    "moreHref": "/lineup/sound/"
+    "moreHref": "#"
   },
   "light": {
     "label": "with Installations by",
     "artists": [
-      { "name": "Björk Digital", "href": "/light/bjork-digital/" },
-      { "name": "United Visual Artists", "href": "/light/uva/" },
-      { "name": "Golan Levin", "href": "/light/golan-nevin/" },
-      { "name": "NONOTAK", "href": "/light/nonotak/" },
-      { "name": "Shoplifter", "href": "/light/shoplifter/" }
+      { "name": "Björk Digital", "href": "#" },
+      { "name": "United Visual Artists", "href": "#" },
+      { "name": "Golan Levin", "href": "#" },
+      { "name": "NONOTAK", "href": "#" },
+      { "name": "Shoplifter", "href": "#" }
     ],
-    "moreHref": "/lineup/light/"
+    "moreHref": "#"
   },
   "installationImages": [
     { "medium": "uploads/V47A9762-500x334.jpg", "medh": 334, "large": "uploads/V47A9762.jpg" },
@@ -56,7 +56,7 @@
     { "medium": "uploads/dfn-light-home-01-500x281.jpg", "medh": 281, "large": "uploads/dfn-light-home-01-1024x576.jpg" }
   ],
   "footer": {
-    "contactHref": "/contact/",
+    "contactHref": "#",
     "lines": ["Day For Night 2016", "December 17-18, 2016", "Houston, Texas"]
   },
   "dateData": [

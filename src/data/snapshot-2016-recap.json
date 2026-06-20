@@ -29,16 +29,16 @@
     { "name": "Deep Eddy", "image": "uploads/deep-eddy@2x.png", "maxWidth": "119px" }
   ],
   "nav": [
-    { "label": "About", "href": "/about-day-for-night/" },
-    { "label": "Schedule", "href": "/schedule/" },
-    { "label": "2016 Lineup", "href": "/lineup/", "children": [
-      { "label": "Sound", "href": "/lineup/sound/" },
-      { "label": "Light", "href": "/lineup/light/" }
+    { "label": "About", "href": "#" },
+    { "label": "Schedule", "href": "#" },
+    { "label": "2016 Lineup", "href": "/2016/lineup/", "children": [
+      { "label": "Sound", "href": "#" },
+      { "label": "Light", "href": "#" }
     ]},
-    { "label": "Map", "href": "/map/" },
-    { "label": "Media", "href": "/media/" },
-    { "label": "FAQ", "href": "/faq/" },
-    { "label": "Sponsors", "href": "/sponsors/" }
+    { "label": "Map", "href": "#" },
+    { "label": "Media", "href": "#" },
+    { "label": "FAQ", "href": "#" },
+    { "label": "Sponsors", "href": "#sponsors" }
   ],
   "social": [
     { "platform": "spotify", "url": "https://play.spotify.com/user/dayfornightfest" },
@@ -52,7 +52,7 @@
     "label": "Get our newsletter"
   },
   "footer": {
-    "contactUrl": "/contact/"
+    "contactUrl": "#"
   },
   "dateData": [
     ["12","17","2016","7:13","17:21"],
