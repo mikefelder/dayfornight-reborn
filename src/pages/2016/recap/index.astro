@@ -25,12 +25,12 @@ const { tagline, quote, video, nav, social, newsletter, installationImages, spon
       <ul id="menu-main-menu" class="menu">
         {nav.map((item) => (
           <li class={`menu-item${item.children ? ' menu-item-has-children' : ''}${item.label.includes('Lineup') ? ' lineup-link' : ''}`}>
-            <a href={item.href}>{item.label}</a>
+            {item.href === '#' || item.href === '#sponsors' ? <a>{item.label}</a> : <a href={item.href}>{item.label}</a>}
             {item.children && (
               <ul class="sub-menu">
                 {item.children.map((child) => (
                   <li class={`menu-item${child.label === 'Sound' ? ' sound-link' : ''}${child.label === 'Light' ? ' light-link' : ''}`}>
-                    <a href={child.href}>{child.label}</a>
+                    {child.href === '#' ? <a>{child.label}</a> : <a href={child.href}>{child.label}</a>}
                   </li>
                 ))}
               </ul>
