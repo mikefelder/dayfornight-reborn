@@ -8,7 +8,7 @@
   },
   "navigationFallback": {
     "rewrite": "/404.html",
-    "exclude": ["/shared-assets/**", "*.jpg", "*.jpeg", "*.png", "*.gif", "*.webp", "*.svg", "*.mp4", "*.woff", "*.woff2", "*.eot", "*.ttf", "*.css", "*.js", "*.ico"]
+    "exclude": ["/shared-assets/*", "*.jpg", "*.jpeg", "*.png", "*.gif", "*.webp", "*.svg", "*.mp4", "*.woff", "*.woff2", "*.eot", "*.ttf", "*.css", "*.js", "*.ico"]
   },
   "mimeTypes": {
     ".ico": "image/x-icon",
