@@ -2238,6 +2238,41 @@ header {
   .single-sound .artist-links .mobile-br, .single-light .artist-links .mobile-br {
     display: block; } }
 
+/* Sponsor section (from 2017-01-16 snapshot) */
+.sponsor-section {
+  border-top: 1px solid currentColor;
+  padding: 20px 0; }
+  .sponsor-section.homepage-sponsor-section {
+    margin: 80px auto 0 30px;
+    padding: 20px 0 0; }
+    @media (max-width: 669px) {
+      .sponsor-section.homepage-sponsor-section {
+        margin: 50px 18px 0; } }
+
+.sponsor-list {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none; }
+  .sponsor-list .single-sponsor {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 40px 20px 0; }
+  .homepage-sponsor-section .sponsor-list {
+    margin: 0; }
+    .homepage-sponsor-section .sponsor-list .single-sponsor {
+      margin-bottom: 0; }
+    @media (max-width: 669px) {
+      .homepage-sponsor-section .sponsor-list {
+        text-align: center; }
+        .homepage-sponsor-section .sponsor-list .single-sponsor {
+          margin: 10px 20px; } }
+  .sponsor-list.tier-1 .single-sponsor {
+    min-height: 90px; }
+  .sponsor-list img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+
 /*
      FILE ARCHIVED ON 00:39:22 Oct 04, 2016 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 23:53:10 Jun 17, 2026.

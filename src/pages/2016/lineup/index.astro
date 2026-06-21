@@ -102,12 +102,12 @@ const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, soun
       </div>
 
       <div class="light-media o1">
-        {installationImages.map((img, i) => (
+        {installationImages.map((img) => (
           <img
-            class={i === 0 ? 'img-lrg' : 'img-med'}
-            src={`${IMG}/${i === 0 ? img.large : img.medium}`}
+            src={`${IMG}/${img.large}`}
             alt=""
             loading="lazy"
+            style="display:block; max-width:100%; height:auto; margin-bottom:20px;"
           />
         ))}
       </div>
