@@ -29,15 +29,13 @@
     { "name": "Deep Eddy", "image": "uploads/deep-eddy@2x.png", "maxWidth": "119px" }
   ],
   "nav": [
-    { "label": "About", "href": "#" },
-    { "label": "Schedule", "href": "#" },
+    { "label": "About", "href": "/2016/about/" },
+    { "label": "Schedule", "href": "/2016/schedule/" },
     { "label": "2016 Lineup", "href": "/2016/lineup/", "children": [
-      { "label": "Sound", "href": "#" },
-      { "label": "Light", "href": "#" }
+      { "label": "Sound", "href": "/2016/lineup/sound/" },
+      { "label": "Light", "href": "/2016/lineup/light/" }
     ]},
-    { "label": "Map", "href": "#" },
-    { "label": "Media", "href": "#" },
-    { "label": "FAQ", "href": "#" },
+    { "label": "FAQ", "href": "/2016/faq/" },
     { "label": "Sponsors", "href": "#sponsors" }
   ],
   "social": [

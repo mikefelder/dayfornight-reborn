@@ -1,0 +1,125 @@
+---
+import Dfn2016LineupLayout from '@layouts/Dfn2016LineupLayout.astro';
+import snapshot from '@data/snapshot-2016-lineup.json';
+import subpages from '@data/snapshot-2016-subpages.json';
+
+export function getStaticPaths() {
+  return subpages.lineup.light.map((artist) => ({
+    params: { slug: artist.slug },
+    props: { artist },
+  }));
+}
+
+const IMG = '/shared-assets/2016/images';
+const { ticketUrl, nav, social, newsletter } = snapshot;
+const { artist } = Astro.props;
+---
+
+<Dfn2016LineupLayout title={`${artist.name} – Day for Night` } bodyClass="single single-light">
+  <span class="gradientBG"></span>
+  <div id="container">
+    <header id="header">
+      <h1 id="main-title">
+        <a href="/2016/lineup/">
+          <svg role="img" class="stroke c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#stroke`}></use></svg>
+          <svg role="img" class="half c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#half`}></use></svg>
+          <svg role="img" class="dropped c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#dropped`}></use></svg>
+          <svg role="img" class="d c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#d`}></use></svg>
+          <svg role="img" class="fn c0" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#fn`}></use></svg>
+        </a>
+      </h1>
+    </header>
+
+    <div class="nav-items">
+      <ul id="menu-main-menu" class="menu">
+        {nav.map((item) => (
+          <li class={`menu-item${item.children ? ' menu-item-has-children' : ''}${item.label === 'Lineup' ? ' lineup-link current-menu-ancestor menu-item-has-children' : ''}`}>
+            <a href={item.href}>{item.label}</a>
+            {item.children && (
+              <ul class="sub-menu">
+                {item.children.map((child) => (
+                  <li class={`menu-item${child.label === 'Sound' ? ' sound-link' : ''}${child.label === 'Light' ? ' light-link' : ''}`}>
+                    <a href={child.href}>{child.label}</a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+      <a href={ticketUrl} class="button ticket-link" target="_blank" rel="noopener noreferrer">Tickets</a>
+      <span class="menu-toggle mobile-only"></span>
+    </div>
+
+    <div class="social-sidebar">
+      {social.map((s) => (
+        <a href={s.href} class="social-link" target="_blank" rel="noopener noreferrer">
+          <svg role="img" class={s.id} viewBox="0 0 36 36" x="0px" y="0px" width="36px" height="36px"><use xlink:href={`${IMG}/social.svg#${s.id}`}></use></svg>
+        </a>
+      ))}
+      <a href={newsletter.action} class="mailing-list-toggle newsletter-link caption" target="_blank" rel="noopener noreferrer">Get our newsletter</a>
+    </div>
+
+    <div id="main" role="main">
+      <div class="artist-detail">
+        <div class="artist-hero">
+          <img src={`${IMG}/uploads/${artist.image}`} alt={artist.name} loading="lazy" />
+        </div>
+        <h1 class="artist-name">{artist.name}</h1>
+        <p class="artist-type">Installation Artist</p>
+        <nav class="artist-nav">
+          <a href="/2016/lineup/light/">← All Light Artists</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container-footer"></div>
+  </div>
+
+  <footer>
+    <span>Day For Night 2016</span>
+    <span>December 17-18, 2016</span>
+    <span>Houston, Texas</span>
+  </footer>
+</Dfn2016LineupLayout>
+
+<style>
+  .artist-detail {
+    padding: 0 1em;
+  }
+  .artist-hero {
+    max-width: 600px;
+    margin-bottom: 1.5em;
+  }
+  .artist-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .artist-name {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.3em;
+  }
+  .artist-type {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.5);
+    margin: 0 0 1.5em;
+  }
+  .artist-nav {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .artist-nav a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    font-size: 0.85em;
+  }
+  .artist-nav a:hover {
+    color: #f7931e;
+  }
+</style>

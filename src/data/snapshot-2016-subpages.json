@@ -1,0 +1,1261 @@
+{
+  "schedule": {
+    "title": "Schedule",
+    "days": [
+      {
+        "label": "Friday, 12/16",
+        "slug": "dec-16",
+        "stages": []
+      },
+      {
+        "label": "Saturday, 12/17",
+        "slug": "dec-17",
+        "stages": [
+          {
+            "name": "Red Stage",
+            "color": "red",
+            "slots": [
+              {
+                "artist": "Welcome To Houston",
+                "slug": "welcome-to-houston",
+                "time": "3:20–4:20"
+              },
+              {
+                "artist": "Thundercat",
+                "slug": "thundercat",
+                "time": "4:40–5:25"
+              },
+              {
+                "artist": "Banks",
+                "slug": "banks",
+                "time": "5:40–6:20"
+              },
+              {
+                "artist": "Nick Murphy (Chet Faker)",
+                "slug": "nick-murphy",
+                "time": "6:40–7:30"
+              },
+              {
+                "artist": "ODESZA",
+                "slug": "odesza",
+                "time": "8:00–9:30"
+              },
+              {
+                "artist": "Aphex Twin",
+                "slug": "aphex-twin",
+                "time": "10:00–12:00"
+              }
+            ]
+          },
+          {
+            "name": "Green Stage",
+            "color": "green",
+            "slots": [
+              {
+                "artist": "Buoyant Spirit",
+                "slug": "buoyant-spirit",
+                "time": "3:10–3:50"
+              },
+              {
+                "artist": "Chelsea Wolfe",
+                "slug": "chelsea-wolfe",
+                "time": "4:10–4:50"
+              },
+              {
+                "artist": "Lower Dens",
+                "slug": "lower-dens",
+                "time": "5:10–5:50"
+              },
+              {
+                "artist": "The Jesus and Mary Chain",
+                "slug": "the-jesus-and-mary-chain",
+                "time": "6:20–7:10"
+              },
+              {
+                "artist": "Blood Orange",
+                "slug": "blood-orange",
+                "time": "7:40–8:40"
+              },
+              {
+                "artist": "DJ Windows 98",
+                "slug": "dj-windows-98",
+                "time": "9:10–9:40"
+              },
+              {
+                "artist": "Run The Jewels",
+                "slug": "run-the-jewels",
+                "time": "10:10–11:00"
+              }
+            ]
+          },
+          {
+            "name": "Blue Stage",
+            "color": "blue",
+            "slots": [
+              {
+                "artist": "Herman Kolgen",
+                "slug": "herman-kolgen",
+                "time": "3:20–4:00"
+              },
+              {
+                "artist": "Tobacco",
+                "slug": "tobacco",
+                "time": "4:15–5:00"
+              },
+              {
+                "artist": "Clams Casino",
+                "slug": "clams-casino",
+                "time": "5:20–6:05"
+              },
+              {
+                "artist": "Oneohtrix Point Never",
+                "slug": "oneohtrix-point-never",
+                "time": "6:35–7:35"
+              },
+              {
+                "artist": "Tycho",
+                "slug": "tycho",
+                "time": "8:10–9:05"
+              },
+              {
+                "artist": "John Carpenter",
+                "slug": "john-carpenter",
+                "time": "9:45–10:45"
+              },
+              {
+                "artist": "Soulection",
+                "slug": "soulection",
+                "time": "11:20–2:00"
+              }
+            ]
+          },
+          {
+            "name": "Yellow Stage",
+            "color": "yellow",
+            "slots": [
+              {
+                "artist": "Splendid Emblem",
+                "slug": "splendid-emblem",
+                "time": "3:00–3:30"
+              },
+              {
+                "artist": "Tee Vee",
+                "slug": "tee-vee",
+                "time": "3:50–4:20"
+              },
+              {
+                "artist": "MNYNMS",
+                "slug": "mnymns",
+                "time": "4:40–5:10"
+              },
+              {
+                "artist": "-Us.",
+                "slug": "us",
+                "time": "5:30–6:10"
+              },
+              {
+                "artist": "From Beyond",
+                "slug": "from-beyond",
+                "time": "6:30–7:10"
+              },
+              {
+                "artist": "Spit Mask",
+                "slug": "spit-mask",
+                "time": "7:30–8:00"
+              },
+              {
+                "artist": "Daughters",
+                "slug": "daughters",
+                "time": "8:20–9:00"
+              },
+              {
+                "artist": "Fat Tony",
+                "slug": "fat-tony",
+                "time": "9:20–10:00"
+              },
+              {
+                "artist": "HevIn",
+                "slug": "heaven-spacey",
+                "time": "10:20–11:10"
+              },
+              {
+                "artist": "SG Lewis",
+                "slug": "sg-lewis",
+                "time": "11:30–12:20"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Sunday, 12/18",
+        "slug": "dec-18",
+        "stages": []
+      }
+    ]
+  },
+  "about": {
+    "title": "About Day for Night",
+    "sections": [
+      {
+        "type": "intro-section",
+        "title": "THE FESTIVAL OF THE FUTURE",
+        "subtitle": "The Department of Dance",
+        "images": [
+          "V47A0556-1024x683.jpg"
+        ],
+        "paragraphs": [
+          "Combining headlining musicians with immersive art installations, Day for Night transforms live music production by introducing new sensory experiences to the festival landscape."
+        ]
+      },
+      {
+        "type": "music-section",
+        "heading": "An eclectic musical lineup",
+        "images": [
+          "V47A2473-768x512.jpg"
+        ],
+        "paragraphs": [
+          "Day for Night is both a current snapshot of popular music, as well as a showcase for trailblazers who continue to crossover from fringe to influential. The focus across multiple musical genres is on acts that specialize in an inventive and highly visual approach to performing."
+        ],
+        "artists": [
+          {
+            "name": "Aphex Twin",
+            "slug": "aphex-twin",
+            "type": "sound"
+          },
+          {
+            "name": "ODESZA",
+            "slug": "odesza",
+            "type": "sound"
+          },
+          {
+            "name": "Björk Digital",
+            "slug": "bjork",
+            "type": "sound"
+          },
+          {
+            "name": "Kaskade",
+            "slug": "kaskade",
+            "type": "sound"
+          },
+          {
+            "name": "Nick Murphy (Chet Faker)",
+            "slug": "nick-murphy",
+            "type": "sound"
+          },
+          {
+            "name": "Travis Scott",
+            "slug": "travis-scott",
+            "type": "sound"
+          },
+          {
+            "name": "Run The Jewels",
+            "slug": "run-the-jewels",
+            "type": "sound"
+          },
+          {
+            "name": "Banks",
+            "slug": "banks",
+            "type": "sound"
+          },
+          {
+            "name": "Butthole Surfers",
+            "slug": "butthole-surfers",
+            "type": "sound"
+          },
+          {
+            "name": "Blood Orange",
+            "slug": "blood-orange",
+            "type": "sound"
+          },
+          {
+            "name": "Little Dragon",
+            "slug": "little-dragon",
+            "type": "sound"
+          },
+          {
+            "name": "The Jesus and Mary Chain",
+            "slug": "the-jesus-and-mary-chain",
+            "type": "sound"
+          },
+          {
+            "name": "Squarepusher",
+            "slug": "squarepusher",
+            "type": "sound"
+          },
+          {
+            "name": "Blonde Redhead",
+            "slug": "blonde-redhead",
+            "type": "sound"
+          },
+          {
+            "name": "Kamasi Washington",
+            "slug": "kamasi-washington",
+            "type": "sound"
+          },
+          {
+            "name": "Thundercat",
+            "slug": "thundercat",
+            "type": "sound"
+          },
+          {
+            "name": "Unknown Mortal Orchestra",
+            "slug": "unknown-mortal-orchestra",
+            "type": "sound"
+          },
+          {
+            "name": "RZA feat. Stone Mecca",
+            "slug": "rza",
+            "type": "sound"
+          },
+          {
+            "name": "John Carpenter",
+            "slug": "john-carpenter",
+            "type": "sound"
+          },
+          {
+            "name": "Tycho",
+            "slug": "tycho",
+            "type": "sound"
+          },
+          {
+            "name": "Ariel Pink",
+            "slug": "ariel-pink",
+            "type": "sound"
+          },
+          {
+            "name": "Lightning Bolt",
+            "slug": "lighting-bolt",
+            "type": "sound"
+          },
+          {
+            "name": "Arca",
+            "slug": "arca",
+            "type": "sound"
+          },
+          {
+            "name": "Oneohtrix Point Never",
+            "slug": "oneohtrix-point-never",
+            "type": "sound"
+          },
+          {
+            "name": "DJ Windows 98",
+            "slug": "dj-windows-98",
+            "type": "sound"
+          },
+          {
+            "name": "Liars",
+            "slug": "liars",
+            "type": "sound"
+          },
+          {
+            "name": "Lower Dens",
+            "slug": "lower-dens",
+            "type": "sound"
+          },
+          {
+            "name": "S U R V I V E",
+            "slug": "s-u-r-v-i-v-e",
+            "type": "sound"
+          },
+          {
+            "name": "Matmos",
+            "slug": "matmos",
+            "type": "sound"
+          },
+          {
+            "name": "Clams Casino",
+            "slug": "clams-casino",
+            "type": "sound"
+          },
+          {
+            "name": "Mykki Blanco",
+            "slug": "mykki-blanco",
+            "type": "sound"
+          },
+          {
+            "name": "Marcel, Rami and Bachar Khalife",
+            "slug": "marcel-khalife",
+            "type": "sound"
+          },
+          {
+            "name": "Chelsea Wolfe",
+            "slug": "chelsea-wolfe",
+            "type": "sound"
+          },
+          {
+            "name": "Uncle Acid & The Deadbeats",
+            "slug": "uncle-acid-the-deadbeats",
+            "type": "sound"
+          },
+          {
+            "name": "Welcome To Houston",
+            "slug": "welcome-to-houston",
+            "type": "sound"
+          },
+          {
+            "name": "SG Lewis",
+            "slug": "sg-lewis",
+            "type": "sound"
+          },
+          {
+            "name": "SOPHIE",
+            "slug": "sophie",
+            "type": "sound"
+          },
+          {
+            "name": "Tobacco",
+            "slug": "tobacco",
+            "type": "sound"
+          },
+          {
+            "name": "Daughters",
+            "slug": "daughters",
+            "type": "sound"
+          },
+          {
+            "name": "Herman Kolgen",
+            "slug": "herman-kolgen",
+            "type": "sound"
+          },
+          {
+            "name": "Nothing",
+            "slug": "nothing",
+            "type": "sound"
+          },
+          {
+            "name": "Soulection",
+            "slug": "soulection",
+            "type": "sound"
+          },
+          {
+            "name": "Mary Lattimore & Jeff Zeigler",
+            "slug": "m-lattimore-j-ziegler",
+            "type": "sound"
+          },
+          {
+            "name": "Fat Tony",
+            "slug": "fat-tony",
+            "type": "sound"
+          },
+          {
+            "name": "Anklepants",
+            "slug": "anklepants",
+            "type": "sound"
+          },
+          {
+            "name": "Jock Club",
+            "slug": "jock-club",
+            "type": "sound"
+          },
+          {
+            "name": "Wild Moccassins",
+            "slug": "wild-moccassins",
+            "type": "sound"
+          },
+          {
+            "name": "DAED",
+            "slug": "daed",
+            "type": "sound"
+          },
+          {
+            "name": "Christine Renee",
+            "slug": "christine-renee",
+            "type": "sound"
+          },
+          {
+            "name": "Buoyant Spirit",
+            "slug": "buoyant-spirit",
+            "type": "sound"
+          },
+          {
+            "name": "Vacation Eyes",
+            "slug": "vacation-eyes",
+            "type": "sound"
+          },
+          {
+            "name": "LIMB + Eric Todd",
+            "slug": "limb",
+            "type": "sound"
+          },
+          {
+            "name": "Night Drive",
+            "slug": "night-drive",
+            "type": "sound"
+          },
+          {
+            "name": "Spit Mask",
+            "slug": "spit-mask",
+            "type": "sound"
+          },
+          {
+            "name": "HevIn",
+            "slug": "heaven-spacey",
+            "type": "sound"
+          },
+          {
+            "name": "-Us.",
+            "slug": "us",
+            "type": "sound"
+          },
+          {
+            "name": "Jerk",
+            "slug": "jerk",
+            "type": "sound"
+          },
+          {
+            "name": "Tee Vee",
+            "slug": "tee-vee",
+            "type": "sound"
+          },
+          {
+            "name": "MNYNMS",
+            "slug": "mnymns",
+            "type": "sound"
+          },
+          {
+            "name": "Maramuresh",
+            "slug": "maramuresh",
+            "type": "sound"
+          },
+          {
+            "name": "Pfaff",
+            "slug": "pfaff",
+            "type": "sound"
+          },
+          {
+            "name": "Splendid Emblem",
+            "slug": "splendid-emblem",
+            "type": "sound"
+          },
+          {
+            "name": "Kult Dizney",
+            "slug": "kult-dizney",
+            "type": "sound"
+          },
+          {
+            "name": "DIVISION",
+            "slug": "division",
+            "type": "sound"
+          },
+          {
+            "name": "Josh Dupont",
+            "slug": "josh-dupont",
+            "type": "sound"
+          },
+          {
+            "name": "From Beyond",
+            "slug": "from-beyond",
+            "type": "sound"
+          },
+          {
+            "name": "Futurelix",
+            "slug": "futurelix",
+            "type": "sound"
+          },
+          {
+            "name": "Kam Franklin",
+            "slug": "kam-franklin",
+            "type": "sound"
+          },
+          {
+            "name": "Light Wheel",
+            "slug": "light-wheel",
+            "type": "sound"
+          }
+        ],
+        "link": {
+          "text": "2016 Lineup: Sound",
+          "href": "/lineup/sound/"
+        }
+      },
+      {
+        "type": "visual-section",
+        "heading": "Mixed with ambitious installations",
+        "images": [
+          "V47A9785-768x512.jpg"
+        ],
+        "paragraphs": [
+          "The visual artists build experiences within the blurred boundaries of performance, interaction and immersive installations both indoors and out. Large scale projections and site-specific custom-built structures bring a heightened sensorial experience to new audiences."
+        ],
+        "artists": [
+          {
+            "name": "Björk Digital",
+            "slug": "bjork-digital",
+            "type": "light"
+          },
+          {
+            "name": "United Visual Artists",
+            "slug": "uva",
+            "type": "light"
+          },
+          {
+            "name": "Golan Levin",
+            "slug": "golan-nevin",
+            "type": "light"
+          },
+          {
+            "name": "NONOTAK",
+            "slug": "nonotak",
+            "type": "light"
+          },
+          {
+            "name": "Shoplifter",
+            "slug": "shoplifter",
+            "type": "light"
+          },
+          {
+            "name": "Tundra",
+            "slug": "tundra",
+            "type": "light"
+          },
+          {
+            "name": "Robert Seidel",
+            "slug": "robert-seidel",
+            "type": "light"
+          },
+          {
+            "name": "Damien Echols",
+            "slug": "damien-echols",
+            "type": "light"
+          },
+          {
+            "name": "AV&C + Houzé",
+            "slug": "avc",
+            "type": "light"
+          },
+          {
+            "name": "Michael Fullman of VT Pro Design",
+            "slug": "vt-pro",
+            "type": "light"
+          },
+          {
+            "name": "Ezra Miller",
+            "slug": "ezra-miller",
+            "type": "light"
+          },
+          {
+            "name": "Jesse Kanda",
+            "slug": "jesse-kanda",
+            "type": "light"
+          },
+          {
+            "name": "Alex Czetwertynski",
+            "slug": "alex-czetwertynski",
+            "type": "light"
+          },
+          {
+            "name": "Herman Kolgen",
+            "slug": "herman-kolgen",
+            "type": "light"
+          },
+          {
+            "name": "Various Projects",
+            "slug": "various-projects",
+            "type": "light"
+          }
+        ],
+        "link": {
+          "text": "2016 Lineup: Light",
+          "href": "/lineup/light/"
+        }
+      },
+      {
+        "type": "loc-section",
+        "title": "The Campus",
+        "images": [
+          "PostOffice_night-shot-768x513.jpg"
+        ],
+        "paragraphs": [
+          "The historic Barbara Jordan Post Office at 401 Franklin Street, designed by the same architects as the Houston Astrodome, will be the setting for this year’s hyper-sensorial festival.",
+          "The 1.5 million square foot hybrid indoor-outdoor space will house three massive stages with seamless flow between the stages and immersive art installations."
+        ]
+      },
+      {
+        "type": "ticket-section",
+        "title": "Join Us",
+        "images": [
+          "176511637-1024x576.jpg"
+        ],
+        "paragraphs": [
+          "Keep an eye on social media for Day for Night updates on giveaways, Street Team opportunities and more."
+        ],
+        "ticketLink": {
+          "text": "Tickets",
+          "href": "https://day-for-night.eventbrite.com/"
+        }
+      }
+    ]
+  },
+  "lineup": {
+    "sound": [
+      {
+        "name": "Aphex Twin",
+        "slug": "aphex-twin",
+        "image": "AphexTwin600x450-500x375.jpg"
+      },
+      {
+        "name": "ODESZA",
+        "slug": "odesza",
+        "image": "odesza-500x248.jpg"
+      },
+      {
+        "name": "Björk Digital",
+        "slug": "bjork",
+        "image": "unspecified-2-500x500.jpg"
+      },
+      {
+        "name": "Kaskade",
+        "slug": "kaskade",
+        "image": "Kaskade600x450-500x375.jpg"
+      },
+      {
+        "name": "Nick Murphy (Chet Faker)",
+        "slug": "nick-murphy",
+        "image": "NickMurphy-save-500x333.jpg"
+      },
+      {
+        "name": "Travis Scott",
+        "slug": "travis-scott",
+        "image": "travis-scott-2.jpg"
+      },
+      {
+        "name": "Run The Jewels",
+        "slug": "run-the-jewels",
+        "image": "RuntheJewels600x450-500x375.jpg"
+      },
+      {
+        "name": "Banks",
+        "slug": "banks",
+        "image": "banksys-500x281.jpg"
+      },
+      {
+        "name": "Butthole Surfers",
+        "slug": "butthole-surfers",
+        "image": "ButtholeSurfer600x450-500x375.jpg"
+      },
+      {
+        "name": "Blood Orange",
+        "slug": "blood-orange",
+        "image": "BloodOrange600x450-500x375.jpg"
+      },
+      {
+        "name": "Little Dragon",
+        "slug": "little-dragon",
+        "image": "LittleDragon600x450-500x374.jpg"
+      },
+      {
+        "name": "The Jesus and Mary Chain",
+        "slug": "the-jesus-and-mary-chain",
+        "image": "JAMC600x450-500x375.jpg"
+      },
+      {
+        "name": "Squarepusher",
+        "slug": "squarepusher",
+        "image": "Squarepusher600x450-500x375.jpg"
+      },
+      {
+        "name": "Blonde Redhead",
+        "slug": "blonde-redhead",
+        "image": "BlondeRedhead600x450-500x375.jpg"
+      },
+      {
+        "name": "Kamasi Washington",
+        "slug": "kamasi-washington",
+        "image": "KamsaiWashington600x450-500x375.jpg"
+      },
+      {
+        "name": "Thundercat",
+        "slug": "thundercat",
+        "image": "Thundercat600x450-500x375.jpg"
+      },
+      {
+        "name": "Unknown Mortal Orchestra",
+        "slug": "unknown-mortal-orchestra",
+        "image": "umo-500x500.jpg"
+      },
+      {
+        "name": "RZA feat. Stone Mecca",
+        "slug": "rza",
+        "image": "RZA-1-500x333.jpg"
+      },
+      {
+        "name": "John Carpenter",
+        "slug": "john-carpenter",
+        "image": "JohnCarpenter600x450-500x375.jpg"
+      },
+      {
+        "name": "Tycho",
+        "slug": "tycho",
+        "image": "Tycho_press_epoch_color72-500x446.jpeg"
+      },
+      {
+        "name": "Ariel Pink",
+        "slug": "ariel-pink",
+        "image": "ArielPink600x450-500x375.jpg"
+      },
+      {
+        "name": "Lightning Bolt",
+        "slug": "lighting-bolt",
+        "image": "LightningBolt600x450-500x375.jpg"
+      },
+      {
+        "name": "Arca",
+        "slug": "arca",
+        "image": "Arca600x450-500x375.jpg"
+      },
+      {
+        "name": "Oneohtrix Point Never",
+        "slug": "oneohtrix-point-never",
+        "image": "OPN600x450-500x375.jpg"
+      },
+      {
+        "name": "DJ Windows 98",
+        "slug": "dj-windows-98",
+        "image": "WINDOWS98600x450-500x376.jpg"
+      },
+      {
+        "name": "Liars",
+        "slug": "liars",
+        "image": "Liars600x450-500x375.jpg"
+      },
+      {
+        "name": "Lower Dens",
+        "slug": "lower-dens",
+        "image": "Lower_Dens_photo_by_Frank_Hamilton__MG_9671_h__zpsg1axwmou-500x293.jpg"
+      },
+      {
+        "name": "S U R V I V E",
+        "slug": "s-u-r-v-i-v-e",
+        "image": "Survive600x450-500x375.jpg"
+      },
+      {
+        "name": "Matmos",
+        "slug": "matmos",
+        "image": "Matmos600x450-500x375.jpg"
+      },
+      {
+        "name": "Clams Casino",
+        "slug": "clams-casino",
+        "image": "ClamsCasino600x450-500x375.jpg"
+      },
+      {
+        "name": "Mykki Blanco",
+        "slug": "mykki-blanco",
+        "image": "MykkiBlanco600x450-500x375.jpg"
+      },
+      {
+        "name": "Marcel, Rami and Bachar Khalife",
+        "slug": "marcel-khalife",
+        "image": "ALX_6994_Fotor-492x500.jpg"
+      },
+      {
+        "name": "Chelsea Wolfe",
+        "slug": "chelsea-wolfe",
+        "image": "ChelseaWolfe600x450-500x375.jpg"
+      },
+      {
+        "name": "Uncle Acid & The Deadbeats",
+        "slug": "uncle-acid-the-deadbeats",
+        "image": "UncleAcid600x450-500x375.jpg"
+      },
+      {
+        "name": "Welcome To Houston",
+        "slug": "welcome-to-houston",
+        "image": "hou_mus_20150606_partypeoplefpsf_marcotorres_0009-500x333.jpg"
+      },
+      {
+        "name": "SG Lewis",
+        "slug": "sg-lewis",
+        "image": "SGLewis600x450-500x375.jpg"
+      },
+      {
+        "name": "SOPHIE",
+        "slug": "sophie",
+        "image": "SOPHIE-500x500.jpg"
+      },
+      {
+        "name": "Tobacco",
+        "slug": "tobacco",
+        "image": "13100699_10154080408133864_1107613379328864878_n-500x500.jpg"
+      },
+      {
+        "name": "Daughters",
+        "slug": "daughters",
+        "image": "Daughters_self-titled_-500x500.jpg"
+      },
+      {
+        "name": "Herman Kolgen",
+        "slug": "herman-kolgen",
+        "image": "HermanKolgen600x450-500x375.jpg"
+      },
+      {
+        "name": "Nothing",
+        "slug": "nothing",
+        "image": "Nothing600x450-500x375.jpg"
+      },
+      {
+        "name": "Soulection",
+        "slug": "soulection",
+        "image": "Soulection-Group-500x381.jpg"
+      },
+      {
+        "name": "Mary Lattimore & Jeff Zeigler",
+        "slug": "m-lattimore-j-ziegler",
+        "image": "mljz600x450-500x375.jpg"
+      },
+      {
+        "name": "Fat Tony",
+        "slug": "fat-tony",
+        "image": "FatTony600x450-500x375.jpg"
+      },
+      {
+        "name": "Anklepants",
+        "slug": "anklepants",
+        "image": "Photo-by-Torsten-solin-3-344x500.jpeg"
+      },
+      {
+        "name": "Jock Club",
+        "slug": "jock-club",
+        "image": "JockClub600x450-500x375.jpg"
+      },
+      {
+        "name": "Wild Moccassins",
+        "slug": "wild-moccassins",
+        "image": "WildMoccasins600x450-500x375.jpg"
+      },
+      {
+        "name": "DAED",
+        "slug": "daed",
+        "image": "Daed600x450-500x375.jpg"
+      },
+      {
+        "name": "Christine Renee",
+        "slug": "christine-renee",
+        "image": "IMG-20160910-WA0001_Cropped_Thumbnail_2-500x375.jpg"
+      },
+      {
+        "name": "Buoyant Spirit",
+        "slug": "buoyant-spirit",
+        "image": "Bouyant600x450-500x375.jpg"
+      },
+      {
+        "name": "Vacation Eyes",
+        "slug": "vacation-eyes",
+        "image": "vacation-eyes-500x351.jpg"
+      },
+      {
+        "name": "LIMB + Eric Todd",
+        "slug": "limb",
+        "image": "DSC07888-500x334.jpg"
+      },
+      {
+        "name": "Night Drive",
+        "slug": "night-drive",
+        "image": "NightDrive600x450-500x375.jpg"
+      },
+      {
+        "name": "Spit Mask",
+        "slug": "spit-mask",
+        "image": "spit-mask_Fotor-500x323.png"
+      },
+      {
+        "name": "HevIn",
+        "slug": "heaven-spacey",
+        "image": "11149567_10152829922500678_3182261903337523748_n-500x281.jpg"
+      },
+      {
+        "name": "-Us.",
+        "slug": "us",
+        "image": "us-600x450-500x375.jpg"
+      },
+      {
+        "name": "Jerk",
+        "slug": "jerk",
+        "image": "DSC06580-500x334.jpg"
+      },
+      {
+        "name": "Tee Vee",
+        "slug": "tee-vee",
+        "image": "image1_Fotor-1-500x281.jpg"
+      },
+      {
+        "name": "MNYNMS",
+        "slug": "mnymns",
+        "image": "MNYNMS600x450-500x375.jpg"
+      },
+      {
+        "name": "Maramuresh",
+        "slug": "maramuresh",
+        "image": "marmamarmar-500x340.jpg"
+      },
+      {
+        "name": "Pfaff",
+        "slug": "pfaff",
+        "image": "Pfaff600x450-500x375.jpg"
+      },
+      {
+        "name": "Splendid Emblem",
+        "slug": "splendid-emblem",
+        "image": "splendid.jpg"
+      },
+      {
+        "name": "Kult Dizney",
+        "slug": "kult-dizney",
+        "image": "kultdizney-500x484.jpg"
+      },
+      {
+        "name": "DIVISION",
+        "slug": "division",
+        "image": "Division600x450-500x375.jpg"
+      },
+      {
+        "name": "Josh Dupont",
+        "slug": "josh-dupont",
+        "image": "JoshDupint600x450-500x375.jpg"
+      },
+      {
+        "name": "From Beyond",
+        "slug": "from-beyond",
+        "image": "IMG_2225-500x333.jpg"
+      },
+      {
+        "name": "Futurelix",
+        "slug": "futurelix",
+        "image": "Futurelix-2-500x500.jpg"
+      },
+      {
+        "name": "Kam Franklin",
+        "slug": "kam-franklin",
+        "image": "Kam-500x333.jpg"
+      },
+      {
+        "name": "Light Wheel",
+        "slug": "light-wheel",
+        "image": "JGBAJSEL_DAYFORNIGHT_LIGHTWHEEL_P1-500x333.jpg"
+      }
+    ],
+    "light": [
+      {
+        "name": "Björk Digital",
+        "slug": "bjork-digital",
+        "image": "unspecified-2-500x500.jpg"
+      },
+      {
+        "name": "United Visual Artists",
+        "slug": "uva",
+        "image": "UVA_Fragment_01-500x375.jpg"
+      },
+      {
+        "name": "Golan Levin",
+        "slug": "golan-nevin",
+        "image": "Golan-Levin-1-500x375.jpg"
+      },
+      {
+        "name": "NONOTAK",
+        "slug": "nonotak",
+        "image": "nonotak-500x281.jpg"
+      },
+      {
+        "name": "Shoplifter",
+        "slug": "shoplifter",
+        "image": "Site-Magnus-Unnar-please-500x375.jpg"
+      },
+      {
+        "name": "Tundra",
+        "slug": "tundra",
+        "image": "2016-09-12_11h13_20-500x323.png"
+      },
+      {
+        "name": "Robert Seidel",
+        "slug": "robert-seidel",
+        "image": "folds_lindenau-museum_robert-seidel_03-500x333.png"
+      },
+      {
+        "name": "Damien Echols",
+        "slug": "damien-echols",
+        "image": "Sigil_3_web-500x375.jpg"
+      },
+      {
+        "name": "AV&C + Houzé",
+        "slug": "avc",
+        "image": "AVC_02-LULL-500x375.jpg"
+      },
+      {
+        "name": "Michael Fullman of VT Pro Design",
+        "slug": "vt-pro",
+        "image": "Michael-Fullman-500x375.jpg"
+      },
+      {
+        "name": "Ezra Miller",
+        "slug": "ezra-miller",
+        "image": "2016-09-10_15h32_47-500x333.png"
+      },
+      {
+        "name": "Jesse Kanda",
+        "slug": "jesse-kanda",
+        "image": "JesseKanda-500x375.png"
+      },
+      {
+        "name": "Alex Czetwertynski",
+        "slug": "alex-czetwertynski",
+        "image": "alex-1-500x422.jpg"
+      },
+      {
+        "name": "Herman Kolgen",
+        "slug": "herman-kolgen",
+        "image": "HermanKolgen600x450-500x375.jpg"
+      },
+      {
+        "name": "Various Projects",
+        "slug": "various-projects",
+        "image": "600x450-VP-500x375.jpg"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "category": "General",
+      "items": [
+        {
+          "question": "What is Day for Night?",
+          "answer": "Day for Night is a visually immersive art and music festival exploring the boundaries of light, space, and sound."
+        },
+        {
+          "question": "When is it?",
+          "answer": "Friday, December 16, 2016 – 7 pm to 2 amSaturday, December 17, 2016 – 2 pm to 2 amSunday, December 18, 2016 – 2 pm to 2 am\n\nThe festival will take place rain or shine, unless otherwise posted. Limited re-entry."
+        },
+        {
+          "question": "Where is it?",
+          "answer": "Barbara Jordan Post Office401 Franklin StreetHouston, Texas 77201Directions\n\nBuy passesonlineor at the gate."
+        },
+        {
+          "question": "Is there ADA access at Day for Night?",
+          "answer": "There will plenty of ADA accessible parking on-site. The main entrance is accessible. Should a line form, you may proceed to the front and ask a gate manager to help expedite your entry. In order to access the ADA viewing area, we will be issuing ADA wristbands to those that require it at the Box Office. The ADA wristband does not gain the attendee access to the park if it isn’t accompanied by another wristband."
+        },
+        {
+          "question": "Are kids allowed?",
+          "answer": "Yes, children 10 and up are allowed if accompanied by a parent and under close parental supervision at all times. Remember, children have sensitive ears and we recommend appropriate ear plugs and/or headsets to protect their hearing."
+        },
+        {
+          "question": "What if I become ill at the festival?",
+          "answer": "Medical stations will be located throughout the festival site. Paramedics and EMTs will be roaming the festival site as well. Remember, medical staff are there to help you under any circumstances. Not to judge you. Not to arrest you. They are there only to make sure you are safe. If you, or a friend, feel ill for any reason whatsoever, immediately check in with our medical staff to make sure all is well. Your safety is more important than anything."
+        },
+        {
+          "question": "Why did you change venues?",
+          "answer": "Day for Night is about transforming spaces and exploring them in a whole new light. Moving from one venue to another allows attendees the excitement of unfamiliarity with every new festival."
+        },
+        {
+          "question": "Anti-Harassment Policy",
+          "answer": "Day for Night aims to make the festival experience one that you won’t forget. That being said, memories of people making you feel uncomfortable or harassed are the kinds of memories we will avoid at all costs. Day for Night does not tolerate any kind of harassment, from non-consensual touching to inappropriate comments. We want all participants to immediately notify Day for Night security or staff if they experience or witness these kinds of behaviors as we will work to make sure it doesn’t happen again so that you feel safe at the festival.\n\nDay for Night has a zero-tolerance policy for harassment of any kind and we want to make sure everyone feels comfortable in the festival environment regardless of race, color, national origin, gender, gender identity, gender presentation, sexual orientation, age, body size, disability, appearance, religion, citizenship, or pregnancy.\n\nHarassment includes (but is not limited to): inappropriate physical contact, harassing or non-consensual photography or recording, offensive comments, verbal or physical intimidation, stalking, and physical assault."
+        }
+      ]
+    },
+    {
+      "category": "Tickets",
+      "items": [
+        {
+          "question": "Day for Night General Admission",
+          "answer": "2-day General Admission with entry to all stages, art installations, and GA areas on festival campus."
+        },
+        {
+          "question": "Day for Night General Admission + Friday Night Party",
+          "answer": "2-day General Admission with entry to all stages, art installations, and GA areas on festival campus.\n\nPlus Friday Night Party"
+        },
+        {
+          "question": "Day for Night VIP",
+          "answer": "2-day General Admission with entry to all stages, art installations, and GA areas on festival campus.\n\nPlus Friday Night Party.\n\nPlus VIP Access"
+        },
+        {
+          "question": "Where can I buy tickets?",
+          "answer": "Buy passesonlineor at the gate."
+        },
+        {
+          "question": "Where is my wristband? When will it ship?",
+          "answer": "You can find estimated shipment and delivery dates along with other tracking information from theTicketspage in your Eventbrite account.\n\nIf you purchased your wristband after the cutoff date for shipping, please proceed to Will Call with a copy of your original order confirmation email and a photo ID. We’ll get you set up."
+        },
+        {
+          "question": "Ticketing Support",
+          "answer": "For all ticketing inquires, please visitwww.eventbrite.com."
+        }
+      ]
+    },
+    {
+      "category": "Transportation",
+      "items": [
+        {
+          "question": "What are the closest options for public transport?",
+          "answer": "Day for Night will be launching a comprehensive plan for transportation to and from the festival. As always, we encourage attendees to get to and from the festival as safely as possible. Take the Metro, an Uber, or find a designated driver."
+        },
+        {
+          "question": "Is there parking at Day For Night?",
+          "answer": "Check back for parking options and information."
+        }
+      ]
+    },
+    {
+      "category": "What to bring/not to bring",
+      "items": [
+        {
+          "question": "What should I bring?",
+          "answer": "WINTER-FRIENDLY ITEMS such as a hoodie, jacket, scarf, gloves, beanies, etc.BACKPACKS will be searched.PERSONAL CAMERAS are allowed, and the rule prohibiting detachable lenses has been lifted this year so bring them at your own risk. The promoters reserve the right to use photographs taken at the event in promotional materials.EMPTY WATER CONTAINERS. You may bring one to fill at the fest, such as a CamelBak.TOWEL OR BLANKET for sitting.CASH (SMALL BILLS) AND CREDIT CARDS. Cash will be accepted for food, drinks, and memorabilia, and in some locations credit cards will be accepted as well. There is no need to purchase food/drink tickets first. ATMs will be available throughout the festival grounds as well."
+        },
+        {
+          "question": "What can’t I bring?",
+          "answer": "PETS of any kindMOTORIZED VEHICLESCOOLERSTENTS, CANOPIES, or other big pointy obstructionsWEAPONSNO WATER OR ANY OTHER LIQUID OR FOOD IS ADMITTED (as required by the City of Houston)"
+        },
+        {
+          "question": "Will water be available?",
+          "answer": "Water will be available for free and for sale. Empty camel packs or reusable non-glass water thermoses are allowed and can be filled once in the fest, but must be proven empty upon entrance. Again, no outside food or drinks, including water or water bottles, sealed or unsealed."
+        },
+        {
+          "question": "Can I take photos and video at Day for Night?",
+          "answer": "NO PROFESSIONAL PHOTOGRAPHY, VIDEO, OR AUDIO RECORDING EQUIPMENT WILL BE ALLOWED.Detachable lenses are okay. Images taken at the festival may be used for festival promotional purposes."
+        },
+        {
+          "question": "Are outside sales allowed at Day for Night?",
+          "answer": "NO UNAUTHORIZED VENDING, SALES, SOLICITATIONS, OR PROMOTIONS. If you are interested in any of these things, please contact us."
+        }
+      ]
+    },
+    {
+      "category": "Lineup",
+      "items": [
+        {
+          "question": "Who is performing at Day for Night?",
+          "answer": "For all musical artists:SOUNDFor all visual artists:LIGHT"
+        },
+        {
+          "question": "Can my band play?",
+          "answer": "2016 is already booked, however if you are interested in playing 2017, please direct all inquiries to Chris Wise atchris@dayfornight.io."
+        }
+      ]
+    },
+    {
+      "category": "Who What Why",
+      "items": [
+        {
+          "question": "Why digital art installations?",
+          "answer": "It is our aim for Day for Night attendees to be as engaged as they walk from stage to stage as when they’re watching their favorite band. We believe disassociating art and music is boring. With dozens of art installations throughout our festival campus, you can explore awe inspiring installations when you’re not dancing to the music."
+        },
+        {
+          "question": "Why Houston?",
+          "answer": "Houston is rapidly approaching the distinction of becoming the third largest city in the US. The greater Houston area has a population of over 5 million and we have seen a recent renaissance in arts, music and culture. We can put a man on the moon and throw a bad ass party."
+        },
+        {
+          "question": "Who runs Day For Night?",
+          "answer": "Free Press Houstonand New York-based creative agencyWork-Orderare responsible for the creation of Day For Night.\n\nFor 13 years, Free Press Houston has been independently publishing a newspaper dedicated to local arts, music, and political coverage. In 2009, they founded Free Press Summer Festival, an annual music festival which has hosted notable acts such as Jack White, Major Lazer, Willie Nelson, Skrillex, Macklemore and Ryan Lewis, and Lauren Hill, among others.\n\nWork-Orderis the creative partnership of Keira Alexandra and Houston native Kiffer Keegan. The practice focuses on experiential branding from concept to execution for clients such as Apple, The New York Times, Huffington Post, Showtime and Design Within Reach.\n\nThe festival recently partnered with music industry veteran Randall Jamail. He brings years of experience and relationships from both the music industry and public relations. Jamail’s involvement is part of an aggressive plan to grow the Day For Night into more than a music festival, but into a internationally recognized arts and cultural civic event."
+        }
+      ]
+    },
+    {
+      "category": "Inquiries",
+      "items": [
+        {
+          "question": "Who can I get in touch with?",
+          "answer": "Generalinfo@dayfornight.io\n\nFood vendorkcallahan@spectrumfcs.com\n\nNon-food vendorvendors@dayfornight.io\n\nMediamedia@dayfornight.io\n\nSponsoromar@dayfornight.io\n\nVolunteervolunteers@dayfornight.io\n\nStreet teamPlease fill outthis formto be involved with the Day for Night Street Team.\n\nTicketingFor all ticketing inquires, please visitwww.eventbrite.com.\n\nMedia inquiriesPlease fill outthis formfor all media inquiries."
+        }
+      ]
+    }
+  ]
+}

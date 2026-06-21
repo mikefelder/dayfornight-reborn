@@ -1,0 +1,140 @@
+---
+import Dfn2016LineupLayout from '@layouts/Dfn2016LineupLayout.astro';
+import snapshot from '@data/snapshot-2016-lineup.json';
+import subpages from '@data/snapshot-2016-subpages.json';
+
+const IMG = '/shared-assets/2016/images';
+const { ticketUrl, nav, social, newsletter } = snapshot;
+const { about } = subpages;
+---
+
+<Dfn2016LineupLayout title="About – Day for Night" bodyClass="page page-id-17 page-template-default page-about-day-for-night">
+  <span class="gradientBG"></span>
+  <div id="container">
+    <header id="header">
+      <h1 id="main-title">
+        <a href="/2016/lineup/">
+          <svg role="img" class="stroke c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#stroke`}></use></svg>
+          <svg role="img" class="half c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#half`}></use></svg>
+          <svg role="img" class="dropped c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#dropped`}></use></svg>
+          <svg role="img" class="d c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#d`}></use></svg>
+          <svg role="img" class="fn c0" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#fn`}></use></svg>
+        </a>
+      </h1>
+    </header>
+
+    <div class="nav-items">
+      <ul id="menu-main-menu" class="menu">
+        {nav.map((item) => (
+          <li class={`menu-item${item.children ? ' menu-item-has-children' : ''}${item.label === 'Lineup' ? ' lineup-link' : ''}${item.label === 'About' ? ' current-menu-item' : ''}`}>
+            <a href={item.href}>{item.label}</a>
+            {item.children && (
+              <ul class="sub-menu">
+                {item.children.map((child) => (
+                  <li class={`menu-item${child.label === 'Sound' ? ' sound-link' : ''}${child.label === 'Light' ? ' light-link' : ''}`}>
+                    <a href={child.href}>{child.label}</a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+      <a href={ticketUrl} class="button ticket-link" target="_blank" rel="noopener noreferrer">Tickets</a>
+      <span class="menu-toggle mobile-only"></span>
+    </div>
+
+    <div class="social-sidebar">
+      {social.map((s) => (
+        <a href={s.href} class="social-link" target="_blank" rel="noopener noreferrer">
+          <svg role="img" class={s.id} viewBox="0 0 36 36" x="0px" y="0px" width="36px" height="36px"><use xlink:href={`${IMG}/social.svg#${s.id}`}></use></svg>
+        </a>
+      ))}
+      <a href={newsletter.action} class="mailing-list-toggle newsletter-link caption" target="_blank" rel="noopener noreferrer">Get our newsletter</a>
+    </div>
+
+    <div id="main" role="main">
+      {about.sections.map((section) => (
+        <div class={`about-section ${section.type}`}>
+          {section.title && (
+            <div class="title-wrap quote-wrap o1">
+              <h1>{section.title}{section.subtitle && <small>{section.subtitle}</small>}</h1>
+            </div>
+          )}
+          {section.heading && <h3>{section.heading}</h3>}
+          {section.images?.map((img) => (
+            <div class="section-img">
+              <img src={`${IMG}/uploads/${img}`} alt="" loading="lazy" style="max-width:100%; height:auto; display:block; margin-bottom:1.5em;" />
+            </div>
+          ))}
+          <div class="section-text">
+            {section.paragraphs?.map((p) => <p>{p}</p>)}
+          </div>
+          {section.artists && section.artists.length > 0 && (
+            <div class="artist-group">
+              <ul class="about-artist-list">
+                {section.artists.map((a) => (
+                  <li><a href={`/2016/lineup/${a.type}/${a.slug}/`}>{a.name}</a></li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+
+    <div class="container-footer"></div>
+  </div>
+
+  <footer>
+    <span>Day For Night 2016</span>
+    <span>December 17-18, 2016</span>
+    <span>Houston, Texas</span>
+  </footer>
+</Dfn2016LineupLayout>
+
+<style>
+  .about-section {
+    margin-bottom: 3em;
+    padding: 0 1em;
+  }
+  .about-section h1 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .about-section h1 small {
+    display: block;
+    font-size: 0.5em;
+    color: rgba(255,255,255,0.5);
+    margin-top: 0.5em;
+  }
+  .about-section h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.7);
+  }
+  .section-text p {
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+    max-width: 600px;
+  }
+  .about-artist-list {
+    list-style: none;
+    padding: 0;
+    columns: 2;
+    column-gap: 2em;
+  }
+  .about-artist-list li {
+    margin-bottom: 0.3em;
+  }
+  .about-artist-list a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 0.85em;
+  }
+  .about-artist-list a:hover {
+    color: #f7931e;
+  }
+</style>

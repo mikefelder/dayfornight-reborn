@@ -1,0 +1,158 @@
+---
+import Dfn2016LineupLayout from '@layouts/Dfn2016LineupLayout.astro';
+import snapshot from '@data/snapshot-2016-lineup.json';
+import subpages from '@data/snapshot-2016-subpages.json';
+
+const IMG = '/shared-assets/2016/images';
+const { ticketUrl, nav, social, newsletter } = snapshot;
+const { schedule } = subpages;
+const saturday = schedule.days.find(d => d.slug === 'dec-17');
+---
+
+<Dfn2016LineupLayout title="Schedule – Day for Night" bodyClass="page-template-default page page-id-675 page-parent no-tick page-schedule">
+  <span class="gradientBG"></span>
+  <div id="container">
+    <header id="header">
+      <h1 id="main-title">
+        <a href="/2016/lineup/">
+          <svg role="img" class="stroke c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#stroke`}></use></svg>
+          <svg role="img" class="half c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#half`}></use></svg>
+          <svg role="img" class="dropped c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#dropped`}></use></svg>
+          <svg role="img" class="d c1" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#d`}></use></svg>
+          <svg role="img" class="fn c0" viewBox="0 0 190 190" x="0px" y="0px" width="190px" height="190px"><use xlink:href={`${IMG}/logo-layers.svg#fn`}></use></svg>
+        </a>
+      </h1>
+    </header>
+
+    <div class="nav-items">
+      <ul id="menu-main-menu" class="menu">
+        {nav.map((item) => (
+          <li class={`menu-item${item.children ? ' menu-item-has-children' : ''}${item.label === 'Lineup' ? ' lineup-link' : ''}${item.label === 'Schedule' ? ' current-menu-item' : ''}`}>
+            <a href={item.href}>{item.label}</a>
+            {item.children && (
+              <ul class="sub-menu">
+                {item.children.map((child) => (
+                  <li class={`menu-item${child.label === 'Sound' ? ' sound-link' : ''}${child.label === 'Light' ? ' light-link' : ''}`}>
+                    <a href={child.href}>{child.label}</a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+      <a href={ticketUrl} class="button ticket-link" target="_blank" rel="noopener noreferrer">Tickets</a>
+      <span class="menu-toggle mobile-only"></span>
+    </div>
+
+    <div class="social-sidebar">
+      {social.map((s) => (
+        <a href={s.href} class="social-link" target="_blank" rel="noopener noreferrer">
+          <svg role="img" class={s.id} viewBox="0 0 36 36" x="0px" y="0px" width="36px" height="36px"><use xlink:href={`${IMG}/social.svg#${s.id}`}></use></svg>
+        </a>
+      ))}
+      <a href={newsletter.action} class="mailing-list-toggle newsletter-link caption" target="_blank" rel="noopener noreferrer">Get our newsletter</a>
+    </div>
+
+    <div id="main" role="main">
+      <div class="title-wrap o1"><h1>Schedule</h1></div>
+      <ul class="schedule-nav">
+        {schedule.days.map((day) => (
+          <li class={`schedule-link${day.slug === 'dec-17' ? ' active-schedule-link' : ''}`}>
+            <a href={`/2016/schedule/#${day.slug}`}>{day.label}</a>
+          </li>
+        ))}
+      </ul>
+
+      {saturday && (
+        <div class="page-content schedule-content">
+          {saturday.stages.map((stage) => (
+            <div class={`schedule-stage stage-${stage.color}`}>
+              <h3 class="stage-label">{stage.name}</h3>
+              <ul class="schedule-slots">
+                {stage.slots.map((slot) => (
+                  <li class="schedule-slot">
+                    <a href={`/2016/lineup/sound/${slot.slug}/`}>{slot.artist}</a>
+                    <span class="slot-time">{slot.time}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+
+    <div class="container-footer"></div>
+  </div>
+
+  <footer>
+    <span>Day For Night 2016</span>
+    <span>December 17-18, 2016</span>
+    <span>Houston, Texas</span>
+  </footer>
+</Dfn2016LineupLayout>
+
+<style>
+  .schedule-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2em;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+  }
+  .schedule-link a {
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .active-schedule-link a {
+    color: #fff;
+    border-bottom: 1px solid #f7931e;
+  }
+  .schedule-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2em;
+    padding: 0 1em;
+  }
+  .schedule-stage {
+    border-top: 3px solid;
+    padding-top: 1em;
+  }
+  .stage-red { border-color: #e74c3c; }
+  .stage-green { border-color: #2ecc71; }
+  .stage-blue { border-color: #3498db; }
+  .stage-yellow { border-color: #f1c40f; }
+  .stage-label {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.6);
+    margin: 0 0 1em;
+  }
+  .schedule-slots {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .schedule-slot {
+    margin-bottom: 1em;
+    line-height: 1.4;
+  }
+  .schedule-slot a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+  .schedule-slot a:hover {
+    color: #f7931e;
+  }
+  .slot-time {
+    font-size: 0.75em;
+    color: rgba(255,255,255,0.5);
+  }
+</style>

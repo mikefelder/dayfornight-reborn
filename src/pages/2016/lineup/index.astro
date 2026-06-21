@@ -25,12 +25,12 @@ const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, soun
       <ul id="menu-main-menu" class="menu">
         {nav.map((item) => (
           <li class={`menu-item${item.children ? ' menu-item-has-children' : ''}${item.label === 'Lineup' ? ' lineup-link' : ''}`}>
-            {item.href === '#' ? <a>{item.label}</a> : <a href={item.href}>{item.label}</a>}
+            <a href={item.href}>{item.label}</a>
             {item.children && (
               <ul class="sub-menu">
                 {item.children.map((child) => (
                   <li class={`menu-item${child.label === 'Sound' ? ' sound-link' : ''}${child.label === 'Light' ? ' light-link' : ''}`}>
-                    {child.href === '#' ? <a>{child.label}</a> : <a href={child.href}>{child.label}</a>}
+                    <a href={child.href}>{child.label}</a>
                   </li>
                 ))}
               </ul>
@@ -58,7 +58,7 @@ const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, soun
         <span class="span-2" dub={dateLocation}>{dateLocation}</span>
       </h1>
 
-      <div class="features sound-features o1">
+      <div id="sound" class="features sound-features o1">
         <span class="features-label caption">{sound.label}</span>
         <ul>
           {sound.artists.map((artist, i) => (
@@ -87,7 +87,7 @@ const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, soun
         </div>
       </div>
 
-      <div class="features light-features o1">
+      <div id="light" class="features light-features o1">
         <span class="features-label caption">{light.label}</span>
         <ul>
           {light.artists.map((artist, i) => (

@@ -5,13 +5,14 @@
   "ticketUrl": "https://day-for-night.eventbrite.com",
   "vimeoId": "182770858",
   "nav": [
-    { "label": "About", "href": "#" },
+    { "label": "About", "href": "/2016/about/" },
+    { "label": "Schedule", "href": "/2016/schedule/" },
     { "label": "Lineup", "href": "/2016/lineup/", "children": [
-      { "label": "Sound", "href": "#" },
-      { "label": "Light", "href": "#" }
+      { "label": "Sound", "href": "/2016/lineup/sound/" },
+      { "label": "Light", "href": "/2016/lineup/light/" }
     ]},
-    { "label": "Media", "href": "#" },
-    { "label": "FAQ", "href": "#" }
+    { "label": "FAQ", "href": "/2016/faq/" },
+    { "label": "Recap", "href": "/2016/recap/" }
   ],
   "social": [
     { "id": "spotify", "href": "https://play.spotify.com/user/dayfornightfest?play=true&utm_source=open.spotify.com&utm_medium=open" },
@@ -25,28 +26,28 @@
   "sound": {
     "label": "Performing Live",
     "artists": [
-      { "name": "Aphex Twin", "href": "#" },
-      { "name": "ODESZA", "href": "#" },
-      { "name": "Björk Digital", "href": "#", "subtitle": "A five-room digital experience and DJ set", "class": "bjork-item" },
-      { "name": "Kaskade", "href": "#" },
-      { "name": "Nick Murphy (Chet Faker)", "href": "#" },
-      { "name": "Travis Scott", "href": "#" },
-      { "name": "Run The Jewels", "href": "#" },
-      { "name": "Butthole Surfers", "href": "#" },
-      { "name": "Banks", "href": "#" }
+      { "name": "Aphex Twin", "href": "/2016/lineup/sound/aphex-twin/" },
+      { "name": "ODESZA", "href": "/2016/lineup/sound/odesza/" },
+      { "name": "Björk Digital", "href": "/2016/lineup/sound/bjork/", "subtitle": "A five-room digital experience and DJ set", "class": "bjork-item" },
+      { "name": "Kaskade", "href": "/2016/lineup/sound/kaskade/" },
+      { "name": "Nick Murphy (Chet Faker)", "href": "/2016/lineup/sound/nick-murphy/" },
+      { "name": "Travis Scott", "href": "/2016/lineup/sound/travis-scott/" },
+      { "name": "Run The Jewels", "href": "/2016/lineup/sound/run-the-jewels/" },
+      { "name": "Butthole Surfers", "href": "/2016/lineup/sound/butthole-surfers/" },
+      { "name": "Banks", "href": "/2016/lineup/sound/banks/" }
     ],
-    "moreHref": "#"
+    "moreHref": "/2016/lineup/sound/"
   },
   "light": {
     "label": "with Installations by",
     "artists": [
-      { "name": "Björk Digital", "href": "#" },
-      { "name": "United Visual Artists", "href": "#" },
-      { "name": "Golan Levin", "href": "#" },
-      { "name": "NONOTAK", "href": "#" },
-      { "name": "Shoplifter", "href": "#" }
+      { "name": "Björk Digital", "href": "/2016/lineup/light/bjork-digital/" },
+      { "name": "United Visual Artists", "href": "/2016/lineup/light/uva/" },
+      { "name": "Golan Levin", "href": "/2016/lineup/light/golan-nevin/" },
+      { "name": "NONOTAK", "href": "/2016/lineup/light/nonotak/" },
+      { "name": "Shoplifter", "href": "/2016/lineup/light/shoplifter/" }
     ],
-    "moreHref": "#"
+    "moreHref": "/2016/lineup/light/"
   },
   "installationImages": [
     { "medium": "uploads/V47A9762-500x334.jpg", "medh": 334, "large": "uploads/V47A9762.jpg" },
