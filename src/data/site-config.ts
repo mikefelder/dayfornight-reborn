@@ -5,6 +5,16 @@
 
 export const SITE_DOMAIN = 'dayfornight.dev';
 
+/**
+ * Base URL for shared assets (images, fonts, videos, CSS).
+ * Currently serves from the same origin (SWA).
+ * To cut over to Azure Blob Storage, change to:
+ *   'https://dfnassets.z19.web.core.windows.net'
+ * Or with CDN:
+ *   'https://assets.dayfornight.dev'
+ */
+export const ASSETS_BASE_URL = '';
+
 export const SOCIAL_LINKS = {
   facebook: 'https://www.facebook.com/dayfornightfest',
   instagram: 'https://instagram.com/dayfornightfest/',
