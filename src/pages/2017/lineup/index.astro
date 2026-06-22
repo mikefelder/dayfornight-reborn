@@ -2,12 +2,20 @@
 import Dfn2017Layout from '@layouts/Dfn2017Layout.astro';
 import snapshot from '@data/snapshot-2017.json';
 
-const { lineup } = snapshot;
+const { lineup, artists } = snapshot;
+
+// Build set of slugs that have detail pages
+const artistSlugs = new Set(artists.map((a: any) => a.slug));
+
+function hasDetailPage(href: string): boolean {
+  const parts = href.replace(/^\/|\/$/g, '').split('/');
+  return parts.length >= 3 && artistSlugs.has(parts[parts.length - 1]);
+}
 
 // Split lineup items by section
-const soundItems = lineup.filter((item) => item.section === 'sound');
-const lightItems = lineup.filter((item) => item.section === 'light');
-const talksItems = lineup.filter((item) => item.section === 'talks');
+const soundItems = lineup.filter((item: any) => item.section === 'sound');
+const lightItems = lineup.filter((item: any) => item.section === 'light');
+const talksItems = lineup.filter((item: any) => item.section === 'talks');
 ---
 
 <Dfn2017Layout
@@ -34,7 +42,11 @@ const talksItems = lineup.filter((item) => item.section === 'talks');
         <ul>
           {soundItems.map((item) => (
             <li class="lineup-item" data-url={item.href}>
-              <a href={item.href} class="lineup-single" data-lineup-section="sound">{item.name}</a>
+              {hasDetailPage(item.href) ? (
+                <a href={item.href} class="lineup-single" data-lineup-section="sound">{item.name}</a>
+              ) : (
+                <span class="lineup-single no-detail" data-lineup-section="sound">{item.name}</span>
+              )}
             </li>
           ))}
         </ul>
@@ -59,7 +71,11 @@ const talksItems = lineup.filter((item) => item.section === 'talks');
         <ul>
           {lightItems.map((item) => (
             <li class="lineup-item" data-url={item.href}>
-              <a href={item.href} class="lineup-single" data-lineup-section="light">{item.name}</a>
+              {hasDetailPage(item.href) ? (
+                <a href={item.href} class="lineup-single" data-lineup-section="light">{item.name}</a>
+              ) : (
+                <span class="lineup-single no-detail" data-lineup-section="light">{item.name}</span>
+              )}
             </li>
           ))}
         </ul>
@@ -71,7 +87,11 @@ const talksItems = lineup.filter((item) => item.section === 'talks');
         <ul>
           {talksItems.map((item) => (
             <li class="lineup-item" data-url={item.href}>
-              <a href={item.href} class="lineup-single" data-lineup-section="talks">{item.name}</a>
+              {hasDetailPage(item.href) ? (
+                <a href={item.href} class="lineup-single" data-lineup-section="talks">{item.name}</a>
+              ) : (
+                <span class="lineup-single no-detail" data-lineup-section="talks">{item.name}</span>
+              )}
             </li>
           ))}
         </ul>
@@ -95,8 +115,11 @@ const talksItems = lineup.filter((item) => item.section === 'talks');
       });
 
       // Lineup item click
-      document.querySelectorAll('.lineup-item a').forEach((el) => {
+      document.querySelectorAll('.lineup-item .lineup-single').forEach((el) => {
         el.addEventListener('click', (e) => {
+          if ((el as HTMLElement).classList.contains('no-detail')) {
+            e.preventDefault();
+          }
           const li = (el as HTMLElement).closest('.lineup-item');
           if (!li) return;
           const section = (el as HTMLElement).dataset.lineupSection || '';

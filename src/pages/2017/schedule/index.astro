@@ -2,10 +2,16 @@
 import Dfn2017Layout from '@layouts/Dfn2017Layout.astro';
 import snapshot from '@data/snapshot-2017.json';
 
-const { schedule } = snapshot;
+const { schedule, artists } = snapshot;
 const { days, stages } = schedule;
 const stageNames = ['red', 'green', 'blue', 'yellow'];
 const stageLabels = { red: 'RED STAGE', green: 'GREEN STAGE', blue: 'BLUE STAGE', yellow: 'YELLOW STAGE' };
+
+const artistSlugs = new Set(artists.map((a: any) => a.slug));
+function hasDetailPage(href: string): boolean {
+  const parts = href.replace(/^\/|\/$/g, '').split('/');
+  return parts.length >= 3 && artistSlugs.has(parts[parts.length - 1]);
+}
 ---
 
 <Dfn2017Layout
@@ -58,7 +64,11 @@ const stageLabels = { red: 'RED STAGE', green: 'GREEN STAGE', blue: 'BLUE STAGE'
                 {slot.artists.map((artist, i) => (
                   <Fragment>
                     {i > 0 && <br />}
-                    <a href={artist.href}>{artist.name}</a>
+                    {hasDetailPage(artist.href) ? (
+                      <a href={artist.href}>{artist.name}</a>
+                    ) : (
+                      <span>{artist.name}</span>
+                    )}
                   </Fragment>
                 ))}
                 <span> {slot.time}</span>
