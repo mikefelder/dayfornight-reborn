@@ -6,7 +6,6 @@ import subpages from '@data/snapshot-2016-subpages.json';
 const IMG = '/shared-assets/2016/images';
 const { ticketUrl, nav, social, newsletter } = snapshot;
 const { schedule } = subpages;
-const saturday = schedule.days.find(d => d.slug === 'dec-17');
 ---
 
 <Dfn2016LineupLayout title="Schedule – Day for Night" bodyClass="page-template-default page page-id-675 page-parent no-tick page-schedule">
@@ -59,28 +58,36 @@ const saturday = schedule.days.find(d => d.slug === 'dec-17');
       <ul class="schedule-nav">
         {schedule.days.map((day) => (
           <li class={`schedule-link${day.slug === 'dec-17' ? ' active-schedule-link' : ''}`}>
-            <a href={`/2016/schedule/#${day.slug}`}>{day.label}</a>
+            <a href={`#${day.slug}`} data-day={day.slug}>{day.label}</a>
           </li>
         ))}
       </ul>
 
-      {saturday && (
-        <div class="page-content schedule-content">
-          {saturday.stages.map((stage) => (
-            <div class={`schedule-stage stage-${stage.color}`}>
-              <h3 class="stage-label">{stage.name}</h3>
-              <ul class="schedule-slots">
-                {stage.slots.map((slot) => (
-                  <li class="schedule-slot">
-                    <a href={`/2016/lineup/sound/${slot.slug}/`}>{slot.artist}</a>
-                    <span class="slot-time">{slot.time}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+      {schedule.days.map((day) => (
+        <div
+          id={day.slug}
+          class="page-content schedule-content schedule-day"
+          style={day.slug !== 'dec-17' ? 'display:none;' : ''}
+        >
+          {day.stages.length > 0 ? (
+            day.stages.map((stage) => (
+              <div class={`schedule-stage stage-${stage.color}`}>
+                <h3 class="stage-label">{stage.name}</h3>
+                <ul class="schedule-slots">
+                  {stage.slots.map((slot) => (
+                    <li class="schedule-slot">
+                      <a href={`/2016/lineup/sound/${slot.slug}/`}>{slot.artist}</a>
+                      <span class="slot-time">{slot.time}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))
+          ) : (
+            <p style="color:rgba(255,255,255,0.5);">No schedule data available for this day.</p>
+          )}
         </div>
-      )}
+      ))}
     </div>
 
     <div class="container-footer"></div>
@@ -91,6 +98,37 @@ const saturday = schedule.days.find(d => d.slug === 'dec-17');
     <span>December 17-18, 2016</span>
     <span>Houston, Texas</span>
   </footer>
+
+  <script is:inline>
+    document.addEventListener('astro:page-load', () => {
+      const navLinks = document.querySelectorAll('.schedule-nav a[data-day]');
+      const days = document.querySelectorAll('.schedule-day');
+      const navItems = document.querySelectorAll('.schedule-nav .schedule-link');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const slug = link.getAttribute('data-day');
+
+          days.forEach(d => d.style.display = d.id === slug ? '' : 'none');
+          navItems.forEach(li => {
+            li.classList.toggle('active-schedule-link',
+              li.querySelector('a')?.getAttribute('data-day') === slug);
+          });
+        });
+      });
+
+      // Handle hash on initial load
+      const hash = window.location.hash.replace('#', '');
+      if (hash && document.getElementById(hash)) {
+        days.forEach(d => d.style.display = d.id === hash ? '' : 'none');
+        navItems.forEach(li => {
+          li.classList.toggle('active-schedule-link',
+            li.querySelector('a')?.getAttribute('data-day') === hash);
+        });
+      }
+    });
+  </script>
 </Dfn2016LineupLayout>
 
 <style>
@@ -108,6 +146,12 @@ const saturday = schedule.days.find(d => d.slug === 'dec-17');
     font-size: 0.85em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    cursor: pointer;
+    padding: 0 0 4px;
+    transition: color 0.2s;
+  }
+  .schedule-link a:hover {
+    color: rgba(255,255,255,0.8);
   }
   .active-schedule-link a {
     color: #fff;

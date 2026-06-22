@@ -5,7 +5,34 @@
       {
         "label": "Friday, 12/16",
         "slug": "dec-16",
-        "stages": []
+        "stages": [
+          {
+            "name": "Blue Stage",
+            "color": "blue",
+            "slots": [
+              {
+                "artist": "Kam Franklin",
+                "slug": "kam-franklin",
+                "time": "8:00–8:20"
+              },
+              {
+                "artist": "Light Wheel",
+                "slug": "light-wheel",
+                "time": "8:30–9:00"
+              },
+              {
+                "artist": "DJ Windows 98",
+                "slug": "dj-windows-98",
+                "time": "9:30–10:00"
+              },
+              {
+                "artist": "Björk Digital",
+                "slug": "bjork",
+                "time": "10:30–2:00"
+              }
+            ]
+          }
+        ]
       },
       {
         "label": "Saturday, 12/17",
@@ -190,7 +217,192 @@
       {
         "label": "Sunday, 12/18",
         "slug": "dec-18",
-        "stages": []
+        "stages": [
+          {
+            "name": "Red Stage",
+            "color": "red",
+            "slots": [
+              {
+                "artist": "Nothing",
+                "slug": "nothing",
+                "time": "3:20–4:00"
+              },
+              {
+                "artist": "Uncle Acid & The Deadbeats",
+                "slug": "uncle-acid-the-deadbeats",
+                "time": "4:30–5:10"
+              },
+              {
+                "artist": "Marcel, Rami and Bachar Khalife",
+                "slug": "marcel-khalife",
+                "time": "5:30–6:20"
+              },
+              {
+                "artist": "Kamasi Washington",
+                "slug": "kamasi-washington",
+                "time": "6:40–7:25"
+              },
+              {
+                "artist": "Squarepusher",
+                "slug": "squarepusher",
+                "time": "7:50–8:50"
+              },
+              {
+                "artist": "Little Dragon",
+                "slug": "little-dragon",
+                "time": "9:20–10:20"
+              },
+              {
+                "artist": "Kaskade",
+                "slug": "kaskade",
+                "time": "10:50–11:50"
+              }
+            ]
+          },
+          {
+            "name": "Green Stage",
+            "color": "green",
+            "slots": [
+              {
+                "artist": "Vacation Eyes",
+                "slug": "vacation-eyes",
+                "time": "3:10–3:50"
+              },
+              {
+                "artist": "Ariel Pink",
+                "slug": "ariel-pink",
+                "time": "4:10–4:55"
+              },
+              {
+                "artist": "Lightning Bolt",
+                "slug": "lighting-bolt",
+                "time": "5:10–5:50"
+              },
+              {
+                "artist": "Blonde Redhead",
+                "slug": "blonde-redhead",
+                "time": "6:10–6:50"
+              },
+              {
+                "artist": "RZA feat. Stone Mecca",
+                "slug": "rza",
+                "time": "7:10–7:50"
+              },
+              {
+                "artist": "Unknown Mortal Orchestra",
+                "slug": "unknown-mortal-orchestra",
+                "time": "8:20–9:10"
+              },
+              {
+                "artist": "Butthole Surfers",
+                "slug": "butthole-surfers",
+                "time": "9:40–10:40"
+              },
+              {
+                "artist": "Travis Scott",
+                "slug": "travis-scott",
+                "time": "11:00–12:00"
+              }
+            ]
+          },
+          {
+            "name": "Blue Stage",
+            "color": "blue",
+            "slots": [
+              {
+                "artist": "Mary Lattimore & Jeff Zeigler",
+                "slug": "m-lattimore-j-ziegler",
+                "time": "3:00–3:40"
+              },
+              {
+                "artist": "S U R V I V E",
+                "slug": "s-u-r-v-i-v-e",
+                "time": "4:00–4:40"
+              },
+              {
+                "artist": "Matmos",
+                "slug": "matmos",
+                "time": "5:00–5:40"
+              },
+              {
+                "artist": "Mykki Blanco",
+                "slug": "mykki-blanco",
+                "time": "6:00–6:45"
+              },
+              {
+                "artist": "Liars",
+                "slug": "liars",
+                "time": "7:10–8:00"
+              },
+              {
+                "artist": "SOPHIE",
+                "slug": "sophie",
+                "time": "8:30–9:20"
+              },
+              {
+                "artist": "Arca",
+                "slug": "arca",
+                "time": "9:50–11:05"
+              },
+              {
+                "artist": "Björk Digital",
+                "slug": "bjork",
+                "time": "11:30–2:00"
+              }
+            ]
+          },
+          {
+            "name": "Yellow Stage",
+            "color": "yellow",
+            "slots": [
+              {
+                "artist": "Kult Dizney",
+                "slug": "kult-dizney",
+                "time": "3:00–3:30"
+              },
+              {
+                "artist": "DAED",
+                "slug": "daed",
+                "time": "3:50–4:20"
+              },
+              {
+                "artist": "Jock Club",
+                "slug": "jock-club",
+                "time": "4:40–5:20"
+              },
+              {
+                "artist": "Anklepants",
+                "slug": "anklepants",
+                "time": "5:50–6:30"
+              },
+              {
+                "artist": "Maramuresh",
+                "slug": "maramuresh",
+                "time": "6:50–7:30"
+              },
+              {
+                "artist": "Night Drive",
+                "slug": "night-drive",
+                "time": "7:50–8:30"
+              },
+              {
+                "artist": "Futurelix",
+                "slug": "futurelix",
+                "time": "8:50–9:30"
+              },
+              {
+                "artist": "Jerk",
+                "slug": "jerk",
+                "time": "9:50–10:30"
+              },
+              {
+                "artist": "Wild Moccassins",
+                "slug": "wild-moccassins",
+                "time": "11:00–11:50"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
