@@ -3,7 +3,7 @@ import Dfn2016LineupLayout from '@layouts/Dfn2016LineupLayout.astro';
 import snapshot from '@data/snapshot-2016-lineup.json';
 
 const IMG = '/shared-assets/2016/images';
-const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, sound, light, footer, dateData } = snapshot;
+const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, sound, light, footer } = snapshot;
 ---
 
 <Dfn2016LineupLayout>
@@ -143,85 +143,4 @@ const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, soun
     </div>
   </div>
 
-  <script define:vars={{ dateData }}>
-    // Time-of-day gradient system — reimplemented from project.js
-    const sunlight = '#f7931e';
-    const twilight = '#00ffff';
-
-    function doDateDisplay() {
-      const today = new Date();
-      const dd = String(today.getDate()).padStart(2, '0');
-      const mm = String(today.getMonth() + 1).padStart(2, '0');
-      const yyyy = String(today.getFullYear());
-
-      // Find matching date entry (or use Dec 17 as fallback for demo)
-      let currDay = dateData.find(d => d[0] === mm && d[1] === dd && d[2] === yyyy);
-      if (!currDay) {
-        // Use Dec 17 data as fallback so the gradient always shows
-        currDay = dateData.find(d => d[0] === '12' && d[1] === '17') || dateData[dateData.length - 1];
-      }
-
-      const sunrise = currDay[3].split(':');
-      const sunset = currDay[4].split(':');
-      const date1 = new Date(+currDay[2], +currDay[0] - 1, +currDay[1], +sunrise[0], +sunrise[1]);
-      const date2 = new Date(+currDay[2], +currDay[0] - 1, +currDay[1], +sunset[0], +sunset[1]);
-      const rightNow = new Date();
-      // Override rightNow to use same date as the lookup for out-of-range years
-      const simNow = new Date(+currDay[2], +currDay[0] - 1, +currDay[1], rightNow.getHours(), rightNow.getMinutes(), rightNow.getSeconds());
-
-      const dayLength = date2 - date1;
-      const nightLength = 86400000 - dayLength;
-
-      let displayMode = '';
-      let percComplete = 0;
-
-      if (date1 > simNow) {
-        percComplete = ((nightLength - (date1 - simNow)) / nightLength).toFixed(4);
-        displayMode = percComplete >= 0.5 ? 'night2' : 'night1';
-      } else if (date1 < simNow && date2 > simNow) {
-        percComplete = ((simNow - date1) / dayLength).toFixed(4);
-        displayMode = percComplete >= 0.5 ? 'day2' : 'day1';
-      } else {
-        percComplete = ((simNow - date2) / nightLength).toFixed(4);
-        displayMode = percComplete >= 0.5 ? 'night2' : 'night1';
-      }
-
-      // Apply body mode class
-      document.body.classList.remove('mode-night1', 'mode-day1', 'mode-night2', 'mode-day2');
-      document.body.classList.add('mode-' + displayMode);
-
-      // Dynamic gradient on desktop
-      updateSky(displayMode, percComplete);
-    }
-
-    function updateSky(mode, perc) {
-      if (perc < 1) perc = (perc * 100).toFixed(4);
-
-      let skyUp = '';
-      if ((mode === 'night1' || mode === 'night2') && perc >= 50 && perc < 95) {
-        skyUp = 'black ' + perc + '%, ' + twilight + ' 100%';
-      } else if ((mode === 'night1' || mode === 'night2') && perc < 50) {
-        skyUp = twilight + ' 0%, black ' + perc + '%';
-      } else if ((mode === 'night1' || mode === 'night2') && perc >= 95) {
-        skyUp = sunlight + ' 0%, black ' + Math.abs(5 - (100 - perc)) + '%, black ' + perc + '%, ' + twilight + ' 100%';
-      } else if ((mode === 'day1' || mode === 'day2') && perc >= 50 && perc < 95) {
-        skyUp = 'black ' + perc + '%, ' + sunlight + ' 100%';
-      } else if ((mode === 'day1' || mode === 'day2') && perc < 50) {
-        skyUp = sunlight + ' 0%, black ' + perc + '%';
-      } else if ((mode === 'day1' || mode === 'day2') && perc >= 95) {
-        skyUp = twilight + ' 0%, black ' + Math.abs(5 - (100 - perc)) + '%, black ' + perc + '%, ' + sunlight + ' 100%';
-      }
-
-      if (window.innerWidth > 670) {
-        const gradEl = document.querySelector('.gradientBG');
-        if (gradEl && skyUp) {
-          gradEl.style.backgroundImage = 'linear-gradient(to right, ' + skyUp + ')';
-        }
-      }
-    }
-
-    // Run immediately and re-check every 10 seconds
-    doDateDisplay();
-    setInterval(doDateDisplay, 10000);
-  </script>
 </Dfn2016LineupLayout>

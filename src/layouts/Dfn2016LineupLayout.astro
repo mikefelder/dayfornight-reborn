@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import snapshot from '@data/snapshot-2016-lineup.json';
 
 interface Props {
   title?: string;
@@ -7,6 +8,7 @@ interface Props {
 }
 
 const { title = 'Day for Night', bodyClass = 'home page page-id-5 page-template-default page-homepage' } = Astro.props;
+const { dateData } = snapshot;
 ---
 
 <BaseLayout title={title} bodyClass={bodyClass}>
@@ -39,5 +41,88 @@ const { title = 'Day for Night', bodyClass = 'home page page-id-5 page-template-
         document.body.classList.add('modal-on');
       }
     });
+  </script>
+
+  <script is:inline define:vars={{ dateData }}>
+    // Time-of-day gradient system — reimplemented from project.js
+    // Runs on all 2016 pages via layout. Uses Houston sunrise/sunset data
+    // to shift body mode class (mode-day1/day2/night1/night2) which controls
+    // gradient color, text accent color, and image overlay tints via CSS.
+    (function() {
+      if (window.__dfnGradientActive) return;
+      window.__dfnGradientActive = true;
+
+      var sunlight = '#f7931e';
+      var twilight = '#00ffff';
+
+      function doDateDisplay() {
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = String(today.getFullYear());
+
+        var currDay = dateData.find(function(d) { return d[0] === mm && d[1] === dd && d[2] === yyyy; });
+        if (!currDay) {
+          currDay = dateData.find(function(d) { return d[0] === '12' && d[1] === '17'; }) || dateData[dateData.length - 1];
+        }
+
+        var sunrise = currDay[3].split(':');
+        var sunset = currDay[4].split(':');
+        var date1 = new Date(+currDay[2], +currDay[0] - 1, +currDay[1], +sunrise[0], +sunrise[1]);
+        var date2 = new Date(+currDay[2], +currDay[0] - 1, +currDay[1], +sunset[0], +sunset[1]);
+        var rightNow = new Date();
+        var simNow = new Date(+currDay[2], +currDay[0] - 1, +currDay[1], rightNow.getHours(), rightNow.getMinutes(), rightNow.getSeconds());
+
+        var dayLength = date2 - date1;
+        var nightLength = 86400000 - dayLength;
+
+        var displayMode = '';
+        var percComplete = 0;
+
+        if (date1 > simNow) {
+          percComplete = ((nightLength - (date1 - simNow)) / nightLength).toFixed(4);
+          displayMode = percComplete >= 0.5 ? 'night2' : 'night1';
+        } else if (date1 < simNow && date2 > simNow) {
+          percComplete = ((simNow - date1) / dayLength).toFixed(4);
+          displayMode = percComplete >= 0.5 ? 'day2' : 'day1';
+        } else {
+          percComplete = ((simNow - date2) / nightLength).toFixed(4);
+          displayMode = percComplete >= 0.5 ? 'night2' : 'night1';
+        }
+
+        document.body.classList.remove('mode-night1', 'mode-day1', 'mode-night2', 'mode-day2');
+        document.body.classList.add('mode-' + displayMode);
+        updateSky(displayMode, percComplete);
+      }
+
+      function updateSky(mode, perc) {
+        if (perc < 1) perc = (perc * 100).toFixed(4);
+
+        var skyUp = '';
+        if ((mode === 'night1' || mode === 'night2') && perc >= 50 && perc < 95) {
+          skyUp = 'black ' + perc + '%, ' + twilight + ' 100%';
+        } else if ((mode === 'night1' || mode === 'night2') && perc < 50) {
+          skyUp = twilight + ' 0%, black ' + perc + '%';
+        } else if ((mode === 'night1' || mode === 'night2') && perc >= 95) {
+          skyUp = sunlight + ' 0%, black ' + Math.abs(5 - (100 - perc)) + '%, black ' + perc + '%, ' + twilight + ' 100%';
+        } else if ((mode === 'day1' || mode === 'day2') && perc >= 50 && perc < 95) {
+          skyUp = 'black ' + perc + '%, ' + sunlight + ' 100%';
+        } else if ((mode === 'day1' || mode === 'day2') && perc < 50) {
+          skyUp = sunlight + ' 0%, black ' + perc + '%';
+        } else if ((mode === 'day1' || mode === 'day2') && perc >= 95) {
+          skyUp = twilight + ' 0%, black ' + Math.abs(5 - (100 - perc)) + '%, black ' + perc + '%, ' + sunlight + ' 100%';
+        }
+
+        if (window.innerWidth > 670) {
+          var gradEl = document.querySelector('.gradientBG');
+          if (gradEl && skyUp) {
+            gradEl.style.backgroundImage = 'linear-gradient(to right, ' + skyUp + ')';
+          }
+        }
+      }
+
+      doDateDisplay();
+      setInterval(doDateDisplay, 10000);
+    })();
   </script>
 </BaseLayout>
