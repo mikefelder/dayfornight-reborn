@@ -15,4 +15,29 @@ const { title = 'Day for Night', bodyClass = 'home page page-id-5 page-template-
   </Fragment>
 
   <slot />
+
+  <script>
+    // Enable text-stroke effect (originally set by Modernizr)
+    document.documentElement.classList.add('textstroke');
+
+    // Re-apply after View Transition swap
+    document.addEventListener('astro:after-swap', () => {
+      document.documentElement.classList.add('textstroke');
+    });
+
+    // Mobile menu toggle + modal close (event delegation survives View Transitions)
+    document.addEventListener('click', (e) => {
+      const target = e.target as Element;
+      if (target.closest('.menu-toggle')) {
+        document.body.classList.toggle('menu-on');
+      }
+      if (target.closest('.modal-bg') || target.closest('.modal .close')) {
+        document.body.classList.remove('modal-on', 'gallery-on');
+      }
+      if (target.closest('.mailing-list-toggle')) {
+        e.preventDefault();
+        document.body.classList.add('modal-on');
+      }
+    });
+  </script>
 </BaseLayout>

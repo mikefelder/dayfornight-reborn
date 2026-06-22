@@ -3,10 +3,53 @@ import Dfn2016LineupLayout from '@layouts/Dfn2016LineupLayout.astro';
 import snapshot from '@data/snapshot-2016-recap.json';
 
 const IMG = '/shared-assets/2016/images';
-const { tagline, quote, video, nav, social, newsletter, installationImages, sponsors, footer, dateData } = snapshot;
+const { tagline, quote, video, nav, social, newsletter, sponsors, footer, dateData } = snapshot;
 ---
 
 <Dfn2016LineupLayout bodyClass="home page-template-default page page-id-5 no-tick page-homepage">
+  <style>
+    .home-quote-wrap {
+      margin-bottom: 30px;
+      padding-right: 18px;
+      max-width: 1360px;
+    }
+    @media (min-width: 670px) {
+      .home-quote-wrap {
+        margin-bottom: 0;
+        min-height: 280px;
+        padding: 40px 0 0;
+      }
+    }
+    .home-quote {
+      margin: 0;
+      text-transform: uppercase;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+    .home-quote small {
+      font-size: 14px;
+      letter-spacing: 0.06em;
+      display: block;
+      margin-top: 12px;
+    }
+    .home-quote small::before {
+      content: "\a0\2014\a0";
+    }
+    @media (min-width: 670px) {
+      .home-quote small {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 0;
+      }
+    }
+    @media (min-width: 1400px) {
+      .home-quote {
+        font-size: 76px;
+        line-height: 84px;
+        letter-spacing: 0.1em;
+      }
+    }
+  </style>
   <span class="gradientBG"></span>
   <div id="container">
     <header id="header">
@@ -53,12 +96,7 @@ const { tagline, quote, video, nav, social, newsletter, installationImages, spon
     <div id="main" role="main">
       <div class="home-quote-wrap bbox">
         <h1 class="home-quote o1 display3">
-          <span class="span-1" dub="&ldquo;">&ldquo;</span>
-          {quote.text.split(' ').map((word, i) => (
-            <span class={`span-${i + 2}`} dub={word}>{word}</span>
-          ))}
-          {' '}
-          <span class={`span-${quote.text.split(' ').length + 2}`} dub="&rdquo;">&rdquo;</span>
+          &ldquo;{quote.text}&rdquo;
           <small>{quote.source}</small>
         </h1>
       </div>
@@ -78,17 +116,6 @@ const { tagline, quote, video, nav, social, newsletter, installationImages, spon
         <div class="section-text">
           <h2>{tagline}</h2>
         </div>
-      </div>
-
-      <div class="light-media o1">
-        {installationImages.map((img) => (
-          <img
-            src={`${IMG}/${img.large}`}
-            alt=""
-            loading="lazy"
-            style="display:block; max-width:100%; height:auto; margin-bottom:20px;"
-          />
-        ))}
       </div>
 
       <div id="sponsors" class="sponsor-section homepage-sponsor-section">
@@ -215,57 +242,5 @@ const { tagline, quote, video, nav, social, newsletter, installationImages, spon
 
     doDateDisplay();
     setInterval(doDateDisplay, 10000);
-
-    // Mobile menu toggle
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggle = document.querySelector('.menu-toggle');
-      if (toggle) {
-        toggle.addEventListener('click', () => {
-          document.body.classList.toggle('menu-on');
-        });
-      }
-
-      // Newsletter modal
-      const mlToggle = document.querySelector('.mailing-list-toggle');
-      const modalBg = document.querySelector('.modal-bg');
-      const modalClose = document.querySelector('.modal-mailinglist .close');
-      if (mlToggle) {
-        mlToggle.addEventListener('click', (e) => {
-          e.preventDefault();
-          document.body.classList.add('modal-on');
-        });
-      }
-      if (modalBg) {
-        modalBg.addEventListener('click', () => {
-          document.body.classList.remove('modal-on', 'gallery-on');
-        });
-      }
-      if (modalClose) {
-        modalClose.addEventListener('click', () => {
-          document.body.classList.remove('modal-on');
-        });
-      }
-
-      // Video cover click -> embed player
-      const vidCover = document.querySelector('.vid-cover');
-      if (vidCover) {
-        vidCover.addEventListener('click', () => {
-          const id = vidCover.getAttribute('data-id');
-          const iframe = document.createElement('iframe');
-          iframe.src = `https://player.vimeo.com/video/${id}?color=f7931e&title=0&byline=0&portrait=0&autoplay=1`;
-          iframe.setAttribute('frameborder', '0');
-          iframe.setAttribute('allowfullscreen', '');
-          iframe.style.width = '100%';
-          iframe.style.height = '100%';
-          iframe.style.position = 'absolute';
-          iframe.style.top = '0';
-          iframe.style.left = '0';
-          vidCover.innerHTML = '';
-          vidCover.style.paddingBottom = '56.25%';
-          vidCover.style.position = 'relative';
-          vidCover.appendChild(iframe);
-        });
-      }
-    });
   </script>
 </Dfn2016LineupLayout>

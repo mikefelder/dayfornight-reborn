@@ -3,7 +3,7 @@ import Dfn2016LineupLayout from '@layouts/Dfn2016LineupLayout.astro';
 import snapshot from '@data/snapshot-2016-lineup.json';
 
 const IMG = '/shared-assets/2016/images';
-const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, sound, light, installationImages, footer, dateData } = snapshot;
+const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, sound, light, footer, dateData } = snapshot;
 ---
 
 <Dfn2016LineupLayout>
@@ -99,17 +99,6 @@ const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, soun
             <a href={light.moreHref} dub="and more →">and more&nbsp;→</a>
           </li>
         </ul>
-      </div>
-
-      <div class="light-media o1">
-        {installationImages.map((img) => (
-          <img
-            src={`${IMG}/${img.large}`}
-            alt=""
-            loading="lazy"
-            style="display:block; max-width:100%; height:auto; margin-bottom:20px;"
-          />
-        ))}
       </div>
     </div>
 
@@ -234,36 +223,5 @@ const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, soun
     // Run immediately and re-check every 10 seconds
     doDateDisplay();
     setInterval(doDateDisplay, 10000);
-
-    // Mobile menu toggle
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggle = document.querySelector('.menu-toggle');
-      if (toggle) {
-        toggle.addEventListener('click', () => {
-          document.body.classList.toggle('menu-on');
-        });
-      }
-
-      // Newsletter modal
-      const mlToggle = document.querySelector('.mailing-list-toggle');
-      const modalBg = document.querySelector('.modal-bg');
-      const modalClose = document.querySelector('.modal-mailinglist .close');
-      if (mlToggle) {
-        mlToggle.addEventListener('click', (e) => {
-          e.preventDefault();
-          document.body.classList.add('modal-on');
-        });
-      }
-      if (modalBg) {
-        modalBg.addEventListener('click', () => {
-          document.body.classList.remove('modal-on', 'gallery-on');
-        });
-      }
-      if (modalClose) {
-        modalClose.addEventListener('click', () => {
-          document.body.classList.remove('modal-on');
-        });
-      }
-    });
   </script>
 </Dfn2016LineupLayout>
