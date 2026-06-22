@@ -1,0 +1,126 @@
+---
+import Dfn2017Layout from '@layouts/Dfn2017Layout.astro';
+import snapshot from '@data/snapshot-2017.json';
+
+const { media } = snapshot;
+const { videos, gallery } = media;
+const mainVideo = videos[0];
+---
+
+<Dfn2017Layout
+  title="Media"
+  titleSpan="Media"
+  bodyClass="page-template-default page page-id-21 no-tick mode-day radio-on page-media"
+  dataSection="media"
+  dataNav="media"
+>
+  <div class="media-playlist">
+    <div class="mainVid">
+      <div class="vid-cover" data-id={mainVideo.id} data-vid-title={mainVideo.title}>
+        <span class="img-wrap" style={`background-image:url(/shared-assets/2017/images/${mainVideo.thumb});`}></span>
+      </div>
+      <p class="video-title">{mainVideo.title}</p>
+    </div>
+    <ul class="media-list">
+      {videos.map((video, i) => (
+        <li class={`list-item${i === 0 ? ' active' : ''}`} data-id={video.id}>
+          <div class="item-inner" data-id={video.id} data-vid-title={video.title}>
+            <div class="item-wrap">
+              <span class="img-wrap" style={`background-image:url(/shared-assets/2017/images/${video.thumb});`}></span>
+            </div>
+            <div class="iframe-wrap mobile-only">
+              <iframe src={`https://player.vimeo.com/video/${video.id}?color=f7931e&title=0&byline=0&portrait=0`} frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="video-title">{video.title}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <div class="gallery-wrap">
+    <ul class="gallery-thumbs">
+      {gallery.map((thumb) => (
+        <li class="gallery-thumb" data-thumb-target={thumb.target}>
+          <img src={`/shared-assets/2017/images/${thumb.src}`} alt="" loading="lazy" />
+        </li>
+      ))}
+    </ul>
+    <div class="modal modal-gallery">
+      <span class="close">Close</span>
+      <span class="nav prev"></span>
+      <span class="nav next"></span>
+      <div class="gallery-full">
+        {gallery.map((thumb, i) => (
+          <div class={`gallery-img lazyload img-${i + 1}`} data-index={i + 1}></div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('astro:page-load', () => {
+      const mainVid = document.querySelector('.mainVid');
+      if (!mainVid) return;
+
+      function setVideo(vID: string, title: string) {
+        const vidPad = document.createElement('div');
+        vidPad.className = 'vid-pad';
+        vidPad.innerHTML = `<iframe src="https://player.vimeo.com/video/${vID}?autoplay=1&color=f7931e&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allowfullscreen></iframe>`;
+        mainVid.innerHTML = '';
+        mainVid.appendChild(vidPad);
+        const titleEl = document.createElement('p');
+        titleEl.className = 'video-title';
+        titleEl.textContent = title;
+        mainVid.appendChild(titleEl);
+      }
+
+      // Click on video cover
+      const vidCover = mainVid.querySelector('.vid-cover');
+      if (vidCover) {
+        vidCover.addEventListener('click', () => {
+          setVideo(vidCover.getAttribute('data-id') || '', vidCover.getAttribute('data-vid-title') || '');
+        });
+      }
+
+      // Click on playlist items
+      document.querySelectorAll('.media-list .item-inner').forEach((el) => {
+        el.addEventListener('click', () => {
+          document.querySelectorAll('.media-list li.active').forEach((li) => li.classList.remove('active'));
+          (el as HTMLElement).closest('li')?.classList.add('active');
+          const id = (el as HTMLElement).getAttribute('data-id') || '';
+          const title = (el as HTMLElement).getAttribute('data-vid-title') || '';
+          setVideo(id, title);
+        });
+      });
+
+      // Gallery
+      let currentGalleryIndex = 1;
+      const galleryModal = document.querySelector('.modal-gallery');
+
+      document.querySelectorAll('.gallery-thumb').forEach((el) => {
+        el.addEventListener('click', () => {
+          const target = parseInt((el as HTMLElement).getAttribute('data-thumb-target') || '1');
+          currentGalleryIndex = target;
+          document.body.classList.add('gallery-on');
+          galleryModal?.classList.add('active');
+        });
+      });
+
+      galleryModal?.querySelector('.close')?.addEventListener('click', () => {
+        document.body.classList.remove('gallery-on');
+        galleryModal?.classList.remove('active');
+      });
+
+      galleryModal?.querySelector('.nav.prev')?.addEventListener('click', () => {
+        const total = document.querySelectorAll('.gallery-img').length;
+        currentGalleryIndex = currentGalleryIndex > 1 ? currentGalleryIndex - 1 : total;
+      });
+
+      galleryModal?.querySelector('.nav.next')?.addEventListener('click', () => {
+        const total = document.querySelectorAll('.gallery-img').length;
+        currentGalleryIndex = currentGalleryIndex < total ? currentGalleryIndex + 1 : 1;
+      });
+    });
+  </script>
+</Dfn2017Layout>

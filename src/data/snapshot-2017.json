@@ -1,0 +1,3115 @@
+{
+  "dateAnnouncement": "DECEMBER 15-17 2017HOUSTON, TEXAS",
+  "ticketUrl": "https://dayfornight2017.eventbrite.com/",
+  "nav": [
+    {
+      "label": "About",
+      "href": "/2017/about/",
+      "class": "nav-about menu-item menu-item-type-post_type menu-item-object-page menu-item-32"
+    },
+    {
+      "label": "Lineup",
+      "href": "/2017/lineup/",
+      "class": "lineup-link nav-lineup menu-item menu-item-type-post_type menu-item-object-page menu-item-31"
+    },
+    {
+      "label": "Schedule",
+      "href": "/2017/schedule/",
+      "class": "nav-schedule menu-item menu-item-type-post_type menu-item-object-page menu-item-1731"
+    },
+    {
+      "label": "Media",
+      "href": "/2017/media/",
+      "class": "nav-media menu-item menu-item-type-post_type menu-item-object-page menu-item-30"
+    },
+    {
+      "label": "FAQ",
+      "href": "/2017/faq/",
+      "class": "nav-faq menu-item menu-item-type-post_type menu-item-object-page menu-item-29"
+    },
+    {
+      "label": "Sponsors",
+      "href": "/2017/sponsors/",
+      "class": "nav-sponsors menu-item menu-item-type-post_type menu-item-object-page menu-item-1663"
+    },
+    {
+      "label": "Shop",
+      "href": "https://shop.dayfornight.io/",
+      "class": "menu-item menu-item-type-custom menu-item-object-custom menu-item-1627"
+    }
+  ],
+  "social": [
+    {
+      "id": "spotify",
+      "href": "https://play.spotify.com/user/dayfornightfest?play=true&utm_source=open.spotify.com&utm_medium=open"
+    },
+    {
+      "id": "facebook",
+      "href": "https://www.facebook.com/dayfornightfest"
+    },
+    {
+      "id": "soundcloud",
+      "href": "https://soundcloud.com/user-431330920"
+    },
+    {
+      "id": "instagram",
+      "href": "https://www.instagram.com/dayfornightfest/"
+    }
+  ],
+  "newsletter": {
+    "action": "https://dayfornight.us13.list-manage.com/subscribe/post?u=2f0646d01369ed754c53fb8a3&id=a04eff96cd",
+    "label": "Get our newsletter"
+  },
+  "soundFeatures": {
+    "heading": "Performances by",
+    "artists": [
+      {
+        "name": "Nine Inch Nails",
+        "href": "/2017/sound/nine-inch-nails/",
+        "more": false
+      },
+      {
+        "name": "Thom Yorke",
+        "href": "/2017/sound/thom-yorke/",
+        "more": false
+      },
+      {
+        "name": "Solange",
+        "href": "/2017/sound/solange/",
+        "more": false
+      },
+      {
+        "name": "Justice",
+        "href": "/2017/sound/justice/",
+        "more": false
+      },
+      {
+        "name": "St. Vincent",
+        "href": "/2017/sound/st-vincent/",
+        "more": false
+      },
+      {
+        "name": "Tyler, The Creator",
+        "href": "/2017/sound/tyler-the-creator/",
+        "more": false
+      },
+      {
+        "name": "James Blake",
+        "href": "/2017/sound/james-blake/",
+        "more": false
+      },
+      {
+        "name": "and more",
+        "href": "/2017/lineup/",
+        "more": true
+      }
+    ]
+  },
+  "lightFeatures": {
+    "heading": "Installations & Performances by",
+    "artists": [
+      {
+        "name": "Ryoji Ikeda",
+        "href": "/2017/light/ryoji-ikeda/",
+        "more": false
+      },
+      {
+        "name": "Matthew Schreiber",
+        "href": "/2017/light/matthew-schreiber/",
+        "more": false
+      },
+      {
+        "name": "Conditional Studio + Processing Foundation",
+        "href": "/2017/light/processing-foundation/",
+        "more": false
+      },
+      {
+        "name": "James Clar",
+        "href": "/2017/light/james-clar/",
+        "more": false
+      },
+      {
+        "name": "Felicie D’Estienne d’Orves",
+        "href": "/2017/light/felicie-destienne/",
+        "more": false
+      },
+      {
+        "name": "and more",
+        "href": "/2017/lineup/",
+        "more": true
+      }
+    ]
+  },
+  "talksFeatures": {
+    "heading": "Talks by",
+    "artists": [
+      {
+        "name": "Chelsea Manning",
+        "href": "/2017/talks/chelsea-manning/",
+        "more": false
+      },
+      {
+        "name": "Nadya from Pussy Riot",
+        "href": "/2017/talks/nadya-from-pussy-riot/",
+        "more": false
+      },
+      {
+        "name": "Laurie Anderson",
+        "href": "/2017/talks/laurie-anderson/",
+        "more": false
+      },
+      {
+        "name": "Lauren McCarthy",
+        "href": "/2017/talks/lauren-mccarthy/",
+        "more": false
+      },
+      {
+        "name": "and more",
+        "href": "/2017/lineup/",
+        "more": true
+      }
+    ]
+  },
+  "schedule": {
+    "days": [
+      {
+        "label": "Friday",
+        "slug": "dec-15",
+        "day_id": "679",
+        "date": "12/15"
+      },
+      {
+        "label": "SATURDAY",
+        "slug": "dec-16",
+        "day_id": "677",
+        "date": "12/16"
+      },
+      {
+        "label": "Sunday",
+        "slug": "dec-17",
+        "day_id": "681",
+        "date": "12/17"
+      }
+    ],
+    "stages": {
+      "red": [
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "True American",
+              "href": "/2017/sound/true-american/"
+            }
+          ],
+          "time": "1:00﻿–﻿1:30",
+          "style": "top:100%;height:100%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "of Montreal",
+              "href": "/2017/sound/of-montreal/"
+            }
+          ],
+          "time": "1:50﻿–﻿2:50",
+          "style": "top:266.66666666667%;height:200%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Perfume Genius",
+              "href": "/2017/sound/perfume-genius/"
+            }
+          ],
+          "time": "3:20﻿–﻿4:00",
+          "style": "top:566.66666666667%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Pussy Riot",
+              "href": "/2017/sound/pussy-riot/"
+            }
+          ],
+          "time": "4:20﻿–﻿5:10",
+          "style": "top:766.66666666667%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Pretty Lights",
+              "href": "/2017/sound/pretty-lights/"
+            }
+          ],
+          "time": "5:30﻿–﻿6:20",
+          "style": "top:1000%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "James Blake",
+              "href": "/2017/sound/james-blake/"
+            }
+          ],
+          "time": "6:50﻿–﻿7:40",
+          "style": "top:1266.6666666667%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Nine Inch Nails",
+              "href": "/2017/sound/nine-inch-nails/"
+            }
+          ],
+          "time": "8:30﻿–﻿10:00",
+          "style": "top:1600%;height:300%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Saro",
+              "href": "/2017/sound/saro/"
+            }
+          ],
+          "time": "1:00﻿–﻿1:40",
+          "style": "top:100%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Kimbra",
+              "href": "/2017/sound/kimbra/"
+            }
+          ],
+          "time": "2:10﻿–﻿3:00",
+          "style": "top:333.33333333333%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "REZZ",
+              "href": "/2017/sound/rezz/"
+            }
+          ],
+          "time": "3:30﻿–﻿4:30",
+          "style": "top:600%;height:200%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Phantogram",
+              "href": "/2017/sound/phantogram/"
+            }
+          ],
+          "time": "5:00﻿–﻿6:00",
+          "style": "top:900%;height:200%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Solange",
+              "href": "/2017/sound/solange/"
+            }
+          ],
+          "time": "6:40﻿–﻿7:40",
+          "style": "top:1233.3333333333%;height:200%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Justice",
+              "href": "/2017/sound/justice/"
+            }
+          ],
+          "time": "8:30﻿–﻿10:00",
+          "style": "top:1600%;height:300%;"
+        }
+      ],
+      "green": [
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Deep Cuts",
+              "href": "/2017/sound/deep-cuts/"
+            }
+          ],
+          "time": "1:10﻿–﻿1:50",
+          "style": "top:133.33333333333%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Hescher",
+              "href": "/2017/sound/hescher/"
+            }
+          ],
+          "time": "2:10﻿–﻿2:40",
+          "style": "top:333.33333333333%;height:100%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Princess Nokia",
+              "href": "/2017/sound/princess-nokia/"
+            }
+          ],
+          "time": "3:00﻿–﻿3:40",
+          "style": "top:500%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Lil B",
+              "href": "/2017/sound/lil-b/"
+            }
+          ],
+          "time": "4:10﻿–﻿5:00",
+          "style": "top:733.33333333333%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Cardi B",
+              "href": "/2017/sound/cardi-b/"
+            },
+            {
+              "name": "HoodCelebrityy",
+              "href": "/2017/sound/hoodcelebrityy/"
+            }
+          ],
+          "time": "6:00﻿–﻿7:00",
+          "style": "top:1100%;height:200%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Cashmere Cat",
+              "href": "/2017/sound/cashmere-cat/"
+            }
+          ],
+          "time": "7:30﻿–﻿8:30",
+          "style": "top:1400%;height:200%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Tyler, The Creator",
+              "href": "/2017/sound/tyler-the-creator/"
+            }
+          ],
+          "time": "9:00﻿–﻿10:00",
+          "style": "top:1700%;height:200%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Narcons",
+              "href": "/2017/sound/narcons/"
+            }
+          ],
+          "time": "1:10﻿–﻿1:50",
+          "style": "top:133.33333333333%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Priests",
+              "href": "/2017/sound/priests/"
+            }
+          ],
+          "time": "2:10﻿–﻿2:50",
+          "style": "top:333.33333333333%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "The Album Leaf",
+              "href": "/2017/sound/the-album-leaf/"
+            }
+          ],
+          "time": "3:10﻿–﻿4:00",
+          "style": "top:533.33333333333%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "En Vogue",
+              "href": "/2017/sound/en-vogue/"
+            }
+          ],
+          "time": "4:30﻿–﻿5:10",
+          "style": "top:800%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Godspeed You! Black Emperor",
+              "href": "/2017/sound/godspeed-you-black-emperor/"
+            }
+          ],
+          "time": "5:40﻿–﻿6:40",
+          "style": "top:1033.3333333333%;height:200%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "The Jesus Lizard",
+              "href": "/2017/sound/the-jesus-lizard/"
+            }
+          ],
+          "time": "7:10﻿–﻿8:10",
+          "style": "top:1333.3333333333%;height:200%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "St. Vincent",
+              "href": "/2017/sound/st-vincent/"
+            }
+          ],
+          "time": "8:40﻿–﻿10:00",
+          "style": "top:1633.3333333333%;height:266.66666666667%;"
+        }
+      ],
+      "blue": [
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Faten Kanaan",
+              "href": "/2017/sound/faten-kanaan/"
+            }
+          ],
+          "time": "3:35﻿–﻿4:20",
+          "style": "top:616.66666666667%;height:150%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Demdike Stare",
+              "href": "/2017/sound/demdike-stare/"
+            }
+          ],
+          "time": "5:00﻿–﻿5:50",
+          "style": "top:900%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Jlin",
+              "href": "/2017/sound/jlin/"
+            }
+          ],
+          "time": "10:40﻿–﻿11:40",
+          "style": "top:2033.3333333333%;height:200%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Forest Swords",
+              "href": "/2017/sound/forest-swords/"
+            }
+          ],
+          "time": "6:20﻿–﻿7:10",
+          "style": "top:1166.6666666667%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Laurie Anderson",
+              "href": "/2017/sound/laurie-anderson/"
+            }
+          ],
+          "time": "7:40﻿–﻿8:30",
+          "style": "top:1433.3333333333%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Venetian Snares x Daniel Lanois",
+              "href": "/2017/sound/venetian-snares-x-daniel-lanois/"
+            }
+          ],
+          "time": "9:00﻿–﻿10:00",
+          "style": "top:1700%;height:200%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Jamie XX",
+              "href": "/2017/sound/jamie-xx/"
+            }
+          ],
+          "time": "12:20﻿–﻿1:50",
+          "style": "top:2366.6666666667%;height:300%;"
+        },
+        {
+          "day_id": "679",
+          "artists": [
+            {
+              "name": "Laurie Anderson",
+              "href": "/2017/talks/laurie-anderson/"
+            },
+            {
+              "name": "Lauren McCarthy",
+              "href": "/2017/talks/lauren-mccarthy/"
+            },
+            {
+              "name": "Nadya from Pussy Riot",
+              "href": "/2017/talks/nadya-from-pussy-riot/"
+            },
+            {
+              "name": "Chelsea Manning",
+              "href": "/2017/talks/chelsea-manning/"
+            },
+            {
+              "name": "Saul Williams",
+              "href": "/2017/talks/saul-williams/"
+            }
+          ],
+          "time": "4:00﻿–﻿7:00",
+          "style": "top:200%;height:600%;"
+        },
+        {
+          "day_id": "679",
+          "artists": [
+            {
+              "name": "BOOTS",
+              "href": "/2017/talks/boots/"
+            }
+          ],
+          "time": "8:50﻿–﻿9:40",
+          "style": "top:1166.6666666667%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "679",
+          "artists": [
+            {
+              "name": "Jenny Hval",
+              "href": "/2017/talks/jenny-hval/"
+            }
+          ],
+          "time": "10:00﻿–﻿10:50",
+          "style": "top:1400%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "679",
+          "artists": [
+            {
+              "name": "Earl Sweatshirt",
+              "href": "/2017/talks/earl-sweatshirt/"
+            }
+          ],
+          "time": "11:20﻿–﻿12:10",
+          "style": "top:1666.6666666667%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "679",
+          "artists": [
+            {
+              "name": "Kaytranada",
+              "href": "/2017/talks/kaytranada/"
+            }
+          ],
+          "time": "12:30﻿–﻿2:00",
+          "style": "top:1900%;height:300%;"
+        },
+        {
+          "day_id": "679",
+          "artists": [
+            {
+              "name": "LIMB",
+              "href": "/2017/sound/limb/"
+            }
+          ],
+          "time": "7:00﻿–﻿8:00",
+          "style": "top:800%;height:200%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Shabazz Palaces",
+              "href": "/2017/sound/shabazz-palaces/"
+            }
+          ],
+          "time": "1:20﻿–﻿2:00",
+          "style": "top:166.66666666667%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Jessy Lanza",
+              "href": "/2017/sound/jessy-lanza/"
+            }
+          ],
+          "time": "2:30﻿–﻿3:10",
+          "style": "top:400%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Rabit x House of Kenzo",
+              "href": "/2017/sound/rabit-x-house-of-kenzo/"
+            }
+          ],
+          "time": "3:30﻿–﻿4:10",
+          "style": "top:600%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Ryoji Ikeda",
+              "href": "/2017/light/ryoji-ikeda/"
+            }
+          ],
+          "time": "4:40﻿–﻿5:20",
+          "style": "top:833.33333333333%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Babyfather",
+              "href": "/2017/sound/babyfather/"
+            }
+          ],
+          "time": "5:35﻿–﻿6:35",
+          "style": "top:1016.6666666667%;height:200%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Mount Kimbie",
+              "href": "/2017/sound/mount-kimbie/"
+            }
+          ],
+          "time": "7:10﻿–﻿8:00",
+          "style": "top:1333.3333333333%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Shlohmo",
+              "href": "/2017/sound/shlohmo/"
+            }
+          ],
+          "time": "8:20﻿–﻿9:05",
+          "style": "top:1566.6666666667%;height:150%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Corbin",
+              "href": "/2017/sound/corbin/"
+            }
+          ],
+          "time": "9:20﻿–﻿10:05",
+          "style": "top:1766.6666666667%;height:150%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Tim Hecker",
+              "href": "/2017/sound/tim-hecker/"
+            }
+          ],
+          "time": "10:30﻿–﻿11:30",
+          "style": "top:2000%;height:200%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Thom Yorke",
+              "href": "/2017/sound/thom-yorke/"
+            }
+          ],
+          "time": "12:20﻿–﻿1:50",
+          "style": "top:2366.6666666667%;height:300%;"
+        }
+      ],
+      "yellow": [
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "XLX",
+              "href": "/2017/sound/xlx/"
+            }
+          ],
+          "time": "1:30﻿–﻿2:10",
+          "style": "top:200%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Pearl Crush",
+              "href": "/2017/sound/pearl-crush/"
+            }
+          ],
+          "time": "2:50﻿–﻿3:20",
+          "style": "top:466.66666666667%;height:100%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Tyler Barber",
+              "href": "/2017/sound/tyler-barber/"
+            }
+          ],
+          "time": "3:40﻿–﻿4:40",
+          "style": "top:633.33333333333%;height:200%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "N N O A",
+              "href": "/2017/sound/n-n-o-a/"
+            }
+          ],
+          "time": "5:00﻿–﻿5:50",
+          "style": "top:900%;height:166.66666666667%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "FREEKA TET",
+              "href": "/2017/light/freeka-tet/"
+            }
+          ],
+          "time": "6:20﻿–﻿6:50",
+          "style": "top:1166.6666666667%;height:100%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "B L A C K I E",
+              "href": "/2017/sound/b-l-a-c-k-i-e/"
+            }
+          ],
+          "time": "7:30﻿–﻿8:10",
+          "style": "top:1400%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Roni Size",
+              "href": "/2017/sound/roni-size/"
+            }
+          ],
+          "time": "8:40﻿–﻿9:40",
+          "style": "top:1633.3333333333%;height:200%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "Bjarki",
+              "href": "/2017/sound/bjarki/"
+            }
+          ],
+          "time": "10:10﻿–﻿11:40",
+          "style": "top:1933.3333333333%;height:300%;"
+        },
+        {
+          "day_id": "677",
+          "artists": [
+            {
+              "name": "G Jones",
+              "href": "/2017/sound/g-jones/"
+            }
+          ],
+          "time": "12:10﻿–﻿1:40",
+          "style": "top:2333.3333333333%;height:300%;"
+        },
+        {
+          "day_id": "679",
+          "artists": [
+            {
+              "name": "LIMB",
+              "href": "/2017/sound/limb/"
+            }
+          ],
+          "time": "7:00﻿–﻿8:00",
+          "style": "top:800%;height:200%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Miguel Flaco",
+              "href": "/2017/sound/miguel-flaco/"
+            }
+          ],
+          "time": "1:20﻿–﻿2:00",
+          "style": "top:166.66666666667%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Collin Hedrick",
+              "href": "/2017/sound/collin-hedrick/"
+            }
+          ],
+          "time": "2:10﻿–﻿2:40",
+          "style": "top:333.33333333333%;height:100%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Kona FM",
+              "href": "/2017/sound/kona-fm/"
+            }
+          ],
+          "time": "3:10﻿–﻿3:40",
+          "style": "top:533.33333333333%;height:100%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Acid Jeep",
+              "href": "/2017/sound/acid-jeep/"
+            }
+          ],
+          "time": "4:00﻿–﻿4:40",
+          "style": "top:700%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Marcus Marr",
+              "href": "/2017/sound/marcus-marr/"
+            }
+          ],
+          "time": "5:00﻿–﻿6:10",
+          "style": "top:900%;height:233.33333333333%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Tearz",
+              "href": "/2017/sound/tearz/"
+            }
+          ],
+          "time": "6:40﻿–﻿7:10",
+          "style": "top:1233.3333333333%;height:100%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Santa Muerte",
+              "href": "/2017/sound/santa-muerte/"
+            }
+          ],
+          "time": "7:30﻿–﻿8:10",
+          "style": "top:1400%;height:133.33333333333%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "DJ Tennis",
+              "href": "/2017/sound/dj-tennis/"
+            }
+          ],
+          "time": "8:30﻿–﻿11:00",
+          "style": "top:1600%;height:500%;"
+        },
+        {
+          "day_id": "681",
+          "artists": [
+            {
+              "name": "Nina Kraviz",
+              "href": "/2017/sound/nina-kraviz/"
+            }
+          ],
+          "time": "11:20﻿–﻿1:50",
+          "style": "top:2166.6666666667%;height:500%;"
+        }
+      ]
+    }
+  },
+  "lineup": [
+    {
+      "name": "Nine Inch Nails",
+      "href": "/2017/sound/nine-inch-nails/",
+      "section": "sound"
+    },
+    {
+      "name": "Thom Yorke",
+      "href": "/2017/sound/thom-yorke/",
+      "section": "sound"
+    },
+    {
+      "name": "Solange",
+      "href": "/2017/sound/solange/",
+      "section": "sound"
+    },
+    {
+      "name": "Justice",
+      "href": "/2017/sound/justice/",
+      "section": "sound"
+    },
+    {
+      "name": "St. Vincent",
+      "href": "/2017/sound/st-vincent/",
+      "section": "sound"
+    },
+    {
+      "name": "Tyler, The Creator",
+      "href": "/2017/sound/tyler-the-creator/",
+      "section": "sound"
+    },
+    {
+      "name": "James Blake",
+      "href": "/2017/sound/james-blake/",
+      "section": "sound"
+    },
+    {
+      "name": "Pretty Lights",
+      "href": "/2017/sound/pretty-lights/",
+      "section": "sound"
+    },
+    {
+      "name": "Jamie XX",
+      "href": "/2017/sound/jamie-xx/",
+      "section": "sound"
+    },
+    {
+      "name": "Phantogram",
+      "href": "/2017/sound/phantogram/",
+      "section": "sound"
+    },
+    {
+      "name": "Pussy Riot",
+      "href": "/2017/sound/pussy-riot/",
+      "section": "sound"
+    },
+    {
+      "name": "The Jesus Lizard",
+      "href": "/2017/sound/the-jesus-lizard/",
+      "section": "sound"
+    },
+    {
+      "name": "Nina Kraviz",
+      "href": "/2017/sound/nina-kraviz/",
+      "section": "sound"
+    },
+    {
+      "name": "Godspeed You! Black Emperor",
+      "href": "/2017/sound/godspeed-you-black-emperor/",
+      "section": "sound"
+    },
+    {
+      "name": "REZZ",
+      "href": "/2017/sound/rezz/",
+      "section": "sound"
+    },
+    {
+      "name": "Laurie Anderson",
+      "href": "/2017/sound/laurie-anderson/",
+      "section": "sound"
+    },
+    {
+      "name": "Cashmere Cat",
+      "href": "/2017/sound/cashmere-cat/",
+      "section": "sound"
+    },
+    {
+      "name": "Cardi B",
+      "href": "/2017/sound/cardi-b/",
+      "section": "sound"
+    },
+    {
+      "name": "Perfume Genius",
+      "href": "/2017/sound/perfume-genius/",
+      "section": "sound"
+    },
+    {
+      "name": "Gas",
+      "href": "/2017/sound/gas/",
+      "section": "sound"
+    },
+    {
+      "name": "En Vogue",
+      "href": "/2017/sound/en-vogue/",
+      "section": "sound"
+    },
+    {
+      "name": "Lil B",
+      "href": "/2017/sound/lil-b/",
+      "section": "sound"
+    },
+    {
+      "name": "of Montreal",
+      "href": "/2017/sound/of-montreal/",
+      "section": "sound"
+    },
+    {
+      "name": "Venetian Snares x Daniel Lanois",
+      "href": "/2017/sound/venetian-snares-x-daniel-lanois/",
+      "section": "sound"
+    },
+    {
+      "name": "Princess Nokia",
+      "href": "/2017/sound/princess-nokia/",
+      "section": "sound"
+    },
+    {
+      "name": "Kimbra",
+      "href": "/2017/sound/kimbra/",
+      "section": "sound"
+    },
+    {
+      "name": "Mount Kimbie",
+      "href": "/2017/sound/mount-kimbie/",
+      "section": "sound"
+    },
+    {
+      "name": "Corbin",
+      "href": "/2017/sound/corbin/",
+      "section": "sound"
+    },
+    {
+      "name": "Shlohmo",
+      "href": "/2017/sound/shlohmo/",
+      "section": "sound"
+    },
+    {
+      "name": "The Album Leaf",
+      "href": "/2017/sound/the-album-leaf/",
+      "section": "sound"
+    },
+    {
+      "name": "DJ Tennis",
+      "href": "/2017/sound/dj-tennis/",
+      "section": "sound"
+    },
+    {
+      "name": "Tim Hecker",
+      "href": "/2017/sound/tim-hecker/",
+      "section": "sound"
+    },
+    {
+      "name": "Forest Swords",
+      "href": "/2017/sound/forest-swords/",
+      "section": "sound"
+    },
+    {
+      "name": "Babyfather",
+      "href": "/2017/sound/babyfather/",
+      "section": "sound"
+    },
+    {
+      "name": "G Jones",
+      "href": "/2017/sound/g-jones/",
+      "section": "sound"
+    },
+    {
+      "name": "Shabazz Palaces",
+      "href": "/2017/sound/shabazz-palaces/",
+      "section": "sound"
+    },
+    {
+      "name": "Andy Stott",
+      "href": "/2017/sound/andy-stott/",
+      "section": "sound"
+    },
+    {
+      "name": "Jessy Lanza",
+      "href": "/2017/sound/jessy-lanza/",
+      "section": "sound"
+    },
+    {
+      "name": "Roni Size",
+      "href": "/2017/sound/roni-size/",
+      "section": "sound"
+    },
+    {
+      "name": "Jlin",
+      "href": "/2017/sound/jlin/",
+      "section": "sound"
+    },
+    {
+      "name": "Priests",
+      "href": "/2017/sound/priests/",
+      "section": "sound"
+    },
+    {
+      "name": "Bjarki",
+      "href": "/2017/sound/bjarki/",
+      "section": "sound"
+    },
+    {
+      "name": "Demdike Stare",
+      "href": "/2017/sound/demdike-stare/",
+      "section": "sound"
+    },
+    {
+      "name": "Saro",
+      "href": "/2017/sound/saro/",
+      "section": "sound"
+    },
+    {
+      "name": "Rabit x House of Kenzo",
+      "href": "/2017/sound/rabit-x-house-of-kenzo/",
+      "section": "sound"
+    },
+    {
+      "name": "B L A C K I E",
+      "href": "/2017/sound/b-l-a-c-k-i-e/",
+      "section": "sound"
+    },
+    {
+      "name": "Marcus Marr",
+      "href": "/2017/sound/marcus-marr/",
+      "section": "sound"
+    },
+    {
+      "name": "HoodCelebrityy",
+      "href": "/2017/sound/hoodcelebrityy/",
+      "section": "sound"
+    },
+    {
+      "name": "Faten Kanaan",
+      "href": "/2017/sound/faten-kanaan/",
+      "section": "sound"
+    },
+    {
+      "name": "True American",
+      "href": "/2017/sound/true-american/",
+      "section": "sound"
+    },
+    {
+      "name": "Pearl Crush",
+      "href": "/2017/sound/pearl-crush/",
+      "section": "sound"
+    },
+    {
+      "name": "Deep Cuts",
+      "href": "/2017/sound/deep-cuts/",
+      "section": "sound"
+    },
+    {
+      "name": "Tyler Barber",
+      "href": "/2017/sound/tyler-barber/",
+      "section": "sound"
+    },
+    {
+      "name": "N N O A",
+      "href": "/2017/sound/n-n-o-a/",
+      "section": "sound"
+    },
+    {
+      "name": "Santa Muerte",
+      "href": "/2017/sound/santa-muerte/",
+      "section": "sound"
+    },
+    {
+      "name": "Kona FM",
+      "href": "/2017/sound/kona-fm/",
+      "section": "sound"
+    },
+    {
+      "name": "Narcons",
+      "href": "/2017/sound/narcons/",
+      "section": "sound"
+    },
+    {
+      "name": "Acid Jeep",
+      "href": "/2017/sound/acid-jeep/",
+      "section": "sound"
+    },
+    {
+      "name": "Hescher",
+      "href": "/2017/sound/hescher/",
+      "section": "sound"
+    },
+    {
+      "name": "Tearz",
+      "href": "/2017/sound/tearz/",
+      "section": "sound"
+    },
+    {
+      "name": "XLX",
+      "href": "/2017/sound/xlx/",
+      "section": "sound"
+    },
+    {
+      "name": "Miguel Flaco",
+      "href": "/2017/sound/miguel-flaco/",
+      "section": "sound"
+    },
+    {
+      "name": "Collin Hedrick",
+      "href": "/2017/sound/collin-hedrick/",
+      "section": "sound"
+    },
+    {
+      "name": "LIMB",
+      "href": "/2017/sound/limb/",
+      "section": "sound"
+    },
+    {
+      "name": "Ryoji Ikeda",
+      "href": "/2017/light/ryoji-ikeda/",
+      "section": "light"
+    },
+    {
+      "name": "Matthew Schreiber",
+      "href": "/2017/light/matthew-schreiber/",
+      "section": "light"
+    },
+    {
+      "name": "Conditional Studio + Processing Foundation",
+      "href": "/2017/light/processing-foundation/",
+      "section": "light"
+    },
+    {
+      "name": "James Clar",
+      "href": "/2017/light/james-clar/",
+      "section": "light"
+    },
+    {
+      "name": "Felicie D’Estienne d’Orves",
+      "href": "/2017/light/felicie-destienne/",
+      "section": "light"
+    },
+    {
+      "name": "Kyle McDonald + Jonas Jongejan",
+      "href": "/2017/light/kyle-mcdonald-jonas-jongejan/",
+      "section": "light"
+    },
+    {
+      "name": "Ryoichi Kurokawa",
+      "href": "/2017/light/ryoichi-kurokawa/",
+      "section": "light"
+    },
+    {
+      "name": "Radio Soulwax",
+      "href": "/2017/light/radio-soulwax/",
+      "section": "light"
+    },
+    {
+      "name": "VT Pro",
+      "href": "/2017/light/vt-pro/",
+      "section": "light"
+    },
+    {
+      "name": "Hovver",
+      "href": "/2017/light/hovver/",
+      "section": "light"
+    },
+    {
+      "name": "The Mill",
+      "href": "/2017/light/the-mill/",
+      "section": "light"
+    },
+    {
+      "name": "FREEKA TET",
+      "href": "/2017/light/freeka-tet/",
+      "section": "light"
+    },
+    {
+      "name": "Playmodes",
+      "href": "/2017/light/playmodes/",
+      "section": "light"
+    },
+    {
+      "name": "Théodore Fivel + Freeka Tet",
+      "href": "/2017/light/theodore-fivel-freeka-tet/",
+      "section": "light"
+    },
+    {
+      "name": "Ekene Ijeoma",
+      "href": "/2017/light/ekene-ijeoma/",
+      "section": "light"
+    },
+    {
+      "name": "Cocolab",
+      "href": "/2017/light/cocolab/",
+      "section": "light"
+    },
+    {
+      "name": "Sam Cannon",
+      "href": "/2017/light/sam-cannon/",
+      "section": "light"
+    },
+    {
+      "name": "Vincent Moon + Priscilla Telmon",
+      "href": "/2017/light/vincent-moon-priscilla-telmon/",
+      "section": "light"
+    },
+    {
+      "name": "Lina Dib",
+      "href": "/2017/light/lina-dib/",
+      "section": "light"
+    },
+    {
+      "name": "Kaytranada",
+      "href": "/2017/talks/kaytranada/",
+      "section": "talks"
+    },
+    {
+      "name": "Earl Sweatshirt",
+      "href": "/2017/talks/earl-sweatshirt/",
+      "section": "talks"
+    },
+    {
+      "name": "Saint Heron Presents: “Soul Cleansing” Featuring Solange",
+      "href": "/2017/talks/saint-heron-presents-soul-cleansing-featuring-solange/",
+      "section": "talks"
+    },
+    {
+      "name": "Jenny Hval",
+      "href": "/2017/talks/jenny-hval/",
+      "section": "talks"
+    },
+    {
+      "name": "BOOTS",
+      "href": "/2017/talks/boots/",
+      "section": "talks"
+    },
+    {
+      "name": "Saul Williams",
+      "href": "/2017/talks/saul-williams/",
+      "section": "talks"
+    },
+    {
+      "name": "Chelsea Manning",
+      "href": "/2017/talks/chelsea-manning/",
+      "section": "talks"
+    },
+    {
+      "name": "Nadya from Pussy Riot",
+      "href": "/2017/talks/nadya-from-pussy-riot/",
+      "section": "talks"
+    },
+    {
+      "name": "Laurie Anderson",
+      "href": "/2017/talks/laurie-anderson/",
+      "section": "talks"
+    },
+    {
+      "name": "Lauren McCarthy",
+      "href": "/2017/talks/lauren-mccarthy/",
+      "section": "talks"
+    }
+  ],
+  "artists": [
+    {
+      "slug": "james-blake",
+      "name": "James Blake",
+      "category": "sound",
+      "bodyClass": "sound-template-default single single-sound postid-1069 no-tick mode-day sound-james-blake",
+      "image": "DFN_web_sound_jamesblake-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "London-based singer, songwriter, musician and record producer James Blake has made a strong name for himself over his 8 year career, regarded for his unique combination of electronic and R&B elements. First gaining recognition in 2010 for a trio of dubstep-influenced EPs, Blake released his self-titled debut album the following year to critical praise and the album gained the No. 1 spot on Billboard’s Top Dance/Electronic Album charts. His second studio album,\nOvergrown\n, released in 2013 and was awarded the Mercury Prize and in 2014, he was nominated for Best New Artist at the Grammy Awards. Blake released his third studio album,\nThe Colour in Anything\n, in 2016 and the album also gained the No. 1 spot on Billboard’s Dance/Electronic Album charts.",
+      "bioHtml": "<p><span style=\"font-weight: 400;\">London-based singer, songwriter, musician and record producer James Blake has made a strong name for himself over his 8 year career, regarded for his unique combination of electronic and R&amp;B elements. First gaining recognition in 2010 for a trio of dubstep-influenced EPs, Blake released his self-titled debut album the following year to critical praise and the album gained the No. 1 spot on Billboard’s Top Dance/Electronic Album charts. His second studio album, </span><i><span style=\"font-weight: 400;\">Overgrown</span></i><span style=\"font-weight: 400;\">, released in 2013 and was awarded the Mercury Prize and in 2014, he was nominated for Best New Artist at the Grammy Awards. Blake released his third studio album,</span><i><span style=\"font-weight: 400;\"> The Colour in Anything</span></i><span style=\"font-weight: 400;\">, in 2016 and the album also gained the No. 1 spot on Billboard’s Dance/Electronic Album charts. </span></p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://jamesblakemusic.com/",
+          "label": "jamesblakemusic.com"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/jamesblake?lang=en"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/jamesblake/?hl=en"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/jamesblakeofficial"
+        },
+        {
+          "type": "facebook",
+          "url": "https://open.spotify.com/artist/53KwLdlmrlCelAZMaLVZqU"
+        },
+        {
+          "type": "spotify",
+          "url": "https://open.spotify.com/artist/53KwLdlmrlCelAZMaLVZqU"
+        }
+      ]
+    },
+    {
+      "slug": "justice",
+      "name": "Justice",
+      "category": "sound",
+      "bodyClass": "sound-template-default single single-sound postid-1024 no-tick mode-day sound-justice",
+      "image": "DFN_web_sound_justice-1-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "French electronic music duo Justice, consisting of Gaspard Augé and Xavier de Rosnay, is well-known for incorporating rock and indie elements with their electronic stylings. The band’s debut album\n†\nwas released in 2007 and garnered widespread critical acclaim. The album was nominated for a Grammy Award for Best Electronic/Dance Album and grabbed the No. 15 spot on Pitchfork’s Top 50 Albums of 2007. Not only that, but the hit track “D.A.N.C.E.” also received a Grammy nomination for Best Dance Recording. In 2009, the band’s remix of the MGMT song “Electric Feel” won the Grammy Award for Best Remixed Recording, Non-Classical. The band released its second album,\nAudio, Video, Disco\n, in 2011, followed by the live album in 2013, titled\nAccess All Arenas\n. Last year, the duo released\nWoman\n, their third album, to positive reviews.",
+      "bioHtml": "<p>French electronic music duo Justice, consisting of Gaspard Augé and Xavier de Rosnay, is well-known for incorporating rock and indie elements with their electronic stylings. The band’s debut album <em>†</em> was released in 2007 and garnered widespread critical acclaim. The album was nominated for a Grammy Award for Best Electronic/Dance Album and grabbed the No. 15 spot on Pitchfork’s Top 50 Albums of 2007. Not only that, but the hit track “D.A.N.C.E.” also received a Grammy nomination for Best Dance Recording. In 2009, the band’s remix of the MGMT song “Electric Feel” won the Grammy Award for Best Remixed Recording, Non-Classical. The band released its second album, <em>Audio, Video, Disco</em>, in 2011, followed by the live album in 2013, titled <em>Access All Arenas</em>. Last year, the duo released <em>Woman</em>, their third album, to positive reviews.</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "https://www.justice.church/",
+          "label": "www.justice.church"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/etjusticepourtous/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/justice-official"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/etjusticepourtous/"
+        },
+        {
+          "type": "spotify",
+          "url": "https://open.spotify.com/artist/1gR0gsQYfi6joyO1dlp76N?autoplay=true"
+        }
+      ]
+    },
+    {
+      "slug": "nine-inch-nails",
+      "name": "Nine Inch Nails",
+      "category": "sound",
+      "bodyClass": "sound-template-default single single-sound postid-1013 no-tick mode-day sound-nine-inch-nails",
+      "image": "DFN_web_sound_nineinchnails-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Industrial group Nine Inch Nails, founded by Trent Reznor, has been at the forefront of the international music scene for nearly three decades. The band released two influential albums during the 1990s –\nThe Downward Spiral\n(1994) and\nThe Fragile\n(1999) – and has record sales exceeding over 20 million copies worldwide.\nNine Inch Nails has been nominated for thirteen Grammy Awards, winning twice for the songs “Wish” and “Happiness in Slavery” in 1992 and 1996, respectively. In 1997, Reznor appeared in Time magazine’s list of the year’s most influential people, and\nSpin\nmagazine has described him as “the most vital artist in music.” In 2004, Rolling Stone placed Nine Inch Nails at No. 94 on its list of the 100 greatest artists of all time, and Nine Inch Nails was named as nominees for induction into the Rock and Roll Hall of Fame, their first year of eligibility, and were nominated again in 2015.",
+      "bioHtml": "<p><span style=\"font-weight: 400;\">Industrial group Nine Inch Nails, founded by Trent Reznor, has been at the forefront of the international music scene for nearly three decades. The band released two influential albums during the 1990s – </span><i><span style=\"font-weight: 400;\">The Downward Spiral</span></i><span style=\"font-weight: 400;\"> (1994) and </span><i><span style=\"font-weight: 400;\">The Fragile</span></i><span style=\"font-weight: 400;\"> (1999) – and has record sales exceeding over 20 million copies worldwide.</span><span style=\"font-weight: 400;\"><br/>\n</span><span style=\"font-weight: 400;\"><br/>\n</span><span style=\"font-weight: 400;\">Nine Inch Nails has been nominated for thirteen Grammy Awards, winning twice for the songs “Wish” and “Happiness in Slavery” in 1992 and 1996, respectively. In 1997, Reznor appeared in Time magazine’s list of the year’s most influential people, and </span><i><span style=\"font-weight: 400;\">Spin</span></i><span style=\"font-weight: 400;\"> magazine has described him as “the most vital artist in music.” In 2004, Rolling Stone placed Nine Inch Nails at No. 94 on its list of the 100 greatest artists of all time, and Nine Inch Nails was named as nominees for induction into the Rock and Roll Hall of Fame, their first year of eligibility, and were nominated again in 2015.</span></p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://www.nin.com/",
+          "label": "www.nin.com"
+        },
+        {
+          "type": "twitter",
+          "url": "http://twitter.com/nineinchnails?lang=en"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/nineinchnails/"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/ninofficial/?fref=ts"
+        },
+        {
+          "type": "spotify",
+          "url": "https://open.spotify.com/artist/0X380XXQSNBYuleKzav5UO?autoplay=true"
+        }
+      ]
+    },
+    {
+      "slug": "solange",
+      "name": "Solange",
+      "category": "sound",
+      "bodyClass": "sound-template-default single single-sound postid-1023 no-tick mode-day sound-solange",
+      "image": "DFN_web_sound_solange-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Songwriter, recording artist, and activist Solange Knowles kicked off 2017 with a private performance at the White House. Backed by The Roots, she performed her songs “Weary,” “Rise,” and “Cranes In The Sky” from her Grammy-winning 2016 release\nA Seat At The Table\n. She also performed in Washington, D.C. at the Peace Ball, which was held on Inauguration Eve, January 19 at the Smithsonian National Museum of African American History and Culture.\nA Seat at the Table\n, written and performed by Solange and co-executive produced alongside Raphael Saadiq, debuted at No. 1 on the Billboard Top 200 Chart and was No. 1 on both Apple Music and iTunes Overall Top Albums Chart. Released globally on September 30, 2016 via Saint Records / Columbia,\nA Seat at the Table\nis available both physically and digitally worldwide. At the 59th annual Grammy Awards on February 12, 2017 the track “Cranes In The Sky” won the Grammy for Best R&B Performance.\nSolange describes\nA Seat at the Table\n, which she began writing in 2013, as “a project on identity, empowerment, independence, grief, and healing.”\nOn January 26, 2017, Solange delivered the keynote at Yale University’s Stephen A. Schwarzman Center. The conversation, entitled “Everybody Still Wants to Fly: Activism in Pop from Prince to Solange featuring an opening roundtable discussion of cinematic Prince in concert and his socio-political activism,” was part of the three-day, multidisciplinary conference Blackstar Rising & The Purple Reign: Celebrating the Legacies of David Bowie and Prince. Solange delivered the talk with moderator Daphne A. Brooks, Professor of African American Studies, American Studies, Theater Studies, and Women’s Gender and Sexuality Studies at Yale University. Knowles discussed her body of work, and activism and its relativity to pop culture.\nSays Solange, “Getting the chance to sit down with Professor Daphne Brooks was a wonderful experience. I loved being able to unpack and share the layers of the making A Seat At ",
+      "bioHtml": "<p>Songwriter, recording artist, and activist Solange Knowles kicked off 2017 with a private performance at the White House. Backed by The Roots, she performed her songs “Weary,” “Rise,” and “Cranes In The Sky” from her Grammy-winning 2016 release <em>A Seat At The Table</em>. She also performed in Washington, D.C. at the Peace Ball, which was held on Inauguration Eve, January 19 at the Smithsonian National Museum of African American History and Culture.</p>\n<p><em>A Seat at the Table</em>, written and performed by Solange and co-executive produced alongside Raphael Saadiq, debuted at No. 1 on the Billboard Top 200 Chart and was No. 1 on both Apple Music and iTunes Overall Top Albums Chart. Released globally on September 30, 2016 via Saint Records / Columbia, <em>A Seat at the Table</em> is available both physically and digitally worldwide. At the 59th annual Grammy Awards on February 12, 2017 the track “Cranes In The Sky” won the Grammy for Best R&amp;B Performance.</p>\n<p>Solange describes <em>A Seat at the Table</em>, which she began writing in 2013, as “a project on identity, empowerment, independence, grief, and healing.”</p>\n<p>On January 26, 2017, Solange delivered the keynote at Yale University’s Stephen A. Schwarzman Center. The conversation, entitled “Everybody Still Wants to Fly: Activism in Pop from Prince to Solange featuring an opening roundtable discussion of cinematic Prince in concert and his socio-political activism,” was part of the three-day, multidisciplinary conference Blackstar Rising &amp; The Purple Reign: Celebrating the Legacies of David Bowie and Prince. Solange delivered the talk with moderator Daphne A. Brooks, Professor of African American Studies, American Studies, Theater Studies, and Women’s Gender and Sexuality Studies at Yale University. Knowles discussed her body of work, and activism and its relativity to pop culture.</p>\n<p>Says Solange, “Getting the chance to sit down with Professor Daphne Brooks was a wonderful experience. I loved being able to unpack and share the layers of the making A Seat At The Table, and in return, it provided me with an examination and incredible insight into to my process and experiences while creating this album. I was beyond honored that Yale invited me to celebrate Prince’s principles of artist ownership and how they have inspired me through my own artistic journey.”</p>\n<p>Already an experienced lecturer, Solange Knowles spoke at Stanford University in the fall of 2016. She joined Wake Forest University professor and editor at large for Elle.com, Melissa Harris-Perry, for a discussion that examined everything from the concept of #BlackGirlMagic to 50 years after the Black is Beautiful movement to the ideas and language of self-care and community cultivation that are shape-shifting through people who are survivors and prolific creators.</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://www.solangemusic.com/",
+          "label": "www.solangemusic.com"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/saintrecords/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/solangeknowles"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/solange/"
+        },
+        {
+          "type": "spotify",
+          "url": "https://open.spotify.com/artist/2auiVi8sUZo17dLy1HwrTU?autoplay=true"
+        }
+      ]
+    },
+    {
+      "slug": "st-vincent",
+      "name": "St. Vincent",
+      "category": "sound",
+      "bodyClass": "sound-template-default single single-sound postid-1026 no-tick mode-day sound-st-vincent",
+      "image": "DFN_web_sound_stvincent-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Musician and songwriter Annie Clark — also known as St. Vincent — is one of the most distinctive artistic voices and arrestingly original guitarists of her generation. Her recent album, the self-titled St. Vincent, won her “album of the year” designations from the NME, the Guardian, and Entertainment Weekly. In 2014, St. Vincent performed on the season finale of Saturday Night Live and, in 2015, she won the Grammy for Best Alternative Album. She has been the recipient of the Smithsonian American Ingenuity Award and the Q Maverick award, both given for outstanding innovation in the arts.\nAn incredible live performer, Clark has been heralded as “the first truly 21st century guitar hero” by Guitar World magazine, and is constantly pushing the boundaries of today’s musical landscape. St. Vincent’s incomparable signature electric guitar for for Ernie Ball Music Man has been critically acclaimed by\neveryone from Guitar World to Vogue.\nThis past Sundance Film Festival, Annie expanded her creativity and vision with a filmmaking debut. She premiered her “BIRTHDAY PARTY” as part of the XX anthology. She co-wrote, scored, and directed the piece, which stars Melanie Lynskey, Joe Swanberg and Sheila Vand. Hollywood Reporter called it “most\noriginal […] with its own mad energy, quirky gallows humor and idiosyncratic visual signature,” while\nVariety\nsaid it left audiences “interested to see what Clark could deliver at feature length.",
+      "bioHtml": "<p>Musician and songwriter Annie Clark — also known as St. Vincent — is one of the most distinctive artistic voices and arrestingly original guitarists of her generation. Her recent album, the self-titled St. Vincent, won her “album of the year” designations from the NME, the Guardian, and Entertainment Weekly. In 2014, St. Vincent performed on the season finale of Saturday Night Live and, in 2015, she won the Grammy for Best Alternative Album. She has been the recipient of the Smithsonian American Ingenuity Award and the Q Maverick award, both given for outstanding innovation in the arts.</p>\n<p>An incredible live performer, Clark has been heralded as “the first truly 21st century guitar hero” by Guitar World magazine, and is constantly pushing the boundaries of today’s musical landscape. St. Vincent’s incomparable signature electric guitar for for Ernie Ball Music Man has been critically acclaimed by<br/>\neveryone from Guitar World to Vogue.</p>\n<p>This past Sundance Film Festival, Annie expanded her creativity and vision with a filmmaking debut. She premiered her “BIRTHDAY PARTY” as part of the XX anthology. She co-wrote, scored, and directed the piece, which stars Melanie Lynskey, Joe Swanberg and Sheila Vand. Hollywood Reporter called it “most<br/>\noriginal […] with its own mad energy, quirky gallows humor and idiosyncratic visual signature,” while <em>Variety</em> said it left audiences “interested to see what Clark could deliver at feature length.</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://ilovestvincent.com/",
+          "label": "ilovestvincent.com"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/st_vincent"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/st_vincent/?hl=en"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/st_vincent"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/St.Vincent/"
+        },
+        {
+          "type": "spotify",
+          "url": "https://open.spotify.com/artist/7bcbShaqKdcyjnmv4Ix8j6?autoplay=true"
+        }
+      ]
+    },
+    {
+      "slug": "thom-yorke",
+      "name": "Thom Yorke",
+      "category": "sound",
+      "bodyClass": "sound-template-default single single-sound postid-1022 no-tick mode-day sound-thom-yorke",
+      "image": "DFN_web_sound_thomyorke-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Thom Yorke performs in a live mix with Nigel Godrich and visual artist Tarik Barri.\nThom Yorke’s work, both as principal songwriter, singer and multi-instrumentalist in Radiohead and as a solo artist, has placed him at the forefront of global contemporary music.\nThom’s first solo record,\nThe Eraser\n, was released in 2006. In 2009, he collaborated with producer Nigel Godrich, Red Hot Chili Peppers bassist Flea, drummer Joey Waronker and percussionist Mauro Refosco to form Atoms For Peace with the principal purpose of touring\nThe Eraser\nlive for the first time. A new album of original material,\nAmok\n, resulted from this collaboration and was released in 2013. In the autumn of 2014, Thom released his second solo record,\nTomorrow’s Modern Boxes\n.",
+      "bioHtml": "<p class=\"textbox\" dir=\"ltr\">Thom Yorke performs in a live mix with Nigel Godrich and visual artist Tarik Barri.</p>\n<p class=\"textbox\" dir=\"ltr\">Thom Yorke’s work, both as principal songwriter, singer and multi-instrumentalist in Radiohead and as a solo artist, has placed him at the forefront of global contemporary music.</p>\n<p class=\"textbox\" dir=\"ltr\">Thom’s first solo record, <em>The Eraser</em>, was released in 2006. In 2009, he collaborated with producer Nigel Godrich, Red Hot Chili Peppers bassist Flea, drummer Joey Waronker and percussionist Mauro Refosco to form Atoms For Peace with the principal purpose of touring <em>The Eraser</em> live for the first time. A new album of original material, <em>Amok</em>, resulted from this collaboration and was released in 2013. In the autumn of 2014, Thom released his second solo record, <em>Tomorrow’s Modern Boxes</em>.</p>\n",
+      "links": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/thomyorke"
+        },
+        {
+          "type": "spotify",
+          "url": "https://open.spotify.com/artist/4CvTDPKA6W06DRfBnZKrau?autoplay=true"
+        }
+      ]
+    },
+    {
+      "slug": "tyler-the-creator",
+      "name": "Tyler, The Creator",
+      "category": "sound",
+      "bodyClass": "sound-template-default single single-sound postid-1027 no-tick mode-day sound-tyler-the-creator",
+      "image": "DFN_web_sound_tylerthecreator-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Tyler, the Creator caught the world’s attention in a big way in 2010. As the founder of Odd Future, his early notoriety came from his raw, DIY approach to the music business along with his wildly energetic and now infamous live shows, though he has since emerged as one of the most compelling creatives of his generation. From his musical growth as a producer, composer and songwriter that garnered him MTV’s Best New Artist award along with 3 top 5 Billboard-charting albums, to his film and TV work in short films, music video direction, and his Adult Swim sketch comedy show\nLoiter Squad\nthat is aired for 3 seasons, to his design work for his apparel/lifestyle brand Golf Wang and his customized automotive company Flog Gnaw Motors, Tyler is as business savvy as he is imaginative. He is the head of creative firm Camp Flog Gnaw after which his single-day music festival that has taken place in LA for the past 4 years takes its name. In addition, Tyler has recently launched his own media company, conveniently called Golf Media, which he describes as “Tyler and his brain without restrictions and bullshit.”",
+      "bioHtml": "<p>Tyler, the Creator caught the world’s attention in a big way in 2010. As the founder of Odd Future, his early notoriety came from his raw, DIY approach to the music business along with his wildly energetic and now infamous live shows, though he has since emerged as one of the most compelling creatives of his generation. From his musical growth as a producer, composer and songwriter that garnered him MTV’s Best New Artist award along with 3 top 5 Billboard-charting albums, to his film and TV work in short films, music video direction, and his Adult Swim sketch comedy show<em> Loiter Squad</em> that is aired for 3 seasons, to his design work for his apparel/lifestyle brand Golf Wang and his customized automotive company Flog Gnaw Motors, Tyler is as business savvy as he is imaginative. He is the head of creative firm Camp Flog Gnaw after which his single-day music festival that has taken place in LA for the past 4 years takes its name. In addition, Tyler has recently launched his own media company, conveniently called Golf Media, which he describes as “Tyler and his brain without restrictions and bullshit.”</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://www.oddfuture.com/",
+          "label": "www.oddfuture.com"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/tylerthecreator?lang=en"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/feliciathegoat/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/ofwgkta-official"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/TylertheCreatorOfficial/"
+        },
+        {
+          "type": "spotify",
+          "url": "https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF"
+        }
+      ]
+    },
+    {
+      "slug": "cocolab",
+      "name": "Cocolab",
+      "category": "light",
+      "bodyClass": "light-template-default single single-light postid-1110 no-tick mode-day radio-on light-cocolab",
+      "image": "DFN_web_lights_15_cocolab-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Cocolab is a Mexico City-based studio composed of artists in different fields of digital arts. Their work is a collaboration of creators that build unique audiovisual experiences for large audiences.\nThey develop their own tools such as software and hardware in order to enrich their audiovisual experiences with the purpose of expanding the possibilities of creation.\nThe studio has been exploring for the past ten years, the limits between the posible and the imposible with technology, making audiovisual installations a powerful way of communicating with the audience through sound and movement.\nCocolab has been collaborating and working in projects such as Disarm installation by Pedro Reyes, which is a automatized musical band made out of weapons that used to belonged to the drug cartels of the north of Mexico. Among others like, White Canvas, a light room filled with hundreds of light beams that explore the relation between space and light. Their work is been showcasing all over the world including countries like Brazil, Japan, Spain, Italy, UK, USA and Netherlands .\nCocolab believes that inspiration is the engine of any form of creation, so their purpose is to inspire people and inspire theirselves. To inspire and create is a virtuous cycle of which we want to be an active part.",
+      "bioHtml": "<p>Cocolab is a Mexico City-based studio composed of artists in different fields of digital arts. Their work is a collaboration of creators that build unique audiovisual experiences for large audiences.</p>\n<p>They develop their own tools such as software and hardware in order to enrich their audiovisual experiences with the purpose of expanding the possibilities of creation.</p>\n<p>The studio has been exploring for the past ten years, the limits between the posible and the imposible with technology, making audiovisual installations a powerful way of communicating with the audience through sound and movement.</p>\n<p>Cocolab has been collaborating and working in projects such as Disarm installation by Pedro Reyes, which is a automatized musical band made out of weapons that used to belonged to the drug cartels of the north of Mexico. Among others like, White Canvas, a light room filled with hundreds of light beams that explore the relation between space and light. Their work is been showcasing all over the world including countries like Brazil, Japan, Spain, Italy, UK, USA and Netherlands .</p>\n<p>Cocolab believes that inspiration is the engine of any form of creation, so their purpose is to inspire people and inspire theirselves. To inspire and create is a virtuous cycle of which we want to be an active part.</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://www.cocolab.mx/",
+          "label": "www.cocolab.mx"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/cocolabmx/"
+        }
+      ]
+    },
+    {
+      "slug": "ekene-ijeoma",
+      "name": "Ekene Ijeoma",
+      "category": "light",
+      "bodyClass": "light-template-default single single-light postid-1109 no-tick mode-day radio-on light-ekene-ijeoma",
+      "image": "DFN_web_lights_14_ekeneijeoma-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Ekene Ijeoma is an interdisciplinary artist and designer exploring the intersections of social issues, data studies and life experiences through websites, apps, installations, and performances.\nCommissioners of his work include: Annenberg Space for Photography (Los Angeles), Neuberger Museum of Art (Purchase, NY), Storefront for Art and Architecture (New York), Pratt Manhattan Gallery (New York), Panorama Festival (New York), Google Creative Lab (New York) and American Institute of Graphic Arts. His work has been exhibited at galleries and museums including Design Museum (London), Istanbul Design Biennial, Annenberg Space for Photography, Neuberger Museum of Art, and Storefront for Art and Architecture.\nEkene was awarded fellowships and residencies from Kennedy Center (Citizen Artist, 2017/2018), New Museum (Ideas City, 2016), New York Foundation for the Arts (Architecture/Environmental Structures/Design, 2016/2017), California College of the Arts (Vibrant Cities, 2017), Santa Fe Art Institute (Equal Justice, 2017/2018), New Lab/Simons Foundation (Science Sandbox, 2017), Urban Design Forum (Forefront, 2017), and Fabrica (2014).\nHe was featured on the cover of GDUSA’s People to Watch “who embody the spirit of the creative community”, named Adweek’s Creative 100 “visual artist whose imagination and intellect will inspire you” and also GOOD’s GOOD 100 “tackling pressing global issues.” His work has also been featured in MoMA, Huffington Post, The Atlantic, Le Monde, Corriere della Sera, Internazionale, Vice, Fusion, WIRED, Fast Company, Dezeen, Designboom, Domus, Hyperallergic and Artsy. He’s appeared on TV and radio shows including Fox 4 News, W Radio and Canadian Broadcasting Company (CBC) Radio.\nEkene has a BS in Information Technology from Rochester Institute of Technology and an MA in Interaction Design from Domus Academy. He was a lecturer at The New School, guest lecturer at Columbia, New York University, University of San Francisco, The New School and School of",
+      "bioHtml": "<p>Ekene Ijeoma is an interdisciplinary artist and designer exploring the intersections of social issues, data studies and life experiences through websites, apps, installations, and performances.</p>\n<p>Commissioners of his work include: Annenberg Space for Photography (Los Angeles), Neuberger Museum of Art (Purchase, NY), Storefront for Art and Architecture (New York), Pratt Manhattan Gallery (New York), Panorama Festival (New York), Google Creative Lab (New York) and American Institute of Graphic Arts. His work has been exhibited at galleries and museums including Design Museum (London), Istanbul Design Biennial, Annenberg Space for Photography, Neuberger Museum of Art, and Storefront for Art and Architecture.  </p>\n<p>Ekene was awarded fellowships and residencies from Kennedy Center (Citizen Artist, 2017/2018), New Museum (Ideas City, 2016), New York Foundation for the Arts (Architecture/Environmental Structures/Design, 2016/2017), California College of the Arts (Vibrant Cities, 2017), Santa Fe Art Institute (Equal Justice, 2017/2018), New Lab/Simons Foundation (Science Sandbox, 2017), Urban Design Forum (Forefront, 2017), and Fabrica (2014).</p>\n<p>He was featured on the cover of GDUSA’s People to Watch “who embody the spirit of the creative community”, named Adweek’s Creative 100 “visual artist whose imagination and intellect will inspire you” and also GOOD’s GOOD 100 “tackling pressing global issues.” His work has also been featured in MoMA, Huffington Post, The Atlantic, Le Monde, Corriere della Sera, Internazionale, Vice, Fusion, WIRED, Fast Company, Dezeen, Designboom, Domus, Hyperallergic and Artsy. He’s appeared on TV and radio shows including Fox 4 News, W Radio and Canadian Broadcasting Company (CBC) Radio.</p>\n<p>Ekene has a BS in Information Technology from Rochester Institute of Technology and an MA in Interaction Design from Domus Academy. He was a lecturer at The New School, guest lecturer at Columbia, New York University, University of San Francisco, The New School and School of Visual Arts (SVA), guest critic at Yale and SVA, and visiting artist at Virginia Commonwealth University and School for Poetic Computation. He was recently appointed as a Mitchell Visiting Professor in Architecture, Interior Architecture and Designed Objects (AIADO) at the School of Art Institute of Chicago (SAIC). A first generation Nigerian-American, he was born in Fort Worth, Texas and lives and works in New York City.</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://studioijeoma.com/",
+          "label": "studioijeoma.com"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/ekeneijeoma"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/ekeneijeoma/"
+        }
+      ]
+    },
+    {
+      "slug": "felicie-destienne",
+      "name": "Felicie D’Estienne d’Orves",
+      "category": "light",
+      "bodyClass": "light-template-default single single-light postid-1112 no-tick mode-day light-felicie-destienne",
+      "image": "DFN_web_lights_5_feliciedestienne-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "The work of Félicie d’Estienne d’Orves combines light, sculpture and new technologies. Her research focuses on vision, its processes and conditioning. Her immersive installations use a phenomenological approach to reality, they underscore the perception of time as a continuum. Since 2014, the artist’ researches focused on space in relation to astrophysics and to study the natural light cycles.\nKey examples of D’Estienne d’Orves’ work include “EXO” : an audiovisual set-up, that projects laser beams onto hundreds of celestial objects and like the head of a disk player reads the sky and translate astrophysical data into a sound composition by Julie Rousse. “Geometry” a kinetic outdoor sculpture created for the Watermans Art Center and London City for the London Olympic Games in 2012.\nHer Cosmos series questions the ways in which natural manifestations of light are grasped by mythical as well as instinctive knowledge. Her “Stellar convection” sculpture considers the convection at an excessively slow rate of hydrogen in helium in a red dwarf, “Eclipse” plays with the relativity of positions between the viewer, a light source and distant space-times. In her Supernova piece, designed with the help of a PhD astrophysicist (Fabio Acero) and which stages the explosion of a star in three dimensions.\nIn 2017, Félicie d’Estienne d’Orves converted the two EDF chimneys of Le Havre city (705 ft high) into a space beacon. The plant’s two smokestacks exhale in time with Mars and Venus respectively, lighting up at variable intervals adjusted to the ‘light Time’ of the two planets.\nHer work has been shown at the Centre Pompidou – Nuit Blanche (Paris) – New Art Space / Sonic Acts (Amsterdam) – Watermans Arts Center (London) – Elektra Festival / BIAN (Montreal) – Maison des Arts of Créteil (Créteil/FR) – Le Centquatre / Nemo International Biennial of Digital Arts (Paris) – OCAT (Shanghai) – ICAS (Dresden) – Aram Art Museum (Goyang /KR) – Luz y Vanguardias (Spain)",
+      "bioHtml": "<p>The work of Félicie d’Estienne d’Orves combines light, sculpture and new technologies. Her research focuses on vision, its processes and conditioning. Her immersive installations use a phenomenological approach to reality, they underscore the perception of time as a continuum. Since 2014, the artist’ researches focused on space in relation to astrophysics and to study the natural light cycles.</p>\n<p>Key examples of D’Estienne d’Orves’ work include “EXO” : an audiovisual set-up, that projects laser beams onto hundreds of celestial objects and like the head of a disk player reads the sky and translate astrophysical data into a sound composition by Julie Rousse. “Geometry” a kinetic outdoor sculpture created for the Watermans Art Center and London City for the London Olympic Games in 2012.</p>\n<p>Her Cosmos series questions the ways in which natural manifestations of light are grasped by mythical as well as instinctive knowledge. Her “Stellar convection” sculpture considers the convection at an excessively slow rate of hydrogen in helium in a red dwarf, “Eclipse” plays with the relativity of positions between the viewer, a light source and distant space-times. In her Supernova piece, designed with the help of a PhD astrophysicist (Fabio Acero) and which stages the explosion of a star in three dimensions.  </p>\n<p>In 2017, Félicie d’Estienne d’Orves converted the two EDF chimneys of Le Havre city (705 ft high) into a space beacon. The plant’s two smokestacks exhale in time with Mars and Venus respectively, lighting up at variable intervals adjusted to the ‘light Time’ of the two planets. </p>\n<p>Her work has been shown at the Centre Pompidou – Nuit Blanche (Paris) – New Art Space / Sonic Acts (Amsterdam) – Watermans Arts Center (London) – Elektra Festival / BIAN (Montreal) – Maison des Arts of Créteil (Créteil/FR) – Le Centquatre / Nemo International Biennial of Digital Arts (Paris) – OCAT (Shanghai) – ICAS (Dresden) – Aram Art Museum (Goyang /KR) – Luz y Vanguardias (Spain)</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://www.feliciedestiennedorves.com/",
+          "label": "www.feliciedestiennedorves.com"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/altair_17al/"
+        }
+      ]
+    },
+    {
+      "slug": "james-clar",
+      "name": "James Clar",
+      "category": "light",
+      "bodyClass": "light-template-default single single-light postid-1104 no-tick mode-day light-james-clar",
+      "image": "DFN_web_lights_4_jamesclar-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "James Clar studied film and animation at New York University and received his Masters from NYU’s Interactive Telecommunication’s Program.\nHis work uses controlled light and sculptural light systems to analyze the effects of technology on our perception of reality, time, and space. As technology has permeated through our daily lives these systems have altered the way we receive information and relay our thoughts. Technology allows for new forms of communication; however every system enhances certain types of information while limiting and simplifying others. These modulated effects and alterations to our perception have become the thematic focus to his works.\nLight and color are controlled to create the impression of space and imagery, often to the subject of the digitization of physical reality. The films and television we watch are largely computer generated, yet we don’t call them animations or take notice of their synthetic nature. We accept them as a form of reality and we’ve become accustomed to existing within the uncanny valley. The majority of our daily experience and information comes from the artificial light sources of our screens and phones, shifting our habitat from the physical space around us to the non-physical space of online digital systems. This gray area formulates the conceptual basis of Clar’s practice.",
+      "bioHtml": "<p>James Clar studied film and animation at New York University and received his Masters from NYU’s Interactive Telecommunication’s Program. </p>\n<p>His work uses controlled light and sculptural light systems to analyze the effects of technology on our perception of reality, time, and space. As technology has permeated through our daily lives these systems have altered the way we receive information and relay our thoughts. Technology allows for new forms of communication; however every system enhances certain types of information while limiting and simplifying others. These modulated effects and alterations to our perception have become the thematic focus to his works.</p>\n<p>Light and color are controlled to create the impression of space and imagery, often to the subject of the digitization of physical reality. The films and television we watch are largely computer generated, yet we don’t call them animations or take notice of their synthetic nature. We accept them as a form of reality and we’ve become accustomed to existing within the uncanny valley. The majority of our daily experience and information comes from the artificial light sources of our screens and phones, shifting our habitat from the physical space around us to the non-physical space of online digital systems. This gray area formulates the conceptual basis of Clar’s practice.</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://www.jamesclar.com/",
+          "label": "www.jamesclar.com"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/_james_clar/"
+        }
+      ]
+    },
+    {
+      "slug": "matthew-schreiber",
+      "name": "Matthew Schreiber",
+      "category": "light",
+      "bodyClass": "light-template-default single single-light postid-1098 no-tick mode-day radio-on light-matthew-schreiber",
+      "image": "DFN_web_lights_2_matthewschreiber-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Matthew Schreiber is a visual artist working in the field of light, architectural space and holography. His use of contemporary technology engages a conversation with ideas of the esoteric, superstition and the occult. His practice pits the active image of the past against todayʼs screen-based image culture of slick and banal immediacy.\nSchreiberʼs work has been the subject of solo exhibitions including\nLight, Color and Geometry\n, at the Frost Museum of Science, Miami, Florida;\nCrossbow\nat the Johnson Museum of Art, Cornell University;\nSide Show\nat Johannes Vogt Gallery, NYC;\nGuilloche\nat Fireplace Project in East Hampton, NY;\nSwiss Hall\nthe permanent installation at Herzog & de Meuron Residence in Basel, Switzerland;\nPlatonic Solids\nat the Ft. Lauderdale Museum of Art; and\nOntario\n, a site-specific installation curated by Ambra Medda in the Miami Design District, FL.\nGroup exhibitions include\nThe Jeweled Net: Views on Contemporary Holograph,\nat the MIT Museum in Cambridge, MA;\nCrystalline Lattice\n, curated by Yongwoo Lee in Gwangju, South Korea;\nMiami Noir\nat Invisible Exports in New York, NY;\nShadows, Disappearances, and Illusions\nat the Miami Art Museum; and\nGroup Show\nat Galerie Almine Rech in Paris, France.\nSchreiber’s Studio has produced major light installations and holographic works with artists, architects, designers, and museums since the mid 1990’s, including, John Baldessari, Roy Lichtenstein, James Turrell, Ed Ruscha, Tadao Ando, Foster + Partners, Local Projects, The Garage Moscow, The Getty, The Guggenheim Museum, NY, and Los Angeles County Museum of Art, among many others.\nSchreiber Studio and Laboratory is in Brooklyn, NY.\nPhoto: Florian Holzherr",
+      "bioHtml": "<p>Matthew Schreiber is a visual artist working in the field of light, architectural space and holography. His use of contemporary technology engages a conversation with ideas of the esoteric, superstition and the occult. His practice pits the active image of the past against todayʼs screen-based image culture of slick and banal immediacy.</p>\n<p>Schreiberʼs work has been the subject of solo exhibitions including <i>Light, Color and Geometry</i>, at the Frost Museum of Science, Miami, Florida;  <i>Crossbow</i> at the Johnson Museum of Art, Cornell University;  <i>Side Show</i> at Johannes Vogt Gallery, NYC;  <i>Guilloche </i>at Fireplace Project in East Hampton, NY; <i>Swiss Hall</i> the permanent installation at Herzog &amp; de Meuron Residence in Basel, Switzerland; <i>Platonic Solids</i> at the Ft. Lauderdale Museum of Art; and <i>Ontario</i>, a site-specific installation curated by Ambra Medda in the Miami Design District, FL.</p>\n<p>Group exhibitions include <i>The Jeweled Net: Views on Contemporary Holograph,</i> at the MIT Museum in Cambridge, MA;  <i>Crystalline Lattice</i>, curated by Yongwoo Lee in Gwangju, South Korea;  <i>Miami Noir</i> at Invisible Exports in New York, NY;  <i>Shadows, Disappearances, and Illusions</i> at the Miami Art Museum; and <i>Group Show</i> at Galerie Almine Rech in Paris, France.</p>\n<p>Schreiber’s Studio has produced major light installations and holographic works with artists, architects, designers, and museums since the mid 1990’s, including, John Baldessari, Roy Lichtenstein, James Turrell, Ed Ruscha, Tadao Ando, Foster + Partners, Local Projects, The Garage Moscow, The Getty, The Guggenheim Museum, NY, and Los Angeles County Museum of Art, among many others.</p>\n<p>Schreiber Studio and Laboratory is in Brooklyn, NY.</p>\n<p> </p>\n<p>Photo: Florian Holzherr</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://www.matthewschreiber.com/",
+          "label": "www.matthewschreiber.com"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/matthewschreiberart/"
+        }
+      ]
+    },
+    {
+      "slug": "processing-foundation",
+      "name": "Conditional Studio + Processing Foundation",
+      "category": "light",
+      "bodyClass": "light-template-default single single-light postid-1105 no-tick mode-day light-processing-foundation",
+      "image": "DFN_web_lights_5_conditionalstudio-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "The UCLA Arts Conditional Studio focuses on the intersections of software with art, politics, and everyday life. In this investigation, software can indicate everything from source code, networks, and UI patterns, to objects, ways of thinking, and practices of creation. Together we create, distribute, perform, modify, write, and critique. The Processing Foundation promotes software literacy within the visual arts, and visual literacy within technology-related fields — and to make these fields accessible to diverse communities. The goal is to empower people of all interests and backgrounds to learn how to program and make creative work with code, especially those who might not otherwise have access to these tools and resources. Impure Functions is led by Chandler McWilliams, Lauren McCarthy, and Casey Reas.",
+      "bioHtml": "<p>The UCLA Arts Conditional Studio focuses on the intersections of software with art, politics, and everyday life. In this investigation, software can indicate everything from source code, networks, and UI patterns, to objects, ways of thinking, and practices of creation. Together we create, distribute, perform, modify, write, and critique. The Processing Foundation promotes software literacy within the visual arts, and visual literacy within technology-related fields — and to make these fields accessible to diverse communities. The goal is to empower people of all interests and backgrounds to learn how to program and make creative work with code, especially those who might not otherwise have access to these tools and resources. Impure Functions is led by Chandler McWilliams, Lauren McCarthy, and Casey Reas.</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "https://processing.org/",
+          "label": "processing.org"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/ProcessingOrg"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/page.processing/"
+        }
+      ]
+    },
+    {
+      "slug": "ryoji-ikeda",
+      "name": "Ryoji Ikeda",
+      "category": "light",
+      "bodyClass": "light-template-default single single-light postid-1120 no-tick mode-day light-ryoji-ikeda",
+      "image": "RI_portrait.jpeg",
+      "aspectStyle": "padding-bottom:86.021505376344%;",
+      "bio": "Japan’s leading electronic composer and visual artist Ryoji Ikeda focuses on the essential characteristics of sound itself and that of visuals as light by means of both mathematical precision and mathematical aesthetics. Ikeda has gained a reputation as one of the few international artists working convincingly across both visual and sonic media. He elaborately orchestrates sound, visuals, materials, physical phenomena and mathematical notions into immersive live performances and installations.\nsupercodex [live set]\nis his latest audiovisual performance.\nAlongside of pure musical activity, Ikeda has been working on long-term projects through live performances, installations, books and CD’s such as\ndatamatics\n(2006-),\ntest pattern\n(2008-),\nspectra\n(2001-),\ncyclo\na collaborative project with Carsten Nicolai,\nsuperposition\n(2012-),\nsupersymmetry\n(2014) and\nmicro | macro\n(2015-).\nHe performs and exhibits worldwide at spaces such as Museum of Contemporary Art Tokyo, Elektra Festival Montreal, Grec and Sonar Festivals Barcelona, Aichi Triennale Nagoya, Palazzo Grassi Venice, Park Avenue Armory, Met Live and Crossing the line Festival New York, The Barbican Centre & the Vinyl Factory London, Hamburger Bahnhof Berlin, DHC/Art Montreal, Pompidou Center and Festival d’Automne in Paris, Sharjah Biennale, Carriageworks Sydney, Ruhrtriennale, Kyoto Experiment Festival, and Center for the Art of Performance UCLA Los Angeles among others.\nIn 2016, he premiered a new acoustic stage piece ‘music for percussion’ in collaboration with ensemble Eklekto (Geneva) currently on tour. In 2017, he presents a drone symphony, A [for 100 cars], produced by Red Bull Music Academy Los Angeles.\nHe is the award winner of the Prix Ars Electronica Collide@CERN 2014.\nHis albums +/- (1996), 0°C (1998), matrix (2000), dataplex (2005), test pattern (2008) and supercodex (2013) pioneered a new minimal world of electronic music through his razor-sharp techniques and aesthetics. In 2016 & 2017, The Vinyl Fac",
+      "bioHtml": "<p>Japan’s leading electronic composer and visual artist Ryoji Ikeda focuses on the essential characteristics of sound itself and that of visuals as light by means of both mathematical precision and mathematical aesthetics. Ikeda has gained a reputation as one of the few international artists working convincingly across both visual and sonic media. He elaborately orchestrates sound, visuals, materials, physical phenomena and mathematical notions into immersive live performances and installations. <em>supercodex [live set]</em> is his latest audiovisual performance.</p>\n<p>Alongside of pure musical activity, Ikeda has been working on long-term projects through live performances, installations, books and CD’s such as<em> datamatics</em> (2006-), <em>test pattern</em> (2008-), <em>spectra</em> (2001-), <em>cyclo</em> a collaborative project with Carsten Nicolai, <em>superposition</em> (2012-), <em>supersymmetry</em> (2014) and <em>micro | macro</em> (2015-).</p>\n<p>He performs and exhibits worldwide at spaces such as Museum of Contemporary Art Tokyo, Elektra Festival Montreal, Grec and Sonar Festivals Barcelona, Aichi Triennale Nagoya, Palazzo Grassi Venice, Park Avenue Armory, Met Live and Crossing the line Festival New York, The Barbican Centre &amp; the Vinyl Factory London, Hamburger Bahnhof Berlin, DHC/Art Montreal, Pompidou Center and Festival d’Automne in Paris, Sharjah Biennale, Carriageworks Sydney, Ruhrtriennale, Kyoto Experiment Festival, and Center for the Art of Performance UCLA Los Angeles among others.</p>\n<p>In 2016, he premiered a new acoustic stage piece ‘music for percussion’ in collaboration with ensemble Eklekto (Geneva) currently on tour. In 2017, he presents a drone symphony, A [for 100 cars], produced by Red Bull Music Academy Los Angeles.</p>\n<p>He is the award winner of the Prix Ars Electronica Collide@CERN 2014.</p>\n<p>His albums +/- (1996), 0°C (1998), matrix (2000), dataplex (2005), test pattern (2008) and supercodex (2013) pioneered a new minimal world of electronic music through his razor-sharp techniques and aesthetics. In 2016 &amp; 2017, The Vinyl Factory London released a limited edition vinyl <em>The Solar System</em> and<em> Music for percussion</em>.</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://www.ryojiikeda.com/",
+          "label": "www.ryojiikeda.com"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/ryojiikeda?lang=en"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/ryojiikedaofficial/"
+        },
+        {
+          "type": "spotify",
+          "url": "https://open.spotify.com/artist/5y835stYdAVOoNOq5EBMxz"
+        }
+      ]
+    },
+    {
+      "slug": "chelsea-manning",
+      "name": "Chelsea Manning",
+      "category": "talks",
+      "bodyClass": "talks-template-default single single-talks postid-1197 no-tick mode-day talks-chelsea-manning",
+      "image": "DFN_web_talks_chelseamanning-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Chelsea E. Manning worked as an intelligence analyst for the U.S. Department of Defense, where she publicly disclosed classified documents that revealed human rights abuses and corruption connected to the U.S. wars in Iraq and Afghanistan. Upon being sentenced to 35 years for leaking government documents, an unprecedented amount of time for whistleblowers, she publicly identified as a trans woman and asserted her legal rights to medical therapy. After serving 7 years in military prison, President Barack Obama commuted her sentence to time served. She was released in 2017.\nToday Manning is a Washington D.C based technologist and network security expert whose actions have shown the power of individuals to change the world through bravery, conscience, and determination. She speaks on the social, technological and economic ramifications of Artificial Intelligence, and on the practical applications of machine learning. She is a vocal advocate for government transparency and queer and transgender rights on Twitter and through her op-ed columns for\nThe Guardian\nand\nThe New York Times\n.",
+      "bioHtml": "<p>Chelsea E. Manning worked as an intelligence analyst for the U.S. Department of Defense, where she publicly disclosed classified documents that revealed human rights abuses and corruption connected to the U.S. wars in Iraq and Afghanistan. Upon being sentenced to 35 years for leaking government documents, an unprecedented amount of time for whistleblowers, she publicly identified as a trans woman and asserted her legal rights to medical therapy. After serving 7 years in military prison, President Barack Obama commuted her sentence to time served. She was released in 2017.</p>\n<p>Today Manning is a Washington D.C based technologist and network security expert whose actions have shown the power of individuals to change the world through bravery, conscience, and determination. She speaks on the social, technological and economic ramifications of Artificial Intelligence, and on the practical applications of machine learning. She is a vocal advocate for government transparency and queer and transgender rights on Twitter and through her op-ed columns for <em>The Guardian</em> and <em>The New York Times</em>.</p>\n",
+      "links": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/xychelsea"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/xychelsea87/?hl=en"
+        }
+      ]
+    },
+    {
+      "slug": "jenny-hval",
+      "name": "Jenny Hval",
+      "category": "talks",
+      "bodyClass": "talks-template-default single single-talks postid-1181 no-tick mode-day radio-on talks-jenny-hval",
+      "image": "DFN_web_talks_jennyhval-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Jenny Hval has in recent years made a name for herself as a recording artist and writer both in her native Norway and abroad. Multidisciplinary and transgressive are words often employed to describe her art, but Jenny Hval’s polyphonic artistry is in fact seamlessly interwoven between musical, literary, visual and performative modes of expression. Her artistic voice is altogether present, accessible and obscurely complex at the same time.\nHval released her first two albums under the alias Rockettothesky (an alias named after her very first recorded song in 1999, and slayed with the greatest pleasure in 2010). She has since recorded three albums under her own name:\nViscera\n,\nInnocence Is Kinky\n, and\nApocalypse, girl\n(Sacred Bones Records / Su Tissue, 2015). She made her debut as a writer with the novel\nPerlebryggeriet\nin 2009. The less genre friendly\nInn i ansiktet\nfollowed in 2012. She has worked on a number of collaborations, sound pieces, compositions, productions and performances.\nShe is currently zoning out after the fabulous release and extensive touring with her vampire / blood solo album\nBlood Bitch\n, co-produced by noise artist Lasse Marhaug and herself.",
+      "bioHtml": "<p>Jenny Hval has in recent years made a name for herself as a recording artist and writer both in her native Norway and abroad. Multidisciplinary and transgressive are words often employed to describe her art, but Jenny Hval’s polyphonic artistry is in fact seamlessly interwoven between musical, literary, visual and performative modes of expression. Her artistic voice is altogether present, accessible and obscurely complex at the same time.</p>\n<p>Hval released her first two albums under the alias Rockettothesky (an alias named after her very first recorded song in 1999, and slayed with the greatest pleasure in 2010). She has since recorded three albums under her own name: <em>Viscera</em>, <em>Innocence Is Kinky</em>, and <em>Apocalypse, girl</em> (Sacred Bones Records / Su Tissue, 2015). She made her debut as a writer with the novel <em>Perlebryggeriet</em> in 2009. The less genre friendly <em>Inn i ansiktet</em> followed in 2012. She has worked on a number of collaborations, sound pieces, compositions, productions and performances.</p>\n<p>She is currently zoning out after the fabulous release and extensive touring with her vampire / blood solo album <em>Blood Bitch</em>, co-produced by noise artist Lasse Marhaug and herself.</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://jennyhval.com/",
+          "label": "jennyhval.com"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/jennyhval"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/jennyhval/?hl=en"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/jennyhval"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/jennyhval/"
+        },
+        {
+          "type": "spotify",
+          "url": "https://open.spotify.com/artist/5eerVxtb9lY9p6D7m89Bs7?autoplay=true"
+        }
+      ]
+    },
+    {
+      "slug": "kaytranada",
+      "name": "Kaytranada",
+      "category": "talks",
+      "bodyClass": "talks-template-default single single-talks postid-1176 no-tick mode-day radio-on talks-kaytranada",
+      "image": "DFN_web_talks_kaytranada-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Born in Haiti and raised in the city of Montreal, Canadian artist Kaytranada has experienced an explosive rise in the past couple of years with his irresistible production and live sets, but the hard work and success did not happen over night. Before touring the globe and amassing millions of hits online with his series of beloved tracks and mixes, the young man came up as a true disciple, absorbing hip hop and RnB culture since his childhood and finding ways to make the music his own.\nSince the age of fourteen, when he first began to DJ and the following year when his brother introduced him to music production software, his output has been relentless. As he explains, “after he showed me the basics, from that day on I couldn’t stop making beats,” pumping out a beat a day for the next couple of years and soon after self-releasing a series of EPs and beat tapes that quickly began to expand his reach. Official releases on HW&W and Jakarta Records soon spread his name like wildfire and some instant-classic remixes by the likes of Missy Elliot, Janet Jackson,TLC, Danny Brown and others have cemented his reputation and his sound; an undeniable swing of the drums comparable to Dilla’s, a signature soulful touch in the melodies, and a healthy dose of funky bass lines.\nIn 2014, Announcing via his Facebook page, KAYTRANADA signed an exclusive recording agreement with XL Recordings, the historic London based record label. His long-awaited debut album,\n99.9%\n, was released on May 6, 2016 with an overwhelming positive response. The album includes features from GoldLink, AlunaGeorge, Syd, Anderson .Paakm and Vic Mensa among others. “Glowed Up ft. Anderson .Paak” was named Best New Music by Pitchfork when it was released as the album’s 3rd single, along with a stunning music video. The album’s second music video for “Lite Spots” was nominated for a 2016 Much Music Video award.\nApart from his solo work, Kaytranada has produced for Mick Jenkins, Mobb Deep, Kali Uchis, Mobb Deep, Cha",
+      "bioHtml": "<p>Born in Haiti and raised in the city of Montreal, Canadian artist Kaytranada has experienced an explosive rise in the past couple of years with his irresistible production and live sets, but the hard work and success did not happen over night. Before touring the globe and amassing millions of hits online with his series of beloved tracks and mixes, the young man came up as a true disciple, absorbing hip hop and RnB culture since his childhood and finding ways to make the music his own.</p>\n<p>Since the age of fourteen, when he first began to DJ and the following year when his brother introduced him to music production software, his output has been relentless. As he explains, “after he showed me the basics, from that day on I couldn’t stop making beats,” pumping out a beat a day for the next couple of years and soon after self-releasing a series of EPs and beat tapes that quickly began to expand his reach. Official releases on HW&amp;W and Jakarta Records soon spread his name like wildfire and some instant-classic remixes by the likes of Missy Elliot, Janet Jackson,TLC, Danny Brown and others have cemented his reputation and his sound; an undeniable swing of the drums comparable to Dilla’s, a signature soulful touch in the melodies, and a healthy dose of funky bass lines.</p>\n<p>In 2014, Announcing via his Facebook page, KAYTRANADA signed an exclusive recording agreement with XL Recordings, the historic London based record label. His long-awaited debut album, <em>99.9%</em>, was released on May 6, 2016 with an overwhelming positive response. The album includes features from GoldLink, AlunaGeorge, Syd, Anderson .Paakm and Vic Mensa among others. “Glowed Up ft. Anderson .Paak” was named Best New Music by Pitchfork when it was released as the album’s 3rd single, along with a stunning music video. The album’s second music video for “Lite Spots” was nominated for a 2016 Much Music Video award.</p>\n<p>Apart from his solo work, Kaytranada has produced for Mick Jenkins, Mobb Deep, Kali Uchis, Mobb Deep, Chance The Rapper, Talib Kweli, The Internet, and more. All of this production caught the eye of someone in particular in late 2015. Def Jam legend, Rick Rubin reached out to Kaytranada for a partnership with his publishing company Pulse Recordings. They soon later inked an exclusive deal.</p>\n<p>Critics often say his career as an artist has 3 parts and that’s what makes him so versatile and talented. Solo artist, producer, and DJ. The latter of which he has proved time and time again. Kaytranada has toured over 100 different cities world wide, and has played many major festivals such as Coachella, Osheaga, Panorama, LoveBox, and many more. He is nonstop in demand as one of the worlds most popular DJs, and sells out the world’s most prestige venues on a regular basis with his exceptional show.</p>\n<p>With his career only beginning, and having accomplished so much already, keep your eye on this extraordinary producer as chances are you will be hearing a lot from him in the decades to come.</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://kaytranada.com/",
+          "label": "kaytranada.com"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/kaytranada"
+        },
+        {
+          "type": "instagram",
+          "url": "https://www.instagram.com/kaytranada/"
+        },
+        {
+          "type": "soundcloud",
+          "url": "https://soundcloud.com/kaytranada"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/Kaytranada"
+        },
+        {
+          "type": "spotify",
+          "url": "https://open.spotify.com/artist/6qgnBH6iDM91ipVXv28OMu"
+        }
+      ]
+    },
+    {
+      "slug": "lauren-mccarthy",
+      "name": "Lauren McCarthy",
+      "category": "talks",
+      "bodyClass": "talks-template-default single single-talks postid-1198 no-tick mode-day talks-lauren-mccarthy",
+      "image": "DFN_web_talks_laurenmccarthy-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Lauren McCarthy is an artist based in Los Angeles and Brooklyn whose work explores social and technological systems for being a person and interacting with other people. She makes software, performances, videos, and other things on the Internet. She is the creator of p5.js.\nLauren has exhibited at Ars Electronica, Conflux Festival, SIGGRAPH, LACMA, Onassis Cultural Center, IDFA DocLab, and the Japan Media Arts Festival, and worked on installations for the London Eye and the US Holocaust Memorial Museum. She holds an MFA from UCLA and a BS Computer Science and BS Art and Design from MIT.\nShe is an Assistant Professor at UCLA Design Media Arts. She was previously a resident at CMU STUDIO for Creative Inquiry, Eyebeam, NYU ITP, and Ars Electronica / QUT TRANSMIT³.",
+      "bioHtml": "<p>Lauren McCarthy is an artist based in Los Angeles and Brooklyn whose work explores social and technological systems for being a person and interacting with other people. She makes software, performances, videos, and other things on the Internet. She is the creator of p5.js.</p>\n<p>Lauren has exhibited at Ars Electronica, Conflux Festival, SIGGRAPH, LACMA, Onassis Cultural Center, IDFA DocLab, and the Japan Media Arts Festival, and worked on installations for the London Eye and the US Holocaust Memorial Museum. She holds an MFA from UCLA and a BS Computer Science and BS Art and Design from MIT.</p>\n<p>She is an Assistant Professor at UCLA Design Media Arts. She was previously a resident at CMU STUDIO for Creative Inquiry, Eyebeam, NYU ITP, and Ars Electronica / QUT TRANSMIT³.</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://lauren-mccarthy.com/",
+          "label": "Lauren McCarthy"
+        },
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/laurmccarthy"
+        }
+      ]
+    },
+    {
+      "slug": "laurie-anderson",
+      "name": "Laurie Anderson",
+      "category": "talks",
+      "bodyClass": "talks-template-default single single-talks postid-1195 no-tick mode-day talks-laurie-anderson",
+      "image": "DFN_web_sound_laurieanderson-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Laurie Anderson is one of America’s most renowned — and daring — creative pioneers. She is best known for her multimedia presentations and innovative use of technology. As writer, director, visual artist and vocalist she has created groundbreaking works that span the worlds of art, theater and experimental music.\nHer recording career, launched by “O Superman” in 1981, includes the soundtrack to her feature film “Home of the Brave” and “Life on a String” (2001). Anderson’s live shows range from simple spoken word to elaborate multi-media stage performances such as “Songs and Stories for Moby Dick” (1999). Anderson has published seven books and her visual work has been presented in major museums around the world.\nIn 2002, Anderson was appointed the first artist-in-residence of NASA which culminated in her 2004 touring solo performance “The End of the Moon.” Recent projects include a series of audio-visual installations and a high-definition film, “Hidden Inside Mountains,” created for World Expo 2005 in Aichi, Japan. In 2007 she received the prestigious Dorothy and Lillian Gish Prize for her outstanding contribution to the arts. In 2008 she completed a two-year worldwide tour of her performance piece, “Homeland,” which was released as an album on Nonesuch Records in June 2010. Anderson’s solo performance “Delusion” debuted at the Vancouver Cultural Olympiad in February 2010. In October 2010 a retrospective of her visual and installation work opened in Sao Paulo, Brazil and later traveled to Rio de Janiero. In 2011 her exhibition of new visual work titled “Forty-Nine Days In the Bardo” opened in Philadelphia, and “Boat,” her first exhibition of paintings, premiered at the Vito Schnabel Gallery in New York. She has recently been appointed as a three-year fellow at both EMPAC, the multi media center at RPI in Troy, NY, and PAC at UCLA. Anderson lives in New York City.",
+      "bioHtml": "<p>Laurie Anderson is one of America’s most renowned — and daring — creative pioneers. She is best known for her multimedia presentations and innovative use of technology. As writer, director, visual artist and vocalist she has created groundbreaking works that span the worlds of art, theater and experimental music.</p>\n<p>Her recording career, launched by “O Superman” in 1981, includes the soundtrack to her feature film “Home of the Brave” and “Life on a String” (2001). Anderson’s live shows range from simple spoken word to elaborate multi-media stage performances such as “Songs and Stories for Moby Dick” (1999). Anderson has published seven books and her visual work has been presented in major museums around the world.</p>\n<p>In 2002, Anderson was appointed the first artist-in-residence of NASA which culminated in her 2004 touring solo performance “The End of the Moon.” Recent projects include a series of audio-visual installations and a high-definition film, “Hidden Inside Mountains,” created for World Expo 2005 in Aichi, Japan. In 2007 she received the prestigious Dorothy and Lillian Gish Prize for her outstanding contribution to the arts. In 2008 she completed a two-year worldwide tour of her performance piece, “Homeland,” which was released as an album on Nonesuch Records in June 2010. Anderson’s solo performance “Delusion” debuted at the Vancouver Cultural Olympiad in February 2010. In October 2010 a retrospective of her visual and installation work opened in Sao Paulo, Brazil and later traveled to Rio de Janiero. In 2011 her exhibition of new visual work titled “Forty-Nine Days In the Bardo” opened in Philadelphia, and “Boat,” her first exhibition of paintings, premiered at the Vito Schnabel Gallery in New York. She has recently been appointed as a three-year fellow at both EMPAC, the multi media center at RPI in Troy, NY, and PAC at UCLA. Anderson lives in New York City.</p>\n",
+      "links": [
+        {
+          "type": "website",
+          "url": "http://www.laurieanderson.com/",
+          "label": "www.laurieanderson.com"
+        },
+        {
+          "type": "twitter",
+          "url": "http://twitter.com/onlyanexpert"
+        },
+        {
+          "type": "facebook",
+          "url": "http://www.facebook.com/LaurieAnderson"
+        },
+        {
+          "type": "spotify",
+          "url": "https://open.spotify.com/artist/5hqB3Fxgin9YGYa0mIGf1G?autoplay=true"
+        }
+      ]
+    },
+    {
+      "slug": "nadya-from-pussy-riot",
+      "name": "Nadya from Pussy Riot",
+      "category": "talks",
+      "bodyClass": "talks-template-default single single-talks postid-1194 no-tick mode-day radio-on talks-nadya-from-pussy-riot",
+      "image": "DFN_web_sound_nadyaofpussyriot-1024x768.jpg",
+      "aspectStyle": "padding-bottom:75%;",
+      "bio": "Nadya Tolokonnikova is a Russian musician, conceptual artist, and political activist. She’s the founder of the feminist punk collective, Pussy Riot, and has a history of political activism both in and out of the group. In Moscow in 2011, Pussy Riot began staging unauthorized provocative guerrilla performances in public locations, later editing footage of the performances into music videos, promoting gender equality, LGBT rights, and opposition to Russian President, Vladimir Putin. In 2012, she was convicted of “hooliganism motivated by religious hatred” after being arrested during a performance in Moscow Cathedral of Christ the Saviour. According to Vladimir Putin, the work “undermined the moral foundations of the Russian nation,” sentencing Nadya and two others to two years’ hard labor in Siberia. She was recognized by the Russian human rights group “Union of Solidarity with Political Prisoners,” named a “prisoner of conscience due to the severity of the response of the Russian authorities” by Amnesty International, and received the LennonOno Grant for Peace in 2012. Her first collaboration with Dave Sitek (TV on the Radio, Yeah Yeah Yeahs, Kelis), “Chaika,” was released in February 2016, and her debut EP,\nxxx\n, released last October.",
+      "bioHtml": "<p>Nadya Tolokonnikova is a Russian musician, conceptual artist, and political activist. She’s the founder of the feminist punk collective, Pussy Riot, and has a history of political activism both in and out of the group. In Moscow in 2011, Pussy Riot began staging unauthorized provocative guerrilla performances in public locations, later editing footage of the performances into music videos, promoting gender equality, LGBT rights, and opposition to Russian President, Vladimir Putin. In 2012, she was convicted of “hooliganism motivated by religious hatred” after being arrested during a performance in Moscow Cathedral of Christ the Saviour. According to Vladimir Putin, the work “undermined the moral foundations of the Russian nation,” sentencing Nadya and two others to two years’ hard labor in Siberia. She was recognized by the Russian human rights group “Union of Solidarity with Political Prisoners,” named a “prisoner of conscience due to the severity of the response of the Russian authorities” by Amnesty International, and received the LennonOno Grant for Peace in 2012. Her first collaboration with Dave Sitek (TV on the Radio, Yeah Yeah Yeahs, Kelis), “Chaika,” was released in February 2016, and her debut EP, <em>xxx</em>, released last October.</p>\n",
+      "links": [
+        {
+          "type": "twitter",
+          "url": "https://twitter.com/pussyrrriot?lang=en"
+        },
+        {
+          "type": "facebook",
+          "url": "https://www.facebook.com/wearepussyriot/"
+        }
+      ]
+    }
+  ],
+  "about": [
+    "Day for Night is the best young music festival in the world\nConsequence of Sound\nLIGHT AND\nSOUND COLLIDE",
+    "An eclectic musical lineup\nDay for Night is a current snapshot of popular music as well as a showcase for trailblazers who continue to cross over from the fringes to become influencers. Eschewing the idea of musical genres, Day for Night focuses instead on acts that specialize in an inventive and highly visual approach to performing.\nLineup\nNine Inch Nails\nThom Yorke\nSolange\nJustice\nSt. Vincent\nTyler, The Creator\nJames Blake\nPretty Lights\nJamie XX\nPhantogram\nPussy Riot\nThe Jesus Lizard\nNina Kraviz\nGodspeed You! Black Emperor\nREZZ\nLaurie Anderson\nCashmere Cat\nCardi B\nPerfume Genius\nGas\nEn Vogue\nLil B\nof Montreal\nVenetian Snares x Daniel Lanois\nPrincess Nokia\nKimbra\nMount Kimbie\nCorbin\nShlohmo\nThe Album Leaf\nDJ Tennis\nTim Hecker\nForest Swords\nBabyfather\nG Jones\nShabazz Palaces\nAndy Stott\nJessy Lanza\nRoni Size\nJlin\nPriests\nBjarki\nDemdike Stare\nSaro\nRabit x House of Kenzo\nB L A C K I E\nMarcus Marr\nHoodCelebrityy\nFaten Kanaan\nTrue American\nPearl Crush\nDeep Cuts\nTyler Barber\nN N O A\nSanta Muerte\nKona FM\nNarcons\nAcid Jeep\nHescher\nTearz\nXLX\nMiguel Flaco\nCollin Hedrick\nLIMB",
+    "Mixed with ambitious installations\nThe visual artists build experiences within the blurred boundaries of performance, interaction and immersive installations both indoors and out. Large scale projections and site-specific custom-built structures bring a heightened sensorial experience to new audiences.\nRyoji Ikeda\nMatthew Schreiber\nConditional Studio + Processing Foundation\nJames Clar\nFelicie D’Estienne d’Orves\nKyle McDonald + Jonas Jongejan\nRyoichi Kurokawa\nRadio Soulwax\nVT Pro\nHovver\nThe Mill\nFREEKA TET\nPlaymodes\nThéodore Fivel + Freeka Tet\nEkene Ijeoma\nCocolab\nSam Cannon\nVincent Moon + Priscilla Telmon\nLina Dib\nLineup",
+    "The Campus\nThe historic Barbara Jordan Post Office at 401 Franklin Street, designed by the same architects as the Houston Astrodome, will be the setting for this year’s hyper-sensorial festival.\nThe 1.5 million square foot hybrid indoor-outdoor space will house four massive stages with seamless flow between the stages and immersive art installations.",
+    "Join Us\nKeep an eye on social media for Day for Night updates on giveaways, Street Team opportunities and more.\nBuy Passes"
+  ],
+  "faq": [
+    {
+      "category": "General",
+      "items": [
+        {
+          "question": "What is Day for Night?",
+          "answer": "Day for Night is a visually immersive art and music festival exploring the boundaries of light, space, and sound."
+        },
+        {
+          "question": "When is it?",
+          "answer": "Friday, December 15, 2017 – 3 pm to 2 am\nSaturday, December 16, 2017 – 12 pm to 2 am\nSunday, December 17, 2017 – 12 pm to 2 am\nThe festival will take place rain or shine, unless otherwise posted. Limited re-entry."
+        },
+        {
+          "question": "Where is it?",
+          "answer": "Barbara Jordan Post Office\n401 Franklin Street\nHouston, Texas 77201\nDirections\nBuy passes\nonline\nor at the gate."
+        },
+        {
+          "question": "Is there ADA access at Day for Night?",
+          "answer": "There will plenty of ADA accessible parking on-site. The main entrance is accessible. Should a line form, you may proceed to the front and ask a gate manager to help expedite your entry. Additional details regarding ADA access will be updated closer to the event. If you have specific requirements that you’d like to discuss with a Day for Night staff member, please send an email to info@dayfornight.io with “ADA Access” in the subject line."
+        },
+        {
+          "question": "How old must I be to attend Day for Night?",
+          "answer": "Day for Night is an all ages event. However, children 16 and under are only allowed if accompanied by a parent and under close parental supervision at all times. Children 5 and under are free, but are highly recommended to wear protective gear over their ears to protect their hearing."
+        },
+        {
+          "question": "What if I become ill at the festival?",
+          "answer": "Medical stations will be located throughout the festival site. Paramedics and EMTs will be roaming the festival site as well. Remember, medical staff are there to help you under any circumstances. Not to judge you. Not to arrest you. They are there only to make sure you are safe. If you, or a friend, feel ill for any reason whatsoever, immediately check in with our medical staff to make sure all is well. Your safety is more important than anything."
+        },
+        {
+          "question": "Is Houston okay to hold Day for Night?",
+          "answer": "Houston is not only a dynamic city, but also an incredibly resilient one. While many in our city experienced life-altering losses during and after the storm, we are recovering quickly thanks to the tireless spirit of our amazing residents and their on-going relief efforts. Hurricane Harvey showed us that Houstonians are ready to help their neighbors at a moment’s notice in the face of adversity. That being said, Day for Night will show support through fundraising efforts to help get people back on their feet."
+        },
+        {
+          "question": "Anti-Harassment Policy",
+          "answer": "Day for Night aims to make the festival experience one that you won’t forget. That being said, memories of people making you feel uncomfortable or harassed are the kinds of memories we will avoid at all costs. Day for Night does not tolerate any kind of harassment, from non-consensual touching to inappropriate comments. We want all participants to immediately notify Day for Night security or staff if they experience or witness these kinds of behaviors as we will work to make sure it doesn’t happen again so that you feel safe at the festival.\nDay for Night has a zero-tolerance policy for harassment of any kind and we want to make sure everyone feels comfortable in the festival environment regardless of race, color, national origin, gender, gender identity, gender presentation, sexual orientation, age, body size, disability, appearance, religion, citizenship, or pregnancy.\nHarassment includes (but is not limited to): inappropriate physical contact, harassing or non-consensual photography or recording, offensive comments, verbal or physical intimidation, stalking, and physical assault."
+        }
+      ]
+    },
+    {
+      "category": "Tickets",
+      "items": [
+        {
+          "question": "Day for Night General Admission",
+          "answer": "2-day General Admission with entry to all stages, art installations, and GA areas on festival campus."
+        },
+        {
+          "question": "Day for Night General Admission + Friday Summit",
+          "answer": "2-day General Admission with entry to all stages, art installations, and GA areas on festival campus.\nPlus Friday Summit\nEntry to private showing and kickoff party at Day for Night festival campus\nSpeaking panels with\nNadya from Pussy Riot\n,\nChelsea Manning\n,\nLaurie Anderson\nand\nLauren McCarthy\nPerformances\nby\nKaytranada\n,\nEarl Sweatshirt\n,\nSolange\n,\nJenny Hval\n,\nBOOTS\nand\nSaul Williams"
+        },
+        {
+          "question": "Day for Night VIP",
+          "answer": "2-day General Admission with entry to all stages, art installations, and GA areas on festival campus.\nPlus Friday Night Summit\nPlus VIP Access\nRapid entry to the event\nPremium viewing areas\nAccess to VIP lounge\nComplimentary beverages and snacks throughout the event\nOn-site VIP concierge and help desk\nComplimentary swag bag with Day for Night t-shirt, stickers, pins and tote"
+        },
+        {
+          "question": "Where can I buy tickets?",
+          "answer": "Passes are available to purchase\nonline\nnow. As long as Day for Night is not sold out in advance, passes will also be available at the gate. Check back closer to the festival dates for Box Office Hours."
+        },
+        {
+          "question": "Will I be able to purchase a single day ticket?",
+          "answer": "Single day passes may or may not become available as we get closer to the festival."
+        },
+        {
+          "question": "Can I upgrade to a VIP pass?",
+          "answer": "Yes. Please contact\nticketing@dayfornight.io\nto inquire about upgrading from a GA to a VIP pass. In your email please include the full name used to purchase your ticket, as well as your original order confirmation number."
+        },
+        {
+          "question": "What are the Collectible 3D Magnets?",
+          "answer": "New for Day for Night 2017, we’re offering an optional Collectible 3D Magnet. Collectible 3D Magnets are an additional $10.00 and are available with every ticket type. Magnets will be shipped along with your festival wristband prior to the event."
+        },
+        {
+          "question": "Do you offer payment plans?",
+          "answer": "Yes. Day for Night is offering payment plans on all ticket types.  After selecting your ticket quantities and being directed to enter payment information, just select\n“Pay by monthly payments with Affirm”\nas the Payment Method and follow the instructions from there. Check out\nEventbrite support\nfor more information about paying with Affirm."
+        },
+        {
+          "question": "What are your box office hours?",
+          "answer": "Box Office hours for festival days will be posted closer to the event."
+        },
+        {
+          "question": "What will I receive when I purchase my ticket online?",
+          "answer": "Once you purchase your ticket, you will receive an order confirmation email from Eventbrite on behalf of Day for Night."
+        },
+        {
+          "question": "I have not received my order confirmation email. What should I do?",
+          "answer": "If you do not see your order confirmation in your inbox, make sure to check your spam folder. If you still do not see your order confirmation, click\nhere\nto access Eventbrite’s help center."
+        },
+        {
+          "question": "When will I get my Day for Night wristband?",
+          "answer": "All wristbands will ship in November 2017. Please allow to the beginning of December 2017 for your wristbands to arrive. Wristbands will be sent to the shipping address specified on your order. If purchasing from outside the US or Canada, wristbands will be held at will call at the festival box office. If you are traveling from out of town, and have not received your wristband prior to traveling, please contact Eventbrite\nhere\n."
+        },
+        {
+          "question": "What if I need to change my shipping address?",
+          "answer": "Click\nhere\nfor instructions. You will be able to update your shipping address until early November."
+        },
+        {
+          "question": "My wristband just came in the mail. Should I put it on now?",
+          "answer": "No. Please do not put your wristband on until you’re ready to enter the festival."
+        },
+        {
+          "question": "I bought an Early Bird Blind Presale Ticket",
+          "answer": "The Early Bird Blind Presale Pass you purchased in December 2016 is will allow you General Admission to the festival. You can find estimated shipment and delivery dates along with other tracking information from the Tickets page in your Eventbrite account."
+        },
+        {
+          "question": "Can I get a refund?",
+          "answer": "All sales are final and non-transferable. No refunds, no exchanges, no-resale."
+        },
+        {
+          "question": "What is your wristband policy?",
+          "answer": "Wristbands MUST be worn for entry into the festival and at all times during the festival (including the time between days).\nOnly wristbands purchased through Eventbrite are valid. If you purchased from an unauthorized source and/or the ticket is counterfeit, you will not be allowed entry.\nWristbands MUST be worn securely on your wrist and cannot be slipped on and off.\nDo NOT remove, stretch or tamper with your wristband in any way or you will not be allowed entry.\nSubsequent and/or multiple presentations of a counterfeited wristband are VOID and will be seized by festival security staff.\nIf your wristband is removed by festival security/event staff for any reason, it WILL NOT be replaced.\nAll wristband holders must pass through security and are subject to a security inspection. Prohibited items will be confiscated by event staff.\nWristbands are NON-TRANSFERABLE, NON-EXCHANGEABLE and NON-REPLACEABLE."
+        },
+        {
+          "question": "Ticketing Support",
+          "answer": "For all ticketing inquires, please visit\nwww.eventbrite.com\n."
+        }
+      ]
+    },
+    {
+      "category": "Transportation",
+      "items": [
+        {
+          "question": "Where can I park?",
+          "answer": "Find the easiest way to park by choosing from 20 locations with parking costs under $25:"
+        },
+        {
+          "question": "What are the best options for public transport?",
+          "answer": "As always, we encourage attendees to get to and from the festival as safely as possible.\nMETRORail\nA great choice for safe public transport is the\nMETRORail\n, which offers a wide variety of parking options along its many routes across Houston, as well as a stop located at UH Downtown (1 Main St.), only a 10-minute walk from the Day for Night festival grounds.\nTake the Red Line to Preston Station, walk two blocks north to Franklin, four blocks west to Smith.\nParking options to utilize the Red Line METRORail include:\nNorthline Transit Center\n7705 Fulton Street\nHouston, Texas 77022\nFree parking. Located just outside of the north side of the 610 Loop. This is the northernmost train station for the Red Line. The train can be taken directly into downtown. Parking is open 24/7. Parking lot is shared by Houston Community College. Please be sure you are parking in a METRO designated parking spot. Spots are labeled.\nFannin South Park & Ride\n1604 West Bellfort Boulevard\nHouston, Texas 77054\n$3.00 for the day. Located just outside of the south side of the 610 Loop. This is the southernmost train station for the Red Line. The train can be taken directly into downtown. Parking is open 24/7. Operator’s booth open 8am-2pm on Saturday.\nCity Street Parking\nThough you cannot park along Main Street itself, you can park on intersecting and adjacent side streets. Please be aware of signage indicating what times you are or are not allowed to park on certain streets. Please also be aware that if a street is along an apartment building or residential neighborhood, a permit may be required. In Downtown and Midtown, parking on public streets is free after 6 PM on Monday – Saturday and is free all day on Sunday. Park near Main Street and take the train into downtown for easy festival access. For parking on a public street outside of “free hours,” pay on the nearby meter or download the ParkMobile app.\nPurchase a Day for Night Pass and enjoy unlimited round-trip access on the Houston Metro Bus and Rail for just $3.00 a day.\nParking options along the Green Line METRORail:\nTake the Green Line to Theatre District Station, walk along Smith five blocks north to Franklin.\nMinute Maid Park/BBVA Compass Stadium\n2200 Texas Avenue\nHouston, Texas 77003\nSaturday: Park all day for $10.00. Parking lots available after 3:00 pm.\nSunday: Park all day for $10.00. Parking lots available after 2:00 pm.\nUtilize the Green Line train into downtown conveniently located at BBVA Stadium’s northeast side (Texas Avenue).\nPurchase a Day for Night Pass and enjoy unlimited round-trip access on the Houston Metro Bus and Rail for just $3.00 a day.\nHouston METRO Bus Network\nYou can take any of the following bus routes to or near the festival site:\n32 Renwick/San Felipe\n48 Market\n82 Westheimer\n85 Antoine/Washington\n160 Memorial City Express\n161 Wilcrest Express\n162 Memorial Express\nPurchase a Day for Night Pass and enjoy unlimited round-trip access on the Houston Metro Bus and Rail for just $3.00 a day.\nGreenLink Bus Network\nGreenLink is downtown’s local bus network (this is\nNOT\nthe Houston Metro bus network). GreenLink buses are white, green, and orange and run strictly within the downtown area. Riding the GreenLink bus is free. Feel free to park in any garage downtown near a GreenLink stop and take the GreenLink bus to the festival site."
+        }
+      ]
+    },
+    {
+      "category": "What to bring/not to bring",
+      "items": [
+        {
+          "question": "What should I bring?",
+          "answer": "WINTER-FRIENDLY ITEMS such as a hoodie, jacket, scarf, gloves, beanies, etc.\nBAGS that include small bags, single compartment backpacks, and purses not larger 21″ x 10″ x 14″\nCAMELBAKS with a single pocket only and empty when entering\nONE (1) CLEAR PLASTIC WATER BOTTLE per person not larger than one liter (1L) that is empty when entering\nPERSONAL CAMERAS with no detachable lenses\nCASH (SMALL BILLS) AND CREDIT CARDS. Cash will be accepted for food, drinks, and memorabilia, and in some locations credit cards will be accepted as well. There is no need to purchase food/drink tickets first. ATMs will be available throughout the festival grounds as well.\nEAR PROTECTION for young children is highly recommended"
+        },
+        {
+          "question": "What can’t I bring?",
+          "answer": "PETS of any kind\nMOTORIZED VEHICLES\nCOOLERS\nTENTS, CANOPIES, or other big pointy obstructions\nWEAPONS of any kind\nNO WATER OR ANY OTHER LIQUID OR FOOD IS ADMITTED (as required by the City of Houston)\nAny item that can be used as a means to disturb the peace, endanger the safety of the crowd, and/or inflict damage to people and goods"
+        },
+        {
+          "question": "Entry conditions for all guests",
+          "answer": "All guests and their belongings are subject to search\nAllowed and prohibited items are subject to change at any time without notice\nDay for Night and private security personnel at the entrances reserve the right to make the final determination on allowed and prohibited items\nAny prohibited item that is surrendered to security at search points will not be returned\nIf you need medicine with you at Day for Night:\nPrescription medications are allowed only in the original prescription bottle, pills in the bottle must match the printed description on the label, and the person bearing the bottle much have valid government-issued photo identification that matches the name on the prescription printed on the bottle — do not mix multiple prescriptions in a single bottle and only bring the dosage prescribed for a single day.\nOver-the-counter medications are allowed in reasonable quantity provided they are new and in the original, factory-sealed container — vitamins are not allowed.\nPursuant to Section 30.06, Penal Code (trespass by license holder with a concealed handgun), a person licensed under Subchapter H, Chapter 411, Government Code (handgun licensing law), may not enter the Day for Night property with a concealed handgun."
+        },
+        {
+          "question": "Can I take photos and video at Day for Night?",
+          "answer": "NO PROFESSIONAL PHOTOGRAPHY, VIDEO, OR AUDIO RECORDING EQUIPMENT WILL BE ALLOWED.  If you are a member of the press and need media access, please contact us."
+        },
+        {
+          "question": "Are outside sales allowed at Day for Night?",
+          "answer": "NO UNAUTHORIZED VENDING, SALES, SOLICITATIONS, OR PROMOTIONS. If you are interested in any of these things, please contact us."
+        }
+      ]
+    },
+    {
+      "category": "Lineup",
+      "items": [
+        {
+          "question": "Who is performing at Day for Night?",
+          "answer": "See the full lineup\nhere\n."
+        },
+        {
+          "question": "Can my band play?",
+          "answer": "2017 is already booked, however if you are interested in playing 2018, please direct all inquiries to Chris Wise at\nchris@dayfornight.io\n."
+        }
+      ]
+    },
+    {
+      "category": "Who What Why",
+      "items": [
+        {
+          "question": "Who runs Day For Night?",
+          "answer": "Free Press Houston\nand New York-based creative agency\nWork-Order\nare responsible for the creation of Day For Night.\nFor 13 years, Free Press Houston has been independently publishing a newspaper dedicated to local arts, music, and political coverage. In 2009, they founded Free Press Summer Festival, an annual music festival which has hosted notable acts such as Jack White, Major Lazer, Willie Nelson, Skrillex, Macklemore and Ryan Lewis, and Lauren Hill, among others.\nWork-Order\nis the creative partnership of Keira Alexandra and Houston native Kiffer Keegan. The practice focuses on experiential branding from concept to execution for clients such as Apple, The New York Times, Huffington Post, Showtime and Design Within Reach.\nThe festival recently partnered with music industry veteran Randall Jamail. He brings years of experience and relationships from both the music industry and public relations. Jamail’s involvement is part of an aggressive plan to grow the Day For Night into more than a music festival, but into a internationally recognized arts and cultural civic event."
+        },
+        {
+          "question": "Why digital art installations?",
+          "answer": "It is our aim for Day for Night attendees to be as engaged as they walk from stage to stage as when they’re watching their favorite band. We believe disassociating art and music is boring. With dozens of art installations throughout our festival campus, you can explore awe inspiring installations when you’re not dancing to the music."
+        },
+        {
+          "question": "Why Houston?",
+          "answer": "Houston is rapidly approaching the distinction of becoming the third largest city in the US. The greater Houston area has a population of over 5 million and we have seen a recent renaissance in arts, music and culture. We can put a man on the moon and throw a bad ass party."
+        }
+      ]
+    },
+    {
+      "category": "Inquiries",
+      "items": [
+        {
+          "question": "Who can I get in touch with?",
+          "answer": "General\ninfo@dayfornight.io\nFood Vendor\nkcallahan@spectrumfcs.com\nNon-Food Vendor\nvendors@dayfornight.io\nMedia\nmedia@dayfornight.io\nSponsor\nomar@dayfornight.io\nVolunteer\nFor volunteer opportunities, please\nfill out this form\n.\nStreet Team\nstreet@dayfornight.io\nTicketing\nFor all ticketing inquires, please visit\nwww.eventbrite.com\n."
+        }
+      ]
+    },
+    {
+      "category": "Lodging",
+      "items": [
+        {
+          "question": "Lodging Near Day for Night",
+          "answer": "Hilton Americas-Houston\n1600 Lamar St.\nHilton\nAmericas-Houston is conveniently located in Avenida Houston, Downtown Houston’s newest dining and entertainment district. Only minutes from the Day for Night festival venue, the hotel is in close proximity to other entertainment options including Main Street, Market Square and Bayou Place.\nGuests can enjoy food and beverages at the hotel’s bars and restaurants and get caffeinated at the largest Starbucks in Texas, all without leaving the hotel lobby. A wide variety of other dining options are also available within easy walking distance of the hotel. For relaxation, the hotel’s 75-foot pool and adjacent outdoor terrace boasts panoramic views of downtown Houston from the 24th floor.\nThey are excited to offer Day for Night guests the special discounted rate of $99/night + tax between the dates of\nDecember 15-17, 2017\n.\nBook your room\nHERE\nand enter the code 1DN to take advantage of this limited-time offer."
+        }
+      ]
+    }
+  ],
+  "dateData": [
+    [
+      "09",
+      "19",
+      "2017",
+      "7:08",
+      "19:21"
+    ],
+    [
+      "09",
+      "20",
+      "2017",
+      "7:08",
+      "19:20"
+    ],
+    [
+      "09",
+      "21",
+      "2017",
+      "7:09",
+      "19:18"
+    ],
+    [
+      "09",
+      "22",
+      "2017",
+      "7:10",
+      "19:17"
+    ],
+    [
+      "09",
+      "23",
+      "2017",
+      "7:10",
+      "19:16"
+    ],
+    [
+      "09",
+      "24",
+      "2017",
+      "7:11",
+      "19:15"
+    ],
+    [
+      "09",
+      "25",
+      "2017",
+      "7:11",
+      "19:13"
+    ],
+    [
+      "09",
+      "26",
+      "2017",
+      "7:12",
+      "19:12"
+    ],
+    [
+      "09",
+      "27",
+      "2017",
+      "7:12",
+      "19:11"
+    ],
+    [
+      "09",
+      "28",
+      "2017",
+      "7:13",
+      "19:10"
+    ],
+    [
+      "09",
+      "29",
+      "2017",
+      "7:13",
+      "19:08"
+    ],
+    [
+      "09",
+      "30",
+      "2017",
+      "7:14",
+      "19:07"
+    ],
+    [
+      "10",
+      "01",
+      "2017",
+      "7:14",
+      "19:06"
+    ],
+    [
+      "10",
+      "02",
+      "2017",
+      "7:15",
+      "19:05"
+    ],
+    [
+      "10",
+      "03",
+      "2017",
+      "7:16",
+      "19:04"
+    ],
+    [
+      "10",
+      "04",
+      "2017",
+      "7:16",
+      "19:02"
+    ],
+    [
+      "10",
+      "05",
+      "2017",
+      "7:17",
+      "19:01"
+    ],
+    [
+      "10",
+      "06",
+      "2017",
+      "7:17",
+      "19:00"
+    ],
+    [
+      "10",
+      "07",
+      "2017",
+      "7:18",
+      "18:59"
+    ],
+    [
+      "10",
+      "08",
+      "2017",
+      "7:19",
+      "18:58"
+    ],
+    [
+      "10",
+      "09",
+      "2017",
+      "7:19",
+      "18:57"
+    ],
+    [
+      "10",
+      "10",
+      "2017",
+      "7:20",
+      "18:56"
+    ],
+    [
+      "10",
+      "11",
+      "2017",
+      "7:20",
+      "18:54"
+    ],
+    [
+      "10",
+      "12",
+      "2017",
+      "7:21",
+      "18:53"
+    ],
+    [
+      "10",
+      "13",
+      "2017",
+      "7:22",
+      "18:52"
+    ],
+    [
+      "10",
+      "14",
+      "2017",
+      "7:22",
+      "18:51"
+    ],
+    [
+      "10",
+      "15",
+      "2017",
+      "7:23",
+      "18:50"
+    ],
+    [
+      "10",
+      "16",
+      "2017",
+      "7:24",
+      "18:49"
+    ],
+    [
+      "10",
+      "17",
+      "2017",
+      "7:24",
+      "18:48"
+    ],
+    [
+      "10",
+      "18",
+      "2017",
+      "7:25",
+      "18:47"
+    ],
+    [
+      "10",
+      "19",
+      "2017",
+      "7:26",
+      "18:46"
+    ],
+    [
+      "10",
+      "20",
+      "2017",
+      "7:26",
+      "18:45"
+    ],
+    [
+      "10",
+      "21",
+      "2017",
+      "7:27",
+      "18:44"
+    ],
+    [
+      "10",
+      "22",
+      "2017",
+      "7:28",
+      "18:43"
+    ],
+    [
+      "10",
+      "23",
+      "2017",
+      "7:28",
+      "18:42"
+    ],
+    [
+      "10",
+      "24",
+      "2017",
+      "7:29",
+      "18:41"
+    ],
+    [
+      "10",
+      "25",
+      "2017",
+      "7:30",
+      "18:40"
+    ],
+    [
+      "10",
+      "26",
+      "2017",
+      "7:30",
+      "18:39"
+    ],
+    [
+      "10",
+      "27",
+      "2017",
+      "7:31",
+      "18:38"
+    ],
+    [
+      "10",
+      "28",
+      "2017",
+      "7:32",
+      "18:37"
+    ],
+    [
+      "10",
+      "29",
+      "2017",
+      "7:33",
+      "18:36"
+    ],
+    [
+      "10",
+      "30",
+      "2017",
+      "7:33",
+      "18:36"
+    ],
+    [
+      "10",
+      "31",
+      "2017",
+      "7:34",
+      "18:35"
+    ],
+    [
+      "11",
+      "01",
+      "2017",
+      "7:35",
+      "18:34"
+    ],
+    [
+      "11",
+      "02",
+      "2017",
+      "7:36",
+      "18:33"
+    ],
+    [
+      "11",
+      "03",
+      "2017",
+      "7:36",
+      "18:32"
+    ],
+    [
+      "11",
+      "04",
+      "2017",
+      "7:37",
+      "18:32"
+    ],
+    [
+      "11",
+      "05",
+      "2017",
+      "6:38",
+      "17:31"
+    ],
+    [
+      "11",
+      "06",
+      "2017",
+      "6:39",
+      "17:30"
+    ],
+    [
+      "11",
+      "07",
+      "2017",
+      "6:39",
+      "17:30"
+    ],
+    [
+      "11",
+      "08",
+      "2017",
+      "6:40",
+      "17:29"
+    ],
+    [
+      "11",
+      "09",
+      "2017",
+      "6:41",
+      "17:28"
+    ],
+    [
+      "11",
+      "10",
+      "2017",
+      "6:42",
+      "17:28"
+    ],
+    [
+      "11",
+      "11",
+      "2017",
+      "6:43",
+      "17:27"
+    ],
+    [
+      "11",
+      "12",
+      "2017",
+      "6:43",
+      "17:27"
+    ],
+    [
+      "11",
+      "13",
+      "2017",
+      "6:44",
+      "17:26"
+    ],
+    [
+      "11",
+      "14",
+      "2017",
+      "6:45",
+      "17:26"
+    ],
+    [
+      "11",
+      "15",
+      "2017",
+      "6:46",
+      "17:25"
+    ],
+    [
+      "11",
+      "16",
+      "2017",
+      "6:47",
+      "17:25"
+    ],
+    [
+      "11",
+      "17",
+      "2017",
+      "6:48",
+      "17:24"
+    ],
+    [
+      "11",
+      "18",
+      "2017",
+      "6:48",
+      "17:24"
+    ],
+    [
+      "11",
+      "19",
+      "2017",
+      "6:49",
+      "17:24"
+    ],
+    [
+      "11",
+      "20",
+      "2017",
+      "6:50",
+      "17:23"
+    ],
+    [
+      "11",
+      "21",
+      "2017",
+      "6:51",
+      "17:23"
+    ],
+    [
+      "11",
+      "22",
+      "2017",
+      "6:52",
+      "17:23"
+    ],
+    [
+      "11",
+      "23",
+      "2017",
+      "6:52",
+      "17:22"
+    ],
+    [
+      "11",
+      "24",
+      "2017",
+      "6:53",
+      "17:22"
+    ],
+    [
+      "11",
+      "25",
+      "2017",
+      "6:54",
+      "17:22"
+    ],
+    [
+      "11",
+      "26",
+      "2017",
+      "6:55",
+      "17:22"
+    ],
+    [
+      "11",
+      "27",
+      "2017",
+      "6:56",
+      "17:22"
+    ],
+    [
+      "11",
+      "28",
+      "2017",
+      "6:57",
+      "17:21"
+    ],
+    [
+      "11",
+      "29",
+      "2017",
+      "6:57",
+      "17:21"
+    ],
+    [
+      "11",
+      "30",
+      "2017",
+      "6:58",
+      "17:21"
+    ],
+    [
+      "12",
+      "01",
+      "2017",
+      "6:59",
+      "17:21"
+    ],
+    [
+      "12",
+      "02",
+      "2017",
+      "7:00",
+      "17:21"
+    ],
+    [
+      "12",
+      "03",
+      "2017",
+      "7:00",
+      "17:21"
+    ],
+    [
+      "12",
+      "04",
+      "2017",
+      "7:01",
+      "17:21"
+    ],
+    [
+      "12",
+      "05",
+      "2017",
+      "7:02",
+      "17:21"
+    ],
+    [
+      "12",
+      "06",
+      "2017",
+      "7:03",
+      "17:22"
+    ],
+    [
+      "12",
+      "07",
+      "2017",
+      "7:03",
+      "17:22"
+    ],
+    [
+      "12",
+      "08",
+      "2017",
+      "7:04",
+      "17:22"
+    ],
+    [
+      "12",
+      "09",
+      "2017",
+      "7:05",
+      "17:22"
+    ],
+    [
+      "12",
+      "10",
+      "2017",
+      "7:06",
+      "17:22"
+    ],
+    [
+      "12",
+      "11",
+      "2017",
+      "7:06",
+      "17:22"
+    ],
+    [
+      "12",
+      "12",
+      "2017",
+      "7:07",
+      "17:23"
+    ],
+    [
+      "12",
+      "13",
+      "2017",
+      "7:08",
+      "17:23"
+    ],
+    [
+      "12",
+      "14",
+      "2017",
+      "7:08",
+      "17:23"
+    ],
+    [
+      "12",
+      "15",
+      "2017",
+      "7:09",
+      "17:24"
+    ],
+    [
+      "12",
+      "16",
+      "2017",
+      "7:10",
+      "17:24"
+    ],
+    [
+      "12",
+      "17",
+      "2017",
+      "7:10",
+      "17:24"
+    ],
+    [
+      "12",
+      "18",
+      "2017",
+      "7:11",
+      "17:25"
+    ],
+    [
+      "12",
+      "19",
+      "2017",
+      "7:11",
+      "17:25"
+    ],
+    [
+      "12",
+      "20",
+      "2017",
+      "7:12",
+      "17:26"
+    ],
+    [
+      "12",
+      "21",
+      "2017",
+      "7:12",
+      "17:26"
+    ],
+    [
+      "12",
+      "22",
+      "2017",
+      "7:13",
+      "17:27"
+    ],
+    [
+      "12",
+      "23",
+      "2017",
+      "7:13",
+      "17:27"
+    ],
+    [
+      "12",
+      "24",
+      "2017",
+      "7:14",
+      "17:28"
+    ],
+    [
+      "12",
+      "25",
+      "2017",
+      "7:14",
+      "17:29"
+    ],
+    [
+      "12",
+      "26",
+      "2017",
+      "7:14",
+      "17:29"
+    ],
+    [
+      "12",
+      "27",
+      "2017",
+      "7:15",
+      "17:30"
+    ],
+    [
+      "12",
+      "28",
+      "2017",
+      "7:15",
+      "17:30"
+    ],
+    [
+      "12",
+      "29",
+      "2017",
+      "7:16",
+      "17:31"
+    ],
+    [
+      "12",
+      "30",
+      "2017",
+      "7:16",
+      "17:32"
+    ],
+    [
+      "12",
+      "31",
+      "2017",
+      "7:16",
+      "17:32"
+    ]
+  ],
+  "media": {
+    "videos": [
+      {
+        "id": "234597099",
+        "title": "Day for Night Line up Release",
+        "thumb": "lineup2017_cover-500x281.jpg"
+      },
+      {
+        "id": "198700839",
+        "title": "Day for Night 2016 Recap",
+        "thumb": "DFN_01-500x281.jpg"
+      },
+      {
+        "id": "213247906",
+        "title": "Making Day for Night 2016",
+        "thumb": "making-of-500x281.jpg"
+      },
+      {
+        "id": "223347619",
+        "title": "Day for Night Artist Series: Damien Echols",
+        "thumb": "DE-DFN-500x281.jpg"
+      },
+      {
+        "id": "223486322",
+        "title": "Day for Night Artist Series: Shoplifter",
+        "thumb": "shopi-500x281.jpg"
+      },
+      {
+        "id": "180229453",
+        "title": "Making Day for Night 2015",
+        "thumb": "180229453-500x281.jpg"
+      },
+      {
+        "id": "180189822",
+        "title": "Day for Night 2015 Recap",
+        "thumb": "180189822-500x281.jpg"
+      },
+      {
+        "id": "176512624",
+        "title": "Day for Night: Merging Art and Music",
+        "thumb": "176512624-500x281.jpg"
+      },
+      {
+        "id": "176511792",
+        "title": "Day for Night Artist Series: Nonotak Studios",
+        "thumb": "176511792-500x281.jpg"
+      },
+      {
+        "id": "176511637",
+        "title": "Day for Night Artist Series: Casey Reas",
+        "thumb": "176511637-500x281.jpg"
+      },
+      {
+        "id": "191990862",
+        "title": "Day for Night Artist Series: Refik Anadol",
+        "thumb": "anadol-500x281.jpg"
+      },
+      {
+        "id": "187376150",
+        "title": "Day for Night Artist Series: AV&C + Vincent Houzé",
+        "thumb": "597092578-500x281.jpg"
+      }
+    ],
+    "gallery": [
+      {
+        "target": "1",
+        "src": "DFN16_PRESS_THEO-CIVITELLO_SUN_TUNDRA_1-203x150.jpg"
+      },
+      {
+        "target": "2",
+        "src": "DFN16_PRESS_ROGER-HO_SAT_NONOTAK-HIGHLINE_3-225x150.jpg"
+      },
+      {
+        "target": "3",
+        "src": "DFN16_PRESS_JULIAN-BAJSEL_VT-PRO_1-225x150.jpg"
+      },
+      {
+        "target": "4",
+        "src": "DFN16_PRESS_THEO-CIVITELLO_SAT_TYCHO_2-225x150.jpg"
+      },
+      {
+        "target": "5",
+        "src": "DFN16_PRESS_THEO-CIVITELLO_SUN_UNITED-VISUAL-ARTISTS_1-225x150.jpg"
+      },
+      {
+        "target": "6",
+        "src": "DFN16_PRESS_ROGER-HO_SAT_APHEX-TWIN_1-225x150.jpg"
+      },
+      {
+        "target": "7",
+        "src": "DFN16_PRESS_GREG-NOIRE_SUN_CROWD_2-225x150.jpg"
+      },
+      {
+        "target": "8",
+        "src": "DFN16_PRESS_SARA-STRICK_SAT_BANKS_1-225x150.jpg"
+      },
+      {
+        "target": "9",
+        "src": "DFN16_PRESS_THEO-CIVITELLO_SAT_NONOTAK-SHIRO_1-225x150.jpg"
+      },
+      {
+        "target": "10",
+        "src": "DFN16_PRESS_ROGER-HO_SUN_ARCA_1-225x150.jpg"
+      },
+      {
+        "target": "11",
+        "src": "DFN16_PRESS_GREG-NOIRE_SUN_NONOTAK-HIGHLINE_1-225x150.jpg"
+      },
+      {
+        "target": "12",
+        "src": "DFN16_PRESS_ROGER-HO_SAT_WELCOME-TO-HOUSTON_2-225x150.jpg"
+      },
+      {
+        "target": "13",
+        "src": "DFN16_PRESS_JULIAN-BAJSEL_SAT_ODESZA_2-225x150.jpg"
+      },
+      {
+        "target": "14",
+        "src": "DFN16_PRESS_JULIAN-BAJSEL_SAT_ONEOHTRIX-POINT-NEVER_1-225x150.jpg"
+      },
+      {
+        "target": "15",
+        "src": "DFN2015_16-225x150.jpg"
+      },
+      {
+        "target": "16",
+        "src": "DFN2015_05-225x150.jpg"
+      },
+      {
+        "target": "17",
+        "src": "2015-blurry-install-group-shot-1-225x150.jpg"
+      },
+      {
+        "target": "18",
+        "src": "2015-V47A1779-100x150.jpg"
+      },
+      {
+        "target": "19",
+        "src": "2015-V47A1762-1-225x150.jpg"
+      },
+      {
+        "target": "20",
+        "src": "DFN2015_14-225x150.jpg"
+      },
+      {
+        "target": "21",
+        "src": "DFN2015_12-225x150.jpg"
+      },
+      {
+        "target": "22",
+        "src": "DFN2015_10-225x150.jpg"
+      },
+      {
+        "target": "23",
+        "src": "DFN2015_03-225x150.jpg"
+      },
+      {
+        "target": "24",
+        "src": "DFN2015_02-225x150.jpg"
+      },
+      {
+        "target": "25",
+        "src": "DFN2015_01-225x150.jpg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+---
+import Dfn2017Layout from '@layouts/Dfn2017Layout.astro';
+import snapshot from '@data/snapshot-2017.json';
+
+const { lineup } = snapshot;
+
+// Split lineup items by section
+const soundItems = lineup.filter((item) => item.section === 'sound');
+const lightItems = lineup.filter((item) => item.section === 'light');
+const talksItems = lineup.filter((item) => item.section === 'talks');
+---
+
+<Dfn2017Layout
+  title="Lineup"
+  titleSpan="Lineup"
+  bodyClass="page-template-default page page-id-19 page-parent no-tick mode-day radio-on page-lineup"
+  dataSection="lineup"
+  dataNav="lineup"
+>
+  <div class="lineups-labels-tabs mobile-only" data-active-section="null">
+    <div class="lineup-tab sound-tab"><a href="/2017/lineup/" data-lineup-section="sound">SOUND</a></div>
+    <div class="lineup-tab light-tab"><a href="/2017/lineup/" data-lineup-section="light">LIGHT</a></div>
+    <div class="lineup-tab talks-tab"><a href="/2017/lineup/" data-lineup-section="talks">FRIDAY</a></div>
+  </div>
+  <div class="lineups-labels-wrap hide-mobile" data-active-section="null">
+    <div class="lineup-label sound-label"><a href="/2017/lineup/">SOUND</a></div>
+    <div class="lineup-label light-label"><a href="/2017/lineup/">LIGHT</a></div>
+    <div class="lineup-label talks-label"><a href="/2017/lineup/">FRIDAY</a></div>
+  </div>
+
+  <div class="lineups-wrap cf" data-active-section="null">
+    <div class="lineup-section sound-section">
+      <div class="section-scroll">
+        <ul>
+          {soundItems.map((item) => (
+            <li class="lineup-item" data-url={item.href}>
+              <a href={item.href} class="lineup-single" data-lineup-section="sound">{item.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <div id="lineupArtist" class="lineup-display partial-target hide-mobile">
+      <div class="partial-content partial-current" data-slug="/2017/lineup/">
+        <div class="artist-img-wrap"></div>
+        <div class="lineup-inner">
+          <div class="artist-info">
+            <h1 class="name display4"></h1>
+            <div class="lineup-bio body1"></div>
+            <div class="artist-links"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lineup-section light-section">
+      <div class="section-scroll">
+        <ul>
+          {lightItems.map((item) => (
+            <li class="lineup-item" data-url={item.href}>
+              <a href={item.href} class="lineup-single" data-lineup-section="light">{item.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <div class="lineup-section talks-section">
+      <div class="section-scroll">
+        <ul>
+          {talksItems.map((item) => (
+            <li class="lineup-item" data-url={item.href}>
+              <a href={item.href} class="lineup-single" data-lineup-section="talks">{item.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('astro:page-load', () => {
+      // Lineup tab & label interaction
+      document.querySelectorAll('.lineup-tab a, .lineup-label a').forEach((el) => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const section = (el as HTMLElement).dataset.lineupSection || 'null';
+          const wraps = document.querySelectorAll('.lineups-wrap, .lineups-labels-wrap, .lineups-labels-tabs');
+          const current = document.querySelector('.lineups-wrap')?.getAttribute('data-active-section');
+          const newVal = current === section ? 'null' : section;
+          wraps.forEach((w) => w.setAttribute('data-active-section', newVal));
+          document.querySelectorAll('.active-lineup-item').forEach((item) => item.classList.remove('active-lineup-item'));
+        });
+      });
+
+      // Lineup item click
+      document.querySelectorAll('.lineup-item a').forEach((el) => {
+        el.addEventListener('click', (e) => {
+          const li = (el as HTMLElement).closest('.lineup-item');
+          if (!li) return;
+          const section = (el as HTMLElement).dataset.lineupSection || '';
+          if (li.classList.contains('active-lineup-item')) {
+            li.classList.remove('active-lineup-item');
+            if (window.innerWidth > 900) {
+              document.querySelectorAll('.lineups-wrap, .lineups-labels-wrap, .lineups-labels-tabs').forEach((w) => w.setAttribute('data-active-section', 'null'));
+            }
+          } else {
+            document.querySelectorAll('.active-lineup-item').forEach((item) => item.classList.remove('active-lineup-item'));
+            document.querySelectorAll('.lineups-wrap, .lineups-labels-wrap, .lineups-labels-tabs').forEach((w) => w.setAttribute('data-active-section', section));
+            li.classList.add('active-lineup-item');
+          }
+        });
+      });
+    });
+  </script>
+</Dfn2017Layout>

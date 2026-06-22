@@ -1,0 +1,49 @@
+---
+import Dfn2017Layout from '@layouts/Dfn2017Layout.astro';
+import snapshot from '@data/snapshot-2017.json';
+
+const { faq } = snapshot;
+---
+
+<Dfn2017Layout
+  title="FAQ"
+  titleSpan="FAQ"
+  bodyClass="page-template-default page page-id-23 no-tick mode-day radio-on page-faq"
+  dataSection="faq"
+  dataNav="faq"
+>
+  <ul class="faq-list">
+    {faq.map((category) => (
+      <li class="faq-category">
+        <h4 class="faq-toggle">{category.category}</h4>
+        <ul class="faqs">
+          {category.items.map((item) => (
+            <li class="faq">
+              <h2 class="question">{item.question}</h2>
+              <div class="answer body2">
+                {item.answer.split('\n').map((line) => (
+                  <p>{line}</p>
+                ))}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </li>
+    ))}
+  </ul>
+
+  <script>
+    document.addEventListener('astro:page-load', () => {
+      document.querySelectorAll('.faq-toggle').forEach((el) => {
+        el.addEventListener('click', () => {
+          const parent = el.closest('.faq-category');
+          if (parent) {
+            const scrollPos = (el as HTMLElement).offsetTop;
+            parent.classList.toggle('toggle-on');
+            window.scrollTo({ top: scrollPos, behavior: 'smooth' });
+          }
+        });
+      });
+    });
+  </script>
+</Dfn2017Layout>

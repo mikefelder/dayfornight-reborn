@@ -1,0 +1,14 @@
+---
+import Dfn2017Layout from '@layouts/Dfn2017Layout.astro';
+import aboutHtml from '@data/about-2017.html?raw';
+---
+
+<Dfn2017Layout
+  title="About"
+  titleSpan="About"
+  bodyClass="page-template-default page page-id-21 no-tick mode-day radio-on page-about"
+  dataSection="about"
+  dataNav="about"
+>
+  <Fragment set:html={aboutHtml} />
+</Dfn2017Layout>
