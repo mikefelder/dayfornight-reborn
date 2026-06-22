@@ -55,12 +55,26 @@ closeModal = function(){
 
 setVideo = function(vID){
 	var vColor = "00ffff";
+	var safeVID = String(vID || "").replace(/[^\d]/g, "");
 	var vScr = $(".media-playlist").offset().top;
+	if(!safeVID){
+		return;
+	}
 	if($("body").hasClass("mode-night1") || $("body").hasClass("mode-night2")){
 		vColor = "f7931e";
 	}
 	// console.log(vColor);
-	$(".mainVid").html('<div class="vid-pad"><iframe src="https://player.vimeo.com/video/' + vID + '?autoplay=1&color=' + vColor + '&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>');
+	var iframeSrc = "https://player.vimeo.com/video/" + safeVID + "?autoplay=1&color=" + vColor + "&title=0&byline=0&portrait=0";
+	var $iframe = $("<iframe>")
+		.attr("src", iframeSrc)
+		.attr("width", "640")
+		.attr("height", "360")
+		.attr("frameborder", "0")
+		.attr("webkitallowfullscreen", "webkitallowfullscreen")
+		.attr("mozallowfullscreen", "mozallowfullscreen")
+		.attr("allowfullscreen", "allowfullscreen");
+	var $vidPad = $("<div>").addClass("vid-pad").append($iframe);
+	$(".mainVid").empty().append($vidPad);
 	$("html, body").animate({ scrollTop:vScr - 30 });
 };
 
