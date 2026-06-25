@@ -1,0 +1,123 @@
+---
+import Dfn2018Layout from '@layouts/Dfn2018Layout.astro';
+import snapshot from '@data/snapshot-2018.json';
+
+const { schedule, artists } = snapshot;
+const { days, stages } = schedule;
+const stageNames = ['red', 'green', 'blue', 'yellow'];
+const stageLabels = { red: 'RED STAGE', green: 'GREEN STAGE', blue: 'BLUE STAGE', yellow: 'YELLOW STAGE' };
+
+const artistSlugs = new Set(artists.map((a: any) => a.slug));
+function hasDetailPage(href: string): boolean {
+  const parts = href.replace(/^\/|\/$/g, '').split('/');
+  return parts.length >= 3 && artistSlugs.has(parts[parts.length - 1]);
+}
+---
+
+<Dfn2018Layout
+  title="Schedule"
+  titleSpan="Schedule"
+  bodyClass="page-template-default page page-id-675 page-parent no-tick mode-day radio-on page-schedule"
+  dataSection="schedule"
+  dataNav="schedule"
+>
+  <div class="page-content schedule-content" data-active-stage="red" data-schedule-day={days[1].day_id} data-day-name={days[1].slug}>
+    <ul class="schedule-nav cf">
+      {days.map((day) => (
+        <li class="schedule-link">
+          <a href={`/2018/schedule/${day.slug}/`} class="noAjax" data-date={day.date} data-day={day.day_id} data-active-slug={day.slug}>{day.label}</a>
+        </li>
+      ))}
+    </ul>
+
+    <div class="stage-labels">
+      <span class="red-label">RED STAGE</span>
+      <span class="green-label">GREEN STAGE</span>
+      <span class="blue-label">BLUE STAGE</span>
+      <span class="yellow-label">YELLOW STAGE</span>
+    </div>
+
+    <div class="schedule-times">
+      <span class="schedule-time">1</span>
+      <span class="schedule-time">2</span>
+      <span class="schedule-time">3</span>
+      <span class="schedule-time">4</span>
+      <span class="schedule-time">5</span>
+      <span class="schedule-time">6</span>
+      <span class="schedule-time">7</span>
+      <span class="schedule-time">8</span>
+      <span class="schedule-time">9</span>
+      <span class="schedule-time">10</span>
+      <span class="schedule-time">11</span>
+      <span class="schedule-time">12</span>
+      <span class="schedule-time">1</span>
+      <span class="schedule-time">2</span>
+    </div>
+
+    <div class="schedule-stages">
+      {stageNames.map((stage) => (
+        <ul class={`stage-data stage-${stage} text-white`} data-stage={stage}>
+          <span class="stage-label"></span>
+          {(stages[stage] || []).map((slot) => (
+            <li class={`par-${slot.day_id}`} style={slot.style}>
+              <p class="text">
+                {slot.artists.map((artist, i) => (
+                  <Fragment>
+                    {i > 0 && <br />}
+                    {hasDetailPage(artist.href) ? (
+                      <a href={artist.href}>{artist.name}</a>
+                    ) : (
+                      <span>{artist.name}</span>
+                    )}
+                  </Fragment>
+                ))}
+                <span> {slot.time}</span>
+              </p>
+            </li>
+          ))}
+        </ul>
+      ))}
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('astro:page-load', () => {
+      const content = document.querySelector('.schedule-content');
+      if (!content) return;
+
+      document.querySelectorAll('.stage-data').forEach((el) => {
+        el.addEventListener('click', () => {
+          document.querySelectorAll('.stage-data.active').forEach((s) => s.classList.remove('active'));
+          el.classList.add('active');
+          content.setAttribute('data-active-stage', (el as HTMLElement).dataset.stage || 'red');
+        });
+      });
+
+      document.querySelectorAll('.schedule-link a').forEach((el) => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          const a = el as HTMLAnchorElement;
+          const dayId = a.dataset.day || '';
+          const slug = a.dataset.activeSlug || '';
+          content.setAttribute('data-schedule-day', dayId);
+          content.setAttribute('data-day-name', slug);
+          if (dayId === '679') {
+            content.setAttribute('data-active-stage', 'blue');
+          }
+          history.replaceState(null, '', `/2018/schedule/${slug}/`);
+        });
+      });
+
+      const path = window.location.pathname;
+      const match = path.match(/\/schedule\/(dec-\d+)/);
+      if (match) {
+        const slug = match[1];
+        const day = document.querySelector(`.schedule-link a[data-active-slug="${slug}"]`) as HTMLAnchorElement;
+        if (day) {
+          content.setAttribute('data-schedule-day', day.dataset.day || '');
+          content.setAttribute('data-day-name', slug);
+        }
+      }
+    });
+  </script>
+</Dfn2018Layout>

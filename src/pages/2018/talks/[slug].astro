@@ -1,0 +1,154 @@
+---
+import Dfn2018Layout from '@layouts/Dfn2018Layout.astro';
+import snapshot from '@data/snapshot-2018.json';
+
+const assetsBase = '/shared-assets/2017';
+
+export function getStaticPaths() {
+  const { artists } = snapshot as any;
+  return artists
+    .filter((a: any) => a.category === 'talks')
+    .map((artist: any) => ({
+      params: { slug: artist.slug },
+      props: { artist }
+    }));
+}
+
+const { artist } = Astro.props;
+const { lineup } = snapshot;
+const soundItems = lineup.filter((item) => item.section === 'sound');
+const lightItems = lineup.filter((item) => item.section === 'light');
+const talksItems = lineup.filter((item) => item.section === 'talks');
+---
+
+<Dfn2018Layout
+  title={artist.name}
+  titleSpan="Lineup"
+  bodyClass={artist.bodyClass || `talks-template-default single single-talks no-tick mode-day radio-on talks-${artist.slug}`}
+  dataSection="lineup"
+  dataNav="lineup"
+>
+  <div class="lineups-labels-tabs mobile-only" data-active-section="talks">
+    <div class="lineup-tab sound-tab"><a href="/2018/lineup/" data-lineup-section="sound">SOUND</a></div>
+    <div class="lineup-tab light-tab"><a href="/2018/lineup/" data-lineup-section="light">LIGHT</a></div>
+    <div class="lineup-tab talks-tab"><a href="/2018/lineup/" data-lineup-section="talks">FRIDAY</a></div>
+  </div>
+  <div class="lineups-labels-wrap hide-mobile" data-active-section="talks">
+    <div class="lineup-label sound-label"><a href="/2018/lineup/">SOUND</a></div>
+    <div class="lineup-label light-label"><a href="/2018/lineup/">LIGHT</a></div>
+    <div class="lineup-label talks-label"><a href="/2018/lineup/">FRIDAY</a></div>
+  </div>
+
+  <div class="lineups-wrap cf" data-active-section="talks">
+    <div class="lineup-section sound-section">
+      <div class="section-scroll">
+        <ul>
+          {soundItems.map((item) => (
+            <li class="lineup-item" data-url={item.href}>
+              <a href={item.href} class="lineup-single" data-lineup-section="sound">{item.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <div id="lineupArtist" class="lineup-display partial-target hide-mobile">
+      <div class="partial-content partial-current" data-slug={`/2018/talks/${artist.slug}/`}>
+        <div class="artist-img-wrap">
+          {artist.image && (
+            <div class="img-pad" style={artist.aspectStyle || 'padding-bottom:75%;'}>
+              <img src={`${assetsBase}/images/${artist.image}`} width="1024" height="768" alt={artist.name} />
+            </div>
+          )}
+        </div>
+        <div class="lineup-inner">
+          <div class="artist-info">
+            <h1 class="name display4">{artist.name}</h1>
+            {artist.schedule && (
+              <div class="schedule-info">
+                <span class="day">{artist.schedule.day}</span>
+                <span class="time">{artist.schedule.time}</span>
+                <span class="loc">{artist.schedule.stage}</span>
+              </div>
+            )}
+            <div class="lineup-bio body1" set:html={artist.bioHtml} />
+            <div class="artist-links">
+              {artist.links.map((link) => (
+                link.type === 'website' ? (
+                  <a href={link.url} class="artist-www" target="_blank" rel="noopener noreferrer">{link.label}</a>
+                ) : (
+                  <a class={`artist-social artist-${link.type}`} href={link.url} target="_blank" rel="noopener noreferrer">
+                    <svg class={link.type} viewBox="0 0 36 36" x="0px" y="0px" width="36px" height="36px">
+                      <use xlink:href={`${assetsBase}/images/social.svg#${link.type}/`}></use>
+                    </svg>
+                  </a>
+                )
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lineup-section light-section">
+      <div class="section-scroll">
+        <ul>
+          {lightItems.map((item) => (
+            <li class="lineup-item" data-url={item.href}>
+              <a href={item.href} class="lineup-single" data-lineup-section="light">{item.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <div class="lineup-section talks-section">
+      <div class="section-scroll">
+        <ul>
+          {talksItems.map((item) => (
+            <li class={`lineup-item${item.href === `/2018/talks/${artist.slug}/` ? ' active-lineup-item' : ''}`} data-url={item.href}>
+              <a href={item.href} class="lineup-single" data-lineup-section="talks">{item.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile artist detail -->
+  <div class="lineup-details-mobile mobile-only">
+    <div class="artist-img-wrap">
+      {artist.image && (
+        <div class="img-pad" style={artist.aspectStyle || 'padding-bottom:75%;'}>
+          <img src={`${assetsBase}/images/${artist.image}`} width="1024" height="768" alt={artist.name} />
+        </div>
+      )}
+    </div>
+    <div class="lineup-inner">
+      <div class="artist-info">
+        <h1 class="name display4">{artist.name}</h1>
+        {artist.schedule && (
+          <div class="schedule-info">
+            <span class="day">{artist.schedule.day}</span>
+            <span class="time">{artist.schedule.time}</span>
+            <span class="loc">{artist.schedule.stage}</span>
+          </div>
+        )}
+        <div class="lineup-bio body1" set:html={artist.bioHtml} />
+        <div class="artist-links">
+          {artist.links.map((link) => (
+            link.type === 'website' ? (
+              <a href={link.url} class="artist-www" target="_blank" rel="noopener noreferrer">{link.label}</a>
+            ) : (
+              <a class={`artist-social artist-${link.type}`} href={link.url} target="_blank" rel="noopener noreferrer">
+                <svg class={link.type} viewBox="0 0 36 36" x="0px" y="0px" width="36px" height="36px">
+                  <use xlink:href={`${assetsBase}/images/social.svg#${link.type}/`}></use>
+                </svg>
+              </a>
+            )
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</Dfn2018Layout>

@@ -1,0 +1,14 @@
+---
+import Dfn2018Layout from '@layouts/Dfn2018Layout.astro';
+import aboutHtml from '@data/about-2018.html?raw';
+---
+
+<Dfn2018Layout
+  title="About"
+  titleSpan="About"
+  bodyClass="page-template-default page page-id-17 no-tick mode-day radio-on page-about-day-for-night"
+  dataSection="about"
+  dataNav="about"
+>
+  <Fragment set:html={aboutHtml} />
+</Dfn2018Layout>

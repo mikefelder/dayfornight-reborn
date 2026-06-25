@@ -1,0 +1,50 @@
+---
+import Dfn2018Layout from '@layouts/Dfn2018Layout.astro';
+import snapshot from '@data/snapshot-2018.json';
+
+const { dateAnnouncement, soundFeatures, lightFeatures, talksFeatures } = snapshot;
+---
+
+<Dfn2018Layout
+  title="Day for Night"
+  bodyClass="home page-template-default page page-id-5 no-tick mode-day radio-on page-homepage"
+  dataSection="home"
+  dataNav=""
+>
+  <div class="date-announcement">
+    <p set:html={dateAnnouncement.replace('December 15-17, 2017', 'DECEMBER 15-17 2017 <br>')} />
+  </div>
+
+  <div class="featured-listings sound-features">
+    <h4>{soundFeatures.heading}</h4>
+    <ul>
+      {soundFeatures.artists.map((artist) => (
+        <li class={artist.more ? 'more-text' : ''}>
+          <a href={artist.href}>{artist.name}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <div class="featured-listings light-features">
+    <h4>{lightFeatures.heading}</h4>
+    <ul>
+      {lightFeatures.artists.map((artist) => (
+        <li class={artist.more ? 'more-text' : ''}>
+          <a href={artist.href}>{artist.name}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <div class="featured-listings talks-features">
+    <h4>{talksFeatures.heading}</h4>
+    <ul>
+      {talksFeatures.artists.map((artist) => (
+        <li class={artist.more ? 'more-text' : ''}>
+          <a href={artist.href}>{artist.name}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Dfn2018Layout>

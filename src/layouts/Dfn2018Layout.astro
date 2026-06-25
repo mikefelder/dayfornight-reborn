@@ -1,0 +1,208 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import snapshot from '@data/snapshot-2018.json';
+
+interface Props {
+  title?: string;
+  titleSpan?: string;
+  bodyClass?: string;
+  dataSection?: string;
+  dataNav?: string;
+}
+
+const {
+  title = 'Day for Night',
+  titleSpan = '',
+  bodyClass = 'home page-template-default page page-id-5 no-tick mode-day radio-on page-homepage',
+  dataSection = 'home',
+  dataNav = ''
+} = Astro.props;
+
+const { nav, social, dateData } = snapshot;
+const ticketUrl = snapshot.ticketUrl || '#';
+
+/* 2018 snapshot is the 2017 festival site — shares CSS, fonts, and images with 2017 */
+const assetsBase = '/shared-assets/2017';
+---
+
+<BaseLayout title={title} bodyClass={bodyClass}>
+  <Fragment slot="head">
+    <link rel="stylesheet" href={`${assetsBase}/css/styles.css`} />
+  </Fragment>
+
+  <div class="loading">
+    <span class="stroke"></span>
+    <span class="fill"></span>
+  </div>
+  <div id="app" class="default">
+    <header>
+      <h1>
+        <a href="/2018/" title="Day for Night">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+            <path class="st0" d="M42.7,42.7c-9.3,9.3-24,9.7-33.8,1.4L44.1,8.9C52.4,18.7,51.9,33.4,42.7,42.7z M9.3,9.3 C17.6,1,30.8,0.6,39.6,8.2l2-2C31.7-2.4,16.7-2.1,7.3,7.3c-9.4,9.4-9.7,24.4-1.1,34.2l2-2C0.6,30.8,1,17.6,9.3,9.3z"/>
+          </svg>
+          <span>Day for Night</span>
+        </a>
+        {titleSpan && <i>{titleSpan}</i>}
+        {!titleSpan && <i></i>}
+      </h1>
+    </header>
+    <span class="tunein-toggle hide-mobile">Radio</span>
+    {ticketUrl !== '#' && (
+      <a href={ticketUrl} target="_self" class="ticket-button ticket-button-header no-aj hide-mobile">Buy Passes</a>
+    )}
+
+    <div id="container">
+      <div id="main" role="main">
+        <div id="holdingPen"><div class="ca-static">
+          <div id="pC" class="content-wrap page-container" data-title={title} data-titlespan={titleSpan} data-section={dataSection} data-nav={dataNav}>
+            <slot />
+          </div>
+        </div></div>
+      </div>
+
+      <footer>
+        <nav id="menu-main-menu" class="menu">
+          {nav.map((item) => (
+            <li class={item.class}>
+              <a href={item.href}>{item.label}</a>
+            </li>
+          ))}
+        </nav>
+        <div class="social-footer">
+          {social.map((link) => (
+            <a href={link.href || link.url} class="social-link" target="_blank" rel="noopener noreferrer">
+              <svg role="img" class={link.id || link.platform} viewBox="0 0 36 36" x="0px" y="0px" width="36px" height="36px">
+                <use xlink:href={`${assetsBase}/images/social.svg#${link.id || link.platform}/`}></use>
+              </svg>
+            </a>
+          ))}
+          <a href="#newsletter" class="mailing-list-toggle newsletter-link caption noAjax">Get our newsletter</a>
+        </div>
+        <div class="mobile-toggles mobile-only">
+          <span class="menu-toggle"></span>
+          {ticketUrl !== '#' && (
+            <a href={ticketUrl} target="_self" class="ticket-button no-aj">Buy Passes</a>
+          )}
+        </div>
+      </footer>
+
+      <svg id="dfnLogo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px" height="360px" viewBox="0 0 360 360" style="enable-background:new 0 0 360 360;" xml:space="preserve">
+        <defs>
+          <linearGradient id="nGradient" class="gradientclass" gradientUnits="objectBoundingBox" gradientTransform="rotate(0 0.5 0.5)">
+            <stop offset="0" style="stop-color:#0168FF"/>
+            <stop offset="1" style="stop-color:#0168FF;stop-opacity:0"/>
+          </linearGradient>
+          <linearGradient id="dGradient" class="gradientclass" gradientUnits="objectBoundingBox" gradientTransform="rotate(0 0.5 0.5)">
+            <stop offset="0" style="stop-color:#FF212B"/>
+            <stop offset="1" style="stop-color:#FF212B;stop-opacity:0"/>
+          </linearGradient>
+        </defs>
+        <path class="st0" d="M307.3,307.3c-66.7,66.7-172.7,70.1-243.4,10.3L317.5,63.9C377.4,134.6,374,240.6,307.3,307.3z M66.8,66.8 C126.6,7,222,4.4,284.9,59.1L299,44.9c-70.7-62.4-178.7-59.8-246.3,7.8c-67.6,67.6-70.2,175.6-7.8,246.3l14.1-14.1 C4.4,222,7,126.6,66.8,66.8z"/>
+      </svg>
+
+      <canvas class="canvas" id="canvas" resize="true"></canvas>
+    </div>
+  </div>
+
+  <div class="modal-bg"></div>
+  <div class="modal modal-mailinglist bbox">
+    <span class="close">Close</span>
+    <div class="form-subscribe form-inline bbox">
+      <p>Enter your email address to get updates</p>
+      <form action="#" method="post" class="validate" novalidate>
+        <div class="mc-field-group">
+          <input type="email" value="" name="EMAIL" class="required email bbox" id="mce-EMAIL" placeholder="Email address" />
+          <button class="btn" type="submit">&rarr;</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('click', (e) => {
+      const target = e.target as Element;
+      if (target.closest('.menu-toggle')) {
+        document.getElementById('app')?.classList.toggle('menu-on');
+      }
+      if (target.closest('.modal-bg') || target.closest('.modal .close')) {
+        document.body.classList.remove('modal-on', 'gallery-on');
+      }
+      if (target.closest('.mailing-list-toggle')) {
+        e.preventDefault();
+        document.body.classList.add('modal-on');
+      }
+      if (target.closest('.tunein-toggle')) {
+        document.body.classList.toggle('radio-on');
+      }
+    });
+  </script>
+
+  <script is:inline define:vars={{ dateData }}>
+    (function() {
+      if (window.__dfn2018GradientActive) return;
+      window.__dfn2018GradientActive = true;
+
+      function getCurrDateData() {
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = String(today.getFullYear());
+
+        for (var d = 0; d < dateData.length; d++) {
+          if (dateData[d][0] === mm && dateData[d][1] === dd && dateData[d][2] === yyyy) {
+            return dateData[d];
+          }
+        }
+        return null;
+      }
+
+      function updateGradient(dayPerc) {
+        var els = document.querySelectorAll('.gradientclass');
+        for (var i = 0; i < els.length; i++) {
+          els[i].setAttribute('gradientTransform', 'rotate(' + (dayPerc * 360) + ' 0.5 0.5)');
+        }
+      }
+
+      function doDateDisplay() {
+        var currDay = getCurrDateData();
+        if (!currDay) {
+          currDay = dateData.find(function(d) { return d[0] === '12' && d[1] === '15'; }) || dateData[dateData.length - 1];
+        }
+        if (!currDay) return;
+
+        var sunrise = currDay[3].split(':');
+        var sunset = currDay[4].split(':');
+        var date1 = new Date(+currDay[2], +currDay[0] - 1, +currDay[1], +sunrise[0], +sunrise[1]);
+        var date2 = new Date(+currDay[2], +currDay[0] - 1, +currDay[1], +sunset[0], +sunset[1]);
+        var rightNow = new Date();
+        var simNow = new Date(+currDay[2], +currDay[0] - 1, +currDay[1], rightNow.getHours(), rightNow.getMinutes(), rightNow.getSeconds());
+
+        var dayLength = date2 - date1;
+        var nightLength = 86400000 - dayLength;
+
+        var displayMode = '';
+        var percComplete = 0;
+
+        if (date1 > simNow) {
+          percComplete = ((nightLength - (date1 - simNow)) / nightLength).toFixed(4);
+          displayMode = 'night';
+        } else if (date1 < simNow && date2 > simNow) {
+          percComplete = ((simNow - date1) / dayLength).toFixed(4);
+          displayMode = 'day';
+        } else {
+          percComplete = ((simNow - date2) / nightLength).toFixed(4);
+          displayMode = 'night';
+        }
+
+        updateGradient(percComplete);
+
+        document.body.classList.remove('mode-day', 'mode-night');
+        document.body.classList.add('mode-' + displayMode);
+      }
+
+      doDateDisplay();
+      setInterval(doDateDisplay, 10000);
+    })();
+  </script>
+</BaseLayout>

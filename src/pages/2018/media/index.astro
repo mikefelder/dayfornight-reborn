@@ -1,0 +1,115 @@
+---
+import Dfn2018Layout from '@layouts/Dfn2018Layout.astro';
+import snapshot from '@data/snapshot-2018.json';
+
+const { media } = snapshot;
+const { videos, gallery } = media;
+const mainVideo = videos[0];
+const assetsBase = '/shared-assets/2017';
+---
+
+<Dfn2018Layout
+  title="Media"
+  titleSpan="Media"
+  bodyClass="page-template-default page page-id-21 no-tick mode-day radio-on page-media"
+  dataSection="media"
+  dataNav="media"
+>
+  <div class="media-playlist">
+    <div class="mainVid">
+      <div class="vid-cover" data-id={mainVideo.id} data-vid-title={mainVideo.title}>
+        <span class="img-wrap" style={`background-image:url(${assetsBase}/images/${mainVideo.thumb});`}></span>
+      </div>
+      <p class="video-title">{mainVideo.title}</p>
+    </div>
+    <ul class="media-list">
+      {videos.map((video, i) => (
+        <li class={`list-item${i === 0 ? ' active' : ''}`} data-id={video.id}>
+          <div class="item-inner" data-id={video.id} data-vid-title={video.title}>
+            <div class="item-wrap">
+              <span class="img-wrap" style={`background-image:url(${assetsBase}/images/${video.thumb});`}></span>
+            </div>
+            <div class="iframe-wrap mobile-only">
+              <iframe src={`https://player.vimeo.com/video/${video.id}?color=f7931e&title=0&byline=0&portrait=0`} frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="video-title">{video.title}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <div class="gallery-wrap">
+    <ul class="gallery-thumbs">
+      {gallery.map((thumb) => (
+        <li class="gallery-thumb" data-thumb-target={thumb.target}>
+          <img src={`${assetsBase}/images/${thumb.src}`} alt="" loading="lazy" />
+        </li>
+      ))}
+    </ul>
+    <div class="modal modal-gallery">
+      <span class="close">Close</span>
+      <span class="nav prev"></span>
+      <span class="nav next"></span>
+      <div class="gallery-full">
+        {gallery.map((thumb, i) => (
+          <div class={`gallery-img lazyload img-${i + 1}`} data-index={i + 1}></div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('astro:page-load', () => {
+      const mainVid = document.querySelector('.mainVid');
+      if (!mainVid) return;
+
+      function setVideo(vID: string, title: string) {
+        const vidPad = document.createElement('div');
+        vidPad.className = 'vid-pad';
+        vidPad.innerHTML = `<iframe src="https://player.vimeo.com/video/${vID}?autoplay=1&color=f7931e&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allowfullscreen></iframe>`;
+        mainVid.innerHTML = '';
+        mainVid.appendChild(vidPad);
+        const titleEl = document.createElement('p');
+        titleEl.className = 'video-title';
+        titleEl.textContent = title;
+        mainVid.appendChild(titleEl);
+      }
+
+      const vidCover = mainVid.querySelector('.vid-cover');
+      if (vidCover) {
+        vidCover.addEventListener('click', () => {
+          const id = (vidCover as HTMLElement).dataset.id || '';
+          const title = (vidCover as HTMLElement).dataset.vidTitle || '';
+          setVideo(id, title);
+        });
+      }
+
+      document.querySelectorAll('.media-list .item-inner').forEach((el) => {
+        el.addEventListener('click', () => {
+          const id = (el as HTMLElement).dataset.id || '';
+          const title = (el as HTMLElement).dataset.vidTitle || '';
+          if (window.innerWidth > 900) {
+            setVideo(id, title);
+            document.querySelectorAll('.list-item.active').forEach((item) => item.classList.remove('active'));
+            const li = (el as HTMLElement).closest('.list-item');
+            if (li) li.classList.add('active');
+          }
+        });
+      });
+
+      document.querySelectorAll('.gallery-thumb').forEach((el) => {
+        el.addEventListener('click', () => {
+          document.body.classList.add('modal-on', 'gallery-on');
+          const target = (el as HTMLElement).dataset.thumbTarget || '1';
+          const gallery = document.querySelector('.gallery-full');
+          if (gallery) {
+            gallery.querySelectorAll('.gallery-img').forEach((img) => img.classList.remove('active'));
+            const active = gallery.querySelector(`.img-${target}`);
+            if (active) active.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</Dfn2018Layout>
