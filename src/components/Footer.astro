@@ -1,4 +1,6 @@
 ---
+import WorkOrderAttribution from './WorkOrderAttribution.astro';
+
 interface SocialLink {
   url: string;
   title: string;
@@ -94,5 +96,6 @@ const iconMap: Record<string, string> = {
         <a href="#"><i class="flora-icon-up-1"></i></a>
       </div>
     </div>
+    <WorkOrderAttribution era="flora" />
   </div>
 </footer>

@@ -1,0 +1,127 @@
+---
+interface Props {
+  era?: 'flora' | 'dfn2016' | 'dfn2017' | 'presale2017';
+}
+
+const { era = 'dfn2017' } = Astro.props;
+const label = 'Origin: Work-Order';
+---
+
+<aside class={`work-order-attribution work-order-attribution--${era}`} aria-label="Day for Night origin attribution">
+  <a href="https://work-order.co" target="_blank" rel="noopener noreferrer">
+    <span class="wo-kicker">Co-founded &amp; shaped with</span>
+    <span class="wo-name">Work-Order</span>
+    <span class="wo-mark" aria-hidden="true">↗</span>
+  </a>
+</aside>
+
+<style>
+  .work-order-attribution {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+
+  .work-order-attribution a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .wo-kicker {
+    opacity: 0.72;
+  }
+
+  .wo-name {
+    font-weight: 700;
+  }
+
+  .wo-mark {
+    display: inline-block;
+    transition: transform 180ms ease;
+  }
+
+  .work-order-attribution a:hover .wo-mark {
+    transform: translate(2px, -2px);
+  }
+
+  .work-order-attribution--flora {
+    padding: 18px 20px 26px;
+    background: #050505;
+    font-family: 'GT-Cinetype-Regular', Arial, sans-serif;
+    font-size: 11px;
+  }
+
+  .work-order-attribution--flora a {
+    color: #cfcfcf;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 9px 14px;
+  }
+
+  .work-order-attribution--flora a:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.44);
+  }
+
+  .work-order-attribution--dfn2016 {
+    padding: 28px 16px;
+    font-family: 'GT-Cinetype', Arial, sans-serif;
+    font-size: 10px;
+  }
+
+  .work-order-attribution--dfn2016 a {
+    color: currentColor;
+    border: 1px solid currentColor;
+    padding: 8px 13px;
+  }
+
+  .work-order-attribution--dfn2017 {
+    padding: 26px 16px 92px;
+    color: #ff212b;
+    font-family: 'GT-Cinetype', Arial, sans-serif;
+    font-size: 10px;
+  }
+
+  .mode-night .work-order-attribution--dfn2017 {
+    color: #0168ff;
+  }
+
+  .work-order-attribution--dfn2017 a {
+    color: inherit;
+    border: 1px solid currentColor;
+    padding: 8px 13px;
+  }
+
+  .work-order-attribution--presale2017 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 18px;
+    z-index: 4;
+    color: #ec352f;
+    font-family: 'GT-Cinetype', Arial, sans-serif;
+    font-size: 10px;
+  }
+
+  .work-order-attribution--presale2017 a {
+    color: inherit;
+    background: rgba(0, 0, 0, 0.78);
+    border: 1px solid currentColor;
+    box-shadow: 0 0 18px rgba(236, 53, 47, 0.18);
+    padding: 8px 13px;
+  }
+
+  @media (max-width: 600px) {
+    .work-order-attribution a {
+      gap: 0.45em;
+      letter-spacing: 0.05em;
+    }
+
+    .work-order-attribution--dfn2017 {
+      padding-bottom: 76px;
+    }
+  }
+</style>

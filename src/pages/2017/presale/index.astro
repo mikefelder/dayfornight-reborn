@@ -1,4 +1,6 @@
 ---
+import WorkOrderAttribution from '@components/WorkOrderAttribution.astro';
+
 const ticketUrl = 'https://dayfornight2017.eventbrite.com/';
 ---
 
@@ -25,13 +27,29 @@ const ticketUrl = 'https://dayfornight2017.eventbrite.com/';
   <!--
     Original 2017 presale background video is missing/dead.
     Vimeo ID: 233762596
+    Vimeo title: BPS STARTS NOW
+    Vimeo account: dayfornightfest (https://vimeo.com/dayfornightfest)
+    Uploaded: Sep 13, 2017 at 9:11 pm
     Poster: http://i.vimeocdn.com/video/655171683.webp
     HLS: https://player.vimeo.com/external/233762596.m3u8?s=51280f5c0cd2321c04b25f18f0b623e83995a655
     MP4: https://player.vimeo.com/external/233762596.hd.mp4?s=99f2399e462d0d0bf4b292ade895d3dcb3796911&profile_id=174
   -->
   <main class="presale-shell" aria-label="Day for Night 2017 presale">
-    <div class="presale-mark" aria-hidden="true">DAY<br />FOR<br />NIGHT</div>
+    <section class="missing-video-stage" aria-label="BPS starts now">
+      <div class="motion-field" aria-hidden="true">
+        <span class="slash slash-a"></span>
+        <span class="slash slash-b"></span>
+        <span class="scan scan-a"></span>
+        <span class="scan scan-b"></span>
+      </div>
+      <div class="presale-copy">
+        <span>BPS</span>
+        <span>STARTS</span>
+        <span>NOW</span>
+      </div>
+    </section>
     <a href={ticketUrl} class="ticket-button">Buy Passes</a>
+    <WorkOrderAttribution era="presale2017" />
     <a href={ticketUrl} class="full-link" aria-label="Purchase tickets">Purchase Tickets</a>
   </main>
 </body>
@@ -69,24 +87,122 @@ const ticketUrl = 'https://dayfornight2017.eventbrite.com/';
     position: relative;
     min-height: 100vh;
     overflow: hidden;
-    background:
-      radial-gradient(circle at 50% 40%, rgba(236, 53, 47, 0.16), transparent 34rem),
-      linear-gradient(180deg, #080808 0%, #000 48%, #040404 100%);
+    background: #000;
   }
 
-  .presale-mark {
+  .missing-video-stage {
     position: absolute;
-    top: 11%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgba(236, 53, 47, 0.84);
-    font-size: clamp(4rem, 13vw, 12rem);
+    top: 3%;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 50% 52%, rgba(236, 53, 47, 0.22), transparent 28rem),
+      linear-gradient(180deg, #090909 0%, #000 58%, #080000 100%);
+  }
+
+  .motion-field {
+    position: absolute;
+    inset: -18%;
+    opacity: 0.92;
+    mix-blend-mode: screen;
+  }
+
+  .motion-field::before,
+  .motion-field::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(90deg, transparent 0 47%, rgba(236, 53, 47, 0.28) 48% 50%, transparent 51% 100%),
+      repeating-linear-gradient(0deg, rgba(236, 53, 47, 0.05) 0 1px, transparent 1px 10px);
+    transform: skewX(-18deg) translateX(-8%);
+    animation: field-sweep 6s linear infinite;
+  }
+
+  .motion-field::after {
+    opacity: 0.6;
+    transform: skewX(22deg) translateX(8%);
+    animation-duration: 8s;
+    animation-direction: reverse;
+  }
+
+  .slash,
+  .scan {
+    position: absolute;
+    display: block;
+    pointer-events: none;
+  }
+
+  .slash {
+    width: 32vw;
+    min-width: 220px;
+    height: 140%;
+    top: -20%;
+    background: linear-gradient(90deg, transparent, rgba(236, 53, 47, 0.52), transparent);
+    filter: blur(5px);
+    transform: rotate(23deg);
+    animation: slash-drive 4.8s cubic-bezier(0.45, 0, 0.2, 1) infinite;
+  }
+
+  .slash-a {
+    left: -35%;
+  }
+
+  .slash-b {
+    left: 105%;
+    animation-delay: -2.3s;
+    animation-direction: reverse;
+  }
+
+  .scan {
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(236, 53, 47, 0.72);
+    box-shadow: 0 0 18px rgba(236, 53, 47, 0.8);
+    animation: scan-drop 3.2s linear infinite;
+  }
+
+  .scan-a {
+    top: 8%;
+  }
+
+  .scan-b {
+    top: 70%;
+    animation-delay: -1.6s;
+  }
+
+  .presale-copy {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ec352f;
+    font-size: clamp(3.75rem, 13vw, 12rem);
     font-weight: 700;
-    line-height: 0.84;
+    line-height: 0.82;
     text-align: center;
     letter-spacing: 0;
     text-transform: uppercase;
-    opacity: 0.9;
+    text-shadow: 0 0 12px rgba(236, 53, 47, 0.32);
+  }
+
+  .presale-copy span {
+    display: block;
+    animation: type-jitter 2.4s steps(2, end) infinite;
+  }
+
+  .presale-copy span:nth-child(2) {
+    animation-delay: -0.8s;
+  }
+
+  .presale-copy span:nth-child(3) {
+    animation-delay: -1.6s;
   }
 
   .ticket-button {
@@ -132,8 +248,50 @@ const ticketUrl = 'https://dayfornight2017.eventbrite.com/';
   }
 
   @media (max-width: 600px) {
+    .missing-video-stage {
+      height: 76%;
+    }
+
     .ticket-button {
       top: 80%;
     }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .motion-field::before,
+    .motion-field::after,
+    .slash,
+    .scan,
+    .presale-copy span {
+      animation: none;
+    }
+  }
+
+  @keyframes field-sweep {
+    0% { transform: skewX(-18deg) translateX(-14%); }
+    100% { transform: skewX(-18deg) translateX(14%); }
+  }
+
+  @keyframes slash-drive {
+    0% { transform: translateX(0) rotate(23deg); opacity: 0; }
+    18% { opacity: 0.9; }
+    64% { opacity: 0.42; }
+    100% { transform: translateX(170vw) rotate(23deg); opacity: 0; }
+  }
+
+  @keyframes scan-drop {
+    0% { transform: translateY(-18vh); opacity: 0; }
+    12% { opacity: 0.85; }
+    100% { transform: translateY(90vh); opacity: 0; }
+  }
+
+  @keyframes type-jitter {
+    0%, 100% { transform: translate(0, 0); opacity: 0.92; }
+    18% { transform: translate(-1px, 0); opacity: 1; }
+    20% { transform: translate(2px, -1px); opacity: 0.74; }
+    22% { transform: translate(0, 0); opacity: 0.96; }
+    62% { transform: translate(1px, 0); }
+    64% { transform: translate(-2px, 1px); }
+    66% { transform: translate(0, 0); }
   }
 </style>

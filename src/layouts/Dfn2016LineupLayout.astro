@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import WorkOrderAttribution from '@components/WorkOrderAttribution.astro';
 import snapshot from '@data/snapshot-2016-lineup.json';
 
 interface Props {
@@ -17,6 +18,7 @@ const { dateData } = snapshot;
   </Fragment>
 
   <slot />
+  <WorkOrderAttribution era="dfn2016" />
 
   <script>
     // Enable text-stroke effect (originally set by Modernizr)
