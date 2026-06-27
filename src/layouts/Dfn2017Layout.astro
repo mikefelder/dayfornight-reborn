@@ -5,6 +5,9 @@ import snapshot from '@data/snapshot-2017.json';
 interface Props {
   title?: string;
   titleSpan?: string;
+  description?: string;
+  ogImage?: string;
+  ogType?: string;
   bodyClass?: string;
   dataSection?: string;
   dataNav?: string;
@@ -13,6 +16,9 @@ interface Props {
 const {
   title = 'Day for Night',
   titleSpan = '',
+  description,
+  ogImage,
+  ogType,
   bodyClass = 'home page-template-default page page-id-5 no-tick mode-day radio-on page-homepage',
   dataSection = 'home',
   dataNav = ''
@@ -22,7 +28,7 @@ const { nav, social, dateData } = snapshot;
 const ticketUrl = snapshot.ticketUrl || 'https://dayfornight2017.eventbrite.com/';
 ---
 
-<BaseLayout title={title} bodyClass={bodyClass}>
+<BaseLayout title={title} description={description} ogImage={ogImage} ogType={ogType} bodyClass={bodyClass}>
   <Fragment slot="head">
     <link rel="stylesheet" href="/shared-assets/2017/css/styles.css" />
   </Fragment>

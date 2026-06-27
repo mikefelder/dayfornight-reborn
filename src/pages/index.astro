@@ -17,15 +17,36 @@ const snapshots = [
 ];
 ---
 
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Day for Night</title>
+  <meta name="description" content="Day For Night — a music and arts festival in Houston, Texas featuring light and sound. Explore the 2015, 2016, 2017, and 2018 editions." />
+  <link rel="canonical" href="https://dayfornight.dev/" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="alternate icon" href="/favicon.ico" sizes="any" />
+  <meta property="og:title" content="Day for Night" />
+  <meta property="og:description" content="Day For Night — a music and arts festival in Houston, Texas featuring light and sound. Explore the 2015, 2016, 2017, and 2018 editions." />
+  <meta property="og:site_name" content="Day For Night" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dayfornight.dev/" />
+  <meta name="twitter:site" content="@dayfornightfest" />
+  <meta name="twitter:title" content="Day for Night" />
+  <meta name="twitter:description" content="Day For Night — a music and arts festival in Houston, Texas featuring light and sound. Explore the 2015, 2016, 2017, and 2018 editions." />
+  <meta name="twitter:card" content="summary_large_image" />
 </head>
 <body>
+  <noscript>
+    <nav>
+      <ul>
+        <li><a href="/2018/">Day for Night 2018</a></li>
+        <li><a href="/2017/">Day for Night 2017</a></li>
+        <li><a href="/2016/">Day for Night 2016</a></li>
+        <li><a href="/2015/">Day for Night 2015</a></li>
+      </ul>
+    </nav>
+  </noscript>
   <script define:vars={{ snapshots }}>
     const storageKey = 'dfn:snapshot-seen-at-session';
     const cooldownMs = 20 * 60 * 1000;

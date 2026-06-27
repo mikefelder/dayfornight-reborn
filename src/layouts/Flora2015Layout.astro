@@ -10,15 +10,17 @@ import snapshotData from '@data/snapshot-2015.json';
 interface Props {
   title: string;
   bodyClass?: string;
+  description?: string;
   ogImage?: string;
+  ogType?: string;
   extraStylesheets?: string[];
 }
 
-const { title, bodyClass = '', ogImage, extraStylesheets = [] } = Astro.props;
+const { title, bodyClass = '', description, ogImage, ogType, extraStylesheets = [] } = Astro.props;
 const fullBodyClass = `loaded ${bodyClass}`.trim();
 ---
 
-<BaseLayout title={`${title} | Day For Night`} ogImage={ogImage} bodyClass={fullBodyClass}>
+<BaseLayout title={`${title} | Day For Night`} description={description} ogImage={ogImage} ogType={ogType} bodyClass={fullBodyClass}>
   <Fragment slot="head">
     <link rel="stylesheet" href="/shared-assets/2015/css/event_template.css" />
     <link rel="stylesheet" href="/shared-assets/2015/css/style.css" />

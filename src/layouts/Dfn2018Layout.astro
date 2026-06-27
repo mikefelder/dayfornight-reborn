@@ -5,6 +5,9 @@ import snapshot from '@data/snapshot-2018.json';
 interface Props {
   title?: string;
   titleSpan?: string;
+  description?: string;
+  ogImage?: string;
+  ogType?: string;
   bodyClass?: string;
   dataSection?: string;
   dataNav?: string;
@@ -13,6 +16,9 @@ interface Props {
 const {
   title = 'Day for Night',
   titleSpan = '',
+  description,
+  ogImage,
+  ogType,
   bodyClass = 'home page-template-default page page-id-5 no-tick mode-day radio-on page-homepage',
   dataSection = 'home',
   dataNav = ''
@@ -25,7 +31,7 @@ const ticketUrl = snapshot.ticketUrl || '#';
 const assetsBase = '/shared-assets/2017';
 ---
 
-<BaseLayout title={title} bodyClass={bodyClass}>
+<BaseLayout title={title} description={description} ogImage={ogImage} ogType={ogType} bodyClass={bodyClass}>
   <Fragment slot="head">
     <link rel="stylesheet" href={`${assetsBase}/css/styles.css`} />
   </Fragment>
