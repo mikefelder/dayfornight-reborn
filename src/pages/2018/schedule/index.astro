@@ -6,6 +6,38 @@ const { schedule, artists } = snapshot;
 const { days, stages } = schedule;
 const stageNames = ['red', 'green', 'blue', 'yellow'];
 const stageLabels = { red: 'RED STAGE', green: 'GREEN STAGE', blue: 'BLUE STAGE', yellow: 'YELLOW STAGE' };
+const scheduleTimes = [
+  { className: 'schedule-time no-friday', time: '12PM' },
+  { className: 'schedule-time no-friday', time: '1:00' },
+  { className: 'schedule-time no-friday' },
+  { className: 'schedule-time no-friday', time: '2:00' },
+  { className: 'schedule-time no-friday' },
+  { className: 'schedule-time no-friday', time: '3:00' },
+  { className: 'schedule-time friday-only', time: '3PM' },
+  { className: 'schedule-time' },
+  { className: 'schedule-time', time: '4:00' },
+  { className: 'schedule-time' },
+  { className: 'schedule-time', time: '5:00' },
+  { className: 'schedule-time' },
+  { className: 'schedule-time', time: '6:00' },
+  { className: 'schedule-time' },
+  { className: 'schedule-time', time: '7:00' },
+  { className: 'schedule-time' },
+  { className: 'schedule-time', time: '8:00' },
+  { className: 'schedule-time' },
+  { className: 'schedule-time', time: '9:00' },
+  { className: 'schedule-time' },
+  { className: 'schedule-time', time: '10:00' },
+  { className: 'schedule-time' },
+  { className: 'schedule-time', time: '11:00' },
+  { className: 'schedule-time' },
+  { className: 'schedule-time', time: '12AM' },
+  { className: 'schedule-time' },
+  { className: 'schedule-time', time: '1:00' },
+  { className: 'schedule-time' },
+  { className: 'schedule-time', time: '2:00' },
+  { className: 'schedule-time' },
+];
 
 const artistSlugs = new Set(artists.map((a: any) => a.slug));
 function hasDetailPage(href: string): boolean {
@@ -37,24 +69,12 @@ function hasDetailPage(href: string): boolean {
       <span class="yellow-label">YELLOW STAGE</span>
     </div>
 
-    <div class="schedule-times">
-      <span class="schedule-time">1</span>
-      <span class="schedule-time">2</span>
-      <span class="schedule-time">3</span>
-      <span class="schedule-time">4</span>
-      <span class="schedule-time">5</span>
-      <span class="schedule-time">6</span>
-      <span class="schedule-time">7</span>
-      <span class="schedule-time">8</span>
-      <span class="schedule-time">9</span>
-      <span class="schedule-time">10</span>
-      <span class="schedule-time">11</span>
-      <span class="schedule-time">12</span>
-      <span class="schedule-time">1</span>
-      <span class="schedule-time">2</span>
-    </div>
+    <div class="schedule-wrap">
+      <ul class="schedule-times">
+        <span class="doors-label">DOORS</span>
+        {scheduleTimes.map((item) => <li class={item.className} data-time={item.time}></li>)}
+      </ul>
 
-    <div class="schedule-stages">
       {stageNames.map((stage) => (
         <ul class={`stage-data stage-${stage} text-white`} data-stage={stage}>
           <span class="stage-label"></span>
