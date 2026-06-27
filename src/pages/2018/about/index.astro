@@ -1,6 +1,12 @@
 ---
 import Dfn2018Layout from '@layouts/Dfn2018Layout.astro';
 import aboutHtml from '@data/about-2018.html?raw';
+
+const aboutContent = aboutHtml
+  .split(/<footer>/i)[0]
+  .replace(/\/wp-content\/uploads\/(?:2017\/01|2016\/08)\//g, '/shared-assets/2017/images/')
+  .replaceAll('href="./lineup/"', 'href="/2018/lineup/"')
+  .replace(/href="\.\/(sound|light|talks)\//g, 'href="/2018/$1/');
 ---
 
 <Dfn2018Layout
@@ -10,5 +16,5 @@ import aboutHtml from '@data/about-2018.html?raw';
   dataSection="about"
   dataNav="about"
 >
-  <Fragment set:html={aboutHtml} />
+  <Fragment set:html={aboutContent} />
 </Dfn2018Layout>

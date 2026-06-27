@@ -547,7 +547,7 @@
           "artists": [
             {
               "name": "Laurie Anderson",
-              "href": "/2017/sound/laurie-anderson/"
+              "href": "/2017/talks/laurie-anderson/"
             }
           ],
           "time": "7:40\ufeff\u2013\ufeff8:30",
@@ -1059,8 +1059,8 @@
     },
     {
       "name": "Laurie Anderson",
-      "href": "/2017/sound/laurie-anderson/",
-      "section": "sound"
+      "href": "/2017/talks/laurie-anderson/",
+      "section": "talks"
     },
     {
       "name": "Cashmere Cat",
@@ -3812,7 +3812,7 @@
       },
       {
         "target": "3",
-        "src": "DFN16_PRESS_JULIAN-BAJSEL_VT-PRO_1-225x150.jpg"
+        "src": "DFN16_PRESS_JULIAN-BAJSEL_VT-PRO_1-1024x683.jpg"
       },
       {
         "target": "4",

@@ -1,4 +1,6 @@
 ---
+import snapshotData from '@data/snapshot-2015.json';
+
 interface NavArtist {
   slug: string;
   name: string;
@@ -10,6 +12,14 @@ interface Props {
 }
 
 const { prevArtist, nextArtist } = Astro.props;
+
+const imageBySlug = new Map(
+  snapshotData.gridOrder.map((item) => [item.slug, item.image.replace(/^images\//, '')])
+);
+
+function imageFor(artist: NavArtist): string {
+  return imageBySlug.get(artist.slug) || `${artist.slug}-1600-640x500.jpg`;
+}
 ---
 
 <nav class="post-nav clear">
@@ -20,7 +30,7 @@ const { prevArtist, nextArtist } = Astro.props;
         <span>
           <a href={`/2015/artists/${prevArtist.slug}/`} rel="prev">
             <img
-              src={`/shared-assets/2015/images/${prevArtist.slug}-1600-640x500.jpg`}
+              src={`/shared-assets/2015/images/${imageFor(prevArtist)}`}
               alt={prevArtist.name}
               class="post-thumb"
               loading="lazy"
@@ -40,7 +50,7 @@ const { prevArtist, nextArtist } = Astro.props;
         <span>
           <a href={`/2015/artists/${nextArtist.slug}/`} rel="next">
             <img
-              src={`/shared-assets/2015/images/${nextArtist.slug}-1600-640x500.jpg`}
+              src={`/shared-assets/2015/images/${imageFor(nextArtist)}`}
               alt={nextArtist.name}
               class="post-thumb"
               loading="lazy"

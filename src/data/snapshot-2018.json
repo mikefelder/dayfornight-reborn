@@ -2,7 +2,7 @@
   "nav": [
     {
       "label": "About",
-      "href": "/2018/about-day-for-night/",
+      "href": "/2018/about/",
       "class": "nav-about menu-item menu-item-type-post_type menu-item-object-page menu-item-32"
     },
     {
@@ -24,11 +24,6 @@
       "label": "FAQ",
       "href": "/2018/faq/",
       "class": "nav-faq menu-item menu-item-type-post_type menu-item-object-page menu-item-29"
-    },
-    {
-      "label": "Sponsors",
-      "href": "/2018/sponsors/",
-      "class": "nav-sponsors menu-item menu-item-type-post_type menu-item-object-page menu-item-1663"
     },
     {
       "label": "Shop",
@@ -4391,7 +4386,7 @@
       },
       {
         "target": "3",
-        "src": "DFN16_PRESS_JULIAN-BAJSEL_VT-PRO_1-225x150.jpg"
+        "src": "DFN16_PRESS_JULIAN-BAJSEL_VT-PRO_1-1024x683.jpg"
       },
       {
         "target": "4",

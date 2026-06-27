@@ -1,0 +1,9 @@
+---
+import ScheduleIndex from './index.astro';
+
+export function getStaticPaths() {
+  return ['dec-15', 'dec-16', 'dec-17'].map((day) => ({ params: { day } }));
+}
+---
+
+<ScheduleIndex />
