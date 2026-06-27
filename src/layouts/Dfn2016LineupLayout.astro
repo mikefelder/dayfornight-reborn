@@ -5,13 +5,16 @@ import snapshot from '@data/snapshot-2016-lineup.json';
 interface Props {
   title?: string;
   bodyClass?: string;
+  description?: string;
+  ogImage?: string;
+  ogType?: string;
 }
 
-const { title = 'Day for Night', bodyClass = 'home page page-id-5 page-template-default page-homepage' } = Astro.props;
+const { title = 'Day for Night', bodyClass = 'home page page-id-5 page-template-default page-homepage', description, ogImage, ogType } = Astro.props;
 const { dateData } = snapshot;
 ---
 
-<BaseLayout title={title} bodyClass={bodyClass}>
+<BaseLayout title={title} description={description} ogImage={ogImage} ogType={ogType} bodyClass={bodyClass}>
   <Fragment slot="head">
     <link rel="stylesheet" href="/shared-assets/2016/css/lineup-styles.css" />
   </Fragment>

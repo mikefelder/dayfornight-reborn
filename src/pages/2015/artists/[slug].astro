@@ -14,12 +14,15 @@ export async function getStaticPaths() {
 const { artist } = Astro.props;
 const { Content } = await render(artist);
 const { name, image, categories, publishedDate, prevArtist, nextArtist } = artist.data;
+const artistDescription = artist.body ? artist.body.replace(/\s+/g, ' ').trim().slice(0, 160) : undefined;
 ---
 
 <Flora2015Layout
   title={name}
   bodyClass="single single-wyde_portfolio classic-nav no-title"
+  description={artistDescription}
   ogImage={`/shared-assets/2015/images/${image}`}
+  ogType="article"
 >
   <div class="main-content full-width header-space portfolio-gallery">
     <div class="post-media">

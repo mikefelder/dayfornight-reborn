@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dayfornight.dev/sitemap-index.xml

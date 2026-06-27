@@ -5,10 +5,19 @@ interface Props {
   title: string;
   description?: string;
   ogImage?: string;
+  ogType?: string;
   bodyClass?: string;
 }
 
-const { title, description = 'Day For Night - light & sound collide', ogImage, bodyClass = '' } = Astro.props;
+const {
+  title,
+  description = 'Day For Night - light & sound collide',
+  ogImage,
+  ogType = 'website',
+  bodyClass = '',
+} = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <!doctype html>
@@ -18,15 +27,21 @@ const { title, description = 'Day For Night - light & sound collide', ogImage, b
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="alternate icon" href="/favicon.ico" sizes="any" />
     <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
     <meta property="og:site_name" content="Day For Night" />
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalUrl} />
     {ogImage && <meta property="og:image" content={ogImage} />}
     <meta name="twitter:site" content="@dayfornightfest" />
     <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
     <meta name="twitter:card" content="summary_large_image" />
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
     <ClientRouter />
     <slot name="head" />
     <style is:global>

@@ -19,11 +19,16 @@ const { lineup } = snapshot;
 const soundItems = lineup.filter((item) => item.section === 'sound');
 const lightItems = lineup.filter((item) => item.section === 'light');
 const talksItems = lineup.filter((item) => item.section === 'talks');
+const artistDescription = artist.bio ? artist.bio.slice(0, 160).trimEnd() : undefined;
+const artistImage = artist.image ? `${assetsBase}/images/${artist.image}` : undefined;
 ---
 
 <Dfn2018Layout
   title={artist.name}
   titleSpan="Lineup"
+  description={artistDescription}
+  ogImage={artistImage}
+  ogType="article"
   bodyClass={artist.bodyClass || `talks-template-default single single-talks no-tick mode-day radio-on talks-${artist.slug}`}
   dataSection="lineup"
   dataNav="lineup"

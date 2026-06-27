@@ -17,14 +17,19 @@ const { lineup } = snapshot;
 const soundItems = lineup.filter((item) => item.section === 'sound');
 const lightItems = lineup.filter((item) => item.section === 'light');
 const talksItems = lineup.filter((item) => item.section === 'talks');
+const artistDescription = artist.bio ? artist.bio.slice(0, 160).trimEnd() : undefined;
+const artistImage = artist.image ? `/shared-assets/2017/images/${artist.image}` : undefined;
 ---
 
 <Dfn2017Layout
   title={artist.name}
   titleSpan="Lineup"
+  description={artistDescription}
+  ogImage={artistImage}
   bodyClass={artist.bodyClass || `sound-template-default single single-sound no-tick mode-day radio-on sound-${artist.slug}`}
   dataSection="lineup"
   dataNav="lineup"
+  ogType="article"
 >
   <div class="lineups-labels-tabs mobile-only" data-active-section="sound">
     <div class="lineup-tab sound-tab"><a href="/2017/lineup/" data-lineup-section="sound">SOUND</a></div>

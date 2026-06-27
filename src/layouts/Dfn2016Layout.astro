@@ -4,13 +4,15 @@ import BaseLayout from './BaseLayout.astro';
 interface Props {
   title?: string;
   bodyClass?: string;
+  description?: string;
   ogImage?: string;
+  ogType?: string;
 }
 
-const { title = 'Day for Night', bodyClass = 'home blog', ogImage } = Astro.props;
+const { title = 'Day for Night', bodyClass = 'home blog', description, ogImage, ogType } = Astro.props;
 ---
 
-<BaseLayout title={title} ogImage={ogImage} bodyClass={bodyClass}>
+<BaseLayout title={title} description={description} ogImage={ogImage} ogType={ogType} bodyClass={bodyClass}>
   <Fragment slot="head">
     <link rel="stylesheet" href="/shared-assets/2016/css/style.css" />
   </Fragment>
