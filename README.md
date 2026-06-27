@@ -1,6 +1,6 @@
-# dayfornight.dev
+# Day for Night - Reborn
 
-Archival site for Day for Night festival — deployed to Azure Static Web Apps via Astro.
+Rebuilt site for Day for Night festival
 
 ## Routes
 
