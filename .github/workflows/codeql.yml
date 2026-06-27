@@ -21,6 +21,9 @@ on:
 
 jobs:
   analyze:
+    # This repository uses CodeQL default setup. Advanced workflow uploads are
+    # rejected while default setup is enabled, so keep this job disabled.
+    if: ${{ false }}
     name: Analyze (${{ matrix.language }})
     runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
     permissions:
