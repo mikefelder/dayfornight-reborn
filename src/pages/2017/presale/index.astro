@@ -30,12 +30,19 @@ const ticketUrl = 'https://dayfornight2017.eventbrite.com/';
     Vimeo title: BPS STARTS NOW
     Vimeo account: dayfornightfest (https://vimeo.com/dayfornightfest)
     Uploaded: Sep 13, 2017 at 9:11 pm
+    Recovered overlay candidate: /shared-assets/2017/images/presale/day-for-night-lines-offset-01.gif
     Poster: http://i.vimeocdn.com/video/655171683.webp
     HLS: https://player.vimeo.com/external/233762596.m3u8?s=51280f5c0cd2321c04b25f18f0b623e83995a655
     MP4: https://player.vimeo.com/external/233762596.hd.mp4?s=99f2399e462d0d0bf4b292ade895d3dcb3796911&profile_id=174
   -->
   <main class="presale-shell" aria-label="Day for Night 2017 presale">
     <section class="missing-video-stage" aria-label="BPS starts now">
+      <img
+        class="presale-lines-gif"
+        src="/shared-assets/2017/images/presale/day-for-night-lines-offset-01.gif"
+        alt=""
+        aria-hidden="true"
+      />
       <div class="motion-field" aria-hidden="true">
         <span class="slash slash-a"></span>
         <span class="slash slash-b"></span>
@@ -102,10 +109,23 @@ const ticketUrl = 'https://dayfornight2017.eventbrite.com/';
       linear-gradient(180deg, #090909 0%, #000 58%, #080000 100%);
   }
 
+  .presale-lines-gif {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.82;
+    mix-blend-mode: screen;
+    pointer-events: none;
+  }
+
   .motion-field {
     position: absolute;
     inset: -18%;
-    opacity: 0.92;
+    z-index: 1;
+    opacity: 0.34;
     mix-blend-mode: screen;
   }
 
