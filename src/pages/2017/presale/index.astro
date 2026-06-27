@@ -1,0 +1,139 @@
+---
+const ticketUrl = 'https://dayfornight2017.eventbrite.com/';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Day for Night 2017 Presale</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta property="og:title" content="Day for Night" />
+  <meta property="og:description" content="Combining headlining musicians with immersive art installations, Day for Night transforms live music production by introducing new sensory experiences to the festival landscape." />
+  <meta property="og:url" content="http://www.dayfornight.io/" />
+  <meta property="og:site_name" content="Day for Night" />
+  <meta property="og:image" content="http://www.dayfornight.io/dfn_og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="Combining headlining musicians with immersive art installations, Day for Night transforms live music production by introducing new sensory experiences to the festival landscape." />
+  <meta name="twitter:title" content="Day for Night" />
+  <meta name="twitter:site" content="@dayfornightfest" />
+  <meta name="twitter:image:src" content="http://www.dayfornight.io/dfn_og.jpg" />
+</head>
+<body>
+  <!--
+    Original 2017 presale background video is missing/dead.
+    Vimeo ID: 233762596
+    Poster: http://i.vimeocdn.com/video/655171683.webp
+    HLS: https://player.vimeo.com/external/233762596.m3u8?s=51280f5c0cd2321c04b25f18f0b623e83995a655
+    MP4: https://player.vimeo.com/external/233762596.hd.mp4?s=99f2399e462d0d0bf4b292ade895d3dcb3796911&profile_id=174
+  -->
+  <main class="presale-shell" aria-label="Day for Night 2017 presale">
+    <div class="presale-mark" aria-hidden="true">DAY<br />FOR<br />NIGHT</div>
+    <a href={ticketUrl} class="ticket-button">Buy Passes</a>
+    <a href={ticketUrl} class="full-link" aria-label="Purchase tickets">Purchase Tickets</a>
+  </main>
+</body>
+</html>
+
+<style>
+  @font-face {
+    font-family: "GT-Cinetype";
+    src: url("/shared-assets/2016/fonts/GT-Cinetype-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  html {
+    box-sizing: border-box;
+    background: #000;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    min-height: 100%;
+    margin: 0;
+    background: #000;
+    color: #ec352f;
+    font-family: "GT-Cinetype", Arial, sans-serif;
+  }
+
+  .presale-shell {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 50% 40%, rgba(236, 53, 47, 0.16), transparent 34rem),
+      linear-gradient(180deg, #080808 0%, #000 48%, #040404 100%);
+  }
+
+  .presale-mark {
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(236, 53, 47, 0.84);
+    font-size: clamp(4rem, 13vw, 12rem);
+    font-weight: 700;
+    line-height: 0.84;
+    text-align: center;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    opacity: 0.9;
+  }
+
+  .ticket-button {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    z-index: 4;
+    width: 160px;
+    margin: 20px 0 20px -80px;
+    padding: 4px 12px 5px 20px;
+    border: 1px solid #ec352f;
+    background-color: #000;
+    color: #ec352f;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform-origin: 50% 50%;
+  }
+
+  .ticket-button:hover {
+    background-color: #ec352f;
+    color: #000;
+  }
+
+  .ticket-button:active {
+    transform: scale(0.95);
+  }
+
+  .ticket-button::after {
+    content: "\00a0\2192";
+  }
+
+  .full-link {
+    position: fixed;
+    inset: 0;
+    z-index: 3;
+    background: #fff;
+    opacity: 0;
+    color: transparent;
+  }
+
+  @media (max-width: 600px) {
+    .ticket-button {
+      top: 80%;
+    }
+  }
+</style>
