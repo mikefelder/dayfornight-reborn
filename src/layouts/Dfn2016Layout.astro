@@ -1,6 +1,5 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import WorkOrderAttribution from '@components/WorkOrderAttribution.astro';
 
 interface Props {
   title?: string;
@@ -17,5 +16,4 @@ const { title = 'Day for Night', bodyClass = 'home blog', ogImage } = Astro.prop
   </Fragment>
 
   <slot />
-  <WorkOrderAttribution era="dfn2016" />
 </BaseLayout>
