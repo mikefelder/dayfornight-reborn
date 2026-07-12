@@ -33,7 +33,7 @@
   <!-- Year-navigation pill (matches the Astro <YearRotationPill> used on every
        built page; hand-authored here because the splash is a static file). -->
   <aside class="dfn-year-pill" aria-label="Day For Night snapshot navigation">
-    <a class="dfn-year-pill__home" href="/" title="All Day For Night snapshots">DFN</a>
+    <span class="dfn-year-pill__home">DFN</span>
     <a class="dfn-year-pill__nav dfn-year-pill__nav--next" href="/2015/" title="2015 — Day For Night 2015 (Main)">DFN 2015 &rarr;</a>
   </aside>
   <style>
@@ -54,7 +54,8 @@
       backdrop-filter: blur(6px);
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
     }
-    .dfn-year-pill a {
+    .dfn-year-pill a,
+    .dfn-year-pill__home {
       color: #fff !important;
       text-decoration: none;
       padding: 8px 14px;
@@ -63,12 +64,12 @@
       line-height: 1;
     }
     .dfn-year-pill__nav { opacity: 0.7; }
-    .dfn-year-pill__nav:hover,
-    .dfn-year-pill__home:hover { background: rgba(255, 255, 255, 0.12); opacity: 1; }
+    .dfn-year-pill__nav:hover { background: rgba(255, 255, 255, 0.12); opacity: 1; }
     .dfn-year-pill__home {
       font-weight: 600;
       border-right: 1px solid rgba(255, 255, 255, 0.15);
       border-radius: 999px 0 0 999px;
+      cursor: default;
     }
     .dfn-year-pill__nav--next { border-radius: 0 999px 999px 0; }
     @media print { .dfn-year-pill { display: none; } }
