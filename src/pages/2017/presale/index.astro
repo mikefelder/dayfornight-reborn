@@ -1,4 +1,6 @@
 ---
+import YearRotationPill from '@components/YearRotationPill.astro';
+
 const ticketUrl = 'https://dayfornight2017.eventbrite.com/';
 ---
 
@@ -56,6 +58,7 @@ const ticketUrl = 'https://dayfornight2017.eventbrite.com/';
     <a href={ticketUrl} class="ticket-button">Buy Passes</a>
     <a href={ticketUrl} class="full-link" aria-label="Purchase tickets">Purchase Tickets</a>
   </main>
+  <YearRotationPill />
 </body>
 </html>
 
