@@ -1,0 +1,101 @@
+---
+import { findSnapshot, adjacentSnapshots } from '@data/show-years';
+
+export interface Props {
+  // The href of the current page (e.g. "/2016/lineup/"). If omitted, it is
+  // derived from the current URL. Used to place this page within the
+  // live-snapshots list for prev/next navigation.
+  currentHref?: string;
+}
+
+const rawPath = Astro.props.currentHref ?? Astro.url.pathname;
+const currentHref = rawPath.endsWith('/') ? rawPath : `${rawPath}/`;
+
+const current = findSnapshot(currentHref);
+const { prev, next } = adjacentSnapshots(currentHref);
+
+function pillLabel(entry: { year: number; label: string }): string {
+  return entry.label === 'Main' || entry.label === 'Event'
+    ? `DFN ${entry.year}`
+    : `${entry.year} ${entry.label}`;
+}
+---
+<aside class="dfn-year-pill" aria-label="Day For Night snapshot navigation">
+  {prev && (
+    <a
+      class="dfn-year-pill__nav dfn-year-pill__nav--prev"
+      href={prev.href}
+      title={`${prev.year} — ${prev.edition} (${prev.label})`}
+    >
+      &larr; {pillLabel(prev)}
+    </a>
+  )}
+  <a class="dfn-year-pill__home" href="/" title="All Day For Night snapshots">
+    {current ? pillLabel(current) : 'DFN'}
+  </a>
+  {next && (
+    <a
+      class="dfn-year-pill__nav dfn-year-pill__nav--next"
+      href={next.href}
+      title={`${next.year} — ${next.edition} (${next.label})`}
+    >
+      {pillLabel(next)} &rarr;
+    </a>
+  )}
+</aside>
+
+<style is:global>
+  .dfn-year-pill {
+    position: fixed;
+    bottom: 14px;
+    right: 14px;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: stretch;
+    background: rgba(20, 20, 20, 0.85);
+    color: #fff;
+    border-radius: 999px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  }
+
+  .dfn-year-pill a {
+    color: #fff !important;
+    text-decoration: none;
+    padding: 8px 14px;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+  }
+
+  .dfn-year-pill__nav {
+    opacity: 0.7;
+  }
+
+  .dfn-year-pill__nav:hover,
+  .dfn-year-pill__home:hover {
+    background: rgba(255, 255, 255, 0.12);
+    opacity: 1;
+  }
+
+  .dfn-year-pill__home {
+    font-weight: 600;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .dfn-year-pill__nav--prev {
+    border-radius: 999px 0 0 999px;
+  }
+
+  .dfn-year-pill__nav--next {
+    border-radius: 0 999px 999px 0;
+  }
+
+  @media print {
+    .dfn-year-pill { display: none; }
+  }
+</style>

@@ -1,5 +1,6 @@
 ---
 import { ClientRouter } from 'astro:transitions';
+import YearRotationPill from '@components/YearRotationPill.astro';
 
 interface Props {
   title: string;
@@ -7,6 +8,8 @@ interface Props {
   ogImage?: string;
   ogType?: string;
   bodyClass?: string;
+  // Set false to hide the year-navigation pill (e.g. on standalone pages).
+  showYearPill?: boolean;
 }
 
 const {
@@ -15,6 +18,7 @@ const {
   ogImage,
   ogType = 'website',
   bodyClass = '',
+  showYearPill = true,
 } = Astro.props;
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
@@ -64,5 +68,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
   </head>
   <body class={bodyClass}>
     <slot />
+    {showYearPill && <YearRotationPill />}
   </body>
 </html>
