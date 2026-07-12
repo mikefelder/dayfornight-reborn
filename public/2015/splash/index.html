@@ -29,5 +29,49 @@
   <script src="/2015/splash/js/foundation.min.js"></script>
   <script src="/2015/splash/js/modernizr.js"></script>
   <script src="/2015/splash/js/app.js"></script>
+
+  <!-- Year-navigation pill (matches the Astro <YearRotationPill> used on every
+       built page; hand-authored here because the splash is a static file). -->
+  <aside class="dfn-year-pill" aria-label="Day For Night snapshot navigation">
+    <a class="dfn-year-pill__home" href="/" title="All Day For Night snapshots">DFN</a>
+    <a class="dfn-year-pill__nav dfn-year-pill__nav--next" href="/2015/" title="2015 — Day For Night 2015 (Main)">DFN 2015 &rarr;</a>
+  </aside>
+  <style>
+    .dfn-year-pill {
+      position: fixed;
+      bottom: 14px;
+      right: 14px;
+      z-index: 9999;
+      display: inline-flex;
+      align-items: stretch;
+      background: rgba(20, 20, 20, 0.85);
+      color: #fff;
+      border-radius: 999px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      -webkit-backdrop-filter: blur(6px);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+    .dfn-year-pill a {
+      color: #fff !important;
+      text-decoration: none;
+      padding: 8px 14px;
+      display: inline-flex;
+      align-items: center;
+      line-height: 1;
+    }
+    .dfn-year-pill__nav { opacity: 0.7; }
+    .dfn-year-pill__nav:hover,
+    .dfn-year-pill__home:hover { background: rgba(255, 255, 255, 0.12); opacity: 1; }
+    .dfn-year-pill__home {
+      font-weight: 600;
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 999px 0 0 999px;
+    }
+    .dfn-year-pill__nav--next { border-radius: 0 999px 999px 0; }
+    @media print { .dfn-year-pill { display: none; } }
+  </style>
 </body>
 </html>
