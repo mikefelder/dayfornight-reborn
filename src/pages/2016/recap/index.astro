@@ -1,9 +1,11 @@
 ---
 import Dfn2016LineupLayout from '@layouts/Dfn2016LineupLayout.astro';
 import snapshot from '@data/snapshot-2016-recap.json';
+import { localVideo, localVideoTag } from '@data/videos';
 
 const IMG = '/shared-assets/2016/images';
 const { tagline, quote, video, nav, social, newsletter, sponsors, footer } = snapshot;
+const recapVideoLocal = localVideo(2016, video.vimeoId);
 ---
 
 <Dfn2016LineupLayout bodyClass="home page-template-default page page-id-5 no-tick page-homepage">
@@ -103,12 +105,16 @@ const { tagline, quote, video, nav, social, newsletter, sponsors, footer } = sna
 
       <div class="mainVid">
         <div class="vid-pad" style="position:relative; width:100%; height:0; padding-bottom:56.25%;">
-          <iframe
-            src={`https://player.vimeo.com/video/${video.vimeoId}?color=f7931e&title=0&byline=0&portrait=0`}
-            style="position:absolute; top:0; left:0; width:100%; height:100%;"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+          {recapVideoLocal ? (
+            <Fragment set:html={localVideoTag({ local: recapVideoLocal })} />
+          ) : (
+            <iframe
+              src={`https://player.vimeo.com/video/${video.vimeoId}?color=f7931e&title=0&byline=0&portrait=0`}
+              style="position:absolute; top:0; left:0; width:100%; height:100%;"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          )}
         </div>
       </div>
 

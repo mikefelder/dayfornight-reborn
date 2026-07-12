@@ -1,12 +1,13 @@
 ---
 import Dfn2018Layout from '@layouts/Dfn2018Layout.astro';
 import aboutHtml from '@data/about-2018.html?raw';
+import { swapVimeoIframes } from '@data/videos';
 
-const aboutContent = aboutHtml
+const aboutContent = swapVimeoIframes(aboutHtml
   .split(/<footer>/i)[0]
   .replace(/\/wp-content\/uploads\/(?:2017\/01|2016\/08)\//g, '/shared-assets/2017/images/')
   .replaceAll('href="./lineup/"', 'href="/2018/lineup/"')
-  .replace(/href="\.\/(sound|light|talks)\//g, 'href="/2018/$1/');
+  .replace(/href="\.\/(sound|light|talks)\//g, 'href="/2018/$1/'), 2017);
 ---
 
 <Dfn2018Layout

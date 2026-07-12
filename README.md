@@ -164,18 +164,29 @@ resolve.
   (the only surviving copy is a 142 KB Wayback HTML error page saved with a `.jpg`
   extension). The `/2015/` hero now shows the Day For Night wordmark logo
   (`DAY_FOR_NIGHT_LOGO.png`) as a stand-in.
-- **`shop.dayfornight.io`** — linked as "Shop" in the 2018 footer; the subdomain no
-  longer resolves. Left in place for period accuracy.
-- **Splash social links** — the 2015 splash's Instagram and Twitter icons link to
-  the live accounts; the Facebook icon is an intentional `#` dead-end.
+- **`shop.dayfornight.io`** — the festival shop subdomain no longer resolves and
+  can't be reproduced, so the "Shop" nav link (2017 + 2018) is an intentional `#`
+  dead-end.
+- **Facebook** — the festival's own Facebook link is an intentional `#` dead-end
+  everywhere; Instagram, Twitter, and Spotify point to the live accounts.
+  Individual artists' Facebook links are unaffected.
 
 ### Missing Vimeo videos
 
 These background/feature videos are embedded via `player.vimeo.com` but no longer
-load (the source videos are now private, domain-restricted, or removed), so they
-render as empty embeds. **They can be restored** by downloading each source video
-and either self-hosting it under `public/shared-assets/<year>/videos/` or swapping
-the embed for a poster image + click-through link.
+load (the source videos are now private, domain-restricted, or removed).
+
+**They can be restored automatically.** Download each source video and drop it in as:
+
+```
+public/shared-assets/<year>/videos/vimeo-<ID>.mp4
+```
+
+On the next build, the dead iframe is swapped for a native `<video>` pointing at
+your local copy — no code changes needed (see `src/data/videos.ts`). Until a file
+is present, the original embed is left untouched, so this is a safe drop-in. Use
+`2016` for the 2016 videos and `2017` for the **2017 and 2018** videos (the 2018
+pages reuse the 2017 asset folder).
 
 | Vimeo ID | Source URL | Embedded on |
 |----------|-----------|-------------|

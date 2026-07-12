@@ -1,12 +1,13 @@
 ---
 import Dfn2017Layout from '@layouts/Dfn2017Layout.astro';
 import aboutHtml from '@data/about-2017.html?raw';
+import { swapVimeoIframes } from '@data/videos';
 
-const aboutContent = aboutHtml
+const aboutContent = swapVimeoIframes(aboutHtml
   .split(/<footer>/i)[0]
   .replaceAll('/shared-assets/2017/images/2017/01/', '/shared-assets/2017/images/')
   .replaceAll('/shared-assets/2017/images/2016/08/', '/shared-assets/2017/images/')
-  .replaceAll('/2017/sound/laurie-anderson/', '/2017/talks/laurie-anderson/');
+  .replaceAll('/2017/sound/laurie-anderson/', '/2017/talks/laurie-anderson/'), 2017);
 ---
 
 <Dfn2017Layout

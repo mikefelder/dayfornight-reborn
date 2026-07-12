@@ -1,10 +1,14 @@
 ---
 import Dfn2017Layout from '@layouts/Dfn2017Layout.astro';
 import snapshot from '@data/snapshot-2017.json';
+import { localVideo } from '@data/videos';
 
 const { media } = snapshot;
 const { videos, gallery } = media;
 const mainVideo = videos[0];
+const videoLocals: Record<string, string | null> = Object.fromEntries(
+  videos.map((v) => [v.id, localVideo(2017, v.id)]),
+);
 ---
 
 <Dfn2017Layout
@@ -16,7 +20,7 @@ const mainVideo = videos[0];
 >
   <div class="media-playlist">
     <div class="mainVid">
-      <div class="vid-cover" data-id={mainVideo.id} data-vid-title={mainVideo.title}>
+      <div class="vid-cover" data-id={mainVideo.id} data-vid-title={mainVideo.title} data-local={videoLocals[mainVideo.id] ?? ''}>
         <span class="img-wrap" style={`background-image:url(/shared-assets/2017/images/${mainVideo.thumb});`}></span>
       </div>
       <p class="video-title">{mainVideo.title}</p>
@@ -24,12 +28,18 @@ const mainVideo = videos[0];
     <ul class="media-list">
       {videos.map((video, i) => (
         <li class={`list-item${i === 0 ? ' active' : ''}`} data-id={video.id}>
-          <div class="item-inner" data-id={video.id} data-vid-title={video.title}>
+          <div class="item-inner" data-id={video.id} data-vid-title={video.title} data-local={videoLocals[video.id] ?? ''}>
             <div class="item-wrap">
               <span class="img-wrap" style={`background-image:url(/shared-assets/2017/images/${video.thumb});`}></span>
             </div>
             <div class="iframe-wrap mobile-only">
-              <iframe src={`https://player.vimeo.com/video/${video.id}?color=f7931e&title=0&byline=0&portrait=0`} frameborder="0" allowfullscreen></iframe>
+              {videoLocals[video.id] ? (
+                <video controls playsinline preload="none" style="width:100%;height:100%;object-fit:cover;">
+                  <source src={videoLocals[video.id]} type="video/mp4" />
+                </video>
+              ) : (
+                <iframe src={`https://player.vimeo.com/video/${video.id}?color=f7931e&title=0&byline=0&portrait=0`} frameborder="0" allowfullscreen></iframe>
+              )}
             </div>
             <p class="video-title">{video.title}</p>
           </div>
@@ -63,10 +73,12 @@ const mainVideo = videos[0];
       const mainVid = document.querySelector('.mainVid');
       if (!mainVid) return;
 
-      function setVideo(vID: string, title: string) {
+      function setVideo(vID: string, title: string, local: string) {
         const vidPad = document.createElement('div');
         vidPad.className = 'vid-pad';
-        vidPad.innerHTML = `<iframe src="https://player.vimeo.com/video/${vID}?autoplay=1&color=f7931e&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allowfullscreen></iframe>`;
+        vidPad.innerHTML = local
+          ? `<video controls autoplay playsinline style="width:100%;height:auto;"><source src="${local}" type="video/mp4"></video>`
+          : `<iframe src="https://player.vimeo.com/video/${vID}?autoplay=1&color=f7931e&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allowfullscreen></iframe>`;
         mainVid.innerHTML = '';
         mainVid.appendChild(vidPad);
         const titleEl = document.createElement('p');
@@ -79,7 +91,7 @@ const mainVideo = videos[0];
       const vidCover = mainVid.querySelector('.vid-cover');
       if (vidCover) {
         vidCover.addEventListener('click', () => {
-          setVideo(vidCover.getAttribute('data-id') || '', vidCover.getAttribute('data-vid-title') || '');
+          setVideo(vidCover.getAttribute('data-id') || '', vidCover.getAttribute('data-vid-title') || '', vidCover.getAttribute('data-local') || '');
         });
       }
 
@@ -90,7 +102,7 @@ const mainVideo = videos[0];
           (el as HTMLElement).closest('li')?.classList.add('active');
           const id = (el as HTMLElement).getAttribute('data-id') || '';
           const title = (el as HTMLElement).getAttribute('data-vid-title') || '';
-          setVideo(id, title);
+          setVideo(id, title, (el as HTMLElement).getAttribute('data-local') || '');
         });
       });
 

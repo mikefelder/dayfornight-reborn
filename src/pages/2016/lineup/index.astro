@@ -1,9 +1,11 @@
 ---
 import Dfn2016LineupLayout from '@layouts/Dfn2016LineupLayout.astro';
 import snapshot from '@data/snapshot-2016-lineup.json';
+import { localVideo, localVideoTag } from '@data/videos';
 
 const IMG = '/shared-assets/2016/images';
 const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, sound, light, footer } = snapshot;
+const lineupVideoLocal = localVideo(2016, vimeoId);
 ---
 
 <Dfn2016LineupLayout>
@@ -76,14 +78,18 @@ const { tagline, dateLocation, ticketUrl, vimeoId, nav, social, newsletter, soun
       </div>
 
       <div class="sound-media">
-        <div class="vid-pad" style="padding-bottom:41.719%;">
-          <iframe
-            src={`https://player.vimeo.com/video/${vimeoId}?background=1&title=0&byline=0&portrait=0`}
-            width="640"
-            height="267"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+        <div class="vid-pad" style="position:relative; padding-bottom:41.719%;">
+          {lineupVideoLocal ? (
+            <Fragment set:html={localVideoTag({ local: lineupVideoLocal, background: true })} />
+          ) : (
+            <iframe
+              src={`https://player.vimeo.com/video/${vimeoId}?background=1&title=0&byline=0&portrait=0`}
+              width="640"
+              height="267"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          )}
         </div>
       </div>
 
