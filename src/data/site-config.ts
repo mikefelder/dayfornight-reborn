@@ -16,7 +16,7 @@ export const SITE_DOMAIN = 'dayfornight.dev';
 export const ASSETS_BASE_URL = '';
 
 export const SOCIAL_LINKS = {
-  facebook: 'https://www.facebook.com/dayfornightfest',
+  facebook: '#',
   instagram: 'https://instagram.com/dayfornightfest/',
   twitter: 'https://twitter.com/dayfornightfest',
   spotify: 'https://open.spotify.com/playlist/5yQVK7rXvuwcna4Gx9PYVn',

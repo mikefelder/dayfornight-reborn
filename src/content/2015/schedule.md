@@ -8,7 +8,7 @@ title: "Schedule"
 
 [Info](../../index.php/info/)
 
-### DAY FOR NIGHT FESTIVAL: JOIN THE EVOLUTION OF LIGHT + SOUND         [![Facebook](../../images/facebook.png)](http://www.facebook.com/dayfornightfest) [![Twitter](../../images/twitter.png)](http://twitter.com/dayfornightfest) [![Instagram](../../images/instagram.png)](http://instagram.com/dayfornightfest/) [![Spotify](../../images/spotify.png)](http://open.spotify.com/user/dayfornightfest/playlist/5yQVK7rXvuwcna4Gx9PYVn)         
+### DAY FOR NIGHT FESTIVAL: JOIN THE EVOLUTION OF LIGHT + SOUND         [![Facebook](../../images/facebook.png)](#) [![Twitter](../../images/twitter.png)](http://twitter.com/dayfornightfest) [![Instagram](../../images/instagram.png)](http://instagram.com/dayfornightfest/) [![Spotify](../../images/spotify.png)](http://open.spotify.com/user/dayfornightfest/playlist/5yQVK7rXvuwcna4Gx9PYVn)         
 
 .tt\_tabs .tt\_timetable td{height: 30px;}.tt\_tabs .tt\_timetable .event{background: #000000;} .tt\_tabs\_navigation li a:hover, .tt\_tabs\_navigation li a.selected,.tabs\_box\_navigation.sf-timetable-menu .tabs\_box\_navigation\_selected{border-color:#000000;}.tabs\_box\_navigation.sf-timetable-menu .tabs\_box\_navigation\_selected:hover{background-color: #FFF; border: 1px solid rgba(0, 0, 0, 0.1);}.sf-timetable-menu li ul li a:hover, .sf-timetable-menu li ul li.selected a:hover{}.tt\_tabs .tt\_timetable{font-family:GT-Cinetype-Regular !important;}
 

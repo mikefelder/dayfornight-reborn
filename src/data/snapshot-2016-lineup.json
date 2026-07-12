@@ -16,7 +16,7 @@
   ],
   "social": [
     { "id": "spotify", "href": "https://play.spotify.com/user/dayfornightfest?play=true&utm_source=open.spotify.com&utm_medium=open" },
-    { "id": "facebook", "href": "https://www.facebook.com/dayfornightfest" },
+    { "id": "facebook", "href": "#" },
     { "id": "soundcloud", "href": "https://soundcloud.com/user-431330920" },
     { "id": "instagram", "href": "https://www.instagram.com/dayfornightfest/" }
   ],
