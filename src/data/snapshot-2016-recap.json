@@ -40,9 +40,9 @@
   ],
   "social": [
     { "platform": "spotify", "url": "https://play.spotify.com/user/dayfornightfest" },
-    { "platform": "facebook", "url": "#" },
+    { "platform": "github", "url": "https://github.com/mikefelder" },
     { "platform": "soundcloud", "url": "https://soundcloud.com/dayfornightfest" },
-    { "platform": "instagram", "url": "https://www.instagram.com/dayfornightfest/" },
+    { "platform": "instagram", "url": "https://instagram.com/slashmiek" },
     { "platform": "twitter", "url": "https://twitter.com/dayfornightfest" }
   ],
   "newsletter": {
@@ -50,7 +50,7 @@
     "label": "Get our newsletter"
   },
   "footer": {
-    "contactUrl": "#"
+    "contactUrl": "mailto:hello@slashmike.com"
   },
   "dateData": [
     ["12","17","2016","7:13","17:21"],

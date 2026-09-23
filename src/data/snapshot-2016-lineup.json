@@ -16,9 +16,9 @@
   ],
   "social": [
     { "id": "spotify", "href": "https://play.spotify.com/user/dayfornightfest?play=true&utm_source=open.spotify.com&utm_medium=open" },
-    { "id": "facebook", "href": "#" },
+    { "id": "github", "href": "https://github.com/mikefelder" },
     { "id": "soundcloud", "href": "https://soundcloud.com/user-431330920" },
-    { "id": "instagram", "href": "https://www.instagram.com/dayfornightfest/" }
+    { "id": "instagram", "href": "https://instagram.com/slashmiek" }
   ],
   "newsletter": {
     "action": "//dayfornight.us13.list-manage.com/subscribe/post?u=2f0646d01369ed754c53fb8a3&id=a04eff96cd"
@@ -57,7 +57,7 @@
     { "medium": "uploads/dfn-light-home-01-500x281.jpg", "medh": 281, "large": "uploads/dfn-light-home-01-1024x576.jpg" }
   ],
   "footer": {
-    "contactHref": "#",
+    "contactHref": "mailto:hello@slashmike.com",
     "lines": ["Day For Night 2016", "December 17-18, 2016", "Houston, Texas"]
   },
   "dateData": [
