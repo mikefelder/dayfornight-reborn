@@ -131,6 +131,9 @@ The original 2017 site had 93 lineup artists but only 20 had detail pages in the
 
 The 2016 and 2017 eras use identical GT-Cinetype font files (Light, Regular, Bold). The 2017 CSS references fonts at `/shared-assets/2016/fonts/` to avoid duplication. The `public/shared-assets/2017/fonts/` directory was removed.
 
+The 2015 homepage tagline and 2016 presale social links share `GitHubIcon.astro`
+for consistent icon sizing and alignment; GitHub does not use the legacy social sprite.
+
 ### Year-Navigation Pill
 
 Every built snapshot page renders a fixed pill in the bottom-right corner

@@ -386,7 +386,7 @@ textarea:focus {
   letter-spacing: 1.5px;
 }
 .sub-title-wrap .images {
-  display: inline;
+  display: inline-block;
   vertical-align: middle;
 }
 .sub-title-wrap .images img {
@@ -636,4 +636,3 @@ textarea:focus {
     height: 80px;
   }
 }
-
